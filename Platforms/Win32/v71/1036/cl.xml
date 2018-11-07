@@ -160,7 +160,7 @@ Credits
     <EnumValue Name="Default" Switch="" DisplayName="Par défaut" Description="Vérifications effectuées par défaut à l'exécution.">
     </EnumValue>
   </EnumProperty>
-  <EnumProperty Name="TargetProcessor" DisplayName="Processor" Description="Direct the compiler to optimize code generation for the 80386, 80486, or Pentium® processors.     (/G3, /G4, /G5, /G6, /GB)." Category="Code Generation">
+  <EnumProperty Name="TargetProcessor" DisplayName="Processor" Description="Direct the compiler to optimize code generation for the 80386, 80486, Pentium®, Pentium® Pro or Pentium® 4 processors.     (/G3, /G4, /G5, /G6, /G7, /GB)." Category="Code Generation">
     <EnumValue Name="80386" Switch="G3" DisplayName="80386" Description="Forces a value of 300 for the _M_IX86 preprocessor macro. The compiler ignores this option.">
     </EnumValue>
     <EnumValue Name="80486" Switch="G4" DisplayName="80486" Description="Forces a value of 400 for the _M_IX86 preprocessor macro. The compiler ignores this option.">
@@ -168,6 +168,8 @@ Credits
     <EnumValue Name="Pentium" Switch="G5" DisplayName="Pentium" Description="Optimizes the code created to favor the Pentium. Use this option for programs meant only for the Pentium. This option forces a value of 500 for the _M_IX86 preprocessor macro.">
     </EnumValue>
     <EnumValue Name="PentiumPro" Switch="G6" DisplayName="Pentium Pro" Description="Optimizes the code created to favor the Pentium Pro. Use this option for programs meant only for the Pentium Pro. This option forces a value of 600 for the _M_IX86 preprocessor macro.">
+    </EnumValue>
+    <EnumValue Name="Pentium4" Switch="G7" DisplayName="Pentium 4" Description="Optimizes the code created to favor the Pentium 4. Use this option for programs meant only for the Pentium 4. This option forces a value of 700 for the _M_IX86 preprocessor macro.">
     </EnumValue>
     <EnumValue Name="Blend" Switch="GB" DisplayName="Blend" Description="Blends the optimizations for the 80386 (/G3), 80486 (/G4), Pentium (/G5), and Pentium Pro (/G6) options. This option forces a value of 500 for the _M_IX86 preprocessor macro. This value is the default.">
     </EnumValue>
@@ -205,9 +207,9 @@ Credits
   <BoolProperty Name="FunctionLevelLinking" DisplayName="Activer la liaison au niveau des fonctions" Description="Permet au compilateur d'empaqueter des fonctions individuelles sous la forme de fonctions empaquetées (COMDATs). Requis avec l'option Modifier  Continuer.     (/Gy)" Category="Code Generation" Switch="Gy" F1Keyword="VC.Project.VCCLCompilerTool.EnableFunctionLevelLinking">
   </BoolProperty>
   <EnumProperty Name="EnableEnhancedInstructionSet" DisplayName="Activation du jeu d'instructions amélioré" Description="Permet l'utilisation des instructions trouvées dans les processeurs qui prennent en charge les jeux d'instructions améliorés, par exemple, les améliorations SSE et SSE2 apportées à IA-32. Uniquement disponible actuellement lors d'une génération pour l'architecture x86.   (/arch:SSE, /arch:SSE2)" Category="Code Generation" F1Keyword="VC.Project.VCCLCompilerTool.EnableEnhancedInstructionSet">
-    <EnumValue Name="StreamingSIMDExtensions" Switch="arch:SSE" DisplayName="Extensions Streaming SIMD (/arch:SSE)" Description="Extensions Streaming SIMD (/arch:SSE)">
+    <EnumValue Name="StreamingSIMDExtensions" Switch="arch:SSE" DisplayName="Extensions Streaming SIMD" Description="Extensions Streaming SIMD">
     </EnumValue>
-    <EnumValue Name="StreamingSIMDExtensions2" Switch="arch:SSE2" DisplayName="Extensions Streaming SIMD 2 (/arch:SSE2)" Description="Extensions Streaming SIMD 2 (/arch:SSE2)">
+    <EnumValue Name="StreamingSIMDExtensions2" Switch="arch:SSE2" DisplayName="Extensions Streaming SIMD 2" Description="Extensions Streaming SIMD 2">
     </EnumValue>
     <EnumValue Name="NotSet" Switch="" DisplayName="Non défini" Description="Non défini(e).">
     </EnumValue>
@@ -233,7 +235,7 @@ Credits
     <EnumValue Name="NotUsing" Switch="" DisplayName="Sans utiliser les en-têtes précompilés" Description="N'utilise pas les en-têtes précompilés. ">
     </EnumValue>
   </EnumProperty>
-  <StringProperty Subtype="file" Name="PrecompiledHeaderFile" DisplayName="Fichier d'en-tête précompilé" Description="Spécifie le nom de fichier d'en-tête à utiliser au moment de la création ou de l'utilisation d'un fichier d'en-tête précompilé. (/Yc[name], /Yu[name])" Category="Precompiled Headers" F1Keyword="VC.Project.VCCLCompilerTool.PrecompiledHeaderThrough">
+  <StringProperty Subtype="file" Name="PrecompiledHeaderFile" DisplayName="Fichier d'en-tête précompilé" Description="Spécifie le nom de fichier d'en-tête à utiliser au moment de la création ou de l'utilisation d'un fichier d'en-tête précompilé. (/Yc[name], /YX[name], /Yu[name])" Category="Precompiled Headers" F1Keyword="VC.Project.VCCLCompilerTool.PrecompiledHeaderThrough">
   </StringProperty>
   <StringProperty Subtype="file" Name="PrecompiledHeaderOutputFile" DisplayName="Fichier d'en-tête précompilé de sortie" Description="Spécifie le chemin d'accès et/ou le nom du fichier d'en-tête précompilé qui a été généré. (/Fp[name])" Category="Precompiled Headers" Switch="Fp" F1Keyword="VC.Project.VCCLCompilerTool.PrecompiledHeaderFile">
   </StringProperty>

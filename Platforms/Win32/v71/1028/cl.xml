@@ -160,7 +160,7 @@ Credits
     <EnumValue Name="Default" Switch="" DisplayName="預設" Description="預設執行階段檢查。">
     </EnumValue>
   </EnumProperty>
-  <EnumProperty Name="TargetProcessor" DisplayName="Processor" Description="Direct the compiler to optimize code generation for the 80386, 80486, or Pentium® processors.     (/G3, /G4, /G5, /G6, /GB)." Category="Code Generation">
+  <EnumProperty Name="TargetProcessor" DisplayName="Processor" Description="Direct the compiler to optimize code generation for the 80386, 80486, Pentium®, Pentium® Pro or Pentium® 4 processors.     (/G3, /G4, /G5, /G6, /G7, /GB)." Category="Code Generation">
     <EnumValue Name="80386" Switch="G3" DisplayName="80386" Description="Forces a value of 300 for the _M_IX86 preprocessor macro. The compiler ignores this option.">
     </EnumValue>
     <EnumValue Name="80486" Switch="G4" DisplayName="80486" Description="Forces a value of 400 for the _M_IX86 preprocessor macro. The compiler ignores this option.">
@@ -168,6 +168,8 @@ Credits
     <EnumValue Name="Pentium" Switch="G5" DisplayName="Pentium" Description="Optimizes the code created to favor the Pentium. Use this option for programs meant only for the Pentium. This option forces a value of 500 for the _M_IX86 preprocessor macro.">
     </EnumValue>
     <EnumValue Name="PentiumPro" Switch="G6" DisplayName="Pentium Pro" Description="Optimizes the code created to favor the Pentium Pro. Use this option for programs meant only for the Pentium Pro. This option forces a value of 600 for the _M_IX86 preprocessor macro.">
+    </EnumValue>
+    <EnumValue Name="Pentium4" Switch="G7" DisplayName="Pentium 4" Description="Optimizes the code created to favor the Pentium 4. Use this option for programs meant only for the Pentium 4. This option forces a value of 700 for the _M_IX86 preprocessor macro.">
     </EnumValue>
     <EnumValue Name="Blend" Switch="GB" DisplayName="Blend" Description="Blends the optimizations for the 80386 (/G3), 80486 (/G4), Pentium (/G5), and Pentium Pro (/G6) options. This option forces a value of 500 for the _M_IX86 preprocessor macro. This value is the default.">
     </EnumValue>
@@ -205,9 +207,9 @@ Credits
   <BoolProperty Name="FunctionLevelLinking" DisplayName="啟用函式階層連結" Description="讓編譯器以封裝函式 (COMDATs) 的格式封裝個別的函式。需要 [編輯後繼續] 來進行運作。     (/Gy)" Category="Code Generation" Switch="Gy" F1Keyword="VC.Project.VCCLCompilerTool.EnableFunctionLevelLinking">
   </BoolProperty>
   <EnumProperty Name="EnableEnhancedInstructionSet" DisplayName="啟用進階指令集" Description="啟用可在支援進階指令集的處理器上找到的指令，例如 IA-32 的 SSE 和 SSE2 加強功能。目前只適用於建置 x86 架構。   (/arch:SSE, /arch:SSE2)" Category="Code Generation" F1Keyword="VC.Project.VCCLCompilerTool.EnableEnhancedInstructionSet">
-    <EnumValue Name="StreamingSIMDExtensions" Switch="arch:SSE" DisplayName="Streaming SIMD Extensions (/arch:SSE)" Description="Streaming SIMD Extensions (/arch:SSE)">
+    <EnumValue Name="StreamingSIMDExtensions" Switch="arch:SSE" DisplayName="Streaming SIMD Extensions" Description="Streaming SIMD Extensions">
     </EnumValue>
-    <EnumValue Name="StreamingSIMDExtensions2" Switch="arch:SSE2" DisplayName="Streaming SIMD Extensions 2 (/arch:SSE2)" Description="Streaming SIMD Extensions 2 (/arch:SSE2)">
+    <EnumValue Name="StreamingSIMDExtensions2" Switch="arch:SSE2" DisplayName="Streaming SIMD Extensions 2" Description="Streaming SIMD Extensions 2">
     </EnumValue>
     <EnumValue Name="NotSet" Switch="" DisplayName="未設定" Description="未設定。">
     </EnumValue>

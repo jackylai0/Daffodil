@@ -160,7 +160,7 @@ Credits
     <EnumValue Name="Default" Switch="" DisplayName="既定" Description="既定のランタイム チェックです。">
     </EnumValue>
   </EnumProperty>
-  <EnumProperty Name="TargetProcessor" DisplayName="Processor" Description="Direct the compiler to optimize code generation for the 80386, 80486, or Pentium® processors.     (/G3, /G4, /G5, /G6, /GB)." Category="Code Generation">
+  <EnumProperty Name="TargetProcessor" DisplayName="Processor" Description="Direct the compiler to optimize code generation for the 80386, 80486, Pentium®, Pentium® Pro or Pentium® 4 processors.     (/G3, /G4, /G5, /G6, /G7, /GB)." Category="Code Generation">
     <EnumValue Name="80386" Switch="G3" DisplayName="80386" Description="Forces a value of 300 for the _M_IX86 preprocessor macro. The compiler ignores this option.">
     </EnumValue>
     <EnumValue Name="80486" Switch="G4" DisplayName="80486" Description="Forces a value of 400 for the _M_IX86 preprocessor macro. The compiler ignores this option.">
@@ -168,6 +168,8 @@ Credits
     <EnumValue Name="Pentium" Switch="G5" DisplayName="Pentium" Description="Optimizes the code created to favor the Pentium. Use this option for programs meant only for the Pentium. This option forces a value of 500 for the _M_IX86 preprocessor macro.">
     </EnumValue>
     <EnumValue Name="PentiumPro" Switch="G6" DisplayName="Pentium Pro" Description="Optimizes the code created to favor the Pentium Pro. Use this option for programs meant only for the Pentium Pro. This option forces a value of 600 for the _M_IX86 preprocessor macro.">
+    </EnumValue>
+    <EnumValue Name="Pentium4" Switch="G7" DisplayName="Pentium 4" Description="Optimizes the code created to favor the Pentium 4. Use this option for programs meant only for the Pentium 4. This option forces a value of 700 for the _M_IX86 preprocessor macro.">
     </EnumValue>
     <EnumValue Name="Blend" Switch="GB" DisplayName="Blend" Description="Blends the optimizations for the 80386 (/G3), 80486 (/G4), Pentium (/G5), and Pentium Pro (/G6) options. This option forces a value of 500 for the _M_IX86 preprocessor macro. This value is the default.">
     </EnumValue>
@@ -205,9 +207,9 @@ Credits
   <BoolProperty Name="FunctionLevelLinking" DisplayName="関数レベルでリンクする" Description="コンパイラで、パッケージ化された関数の形式 (COMDATs) により個別の関数をパッケージ化することを許可します。エディット コンティニュで必要です。     (/Gy)" Category="Code Generation" Switch="Gy" F1Keyword="VC.Project.VCCLCompilerTool.EnableFunctionLevelLinking">
   </BoolProperty>
   <EnumProperty Name="EnableEnhancedInstructionSet" DisplayName="拡張命令セットを有効にする" Description="IA-32 の SSE および SSE2 などの拡張命令セットをサポートするプロセッサにある命令の使用を有効化します。現在 x86 アーキテクチャのビルド時のみ使用できます。   (/arch:SSE、/arch:SSE2)" Category="Code Generation" F1Keyword="VC.Project.VCCLCompilerTool.EnableEnhancedInstructionSet">
-    <EnumValue Name="StreamingSIMDExtensions" Switch="arch:SSE" DisplayName="ストリーミング SIMD 拡張機能 (/arch:SSE)" Description="ストリーミング SIMD 拡張機能 (/arch:SSE)">
+    <EnumValue Name="StreamingSIMDExtensions" Switch="arch:SSE" DisplayName="ストリーミング SIMD 拡張機能" Description="ストリーミング SIMD 拡張機能">
     </EnumValue>
-    <EnumValue Name="StreamingSIMDExtensions2" Switch="arch:SSE2" DisplayName="ストリーミング SIMD 拡張機能 2 (/arch:SSE2)" Description="ストリーミング SIMD 拡張機能 2 (/arch:SSE2)">
+    <EnumValue Name="StreamingSIMDExtensions2" Switch="arch:SSE2" DisplayName="ストリーミング SIMD 拡張機能 2" Description="ストリーミング SIMD 拡張機能 2">
     </EnumValue>
     <EnumValue Name="NotSet" Switch="" DisplayName="設定なし" Description="設定しません。">
     </EnumValue>
@@ -220,7 +222,7 @@ Credits
   </BoolProperty>
   <BoolProperty ReverseSwitch="GR-" Name="RuntimeTypeInfo" DisplayName="ランタイム型情報を有効にする" Description="実行時に C++ のオブジェクト型をチェックするコードを追加します (ランタイム型情報)。     (/GR、/GR-)" Category="Language" Switch="GR" F1Keyword="VC.Project.VCCLCompilerTool.RuntimeTypeInfo">
   </BoolProperty>
-  <EnumProperty Name="PrecompiledHeader" DisplayName="プリコンパイル済みヘッダー" Description="プリコンパイル済みヘッダーの作成/使用: ビルド時にプリコンパイル済みヘッダーを作成、使用します。     (/Yc、/Yu)" Category="Precompiled Headers" F1Keyword="VC.Project.VCCLCompilerTool.UsePrecompiledHeader">
+  <EnumProperty Name="PrecompiledHeader" DisplayName="プリコンパイル済みヘッダー" Description="プリコンパイル済みヘッダーの作成/使用: ビルド時にプリコンパイル済みヘッダーを作成、使用します。     (/Yc、/YX、/Yu)" Category="Precompiled Headers" F1Keyword="VC.Project.VCCLCompilerTool.UsePrecompiledHeader">
     <EnumValue Name="Create" Switch="Yc" DisplayName="作成" Description="ある時点のコンパイルの状態を表すプリコンパイル済みヘッダー (.pch) ファイルを作成するようにコンパイラを設定します。">
       <Argument Property="PrecompiledHeaderFile" IsRequired="false"/>
     </EnumValue>
