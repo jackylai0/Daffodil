@@ -160,7 +160,7 @@ Credits
     <EnumValue Name="Default" Switch="" DisplayName="Par défaut" Description="Vérifications effectuées par défaut à l'exécution.">
     </EnumValue>
   </EnumProperty>
-  <EnumProperty Name="TargetProcessor" DisplayName="Processor" Description="Direct the compiler to optimize code generation for the 80386, 80486, or Pentium® processors.     (/G3, /G4, /G5, /G6, /GB)." Category="Code Generation">
+  <EnumProperty Name="TargetProcessor" DisplayName="Processor" Description="Direct the compiler to optimize code generation for the 80386, 80486, Pentium® or Pentium® Pro processors.     (/G3, /G4, /G5, /G6, /GB)." Category="Code Generation">
     <EnumValue Name="80386" Switch="G3" DisplayName="80386" Description="Forces a value of 300 for the _M_IX86 preprocessor macro. The compiler ignores this option.">
     </EnumValue>
     <EnumValue Name="80486" Switch="G4" DisplayName="80486" Description="Forces a value of 400 for the _M_IX86 preprocessor macro. The compiler ignores this option.">
@@ -233,7 +233,7 @@ Credits
     <EnumValue Name="NotUsing" Switch="" DisplayName="Sans utiliser les en-têtes précompilés" Description="N'utilise pas les en-têtes précompilés. ">
     </EnumValue>
   </EnumProperty>
-  <StringProperty Subtype="file" Name="PrecompiledHeaderFile" DisplayName="Fichier d'en-tête précompilé" Description="Spécifie le nom de fichier d'en-tête à utiliser au moment de la création ou de l'utilisation d'un fichier d'en-tête précompilé. (/Yc[name], /Yu[name])" Category="Precompiled Headers" F1Keyword="VC.Project.VCCLCompilerTool.PrecompiledHeaderThrough">
+  <StringProperty Subtype="file" Name="PrecompiledHeaderFile" DisplayName="Fichier d'en-tête précompilé" Description="Spécifie le nom de fichier d'en-tête à utiliser au moment de la création ou de l'utilisation d'un fichier d'en-tête précompilé. (/Yc[name], /YX[name], /Yu[name])" Category="Precompiled Headers" F1Keyword="VC.Project.VCCLCompilerTool.PrecompiledHeaderThrough">
   </StringProperty>
   <StringProperty Subtype="file" Name="PrecompiledHeaderOutputFile" DisplayName="Fichier d'en-tête précompilé de sortie" Description="Spécifie le chemin d'accès et/ou le nom du fichier d'en-tête précompilé qui a été généré. (/Fp[name])" Category="Precompiled Headers" Switch="Fp" F1Keyword="VC.Project.VCCLCompilerTool.PrecompiledHeaderFile">
   </StringProperty>

@@ -156,7 +156,7 @@ namespace Daffodil.CPPTasks.Win32.v70
         base.ActiveToolSwitches.Remove("PrecompiledHeader");
         ToolSwitch switch2 = new ToolSwitch(ToolSwitchType.String);
         switch2.DisplayName = "Precompiled Header";
-        switch2.Description = "Create/Use Precompiled Header : Enables creation or use of a precompiled header during the build.     (/Yc, /Yu)";
+        switch2.Description = "Create/Use Precompiled Header : Enables creation or use of a precompiled header during the build.     (/Yc, /YX, /Yu)";
         switch2.ArgumentRelationList = new System.Collections.ArrayList();
         switch2.ArgumentRelationList.Add(new ArgumentRelation("PrecompiledHeaderFile", "Create", false, ""));
         switch2.ArgumentRelationList.Add(new ArgumentRelation("PrecompiledHeaderFile", "Use", false, ""));
@@ -225,7 +225,7 @@ namespace Daffodil.CPPTasks.Win32.v70
         base.ActiveToolSwitches.Remove("TargetProcessor");
         ToolSwitch switch2 = new ToolSwitch(ToolSwitchType.String);
         switch2.DisplayName = "Processor";
-        switch2.Description = "Direct the compiler to optimize code generation for the 80386, 80486, or Pentium® processors.     (/G3, /G4, /G5, /G6, /GB)";
+        switch2.Description = "Direct the compiler to optimize code generation for the 80386, 80486, Pentium®, or Pentium® Pro processors.     (/G3, /G4, /G5, /G6, /GB)";
         switch2.ArgumentRelationList = new System.Collections.ArrayList();
         string[][] switchMap = new string[][] { new string[] { "80386", "/G3" }, new string[] { "80486", "/G4" }, new string[] { "Pentium", "/G5" }, new string[] { "PentiumPro", "/G6" }, new string[] { "Blend", "/GB" } };
         switch2.SwitchValue = base.ReadSwitchMap("TargetProcessor", switchMap, value);

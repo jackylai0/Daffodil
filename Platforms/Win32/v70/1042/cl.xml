@@ -160,7 +160,7 @@ Credits
     <EnumValue Name="Default" Switch="" DisplayName="기본값" Description="기본 런타임 검사입니다.">
     </EnumValue>
   </EnumProperty>
-  <EnumProperty Name="TargetProcessor" DisplayName="Processor" Description="Direct the compiler to optimize code generation for the 80386, 80486, or Pentium® processors.     (/G3, /G4, /G5, /G6, /GB)." Category="Code Generation">
+  <EnumProperty Name="TargetProcessor" DisplayName="Processor" Description="Direct the compiler to optimize code generation for the 80386, 80486, Pentium® or Pentium® Pro processors.     (/G3, /G4, /G5, /G6, /GB)." Category="Code Generation">
     <EnumValue Name="80386" Switch="G3" DisplayName="80386" Description="Forces a value of 300 for the _M_IX86 preprocessor macro. The compiler ignores this option.">
     </EnumValue>
     <EnumValue Name="80486" Switch="G4" DisplayName="80486" Description="Forces a value of 400 for the _M_IX86 preprocessor macro. The compiler ignores this option.">
@@ -233,7 +233,7 @@ Credits
     <EnumValue Name="NotUsing" Switch="" DisplayName="미리 컴파일된 헤더 사용 안 함" Description="미리 컴파일된 헤더를 사용하지 않습니다. ">
     </EnumValue>
   </EnumProperty>
-  <StringProperty Subtype="file" Name="PrecompiledHeaderFile" DisplayName="미리 컴파일된 헤더 파일" Description="미리 컴파일된 헤더 파일을 만들거나 사용할 때 사용할 헤더 파일 이름을 지정합니다. (/Yc[name], /Yu[name])" Category="Precompiled Headers" F1Keyword="VC.Project.VCCLCompilerTool.PrecompiledHeaderThrough">
+  <StringProperty Subtype="file" Name="PrecompiledHeaderFile" DisplayName="미리 컴파일된 헤더 파일" Description="미리 컴파일된 헤더 파일을 만들거나 사용할 때 사용할 헤더 파일 이름을 지정합니다. (/Yc[name], /YX[name], /Yu[name])" Category="Precompiled Headers" F1Keyword="VC.Project.VCCLCompilerTool.PrecompiledHeaderThrough">
   </StringProperty>
   <StringProperty Subtype="file" Name="PrecompiledHeaderOutputFile" DisplayName="미리 컴파일된 헤더 출력 파일" Description="생성된 미리 컴파일된 헤더 파일의 경로 및/또는 이름을 지정합니다. (/Fp[name])" Category="Precompiled Headers" Switch="Fp" F1Keyword="VC.Project.VCCLCompilerTool.PrecompiledHeaderFile">
   </StringProperty>
