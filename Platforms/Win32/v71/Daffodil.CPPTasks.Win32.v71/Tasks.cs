@@ -220,9 +220,9 @@ namespace Daffodil.CPPTasks.Win32.v71
         base.ActiveToolSwitches.Remove("TargetProcessor");
         ToolSwitch switch2 = new ToolSwitch(ToolSwitchType.String);
         switch2.DisplayName = "Processor";
-        switch2.Description = "Direct the compiler to optimize code generation for the 80386, 80486, or Pentium® processors.     (/G3, /G4, /G5, /G6, /GB)";
+        switch2.Description = "Direct the compiler to optimize code generation for the 80386, 80486, Pentium®, Pentium® Pro or Pentium® 4 processors.     (/G3, /G4, /G5, /G6, /G7, /GB)";
         switch2.ArgumentRelationList = new System.Collections.ArrayList();
-        string[][] switchMap = new string[][] { new string[] { "80386", "/G3" }, new string[] { "80486", "/G4" }, new string[] { "Pentium", "/G5" }, new string[] { "Pentium Pro", "/G6" }, new string[] { "Blend", "/GB" } };
+        string[][] switchMap = new string[][] { new string[] { "80386", "/G3" }, new string[] { "80486", "/G4" }, new string[] { "Pentium", "/G5" }, new string[] { "PentiumPro", "/G6" }, new string[] { "Pentium4", "/G7" }, new string[] { "Blend", "/GB" } };
         switch2.SwitchValue = base.ReadSwitchMap("TargetProcessor", switchMap, value);
         switch2.Name = "TargetProcessor";
         switch2.Value = value;
@@ -264,24 +264,24 @@ namespace Daffodil.CPPTasks.Win32.v71
   {
     public virtual bool OptimizeWin98
     {
-        get
-        {
-            return (base.IsPropertySet("OptimizeWin98") && base.ActiveToolSwitches["OptimizeWin98"].BooleanValue);
-        }
-        set
-        {
-            base.ActiveToolSwitches.Remove("OptimizeWin98");
-            ToolSwitch switch2 = new ToolSwitch(ToolSwitchType.Boolean);
-            switch2.DisplayName = "Optimize for Windows 98";
-            switch2.Description = "Align code on 4K boundaries. This improves performance on Windows 98 systems. (/OPT:WIN98, /OPT:NOWIN98) ";
-            switch2.ArgumentRelationList = new System.Collections.ArrayList();
-            switch2.SwitchValue = "/OPT:WIN98";
-            switch2.ReverseSwitchValue = "/OPT:NOWIN98";
-            switch2.Name = "OptimizeWin98";
-            switch2.BooleanValue = value;
-            base.ActiveToolSwitches.Add("OptimizeWin98", switch2);
-            base.AddActiveSwitchToolValue(switch2);
-        }
+      get
+      {
+        return (base.IsPropertySet("OptimizeWin98") && base.ActiveToolSwitches["OptimizeWin98"].BooleanValue);
+      }
+      set
+      {
+        base.ActiveToolSwitches.Remove("OptimizeWin98");
+        ToolSwitch switch2 = new ToolSwitch(ToolSwitchType.Boolean);
+        switch2.DisplayName = "Optimize for Windows 98";
+        switch2.Description = "Align code on 4K boundaries. This improves performance on Windows 98 systems. (/OPT:WIN98, /OPT:NOWIN98) ";
+        switch2.ArgumentRelationList = new System.Collections.ArrayList();
+        switch2.SwitchValue = "/OPT:WIN98";
+        switch2.ReverseSwitchValue = "/OPT:NOWIN98";
+        switch2.Name = "OptimizeWin98";
+        switch2.BooleanValue = value;
+        base.ActiveToolSwitches.Add("OptimizeWin98", switch2);
+        base.AddActiveSwitchToolValue(switch2);
+      }
     }
     protected override void PostProcessSwitchList()
     {
