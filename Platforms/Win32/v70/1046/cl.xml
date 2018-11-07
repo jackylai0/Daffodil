@@ -204,14 +204,6 @@ Credits
   </BoolProperty>
   <BoolProperty Name="FunctionLevelLinking" DisplayName="Habilita Vinculação a Nível de Função" Description="Permite que o compilador empacote funções individuais na forma de funções empacotadas (COMDATs). Exigido para editar e continuar o trabalho.     (/Gy)" Category="Code Generation" Switch="Gy" F1Keyword="VC.Project.VCCLCompilerTool.EnableFunctionLevelLinking">
   </BoolProperty>
-  <EnumProperty Name="EnableEnhancedInstructionSet" DisplayName="Habilita Conjunto de Instruções Avançado" Description="Habilita o uso de instruções encontradas em processadores que suportam conjuntos de instruções avançados, e.g., os aprimoramentos SSE e SSE2 para o IA-32. Atualmente somente disponível para compilações na arquitetura x86.   (/arch:SSE, /arch:SSE2)" Category="Code Generation" F1Keyword="VC.Project.VCCLCompilerTool.EnableEnhancedInstructionSet">
-    <EnumValue Name="StreamingSIMDExtensions" Switch="arch:SSE" DisplayName="Streaming de Extensões SIMD (/arch:SSE)" Description="Streaming de Extensões SIMD (/arch:SSE)">
-    </EnumValue>
-    <EnumValue Name="StreamingSIMDExtensions2" Switch="arch:SSE2" DisplayName="Streaming de Extensões SIMD 2 (/arch:SSE2)" Description="Streaming de Extensões SIMD 2 (/arch:SSE2)">
-    </EnumValue>
-    <EnumValue Name="NotSet" Switch="" DisplayName="Não Definido" Description="Não Definido.">
-    </EnumValue>
-  </EnumProperty>
   <BoolProperty Name="DisableLanguageExtensions" DisplayName="Desabilita Extensões de Linguagem" Description="Inibe ou habilita extensões de linguagem.     (/Za)" Category="Language" Switch="Za" F1Keyword="VC.Project.VCCLCompilerTool.DisableLanguageExtensions">
   </BoolProperty>
   <BoolProperty Name="TreatWChar_tAsBuiltInType" DisplayName="Trate WChar_t Como um Tipo Interno" Description="Quando especificado, o tipo wchar_t torna-se um tipo nativo que é mapeado para  __wchar_t, do mesmo modo que short é mapeado para __int16. /Zc:wchar_t está habilitado por padrão." Category="Language" Switch="Zc:wchar_t" F1Keyword="VC.Project.VCCLCompilerTool.TreatWChar_tAsBuiltInType">
@@ -233,7 +225,7 @@ Credits
     <EnumValue Name="NotUsing" Switch="" DisplayName="Sem Utilização de Cabeçalhos Pré-compilados" Description="Sem utilização de cabeçalhos pré-compilados.">
     </EnumValue>
   </EnumProperty>
-  <StringProperty Subtype="file" Name="PrecompiledHeaderFile" DisplayName="Arquivo de Cabeçalho Pré-compilado" Description="Especifica o nome do arquivo de cabeçalho a ser utilizado ao criar ou utilizar um arquivo de cabeçalho pré-compilado. (/Yc[name], /Yu[name])" Category="Precompiled Headers" F1Keyword="VC.Project.VCCLCompilerTool.PrecompiledHeaderThrough">
+  <StringProperty Subtype="file" Name="PrecompiledHeaderFile" DisplayName="Arquivo de Cabeçalho Pré-compilado" Description="Especifica o nome do arquivo de cabeçalho a ser utilizado ao criar ou utilizar um arquivo de cabeçalho pré-compilado. (/Yc[name], /YX[name], /Yu[name])" Category="Precompiled Headers" F1Keyword="VC.Project.VCCLCompilerTool.PrecompiledHeaderThrough">
   </StringProperty>
   <StringProperty Subtype="file" Name="PrecompiledHeaderOutputFile" DisplayName="Arquivo de Saída de Cabeçalho Pré-compilado" Description="Especifica o caminho e/ou nome do arquivo de cabeçalho pré-compilado gerado. (/Fp[name])" Category="Precompiled Headers" Switch="Fp" F1Keyword="VC.Project.VCCLCompilerTool.PrecompiledHeaderFile">
   </StringProperty>

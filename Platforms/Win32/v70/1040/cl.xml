@@ -204,14 +204,6 @@ Credits
   </BoolProperty>
   <BoolProperty Name="FunctionLevelLinking" DisplayName="Abilita collegamento a livello di funzione" Description="Indica al compilatore di assemblare singole funzioni sotto forma di funzioni incluse nel pacchetto (COMDAT). Necessario per il funzionamento di Modifica e continuazione. (/Gy)" Category="Code Generation" Switch="Gy" F1Keyword="VC.Project.VCCLCompilerTool.EnableFunctionLevelLinking">
   </BoolProperty>
-  <EnumProperty Name="EnableEnhancedInstructionSet" DisplayName="Abilita set di istruzioni avanzate" Description="Consente l'utilizzo di istruzioni presenti su processori che supportano set di istruzioni avanzate, ad esempio i miglioramenti SSE e SSE2 per IA-32. Attualmente disponibile solo durante la compilazione per l'architettura x86. (/arch:SSE, /arch:SSE2)" Category="Code Generation" F1Keyword="VC.Project.VCCLCompilerTool.EnableEnhancedInstructionSet">
-    <EnumValue Name="StreamingSIMDExtensions" Switch="arch:SSE" DisplayName="Streaming SIMD Extensions (/arch:SSE)" Description="Streaming SIMD Extensions (/arch:SSE)">
-    </EnumValue>
-    <EnumValue Name="StreamingSIMDExtensions2" Switch="arch:SSE2" DisplayName="Streaming SIMD Extensions 2 (/arch:SSE2)" Description="Streaming SIMD Extensions 2 (/arch:SSE2)">
-    </EnumValue>
-    <EnumValue Name="NotSet" Switch="" DisplayName="Non impostato" Description="Valore non impostato.">
-    </EnumValue>
-  </EnumProperty>
   <BoolProperty Name="DisableLanguageExtensions" DisplayName="Disabilita estensioni linguaggio" Description="Disabilita o abilita le estensioni del linguaggio. (/Za)" Category="Language" Switch="Za" F1Keyword="VC.Project.VCCLCompilerTool.DisableLanguageExtensions">
   </BoolProperty>
   <BoolProperty Name="TreatWChar_tAsBuiltInType" DisplayName="Considera WChar_t come tipo predefinito" Description="Se specificato, il tipo wchar_t diventa un tipo nativo che effettua il mapping a __wchar_t e il tipo short effettua il mapping a __int16. /Zc:wchar_t è attivo per impostazione predefinita." Category="Language" Switch="Zc:wchar_t" F1Keyword="VC.Project.VCCLCompilerTool.TreatWChar_tAsBuiltInType">

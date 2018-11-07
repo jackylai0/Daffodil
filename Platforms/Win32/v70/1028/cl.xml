@@ -204,14 +204,6 @@ Credits
   </BoolProperty>
   <BoolProperty Name="FunctionLevelLinking" DisplayName="啟用函式階層連結" Description="讓編譯器以封裝函式 (COMDATs) 的格式封裝個別的函式。需要 [編輯後繼續] 來進行運作。     (/Gy)" Category="Code Generation" Switch="Gy" F1Keyword="VC.Project.VCCLCompilerTool.EnableFunctionLevelLinking">
   </BoolProperty>
-  <EnumProperty Name="EnableEnhancedInstructionSet" DisplayName="啟用進階指令集" Description="啟用可在支援進階指令集的處理器上找到的指令，例如 IA-32 的 SSE 和 SSE2 加強功能。目前只適用於建置 x86 架構。   (/arch:SSE, /arch:SSE2)" Category="Code Generation" F1Keyword="VC.Project.VCCLCompilerTool.EnableEnhancedInstructionSet">
-    <EnumValue Name="StreamingSIMDExtensions" Switch="arch:SSE" DisplayName="Streaming SIMD Extensions (/arch:SSE)" Description="Streaming SIMD Extensions (/arch:SSE)">
-    </EnumValue>
-    <EnumValue Name="StreamingSIMDExtensions2" Switch="arch:SSE2" DisplayName="Streaming SIMD Extensions 2 (/arch:SSE2)" Description="Streaming SIMD Extensions 2 (/arch:SSE2)">
-    </EnumValue>
-    <EnumValue Name="NotSet" Switch="" DisplayName="未設定" Description="未設定。">
-    </EnumValue>
-  </EnumProperty>
   <BoolProperty Name="DisableLanguageExtensions" DisplayName="停用語言擴充功能" Description="隱藏或啟用語言擴充功能。     (/Za)" Category="Language" Switch="Za" F1Keyword="VC.Project.VCCLCompilerTool.DisableLanguageExtensions">
   </BoolProperty>
   <BoolProperty Name="TreatWChar_tAsBuiltInType" DisplayName="將 WChar_t 視為內建型別" Description="指定時，wchar_t 型別會變成對應至 __wchar_t 的原生型別，其對應方式與 short 對應至 __int16 相同。/Zc:wchar_t 預設為開啟。" Category="Language" Switch="Zc:wchar_t" F1Keyword="VC.Project.VCCLCompilerTool.TreatWChar_tAsBuiltInType">

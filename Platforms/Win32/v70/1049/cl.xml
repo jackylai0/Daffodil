@@ -204,14 +204,6 @@ Credits
   </BoolProperty>
   <BoolProperty Name="FunctionLevelLinking" DisplayName="Включить компоновку на уровне функций" Description="Разрешает компилятору упаковывать отдельные функции в виде упакованных функций (COMDATs). Требуется для изменения и продолжения работы.     (/Gy)" Category="Code Generation" Switch="Gy" F1Keyword="VC.Project.VCCLCompilerTool.EnableFunctionLevelLinking">
   </BoolProperty>
-  <EnumProperty Name="EnableEnhancedInstructionSet" DisplayName="Включить расширенный набор инструкций" Description="Включить использование инструкций процессоров, поддерживающих расширенные наборы инструкций (например, расширения SSE и SSE2 для IA-32). В настоящий момент доступно только при построении для x86-архитектуры.   (/arch:SSE, /arch:SSE2)" Category="Code Generation" F1Keyword="VC.Project.VCCLCompilerTool.EnableEnhancedInstructionSet">
-    <EnumValue Name="StreamingSIMDExtensions" Switch="arch:SSE" DisplayName="Поддержка SIMD (/arch:SSE)" Description="Поддержка SIMD (/arch:SSE)">
-    </EnumValue>
-    <EnumValue Name="StreamingSIMDExtensions2" Switch="arch:SSE2" DisplayName="Поддержка SIMD Extensions 2 (/arch:SSE2)" Description="Поддержка SIMD Extensions 2 (/arch:SSE2)">
-    </EnumValue>
-    <EnumValue Name="NotSet" Switch="" DisplayName="Не задано" Description="Не задано.">
-    </EnumValue>
-  </EnumProperty>
   <BoolProperty Name="DisableLanguageExtensions" DisplayName="Отключить расширения языка" Description="Отключает или включает расширения языка.     (/Za)" Category="Language" Switch="Za" F1Keyword="VC.Project.VCCLCompilerTool.DisableLanguageExtensions">
   </BoolProperty>
   <BoolProperty Name="TreatWChar_tAsBuiltInType" DisplayName="Считать WChar_t встроенным типом" Description="При наличии wchar_t становится собственным типом, сопоставляемым с __wchar_t так же, как и краткие схемы с __int16. /Zc:wchar_t включено только по умолчанию." Category="Language" Switch="Zc:wchar_t" F1Keyword="VC.Project.VCCLCompilerTool.TreatWChar_tAsBuiltInType">

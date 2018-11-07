@@ -204,14 +204,6 @@ Credits
   </BoolProperty>
   <BoolProperty Name="FunctionLevelLinking" DisplayName="関数レベルでリンクする" Description="コンパイラで、パッケージ化された関数の形式 (COMDATs) により個別の関数をパッケージ化することを許可します。エディット コンティニュで必要です。     (/Gy)" Category="Code Generation" Switch="Gy" F1Keyword="VC.Project.VCCLCompilerTool.EnableFunctionLevelLinking">
   </BoolProperty>
-  <EnumProperty Name="EnableEnhancedInstructionSet" DisplayName="拡張命令セットを有効にする" Description="IA-32 の SSE および SSE2 などの拡張命令セットをサポートするプロセッサにある命令の使用を有効化します。現在 x86 アーキテクチャのビルド時のみ使用できます。   (/arch:SSE、/arch:SSE2)" Category="Code Generation" F1Keyword="VC.Project.VCCLCompilerTool.EnableEnhancedInstructionSet">
-    <EnumValue Name="StreamingSIMDExtensions" Switch="arch:SSE" DisplayName="ストリーミング SIMD 拡張機能 (/arch:SSE)" Description="ストリーミング SIMD 拡張機能 (/arch:SSE)">
-    </EnumValue>
-    <EnumValue Name="StreamingSIMDExtensions2" Switch="arch:SSE2" DisplayName="ストリーミング SIMD 拡張機能 2 (/arch:SSE2)" Description="ストリーミング SIMD 拡張機能 2 (/arch:SSE2)">
-    </EnumValue>
-    <EnumValue Name="NotSet" Switch="" DisplayName="設定なし" Description="設定しません。">
-    </EnumValue>
-  </EnumProperty>
   <BoolProperty Name="DisableLanguageExtensions" DisplayName="言語拡張を無効にする" Description="言語拡張を有効、または無効にします。     (/Za)" Category="Language" Switch="Za" F1Keyword="VC.Project.VCCLCompilerTool.DisableLanguageExtensions">
   </BoolProperty>
   <BoolProperty Name="TreatWChar_tAsBuiltInType" DisplayName="WChar_t をビルトイン型として扱う" Description="指定した場合、wchar_t 型は __int16 に簡潔にマップされるのと同じ方法で __wchar_t にマップされるネイティブ型になります。/Zc:wchar_t は既定で有効です。" Category="Language" Switch="Zc:wchar_t" F1Keyword="VC.Project.VCCLCompilerTool.TreatWChar_tAsBuiltInType">

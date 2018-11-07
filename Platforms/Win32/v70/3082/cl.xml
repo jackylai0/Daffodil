@@ -204,14 +204,6 @@ Credits
   </BoolProperty>
   <BoolProperty Name="FunctionLevelLinking" DisplayName="Habilitar vinculación en el nivel de función" Description="Permite que el compilador empaquete las funciones individuales con formato de funciones empaquetadas (COMDATs). Es necesario para que funcione Editar y continuar.     (/Gy)" Category="Code Generation" Switch="Gy" F1Keyword="VC.Project.VCCLCompilerTool.EnableFunctionLevelLinking">
   </BoolProperty>
-  <EnumProperty Name="EnableEnhancedInstructionSet" DisplayName="Habilitar conjunto de instrucciones mejorado" Description="Habilita el uso de las instrucciones encontradas en procesadores que admiten conjuntos de instrucciones mejorados, como por ejemplo las mejoras SSE y SSE2 a la IA-32. Actualmente solo está disponible cuando se compila para la arquitectura x86.   (/arch:SSE, /arch:SSE2)" Category="Code Generation" F1Keyword="VC.Project.VCCLCompilerTool.EnableEnhancedInstructionSet">
-    <EnumValue Name="StreamingSIMDExtensions" Switch="arch:SSE" DisplayName="Extensiones SIMD de transmisión por secuencias (/arch:SSE)" Description="Extensiones SIMD de transmisión por secuencias (/arch:SSE)">
-    </EnumValue>
-    <EnumValue Name="StreamingSIMDExtensions2" Switch="arch:SSE2" DisplayName="Extensiones SIMD de transmisión por secuencias 2 (/arch:SSE2)" Description="Extensiones SIMD de transmisión por secuencias 2 (/arch:SSE2)">
-    </EnumValue>
-    <EnumValue Name="NotSet" Switch="" DisplayName="Sin establecer" Description="Sin establecer.">
-    </EnumValue>
-  </EnumProperty>
   <BoolProperty Name="DisableLanguageExtensions" DisplayName="Deshabilitar extensiones de lenguaje" Description="Suprime o habilita las extensiones de lenguaje.     (/Za)" Category="Language" Switch="Za" F1Keyword="VC.Project.VCCLCompilerTool.DisableLanguageExtensions">
   </BoolProperty>
   <BoolProperty Name="TreatWChar_tAsBuiltInType" DisplayName="Tratar WChar_t como tipo integrado" Description="Cuando se especifica, el tipo wchar_t se convierte en un tipo nativo que se asigna a __wchar_t al igual que short se asigna a __int16. /Zc:wchar_t está habilitado de forma predeterminada." Category="Language" Switch="Zc:wchar_t" F1Keyword="VC.Project.VCCLCompilerTool.TreatWChar_tAsBuiltInType">

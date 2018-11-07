@@ -204,14 +204,6 @@ Credits
   </BoolProperty>
   <BoolProperty Name="FunctionLevelLinking" DisplayName="함수 수준 링크 사용" Description="컴파일러가 개별 함수를 패키지된 함수의 형태로 패키지할 수 있습니다(COMDATs). 편집하며 계속하기가 작동하려면 필요합니다.     (/Gy)" Category="Code Generation" Switch="Gy" F1Keyword="VC.Project.VCCLCompilerTool.EnableFunctionLevelLinking">
   </BoolProperty>
-  <EnumProperty Name="EnableEnhancedInstructionSet" DisplayName="고급 명령 집합 사용" Description="고급 명령 집합을 지원하는 프로세서에 포함된 명령을 사용할 수 있습니다. 예를 들어, IA-32에 대해 SSE 및 SSE2 명령의 고급 기능을 사용할 수 있습니다. 현재 x86 아키텍처에 대해 빌드하는 경우에만 사용할 수 있습니다.   (/arch:SSE, /arch:SSE2)" Category="Code Generation" F1Keyword="VC.Project.VCCLCompilerTool.EnableEnhancedInstructionSet">
-    <EnumValue Name="StreamingSIMDExtensions" Switch="arch:SSE" DisplayName="스트리밍 SIMD Extensions(/arch:SSE)" Description="스트리밍 SIMD Extensions(/arch:SSE)">
-    </EnumValue>
-    <EnumValue Name="StreamingSIMDExtensions2" Switch="arch:SSE2" DisplayName="스트리밍 SIMD Extensions 2(/arch:SSE2)" Description="스트리밍 SIMD Extensions 2(/arch:SSE2)">
-    </EnumValue>
-    <EnumValue Name="NotSet" Switch="" DisplayName="설정 안 함" Description="설정되지 않았습니다.">
-    </EnumValue>
-  </EnumProperty>
   <BoolProperty Name="DisableLanguageExtensions" DisplayName="언어 확장 사용 안 함" Description="언어 확장을 해제하거나 설정합니다.     (/Za)" Category="Language" Switch="Za" F1Keyword="VC.Project.VCCLCompilerTool.DisableLanguageExtensions">
   </BoolProperty>
   <BoolProperty Name="TreatWChar_tAsBuiltInType" DisplayName="WChar_t를 기본 제공 형식으로 처리" Description="이 옵션을 지정하면 short가 __int16에 매핑되는 것과 동일한 방식으로, wchar_t 형식이 __wchar_t에 매핑되는 네이티브 형식이 됩니다. /Zc:wchar_t가 기본적으로 설정됩니다." Category="Language" Switch="Zc:wchar_t" F1Keyword="VC.Project.VCCLCompilerTool.TreatWChar_tAsBuiltInType">
