@@ -6,6 +6,11 @@ namespace Daffodil.CPPTasks.Win32.v70
 {
   public class CLA : Microsoft.Build.CPPTasks.CL
   {
+	public CLA()
+	{
+		SwitchOrderList.Add("TargetProcessor");
+		SwitchOrderList.Add("FloatConsistency");
+	}
     protected override void PostProcessSwitchList()
     {
       base.PostProcessSwitchList();
@@ -262,6 +267,10 @@ namespace Daffodil.CPPTasks.Win32.v70
   }
   public class LinkA : Microsoft.Build.CPPTasks.Link
   {
+	public LinkA()
+	{
+	  SwitchOrderList.Add("OptimizeWin98");
+	}
     public virtual bool OptimizeWin98
     {
       get
