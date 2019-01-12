@@ -1,16 +1,17 @@
 ﻿using System;
 using Microsoft.Build.Utilities;
 using Microsoft.Build.CPPTasks;
+using Microsoft.Build.Framework;
 
 namespace Daffodil.CPPTasks.Win32.v70
 {
   public class CLA : Microsoft.Build.CPPTasks.CL
   {
-	public CLA()
-	{
-		SwitchOrderList.Add("TargetProcessor");
-		SwitchOrderList.Add("FloatConsistency");
-	}
+    public CLA()
+    {
+      SwitchOrderList.Add("TargetProcessor");
+      SwitchOrderList.Add("FloatConsistency");
+    }
     protected override void PostProcessSwitchList()
     {
       base.PostProcessSwitchList();
@@ -264,13 +265,44 @@ namespace Daffodil.CPPTasks.Win32.v70
         return System.Text.Encoding.ASCII;
       }
     }
+    protected override int ExecuteTool(string pathToTool, string responseFileCommands, string commandLineCommands)
+    {
+      if (this.DebugInformationFormat != null && this.DebugInformationFormat != "OldStyle" && this.ProgramDataBaseFileName != null)
+      {
+        string programDataBaseFileName = this.ProgramDataBaseFileName;
+        if (this.TrackedInputFilesToIgnore == null)
+        {
+          this.TrackedInputFilesToIgnore = new ITaskItem[1];
+          TrackedInputFilesToIgnore[TrackedInputFilesToIgnore.Length - 1] = new TaskItem(programDataBaseFileName);
+        }
+        else
+        {
+          bool bExist = false;
+          for (int i = 0; i < TrackedInputFilesToIgnore.Length; ++i)
+          {
+            if (TrackedInputFilesToIgnore[i].ItemSpec == programDataBaseFileName)
+            {
+              bExist = true;
+              break;
+            }
+          }
+          if (!bExist)
+          {
+            ITaskItem[] trackedInputFilesToIgnore = new ITaskItem[this.TrackedInputFilesToIgnore.Length + 1];
+            Array.Copy(this.TrackedInputFilesToIgnore, trackedInputFilesToIgnore, this.TrackedInputFilesToIgnore.Length);
+            TrackedInputFilesToIgnore[TrackedInputFilesToIgnore.Length - 1] = new TaskItem(programDataBaseFileName);
+          }
+        }
+      }
+      return base.ExecuteTool(pathToTool, responseFileCommands, commandLineCommands);
+    }
   }
   public class LinkA : Microsoft.Build.CPPTasks.Link
   {
-	public LinkA()
-	{
-	  SwitchOrderList.Add("OptimizeWin98");
-	}
+    public LinkA()
+    {
+      SwitchOrderList.Add("OptimizeWin98");
+    }
     public virtual bool OptimizeWin98
     {
       get
