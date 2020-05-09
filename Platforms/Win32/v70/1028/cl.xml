@@ -136,7 +136,7 @@ Credits
   </BoolProperty>
   <BoolProperty Name="StringPooling" DisplayName="啟用字串共用" Description="讓編譯器執行時在程式映像和記憶體中為相同字串建立單一唯讀複本，使得程式較小，這種稱為字串共用的最佳化。/O1、/O2 和 /ZI 會自動設定 /GF 選項。" Category="Code Generation" Switch="GF" F1Keyword="VC.Project.VCCLCompilerTool.StringPooling">
   </BoolProperty>
-  <BoolProperty Name="MinimalRebuild" DisplayName="啟用最少重建" Description="啟用最少重建，它會決定是否需要對含有變更過的 C++ 類別定義的 C++ 原始程式檔進行重新編譯。" Category="Code Generation" Switch="Gm" F1Keyword="VC.Project.VCCLCompilerTool.MinimalRebuild">
+  <BoolProperty Name="MinimalRebuild" DisplayName="啟用最少重建" Description="啟用最少重建，它會決定是否需要對含有變更過的 C++ 類別定義的 C++ 原始程式檔進行重新編譯。 (/Gm)" Category="Code Generation" Switch="Gm" F1Keyword="VC.Project.VCCLCompilerTool.MinimalRebuild">
   </BoolProperty>
   <EnumProperty Name="ExceptionHandling" DisplayName="啟用 C++ 例外狀況" Description="指定編譯器所要使用的例外處理模型。" Category="Code Generation" F1Keyword="VC.Project.VCCLCompilerTool.ExceptionHandling">
     <EnumValue Name="Async" Switch="EHa" DisplayName="是，但有 SEH 例外狀況" Description="會攔截非同步 (結構化) 例外狀況以及同步 (C++) 例外狀況的例外處理模型 (/EHa)">
@@ -172,7 +172,7 @@ Credits
     <EnumValue Name="Blend" Switch="GB" DisplayName="Blend" Description="Blends the optimizations for the 80386 (/G3), 80486 (/G4), Pentium (/G5), and Pentium Pro (/G6) options. This option forces a value of 500 for the _M_IX86 preprocessor macro. This value is the default.">
     </EnumValue>
   </EnumProperty>
-  <EnumProperty Name="RuntimeLibrary" DisplayName="執行階段程式庫" Description="指定連結的執行階段程式庫。     (/MT, /MTd, /MD, /MDd)" Category="Code Generation" F1Keyword="VC.Project.VCCLCompilerTool.RuntimeLibrary">
+  <EnumProperty Name="RuntimeLibrary" DisplayName="執行階段程式庫" Description="指定連結的執行階段程式庫。     (/MT, /MTd, /MD, /MDd, /ML, /MLd)" Category="Code Generation" F1Keyword="VC.Project.VCCLCompilerTool.RuntimeLibrary">
     <EnumValue Name="MultiThreaded" Switch="MT" DisplayName="多執行緒" Description="讓您的應用程式使用多執行緒、靜態版本的執行階段程式庫。">
     </EnumValue>
     <EnumValue Name="MultiThreadedDebug" Switch="MTd" DisplayName="多執行緒偵錯" Description="定義 _DEBUG 和 _MT。這個選項也會讓編譯器將程式庫名稱 LIBCMTD.lib 放入 .obj 檔中，使連結器可以使用 LIBCMTD.lib 解析外部符號。">

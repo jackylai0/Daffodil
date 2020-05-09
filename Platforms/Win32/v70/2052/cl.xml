@@ -136,7 +136,7 @@ Credits
   </BoolProperty>
   <BoolProperty Name="StringPooling" DisplayName="启用字符串池" Description="允许编译器在执行过程中，在程序映像和内存中创建相同字符串的单个只读副本，从而生成较小的程序(一种称为字符串池的优化)。/O1、/O2 和 /ZI 自动设置 /GF 选项。 " Category="Code Generation" Switch="GF" F1Keyword="VC.Project.VCCLCompilerTool.StringPooling">
   </BoolProperty>
-  <BoolProperty Name="MinimalRebuild" DisplayName="启用最小重新生成" Description="启用最小重新生成，这可确定是否需要重新编译包括更改的 C++ 类定义(存储在头文件(.h)中)的 C++ 源文件。" Category="Code Generation" Switch="Gm" F1Keyword="VC.Project.VCCLCompilerTool.MinimalRebuild">
+  <BoolProperty Name="MinimalRebuild" DisplayName="启用最小重新生成" Description="启用最小重新生成，这可确定是否需要重新编译包括更改的 C++ 类定义(存储在头文件(.h)中)的 C++ 源文件。(/Gm)" Category="Code Generation" Switch="Gm" F1Keyword="VC.Project.VCCLCompilerTool.MinimalRebuild">
   </BoolProperty>
   <EnumProperty Name="ExceptionHandling" DisplayName="启用 C++ 异常" Description="指定将由编译器使用的异常处理模型。" Category="Code Generation" F1Keyword="VC.Project.VCCLCompilerTool.ExceptionHandling">
     <EnumValue Name="Async" Switch="EHa" DisplayName="是，但有 SEH 异常" Description="捕获异步(结构化)和同步(C++)异常的异常处理模型(/EHa)">
@@ -172,7 +172,7 @@ Credits
     <EnumValue Name="Blend" Switch="GB" DisplayName="Blend" Description="Blends the optimizations for the 80386 (/G3), 80486 (/G4), Pentium (/G5), and Pentium Pro (/G6) options. This option forces a value of 500 for the _M_IX86 preprocessor macro. This value is the default.">
     </EnumValue>
   </EnumProperty>
-  <EnumProperty Name="RuntimeLibrary" DisplayName="运行库" Description="指定运行库以进行链接。     (/MT, /MTd, /MD, /MDd)" Category="Code Generation" F1Keyword="VC.Project.VCCLCompilerTool.RuntimeLibrary">
+  <EnumProperty Name="RuntimeLibrary" DisplayName="运行库" Description="指定运行库以进行链接。     (/MT, /MTd, /MD, /MDd, /ML, /MLd)" Category="Code Generation" F1Keyword="VC.Project.VCCLCompilerTool.RuntimeLibrary">
     <EnumValue Name="MultiThreaded" Switch="MT" DisplayName="多线程" Description="让应用程序使用多线程的静态版本的运行库。">
     </EnumValue>
     <EnumValue Name="MultiThreadedDebug" Switch="MTd" DisplayName="多线程调试" Description="定义 _DEBUG 和 _MT。此选项还会让编译器将库名称 LIBCMTD.lib 放置到 .obj 文件中，以便链接器将使用 LIBCMTD.lib 来解析外部符号。">

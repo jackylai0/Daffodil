@@ -136,7 +136,7 @@ Credits
   </BoolProperty>
   <BoolProperty Name="StringPooling" DisplayName="Stringpooling aktivieren" Description="Ermöglicht dem Compiler, eine einzige schreibgeschützte Kopie identischer Zeichenfolgen im Programmimage und im Speicher während der Ausführung zu erstellen, was zu kleineren Programmen führt - eine Optimierung mit dem Namen Stringpooling. /O1, /O2 und /ZI legen automatisch die /GF-Option fest. " Category="Code Generation" Switch="GF" F1Keyword="VC.Project.VCCLCompilerTool.StringPooling">
   </BoolProperty>
-  <BoolProperty Name="MinimalRebuild" DisplayName="Minimale Neuerstellung aktivieren" Description="Aktiviert die minimale Neuerstellung, die bestimmt, ob C++-Quelldateien, die geänderte C++-Klassendefinitionen (gespeichert in Headerdateien (.h)) enthalten, erneut kompiliert werden müssen." Category="Code Generation" Switch="Gm" F1Keyword="VC.Project.VCCLCompilerTool.MinimalRebuild">
+  <BoolProperty Name="MinimalRebuild" DisplayName="Minimale Neuerstellung aktivieren" Description="Aktiviert die minimale Neuerstellung, die bestimmt, ob C++-Quelldateien, die geänderte C++-Klassendefinitionen (gespeichert in Headerdateien (.h)) enthalten, erneut kompiliert werden müssen. (/Gm)" Category="Code Generation" Switch="Gm" F1Keyword="VC.Project.VCCLCompilerTool.MinimalRebuild">
   </BoolProperty>
   <EnumProperty Name="ExceptionHandling" DisplayName="C++-Ausnahmen aktivieren" Description="Gibt das Ausnahmebehandlungsmodell an, das vom Compiler verwendet wird." Category="Code Generation" F1Keyword="VC.Project.VCCLCompilerTool.ExceptionHandling">
     <EnumValue Name="Async" Switch="EHa" DisplayName="Ja bei SEH-Ausnahmen" Description="Das Ausnahmebehandlungsmodell, das asynchrone (strukturierte) und synchrone (C++) Ausnahmen abfängt (/EHa)">
@@ -174,7 +174,7 @@ Credits
     <EnumValue Name="Blend" Switch="GB" DisplayName="Blend" Description="Blends the optimizations for the 80386 (/G3), 80486 (/G4), Pentium (/G5), and Pentium Pro (/G6) options. This option forces a value of 500 for the _M_IX86 preprocessor macro. This value is the default.">
     </EnumValue>
   </EnumProperty>
-  <EnumProperty Name="RuntimeLibrary" DisplayName="Laufzeitbibliothek" Description="Gibt die Laufzeitbibliothek zur Verknüpfung an.     (/MT, /MTd, /MD, /MDd)" Category="Code Generation" F1Keyword="VC.Project.VCCLCompilerTool.RuntimeLibrary">
+  <EnumProperty Name="RuntimeLibrary" DisplayName="Laufzeitbibliothek" Description="Gibt die Laufzeitbibliothek zur Verknüpfung an.     (/MT, /MTd, /MD, /MDd, /ML, /MLd)" Category="Code Generation" F1Keyword="VC.Project.VCCLCompilerTool.RuntimeLibrary">
     <EnumValue Name="MultiThreaded" Switch="MT" DisplayName="Multithreaded" Description="Bewirkt, dass die Anwendung die statische Multithreaded-Version der Laufzeitbibliothek verwendet.">
     </EnumValue>
     <EnumValue Name="MultiThreadedDebug" Switch="MTd" DisplayName="Multithreaded-Debug" Description="Definiert _DEBUG und _MT. Diese Option führt auch dazu, dass der Compiler den Bibliotheksnamen &quot;LIBCMTD.lib&quot; in der .obj-Datei positioniert, sodass der Linker &quot;LIBCMTD.lib&quot; für das Auflösen externer Symbole verwendet.">

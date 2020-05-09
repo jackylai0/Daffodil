@@ -136,7 +136,7 @@ Credits
   </BoolProperty>
   <BoolProperty Name="StringPooling" DisplayName="Habilitar agrupación de cadenas" Description="Habilita el compilador para crear una única copia de solo lectura de las cadenas idénticas en la memoria y la imagen del programa durante la ejecución, lo que da como resultado programas más pequeños. Esta optimización se denomina agrupación de cadenas. /O1, /O2 y /ZI establecen automáticamente la opción /GF. " Category="Code Generation" Switch="GF" F1Keyword="VC.Project.VCCLCompilerTool.StringPooling">
   </BoolProperty>
-  <BoolProperty Name="MinimalRebuild" DisplayName="Habilitar recompilación mínima" Description="Habilita la recompilación mínima, que determina si deben recompilarse los archivos de código fuente de C++ que incluyen definiciones de las clases de C++ modificadas (almacenadas en archivos de encabezado (.h))." Category="Code Generation" Switch="Gm" F1Keyword="VC.Project.VCCLCompilerTool.MinimalRebuild">
+  <BoolProperty Name="MinimalRebuild" DisplayName="Habilitar recompilación mínima" Description="Habilita la recompilación mínima, que determina si deben recompilarse los archivos de código fuente de C++ que incluyen definiciones de las clases de C++ modificadas (almacenadas en archivos de encabezado (.h)). (/Gm)" Category="Code Generation" Switch="Gm" F1Keyword="VC.Project.VCCLCompilerTool.MinimalRebuild">
   </BoolProperty>
   <EnumProperty Name="ExceptionHandling" DisplayName="Habilitar excepciones de C++" Description="Especifica el modelo de control de excepciones que va a usar el compilador." Category="Code Generation" F1Keyword="VC.Project.VCCLCompilerTool.ExceptionHandling">
     <EnumValue Name="Async" Switch="EHa" DisplayName="Sí con excepciones SEH" Description="Modelo de control de excepciones que detecta las excepciones asincrónicas (estructuradas) y sincrónicas (C++) (/EHa)">
@@ -172,7 +172,7 @@ Credits
     <EnumValue Name="Blend" Switch="GB" DisplayName="Blend" Description="Blends the optimizations for the 80386 (/G3), 80486 (/G4), Pentium (/G5), and Pentium Pro (/G6) options. This option forces a value of 500 for the _M_IX86 preprocessor macro. This value is the default.">
     </EnumValue>
   </EnumProperty>
-  <EnumProperty Name="RuntimeLibrary" DisplayName="Biblioteca en tiempo de ejecución" Description="Especifica la biblioteca en tiempo de ejecución para la vinculación.     (/MT, /MTd, /MD, /MDd)" Category="Code Generation" F1Keyword="VC.Project.VCCLCompilerTool.RuntimeLibrary">
+  <EnumProperty Name="RuntimeLibrary" DisplayName="Biblioteca en tiempo de ejecución" Description="Especifica la biblioteca en tiempo de ejecución para la vinculación.     (/MT, /MTd, /MD, /MDd, /ML, /MLd)" Category="Code Generation" F1Keyword="VC.Project.VCCLCompilerTool.RuntimeLibrary">
     <EnumValue Name="MultiThreaded" Switch="MT" DisplayName="Multiproceso" Description="Hace que la aplicación use la versión estática multiproceso de la biblioteca en tiempo de ejecución.">
     </EnumValue>
     <EnumValue Name="MultiThreadedDebug" Switch="MTd" DisplayName="Depuración multiproceso" Description="Define _DEBUG y _MT. Esta opción también hace que el compilador coloque el nombre de la biblioteca LIBCMTD.lib en el archivo .obj, así el vinculador usará LIBCMTD.lib para resolver los símbolos externos.">

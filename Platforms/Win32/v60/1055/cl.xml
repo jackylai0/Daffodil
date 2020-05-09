@@ -158,7 +158,7 @@ Credits
     <EnumValue Name="Blend" Switch="GB" DisplayName="Blend" Description="Blends the optimizations for the 80386 (/G3), 80486 (/G4), Pentium (/G5), and Pentium Pro (/G6) options. This option forces a value of 500 for the _M_IX86 preprocessor macro. This value is the default.">
     </EnumValue>
   </EnumProperty>
-  <EnumProperty Name="RuntimeLibrary" DisplayName="Runtime Library" Description="Specify runtime library for linking.     (/MT, /MTd, /MD, /MDd)" Category="Code Generation" F1Keyword="VC.Project.VCCLCompilerTool.RuntimeLibrary">
+  <EnumProperty Name="RuntimeLibrary" DisplayName="Runtime Library" Description="Specify runtime library for linking.     (/MT, /MTd, /MD, /MDd, /ML, /MLd)" Category="Code Generation" F1Keyword="VC.Project.VCCLCompilerTool.RuntimeLibrary">
     <EnumValue Name="MultiThreaded" Switch="MT" DisplayName="Multi-threaded" Description="Causes your application to use the multithread, static version of the run-time library.">
     </EnumValue>
     <EnumValue Name="MultiThreadedDebug" Switch="MTd" DisplayName="Multi-threaded Debug" Description="Defines _DEBUG and _MT. This option also causes the compiler to place the library name LIBCMTD.lib into the .obj file so that the linker will use LIBCMTD.lib to resolve external symbols.">
@@ -207,7 +207,7 @@ Credits
     <EnumValue Name="NotUsing" Switch="" DisplayName="Not Using Precompiled Headers" Description="Not using precompiled headers. ">
     </EnumValue>
   </EnumProperty>
-  <StringProperty Subtype="file" Name="PrecompiledHeaderFile" DisplayName="Precompiled Header File" Description="Specifies header file name to use when creating or using a precompiled header file. (/Yc[name], /Yu[name])" Category="Precompiled Headers" F1Keyword="VC.Project.VCCLCompilerTool.PrecompiledHeaderThrough">
+  <StringProperty Subtype="file" Name="PrecompiledHeaderFile" DisplayName="Precompiled Header File" Description="Specifies header file name to use when creating or using a precompiled header file. (/Yc[name], /YX[name], /Yu[name])" Category="Precompiled Headers" F1Keyword="VC.Project.VCCLCompilerTool.PrecompiledHeaderThrough">
   </StringProperty>
   <StringProperty Subtype="file" Name="PrecompiledHeaderOutputFile" DisplayName="Precompiled Header Output File" Description="Specifies the path and/or name of the generated precompiled header file. (/Fp[name])" Category="Precompiled Headers" Switch="Fp" F1Keyword="VC.Project.VCCLCompilerTool.PrecompiledHeaderFile">
   </StringProperty>

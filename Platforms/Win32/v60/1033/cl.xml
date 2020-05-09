@@ -207,7 +207,7 @@ Credits
     <EnumValue Name="NotUsing" Switch="" DisplayName="Not Using Precompiled Headers" Description="Not using precompiled headers. ">
     </EnumValue>
   </EnumProperty>
-  <StringProperty Subtype="file" Name="PrecompiledHeaderFile" DisplayName="Precompiled Header File" Description="Specifies header file name to use when creating or using a precompiled header file. (/Yc[name], /Yu[name])" Category="Precompiled Headers" F1Keyword="VC.Project.VCCLCompilerTool.PrecompiledHeaderThrough">
+  <StringProperty Subtype="file" Name="PrecompiledHeaderFile" DisplayName="Precompiled Header File" Description="Specifies header file name to use when creating or using a precompiled header file. (/Yc[name], /YX[name], /Yu[name])" Category="Precompiled Headers" F1Keyword="VC.Project.VCCLCompilerTool.PrecompiledHeaderThrough">
   </StringProperty>
   <StringProperty Subtype="file" Name="PrecompiledHeaderOutputFile" DisplayName="Precompiled Header Output File" Description="Specifies the path and/or name of the generated precompiled header file. (/Fp[name])" Category="Precompiled Headers" Switch="Fp" F1Keyword="VC.Project.VCCLCompilerTool.PrecompiledHeaderFile">
   </StringProperty>

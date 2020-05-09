@@ -134,7 +134,7 @@ Credits
   </BoolProperty>
   <BoolProperty Name="StringPooling" DisplayName="文字列プール" Description="コンパイラの実行中に、プログラム イメージ内およびメモリ内に同じ文字列の単一の読み取り専用コピーを作成することで、プログラムのサイズを小さくします (文字列プールと呼ばれる最適化です)。/O1、/O2、および /ZI では /GF オプションが自動的に設定されます。" Category="Code Generation" Switch="GF" F1Keyword="VC.Project.VCCLCompilerTool.StringPooling">
   </BoolProperty>
-  <BoolProperty Name="MinimalRebuild" DisplayName="最小リビルドを有効にする" Description="最小リビルドを有効にします。これにより、(ヘッダー (.h) ファイルに格納されている) 変更された C++ クラス定義を含む  C++ ソース ファイルを再コンパイルする必要があるかどうかが決まります。" Category="Code Generation" Switch="Gm" F1Keyword="VC.Project.VCCLCompilerTool.MinimalRebuild">
+  <BoolProperty Name="MinimalRebuild" DisplayName="最小リビルドを有効にする" Description="最小リビルドを有効にします。これにより、(ヘッダー (.h) ファイルに格納されている) 変更された C++ クラス定義を含む  C++ ソース ファイルを再コンパイルする必要があるかどうかが決まります。 (/Gm)" Category="Code Generation" Switch="Gm" F1Keyword="VC.Project.VCCLCompilerTool.MinimalRebuild">
   </BoolProperty>
   <EnumProperty Name="ExceptionHandling" DisplayName="C++ の例外を有効にする" Description="コンパイラで使用される例外処理のモデルを指定します。" Category="Code Generation" F1Keyword="VC.Project.VCCLCompilerTool.ExceptionHandling">
     <EnumValue Name="Async" Switch="EHa" DisplayName="はい - SEH の例外あり" Description="非同期 (構造化) 例外および同期  (C++) 例外をキャッチする例外処理モデルです (/EHa)。">
@@ -158,7 +158,7 @@ Credits
     <EnumValue Name="Blend" Switch="GB" DisplayName="Blend" Description="Blends the optimizations for the 80386 (/G3), 80486 (/G4), Pentium (/G5), and Pentium Pro (/G6) options. This option forces a value of 500 for the _M_IX86 preprocessor macro. This value is the default.">
     </EnumValue>
   </EnumProperty>
-  <EnumProperty Name="RuntimeLibrary" DisplayName="ランタイム ライブラリ" Description="リンクするランタイム ライブラリを指定します。     (/MT、/MTd、/MD、/MDd)" Category="Code Generation" F1Keyword="VC.Project.VCCLCompilerTool.RuntimeLibrary">
+  <EnumProperty Name="RuntimeLibrary" DisplayName="ランタイム ライブラリ" Description="リンクするランタイム ライブラリを指定します。     (/MT、/MTd、/MD、/MDd, /ML, /MLd)" Category="Code Generation" F1Keyword="VC.Project.VCCLCompilerTool.RuntimeLibrary">
     <EnumValue Name="MultiThreaded" Switch="MT" DisplayName="マルチスレッド" Description="アプリケーションで、ランタイム ライブラリのマルチスレッド、静的バージョンが使用されます。">
     </EnumValue>
     <EnumValue Name="MultiThreadedDebug" Switch="MTd" DisplayName="マルチスレッド デバッグ" Description="_DEBUG および _MT を定義します。このオプションによって、リンカーが LIBCMTD.lib を使用して外部シンボルを解決できるように、コンパイラでライブラリ名 LIBCMTD.lib が .obj ファイルに含められます。">
@@ -207,7 +207,7 @@ Credits
     <EnumValue Name="NotUsing" Switch="" DisplayName="プリコンパイル済みヘッダーを使用しない" Description="プリコンパイル済みヘッダーを使用しません。">
     </EnumValue>
   </EnumProperty>
-  <StringProperty Subtype="file" Name="PrecompiledHeaderFile" DisplayName="プリコンパイル済みヘッダー ファイル" Description="プリコンパイル済みヘッダー ファイルの作成または使用で適用するヘッダー ファイル名を指定します。 (/Yc[名前]、/Yu[名前])" Category="Precompiled Headers" F1Keyword="VC.Project.VCCLCompilerTool.PrecompiledHeaderThrough">
+  <StringProperty Subtype="file" Name="PrecompiledHeaderFile" DisplayName="プリコンパイル済みヘッダー ファイル" Description="プリコンパイル済みヘッダー ファイルの作成または使用で適用するヘッダー ファイル名を指定します。 (/Yc[名前]、/YX[名前]、/Yu[名前])" Category="Precompiled Headers" F1Keyword="VC.Project.VCCLCompilerTool.PrecompiledHeaderThrough">
   </StringProperty>
   <StringProperty Subtype="file" Name="PrecompiledHeaderOutputFile" DisplayName="プリコンパイル済みヘッダー出力ファイル" Description="生成されるプリコンパイル済みヘッダー ファイルのパス、名前を指定します。 (/Fp[名前])" Category="Precompiled Headers" Switch="Fp" F1Keyword="VC.Project.VCCLCompilerTool.PrecompiledHeaderFile">
   </StringProperty>

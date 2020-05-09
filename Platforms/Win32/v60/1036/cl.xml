@@ -134,7 +134,7 @@ Credits
   </BoolProperty>
   <BoolProperty Name="StringPooling" DisplayName="Activation du regroupement des chaînes" Description="Permet au compilateur de créer une seule copie en lecture seule de chaînes identiques dans l'image programme et en mémoire lors de l'exécution. Cette optimisation par regroupement des chaînes permet de réduire la taille des programmes. /O1, /O2 et /ZI définissent automatiquement l'option /GF. " Category="Code Generation" Switch="GF" F1Keyword="VC.Project.VCCLCompilerTool.StringPooling">
   </BoolProperty>
-  <BoolProperty Name="MinimalRebuild" DisplayName="Activation de la régénération minimale" Description="Active la régénération minimale, qui détermine si les fichiers sources C++ dans lesquels des définitions de classe C++, stockées dans les fichiers d'en-tête (.h), ont été modifiées doivent être recompilés." Category="Code Generation" Switch="Gm" F1Keyword="VC.Project.VCCLCompilerTool.MinimalRebuild">
+  <BoolProperty Name="MinimalRebuild" DisplayName="Activation de la régénération minimale" Description="Active la régénération minimale, qui détermine si les fichiers sources C++ dans lesquels des définitions de classe C++, stockées dans les fichiers d'en-tête (.h), ont été modifiées doivent être recompilés. (/Gm)" Category="Code Generation" Switch="Gm" F1Keyword="VC.Project.VCCLCompilerTool.MinimalRebuild">
   </BoolProperty>
   <EnumProperty Name="ExceptionHandling" DisplayName="Activation des exceptions C++" Description="Spécifie le modèle de gestion des exceptions à utiliser par le compilateur." Category="Code Generation" F1Keyword="VC.Project.VCCLCompilerTool.ExceptionHandling">
     <EnumValue Name="Async" Switch="EHa" DisplayName="Oui avec les exceptions SEH" Description="Modèle de gestion des exceptions qui intercepte les exceptions asynchrones (structurées) et synchrones (C++) (/EHa)">
@@ -158,7 +158,7 @@ Credits
     <EnumValue Name="Blend" Switch="GB" DisplayName="Blend" Description="Blends the optimizations for the 80386 (/G3), 80486 (/G4), Pentium (/G5), and Pentium Pro (/G6) options. This option forces a value of 500 for the _M_IX86 preprocessor macro. This value is the default.">
     </EnumValue>
   </EnumProperty>
-  <EnumProperty Name="RuntimeLibrary" DisplayName="Bibliothèque Runtime" Description="Spécifie la bibliothèque Runtime pour la liaison.     (/MT, /MTd, /MD, /MDd)" Category="Code Generation" F1Keyword="VC.Project.VCCLCompilerTool.RuntimeLibrary">
+  <EnumProperty Name="RuntimeLibrary" DisplayName="Bibliothèque Runtime" Description="Spécifie la bibliothèque Runtime pour la liaison.     (/MT, /MTd, /MD, /MDd, /ML, /MLd)" Category="Code Generation" F1Keyword="VC.Project.VCCLCompilerTool.RuntimeLibrary">
     <EnumValue Name="MultiThreaded" Switch="MT" DisplayName="Multithread" Description="Indique à votre application d'utiliser la version statique multithread de la bibliothèque Runtime.">
     </EnumValue>
     <EnumValue Name="MultiThreadedDebug" Switch="MTd" DisplayName="Débogage multithread" Description="Définit _DEBUG et _MT. Cette option indique également au compilateur d'ajouter le nom de bibliothèque LIBCMTD.lib dans le fichier .obj afin que l'Éditeur de liens utilise LIBCMTD.lib pour résoudre les symboles externes.">
@@ -207,7 +207,7 @@ Credits
     <EnumValue Name="NotUsing" Switch="" DisplayName="Sans utiliser les en-têtes précompilés" Description="N'utilise pas les en-têtes précompilés. ">
     </EnumValue>
   </EnumProperty>
-  <StringProperty Subtype="file" Name="PrecompiledHeaderFile" DisplayName="Fichier d'en-tête précompilé" Description="Spécifie le nom de fichier d'en-tête à utiliser au moment de la création ou de l'utilisation d'un fichier d'en-tête précompilé. (/Yc[name], /Yu[name])" Category="Precompiled Headers" F1Keyword="VC.Project.VCCLCompilerTool.PrecompiledHeaderThrough">
+  <StringProperty Subtype="file" Name="PrecompiledHeaderFile" DisplayName="Fichier d'en-tête précompilé" Description="Spécifie le nom de fichier d'en-tête à utiliser au moment de la création ou de l'utilisation d'un fichier d'en-tête précompilé. (/Yc[name], /YX[name], /Yu[name])" Category="Precompiled Headers" F1Keyword="VC.Project.VCCLCompilerTool.PrecompiledHeaderThrough">
   </StringProperty>
   <StringProperty Subtype="file" Name="PrecompiledHeaderOutputFile" DisplayName="Fichier d'en-tête précompilé de sortie" Description="Spécifie le chemin d'accès et/ou le nom du fichier d'en-tête précompilé qui a été généré. (/Fp[name])" Category="Precompiled Headers" Switch="Fp" F1Keyword="VC.Project.VCCLCompilerTool.PrecompiledHeaderFile">
   </StringProperty>
