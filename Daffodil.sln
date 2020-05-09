@@ -859,6 +859,928 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "context", "context", "{A82E
 		Platforms\Win32\v60\1028\context\general_makefile_ps.xml = Platforms\Win32\v60\1028\context\general_makefile_ps.xml
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "V100", "V100", "{4DDEE8B4-EB34-4E00-BBCB-61942B509E60}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "V140", "V140", "{DE8E6869-D3BF-4ADE-9F38-991A8FCFB5C3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Win32", "Win32", "{E126F979-B9D6-4359-9211-D407AE2E4F9E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "X64", "X64", "{170274FD-B597-4B96-A591-02DA1278E4F4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "v71", "v71", "{FE215286-BA4F-48A8-B026-D69AB5B92D57}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v71\Toolset.props = V140\Platforms\Win32\PlatformToolsets\v71\Toolset.props
+		V140\Platforms\Win32\PlatformToolsets\v71\Toolset.targets = V140\Platforms\Win32\PlatformToolsets\v71\Toolset.targets
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "v70", "v70", "{0B81D396-46D0-47D6-9657-3773AB746781}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v70\Toolset.props = V140\Platforms\Win32\PlatformToolsets\v70\Toolset.props
+		V140\Platforms\Win32\PlatformToolsets\v70\Toolset.targets = V140\Platforms\Win32\PlatformToolsets\v70\Toolset.targets
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "v60", "v60", "{EDD40F51-2A8F-4F5D-AD77-3EA9B00BD5F3}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v60\Toolset.props = V140\Platforms\Win32\PlatformToolsets\v60\Toolset.props
+		V140\Platforms\Win32\PlatformToolsets\v60\Toolset.targets = V140\Platforms\Win32\PlatformToolsets\v60\Toolset.targets
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "v80", "v80", "{028E56D9-B933-4FB6-A755-880538769A64}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v80\Toolset.props = V140\Platforms\Win32\PlatformToolsets\v80\Toolset.props
+		V140\Platforms\Win32\PlatformToolsets\v80\Toolset.targets = V140\Platforms\Win32\PlatformToolsets\v80\Toolset.targets
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "v80", "v80", "{79AAC59A-C4F5-43CF-830F-D4FECA5B10D6}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\x64\PlatformToolsets\v80\Toolset.props = V140\Platforms\x64\PlatformToolsets\v80\Toolset.props
+		V140\Platforms\x64\PlatformToolsets\v80\Toolset.targets = V140\Platforms\x64\PlatformToolsets\v80\Toolset.targets
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1028", "1028", "{946E8BF5-E4B8-4E04-B0E3-7929B2D0D124}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v60\1028\cl.xml = V140\Platforms\Win32\PlatformToolsets\v60\1028\cl.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1028\fxcop.xml = V140\Platforms\Win32\PlatformToolsets\v60\1028\fxcop.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1028\lib.xml = V140\Platforms\Win32\PlatformToolsets\v60\1028\lib.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1028\link.xml = V140\Platforms\Win32\PlatformToolsets\v60\1028\link.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1028\midl.xml = V140\Platforms\Win32\PlatformToolsets\v60\1028\midl.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1028\mt.xml = V140\Platforms\Win32\PlatformToolsets\v60\1028\mt.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1029", "1029", "{7D96D3E0-A1B1-4DCE-84A0-5BBC3E7BDEC8}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v60\1029\cl.xml = V140\Platforms\Win32\PlatformToolsets\v60\1029\cl.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1029\fxcop.xml = V140\Platforms\Win32\PlatformToolsets\v60\1029\fxcop.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1029\lib.xml = V140\Platforms\Win32\PlatformToolsets\v60\1029\lib.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1029\link.xml = V140\Platforms\Win32\PlatformToolsets\v60\1029\link.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1029\midl.xml = V140\Platforms\Win32\PlatformToolsets\v60\1029\midl.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1029\mt.xml = V140\Platforms\Win32\PlatformToolsets\v60\1029\mt.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1031", "1031", "{676A73CC-B06D-4911-A99A-0D89AA0323CF}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v60\1031\cl.xml = V140\Platforms\Win32\PlatformToolsets\v60\1031\cl.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1031\fxcop.xml = V140\Platforms\Win32\PlatformToolsets\v60\1031\fxcop.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1031\lib.xml = V140\Platforms\Win32\PlatformToolsets\v60\1031\lib.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1031\link.xml = V140\Platforms\Win32\PlatformToolsets\v60\1031\link.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1031\midl.xml = V140\Platforms\Win32\PlatformToolsets\v60\1031\midl.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1031\mt.xml = V140\Platforms\Win32\PlatformToolsets\v60\1031\mt.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1033", "1033", "{9DA60F66-BF18-4E5F-A8C9-73F98EB4F3E5}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v60\1033\cl.xml = V140\Platforms\Win32\PlatformToolsets\v60\1033\cl.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1033\fxcop.xml = V140\Platforms\Win32\PlatformToolsets\v60\1033\fxcop.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1033\lib.xml = V140\Platforms\Win32\PlatformToolsets\v60\1033\lib.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1033\link.xml = V140\Platforms\Win32\PlatformToolsets\v60\1033\link.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1033\midl.xml = V140\Platforms\Win32\PlatformToolsets\v60\1033\midl.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1033\mt.xml = V140\Platforms\Win32\PlatformToolsets\v60\1033\mt.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1036", "1036", "{A91C3AD9-83E7-42B4-9452-81E8E9750B20}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v60\1036\cl.xml = V140\Platforms\Win32\PlatformToolsets\v60\1036\cl.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1036\fxcop.xml = V140\Platforms\Win32\PlatformToolsets\v60\1036\fxcop.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1036\lib.xml = V140\Platforms\Win32\PlatformToolsets\v60\1036\lib.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1036\link.xml = V140\Platforms\Win32\PlatformToolsets\v60\1036\link.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1036\midl.xml = V140\Platforms\Win32\PlatformToolsets\v60\1036\midl.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1036\mt.xml = V140\Platforms\Win32\PlatformToolsets\v60\1036\mt.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1040", "1040", "{07CC10D8-21ED-480C-A699-65AF01084B2F}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v60\1040\cl.xml = V140\Platforms\Win32\PlatformToolsets\v60\1040\cl.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1040\fxcop.xml = V140\Platforms\Win32\PlatformToolsets\v60\1040\fxcop.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1040\lib.xml = V140\Platforms\Win32\PlatformToolsets\v60\1040\lib.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1040\link.xml = V140\Platforms\Win32\PlatformToolsets\v60\1040\link.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1040\midl.xml = V140\Platforms\Win32\PlatformToolsets\v60\1040\midl.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1040\mt.xml = V140\Platforms\Win32\PlatformToolsets\v60\1040\mt.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1041", "1041", "{A8F5617B-A47F-4C00-B57C-974C53011EC9}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v60\1041\cl.xml = V140\Platforms\Win32\PlatformToolsets\v60\1041\cl.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1041\fxcop.xml = V140\Platforms\Win32\PlatformToolsets\v60\1041\fxcop.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1041\lib.xml = V140\Platforms\Win32\PlatformToolsets\v60\1041\lib.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1041\link.xml = V140\Platforms\Win32\PlatformToolsets\v60\1041\link.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1041\midl.xml = V140\Platforms\Win32\PlatformToolsets\v60\1041\midl.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1041\mt.xml = V140\Platforms\Win32\PlatformToolsets\v60\1041\mt.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1042", "1042", "{149127D3-660F-4CC2-A6FC-20587EE2965F}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v60\1042\cl.xml = V140\Platforms\Win32\PlatformToolsets\v60\1042\cl.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1042\fxcop.xml = V140\Platforms\Win32\PlatformToolsets\v60\1042\fxcop.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1042\lib.xml = V140\Platforms\Win32\PlatformToolsets\v60\1042\lib.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1042\link.xml = V140\Platforms\Win32\PlatformToolsets\v60\1042\link.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1042\midl.xml = V140\Platforms\Win32\PlatformToolsets\v60\1042\midl.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1042\mt.xml = V140\Platforms\Win32\PlatformToolsets\v60\1042\mt.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1045", "1045", "{8D97C12E-5FA3-44A1-94B0-26210A93C5CA}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v60\1045\cl.xml = V140\Platforms\Win32\PlatformToolsets\v60\1045\cl.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1045\fxcop.xml = V140\Platforms\Win32\PlatformToolsets\v60\1045\fxcop.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1045\lib.xml = V140\Platforms\Win32\PlatformToolsets\v60\1045\lib.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1045\link.xml = V140\Platforms\Win32\PlatformToolsets\v60\1045\link.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1045\midl.xml = V140\Platforms\Win32\PlatformToolsets\v60\1045\midl.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1045\mt.xml = V140\Platforms\Win32\PlatformToolsets\v60\1045\mt.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1046", "1046", "{AC99AA9F-DC35-444C-A6E3-978643ABD987}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v60\1046\cl.xml = V140\Platforms\Win32\PlatformToolsets\v60\1046\cl.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1046\fxcop.xml = V140\Platforms\Win32\PlatformToolsets\v60\1046\fxcop.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1046\lib.xml = V140\Platforms\Win32\PlatformToolsets\v60\1046\lib.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1046\link.xml = V140\Platforms\Win32\PlatformToolsets\v60\1046\link.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1046\midl.xml = V140\Platforms\Win32\PlatformToolsets\v60\1046\midl.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1046\mt.xml = V140\Platforms\Win32\PlatformToolsets\v60\1046\mt.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1049", "1049", "{C615B981-279E-447E-B55A-9E7DDFF41652}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v60\1049\cl.xml = V140\Platforms\Win32\PlatformToolsets\v60\1049\cl.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1049\fxcop.xml = V140\Platforms\Win32\PlatformToolsets\v60\1049\fxcop.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1049\lib.xml = V140\Platforms\Win32\PlatformToolsets\v60\1049\lib.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1049\link.xml = V140\Platforms\Win32\PlatformToolsets\v60\1049\link.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1049\midl.xml = V140\Platforms\Win32\PlatformToolsets\v60\1049\midl.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1049\mt.xml = V140\Platforms\Win32\PlatformToolsets\v60\1049\mt.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1055", "1055", "{67500338-23AA-4FE8-9F65-1F0E649A8A35}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v60\1055\cl.xml = V140\Platforms\Win32\PlatformToolsets\v60\1055\cl.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1055\fxcop.xml = V140\Platforms\Win32\PlatformToolsets\v60\1055\fxcop.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1055\lib.xml = V140\Platforms\Win32\PlatformToolsets\v60\1055\lib.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1055\link.xml = V140\Platforms\Win32\PlatformToolsets\v60\1055\link.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1055\midl.xml = V140\Platforms\Win32\PlatformToolsets\v60\1055\midl.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1055\mt.xml = V140\Platforms\Win32\PlatformToolsets\v60\1055\mt.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2052", "2052", "{AA5D1230-A8F0-4954-B9FB-86DB2C1C2293}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v60\2052\cl.xml = V140\Platforms\Win32\PlatformToolsets\v60\2052\cl.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\2052\fxcop.xml = V140\Platforms\Win32\PlatformToolsets\v60\2052\fxcop.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\2052\lib.xml = V140\Platforms\Win32\PlatformToolsets\v60\2052\lib.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\2052\link.xml = V140\Platforms\Win32\PlatformToolsets\v60\2052\link.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\2052\midl.xml = V140\Platforms\Win32\PlatformToolsets\v60\2052\midl.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\2052\mt.xml = V140\Platforms\Win32\PlatformToolsets\v60\2052\mt.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3082", "3082", "{07371373-9CC0-4D0D-8C11-744C55CA1DF8}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v60\3082\cl.xml = V140\Platforms\Win32\PlatformToolsets\v60\3082\cl.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\3082\fxcop.xml = V140\Platforms\Win32\PlatformToolsets\v60\3082\fxcop.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\3082\lib.xml = V140\Platforms\Win32\PlatformToolsets\v60\3082\lib.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\3082\link.xml = V140\Platforms\Win32\PlatformToolsets\v60\3082\link.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\3082\midl.xml = V140\Platforms\Win32\PlatformToolsets\v60\3082\midl.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\3082\mt.xml = V140\Platforms\Win32\PlatformToolsets\v60\3082\mt.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "context", "context", "{B921FDC4-D0AB-4657-A35F-E68B36A45E19}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v60\1028\context\general.xml = V140\Platforms\Win32\PlatformToolsets\v60\1028\context\general.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1028\context\general_makefile.xml = V140\Platforms\Win32\PlatformToolsets\v60\1028\context\general_makefile.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1028\context\general_makefile_ps.xml = V140\Platforms\Win32\PlatformToolsets\v60\1028\context\general_makefile_ps.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "context", "context", "{17F4C0A0-E025-46DA-8468-26AB8E33E377}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v60\1029\context\general.xml = V140\Platforms\Win32\PlatformToolsets\v60\1029\context\general.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1029\context\general_makefile.xml = V140\Platforms\Win32\PlatformToolsets\v60\1029\context\general_makefile.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1029\context\general_makefile_ps.xml = V140\Platforms\Win32\PlatformToolsets\v60\1029\context\general_makefile_ps.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "context", "context", "{6EA44C72-4D0E-4554-BA24-BEDD61366325}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v60\1031\context\general.xml = V140\Platforms\Win32\PlatformToolsets\v60\1031\context\general.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1031\context\general_makefile.xml = V140\Platforms\Win32\PlatformToolsets\v60\1031\context\general_makefile.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1031\context\general_makefile_ps.xml = V140\Platforms\Win32\PlatformToolsets\v60\1031\context\general_makefile_ps.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "context", "context", "{6B9E7E59-79AF-46DA-9631-732D43E07AE3}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v60\1033\context\general.xml = V140\Platforms\Win32\PlatformToolsets\v60\1033\context\general.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1033\context\general_makefile.xml = V140\Platforms\Win32\PlatformToolsets\v60\1033\context\general_makefile.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1033\context\general_makefile_ps.xml = V140\Platforms\Win32\PlatformToolsets\v60\1033\context\general_makefile_ps.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "context", "context", "{3773FCEF-3F15-4CED-84D8-D2B7E4F76E2E}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v60\1036\context\general.xml = V140\Platforms\Win32\PlatformToolsets\v60\1036\context\general.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1036\context\general_makefile.xml = V140\Platforms\Win32\PlatformToolsets\v60\1036\context\general_makefile.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1036\context\general_makefile_ps.xml = V140\Platforms\Win32\PlatformToolsets\v60\1036\context\general_makefile_ps.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "context", "context", "{3A613569-E998-423A-9BCA-5C818F4C4C00}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v60\1040\context\general.xml = V140\Platforms\Win32\PlatformToolsets\v60\1040\context\general.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1040\context\general_makefile.xml = V140\Platforms\Win32\PlatformToolsets\v60\1040\context\general_makefile.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1040\context\general_makefile_ps.xml = V140\Platforms\Win32\PlatformToolsets\v60\1040\context\general_makefile_ps.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "context", "context", "{4A1A2498-4F3F-40AA-8869-705ECF75F765}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v60\3082\context\general.xml = V140\Platforms\Win32\PlatformToolsets\v60\3082\context\general.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\3082\context\general_makefile.xml = V140\Platforms\Win32\PlatformToolsets\v60\3082\context\general_makefile.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\3082\context\general_makefile_ps.xml = V140\Platforms\Win32\PlatformToolsets\v60\3082\context\general_makefile_ps.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "context", "context", "{8220650C-9DF0-4CB0-95AA-1D3B8C10EF72}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v60\2052\context\general.xml = V140\Platforms\Win32\PlatformToolsets\v60\2052\context\general.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\2052\context\general_makefile.xml = V140\Platforms\Win32\PlatformToolsets\v60\2052\context\general_makefile.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\2052\context\general_makefile_ps.xml = V140\Platforms\Win32\PlatformToolsets\v60\2052\context\general_makefile_ps.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "context", "context", "{A62DE600-1CFE-42BA-A769-A011A3A81A38}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v60\1055\context\general.xml = V140\Platforms\Win32\PlatformToolsets\v60\1055\context\general.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1055\context\general_makefile.xml = V140\Platforms\Win32\PlatformToolsets\v60\1055\context\general_makefile.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1055\context\general_makefile_ps.xml = V140\Platforms\Win32\PlatformToolsets\v60\1055\context\general_makefile_ps.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "context", "context", "{2C00DF96-30FC-46DA-BE70-A3A92C764BD7}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v60\1049\context\general.xml = V140\Platforms\Win32\PlatformToolsets\v60\1049\context\general.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1049\context\general_makefile.xml = V140\Platforms\Win32\PlatformToolsets\v60\1049\context\general_makefile.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1049\context\general_makefile_ps.xml = V140\Platforms\Win32\PlatformToolsets\v60\1049\context\general_makefile_ps.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "context", "context", "{69CA856D-296B-4C9E-9F39-054E494DC701}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v60\1046\context\general.xml = V140\Platforms\Win32\PlatformToolsets\v60\1046\context\general.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1046\context\general_makefile.xml = V140\Platforms\Win32\PlatformToolsets\v60\1046\context\general_makefile.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1046\context\general_makefile_ps.xml = V140\Platforms\Win32\PlatformToolsets\v60\1046\context\general_makefile_ps.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "context", "context", "{EA18BA76-E284-454F-9DC9-A7362E36CD59}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v60\1045\context\general.xml = V140\Platforms\Win32\PlatformToolsets\v60\1045\context\general.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1045\context\general_makefile.xml = V140\Platforms\Win32\PlatformToolsets\v60\1045\context\general_makefile.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1045\context\general_makefile_ps.xml = V140\Platforms\Win32\PlatformToolsets\v60\1045\context\general_makefile_ps.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "context", "context", "{72844E93-7E3E-471D-A2E7-288EA4ABC4F9}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v60\1042\context\general.xml = V140\Platforms\Win32\PlatformToolsets\v60\1042\context\general.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1042\context\general_makefile.xml = V140\Platforms\Win32\PlatformToolsets\v60\1042\context\general_makefile.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1042\context\general_makefile_ps.xml = V140\Platforms\Win32\PlatformToolsets\v60\1042\context\general_makefile_ps.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "context", "context", "{4D1EDDEA-FC87-4372-A47D-6BA32A1F43EA}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v60\1041\context\general.xml = V140\Platforms\Win32\PlatformToolsets\v60\1041\context\general.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1041\context\general_makefile.xml = V140\Platforms\Win32\PlatformToolsets\v60\1041\context\general_makefile.xml
+		V140\Platforms\Win32\PlatformToolsets\v60\1041\context\general_makefile_ps.xml = V140\Platforms\Win32\PlatformToolsets\v60\1041\context\general_makefile_ps.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1028", "1028", "{8DCA3FA7-2121-4EB8-A6FB-FD42A32A0A95}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\x64\PlatformToolsets\v80\1028\fxcop.xml = V140\Platforms\x64\PlatformToolsets\v80\1028\fxcop.xml
+		V140\Platforms\x64\PlatformToolsets\v80\1028\link.xml = V140\Platforms\x64\PlatformToolsets\v80\1028\link.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1029", "1029", "{5A71E8BE-1FDE-46DB-8F61-325EEB0F30A8}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\x64\PlatformToolsets\v80\1029\fxcop.xml = V140\Platforms\x64\PlatformToolsets\v80\1029\fxcop.xml
+		V140\Platforms\x64\PlatformToolsets\v80\1029\link.xml = V140\Platforms\x64\PlatformToolsets\v80\1029\link.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1031", "1031", "{2C861AFA-34ED-48FB-B716-61C5772CE32A}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\x64\PlatformToolsets\v80\1031\fxcop.xml = V140\Platforms\x64\PlatformToolsets\v80\1031\fxcop.xml
+		V140\Platforms\x64\PlatformToolsets\v80\1031\link.xml = V140\Platforms\x64\PlatformToolsets\v80\1031\link.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1033", "1033", "{3FF4B7A6-C167-4823-835A-A854820B4461}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\x64\PlatformToolsets\v80\1033\fxcop.xml = V140\Platforms\x64\PlatformToolsets\v80\1033\fxcop.xml
+		V140\Platforms\x64\PlatformToolsets\v80\1033\link.xml = V140\Platforms\x64\PlatformToolsets\v80\1033\link.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1036", "1036", "{32AFABBD-9BF2-4D9F-8B5C-DD1CC504DDF0}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\x64\PlatformToolsets\v80\1036\fxcop.xml = V140\Platforms\x64\PlatformToolsets\v80\1036\fxcop.xml
+		V140\Platforms\x64\PlatformToolsets\v80\1036\link.xml = V140\Platforms\x64\PlatformToolsets\v80\1036\link.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1040", "1040", "{4F845890-3AD8-474E-9254-C415FB8E8006}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\x64\PlatformToolsets\v80\1040\fxcop.xml = V140\Platforms\x64\PlatformToolsets\v80\1040\fxcop.xml
+		V140\Platforms\x64\PlatformToolsets\v80\1040\link.xml = V140\Platforms\x64\PlatformToolsets\v80\1040\link.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1041", "1041", "{13CE0FF7-B5A5-4F4A-A489-6A70A3D3A4F5}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\x64\PlatformToolsets\v80\1041\fxcop.xml = V140\Platforms\x64\PlatformToolsets\v80\1041\fxcop.xml
+		V140\Platforms\x64\PlatformToolsets\v80\1041\link.xml = V140\Platforms\x64\PlatformToolsets\v80\1041\link.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1042", "1042", "{A8E85D53-18AB-4BD2-8426-E7E4326AF004}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\x64\PlatformToolsets\v80\1042\fxcop.xml = V140\Platforms\x64\PlatformToolsets\v80\1042\fxcop.xml
+		V140\Platforms\x64\PlatformToolsets\v80\1042\link.xml = V140\Platforms\x64\PlatformToolsets\v80\1042\link.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1045", "1045", "{ABB449B1-2A60-4565-8A09-9DEEC4402289}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\x64\PlatformToolsets\v80\1045\fxcop.xml = V140\Platforms\x64\PlatformToolsets\v80\1045\fxcop.xml
+		V140\Platforms\x64\PlatformToolsets\v80\1045\link.xml = V140\Platforms\x64\PlatformToolsets\v80\1045\link.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1046", "1046", "{59D3E407-3EED-4F7A-97CC-D27DC96934E2}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\x64\PlatformToolsets\v80\1046\fxcop.xml = V140\Platforms\x64\PlatformToolsets\v80\1046\fxcop.xml
+		V140\Platforms\x64\PlatformToolsets\v80\1046\link.xml = V140\Platforms\x64\PlatformToolsets\v80\1046\link.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1049", "1049", "{5B175019-4000-4547-93DA-AC7E82706DAB}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\x64\PlatformToolsets\v80\1049\fxcop.xml = V140\Platforms\x64\PlatformToolsets\v80\1049\fxcop.xml
+		V140\Platforms\x64\PlatformToolsets\v80\1049\link.xml = V140\Platforms\x64\PlatformToolsets\v80\1049\link.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1055", "1055", "{6E265CA9-D8C8-44B4-AA1A-A04BB6EB967A}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\x64\PlatformToolsets\v80\1055\fxcop.xml = V140\Platforms\x64\PlatformToolsets\v80\1055\fxcop.xml
+		V140\Platforms\x64\PlatformToolsets\v80\1055\link.xml = V140\Platforms\x64\PlatformToolsets\v80\1055\link.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2052", "2052", "{4A83F79C-D8DE-4F06-8C7C-EF7DA3E7EA24}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\x64\PlatformToolsets\v80\2052\fxcop.xml = V140\Platforms\x64\PlatformToolsets\v80\2052\fxcop.xml
+		V140\Platforms\x64\PlatformToolsets\v80\2052\link.xml = V140\Platforms\x64\PlatformToolsets\v80\2052\link.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3082", "3082", "{9CCCBDB3-0E6E-4791-9F1C-039E88C0E080}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\x64\PlatformToolsets\v80\3082\fxcop.xml = V140\Platforms\x64\PlatformToolsets\v80\3082\fxcop.xml
+		V140\Platforms\x64\PlatformToolsets\v80\3082\link.xml = V140\Platforms\x64\PlatformToolsets\v80\3082\link.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1028", "1028", "{38D3AC9E-39C3-4759-BE91-3DDC6EC99278}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v80\1028\fxcop.xml = V140\Platforms\Win32\PlatformToolsets\v80\1028\fxcop.xml
+		V140\Platforms\Win32\PlatformToolsets\v80\1028\link.xml = V140\Platforms\Win32\PlatformToolsets\v80\1028\link.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1029", "1029", "{7E39E45D-F45D-41DB-B129-6F3033F5559E}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v80\1029\fxcop.xml = V140\Platforms\Win32\PlatformToolsets\v80\1029\fxcop.xml
+		V140\Platforms\Win32\PlatformToolsets\v80\1029\link.xml = V140\Platforms\Win32\PlatformToolsets\v80\1029\link.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1031", "1031", "{2269F190-065C-454B-B4EA-1CE76C5DA62F}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v80\1031\fxcop.xml = V140\Platforms\Win32\PlatformToolsets\v80\1031\fxcop.xml
+		V140\Platforms\Win32\PlatformToolsets\v80\1031\link.xml = V140\Platforms\Win32\PlatformToolsets\v80\1031\link.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1033", "1033", "{DDA9CD8B-8932-4A74-A435-C86DB4D3347B}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v80\1033\fxcop.xml = V140\Platforms\Win32\PlatformToolsets\v80\1033\fxcop.xml
+		V140\Platforms\Win32\PlatformToolsets\v80\1033\link.xml = V140\Platforms\Win32\PlatformToolsets\v80\1033\link.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1036", "1036", "{8A1BF784-896C-4201-B3AA-62A8AC537FBA}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v80\1036\fxcop.xml = V140\Platforms\Win32\PlatformToolsets\v80\1036\fxcop.xml
+		V140\Platforms\Win32\PlatformToolsets\v80\1036\link.xml = V140\Platforms\Win32\PlatformToolsets\v80\1036\link.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1040", "1040", "{0D48A66A-72D7-4FBB-9EBE-47A1C1695115}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v80\1040\fxcop.xml = V140\Platforms\Win32\PlatformToolsets\v80\1040\fxcop.xml
+		V140\Platforms\Win32\PlatformToolsets\v80\1040\link.xml = V140\Platforms\Win32\PlatformToolsets\v80\1040\link.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1041", "1041", "{E25686CD-D45F-48FF-9388-E8D4DB3160E2}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v80\1041\fxcop.xml = V140\Platforms\Win32\PlatformToolsets\v80\1041\fxcop.xml
+		V140\Platforms\Win32\PlatformToolsets\v80\1041\link.xml = V140\Platforms\Win32\PlatformToolsets\v80\1041\link.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1042", "1042", "{EE54B130-0F36-4556-A211-76F0D3C58056}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v80\1042\fxcop.xml = V140\Platforms\Win32\PlatformToolsets\v80\1042\fxcop.xml
+		V140\Platforms\Win32\PlatformToolsets\v80\1042\link.xml = V140\Platforms\Win32\PlatformToolsets\v80\1042\link.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1045", "1045", "{192D67E7-ED11-4D3F-961F-5F07D5EC35B5}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v80\1045\fxcop.xml = V140\Platforms\Win32\PlatformToolsets\v80\1045\fxcop.xml
+		V140\Platforms\Win32\PlatformToolsets\v80\1045\link.xml = V140\Platforms\Win32\PlatformToolsets\v80\1045\link.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1046", "1046", "{CA7FFA67-D814-4DD0-8CD0-AADD42E10765}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v80\1046\fxcop.xml = V140\Platforms\Win32\PlatformToolsets\v80\1046\fxcop.xml
+		V140\Platforms\Win32\PlatformToolsets\v80\1046\link.xml = V140\Platforms\Win32\PlatformToolsets\v80\1046\link.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1049", "1049", "{D942A59A-7564-4627-8A8A-2732A2ABDA48}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v80\1049\fxcop.xml = V140\Platforms\Win32\PlatformToolsets\v80\1049\fxcop.xml
+		V140\Platforms\Win32\PlatformToolsets\v80\1049\link.xml = V140\Platforms\Win32\PlatformToolsets\v80\1049\link.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1055", "1055", "{85086D8D-65F3-474F-9D21-2949B9534234}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v80\1055\fxcop.xml = V140\Platforms\Win32\PlatformToolsets\v80\1055\fxcop.xml
+		V140\Platforms\Win32\PlatformToolsets\v80\1055\link.xml = V140\Platforms\Win32\PlatformToolsets\v80\1055\link.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2052", "2052", "{6117DDFF-2C17-435A-9888-778E88E6C4B1}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v80\2052\fxcop.xml = V140\Platforms\Win32\PlatformToolsets\v80\2052\fxcop.xml
+		V140\Platforms\Win32\PlatformToolsets\v80\2052\link.xml = V140\Platforms\Win32\PlatformToolsets\v80\2052\link.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3082", "3082", "{4C2E62BD-9CEA-4F02-8631-06801C51938E}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v80\3082\fxcop.xml = V140\Platforms\Win32\PlatformToolsets\v80\3082\fxcop.xml
+		V140\Platforms\Win32\PlatformToolsets\v80\3082\link.xml = V140\Platforms\Win32\PlatformToolsets\v80\3082\link.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1028", "1028", "{A0A23B3C-1660-4D09-8819-93BE3D68E964}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v70\1028\cl.xml = V140\Platforms\Win32\PlatformToolsets\v70\1028\cl.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1028\fxcop.xml = V140\Platforms\Win32\PlatformToolsets\v70\1028\fxcop.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1028\lib.xml = V140\Platforms\Win32\PlatformToolsets\v70\1028\lib.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1028\link.xml = V140\Platforms\Win32\PlatformToolsets\v70\1028\link.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1028\midl.xml = V140\Platforms\Win32\PlatformToolsets\v70\1028\midl.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1028\mt.xml = V140\Platforms\Win32\PlatformToolsets\v70\1028\mt.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "context", "context", "{FEC19FE0-1A7C-4E95-AE73-8D9F04A80747}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v70\1028\context\general.xml = V140\Platforms\Win32\PlatformToolsets\v70\1028\context\general.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1028\context\general_makefile.xml = V140\Platforms\Win32\PlatformToolsets\v70\1028\context\general_makefile.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1028\context\general_makefile_ps.xml = V140\Platforms\Win32\PlatformToolsets\v70\1028\context\general_makefile_ps.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1029", "1029", "{4BCB6B5B-D2DF-410E-AFDF-5DEE3EFCFE2D}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v70\1029\cl.xml = V140\Platforms\Win32\PlatformToolsets\v70\1029\cl.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1029\fxcop.xml = V140\Platforms\Win32\PlatformToolsets\v70\1029\fxcop.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1029\lib.xml = V140\Platforms\Win32\PlatformToolsets\v70\1029\lib.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1029\link.xml = V140\Platforms\Win32\PlatformToolsets\v70\1029\link.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1029\midl.xml = V140\Platforms\Win32\PlatformToolsets\v70\1029\midl.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1029\mt.xml = V140\Platforms\Win32\PlatformToolsets\v70\1029\mt.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "context", "context", "{485D7B93-E75F-4CCF-9DD8-2FC8714DA123}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v70\1029\context\general.xml = V140\Platforms\Win32\PlatformToolsets\v70\1029\context\general.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1029\context\general_makefile.xml = V140\Platforms\Win32\PlatformToolsets\v70\1029\context\general_makefile.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1029\context\general_makefile_ps.xml = V140\Platforms\Win32\PlatformToolsets\v70\1029\context\general_makefile_ps.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1031", "1031", "{98B2927E-5476-47B0-8C60-A11B35622653}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v70\1031\cl.xml = V140\Platforms\Win32\PlatformToolsets\v70\1031\cl.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1031\fxcop.xml = V140\Platforms\Win32\PlatformToolsets\v70\1031\fxcop.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1031\lib.xml = V140\Platforms\Win32\PlatformToolsets\v70\1031\lib.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1031\link.xml = V140\Platforms\Win32\PlatformToolsets\v70\1031\link.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1031\midl.xml = V140\Platforms\Win32\PlatformToolsets\v70\1031\midl.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1031\mt.xml = V140\Platforms\Win32\PlatformToolsets\v70\1031\mt.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1033", "1033", "{4E2BF045-FD91-41AD-8AD8-D16B0BF0C071}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v70\1033\cl.xml = V140\Platforms\Win32\PlatformToolsets\v70\1033\cl.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1033\fxcop.xml = V140\Platforms\Win32\PlatformToolsets\v70\1033\fxcop.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1033\lib.xml = V140\Platforms\Win32\PlatformToolsets\v70\1033\lib.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1033\link.xml = V140\Platforms\Win32\PlatformToolsets\v70\1033\link.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1033\midl.xml = V140\Platforms\Win32\PlatformToolsets\v70\1033\midl.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1033\mt.xml = V140\Platforms\Win32\PlatformToolsets\v70\1033\mt.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1036", "1036", "{E2AD6771-12D0-4B17-9B2E-E6E465BB0390}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v70\1036\cl.xml = V140\Platforms\Win32\PlatformToolsets\v70\1036\cl.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1036\fxcop.xml = V140\Platforms\Win32\PlatformToolsets\v70\1036\fxcop.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1036\lib.xml = V140\Platforms\Win32\PlatformToolsets\v70\1036\lib.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1036\link.xml = V140\Platforms\Win32\PlatformToolsets\v70\1036\link.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1036\midl.xml = V140\Platforms\Win32\PlatformToolsets\v70\1036\midl.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1036\mt.xml = V140\Platforms\Win32\PlatformToolsets\v70\1036\mt.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1040", "1040", "{17EF02EA-A5EF-46E3-92AA-330817B3E355}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v70\1040\cl.xml = V140\Platforms\Win32\PlatformToolsets\v70\1040\cl.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1040\fxcop.xml = V140\Platforms\Win32\PlatformToolsets\v70\1040\fxcop.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1040\lib.xml = V140\Platforms\Win32\PlatformToolsets\v70\1040\lib.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1040\link.xml = V140\Platforms\Win32\PlatformToolsets\v70\1040\link.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1040\midl.xml = V140\Platforms\Win32\PlatformToolsets\v70\1040\midl.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1040\mt.xml = V140\Platforms\Win32\PlatformToolsets\v70\1040\mt.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1041", "1041", "{FAE0A924-E08B-4FE3-A611-B80BE76EAFB2}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v70\1041\cl.xml = V140\Platforms\Win32\PlatformToolsets\v70\1041\cl.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1041\fxcop.xml = V140\Platforms\Win32\PlatformToolsets\v70\1041\fxcop.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1041\lib.xml = V140\Platforms\Win32\PlatformToolsets\v70\1041\lib.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1041\link.xml = V140\Platforms\Win32\PlatformToolsets\v70\1041\link.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1041\midl.xml = V140\Platforms\Win32\PlatformToolsets\v70\1041\midl.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1041\mt.xml = V140\Platforms\Win32\PlatformToolsets\v70\1041\mt.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1042", "1042", "{2614B43D-8542-463C-980C-227528C6165C}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v70\1042\cl.xml = V140\Platforms\Win32\PlatformToolsets\v70\1042\cl.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1042\fxcop.xml = V140\Platforms\Win32\PlatformToolsets\v70\1042\fxcop.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1042\lib.xml = V140\Platforms\Win32\PlatformToolsets\v70\1042\lib.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1042\link.xml = V140\Platforms\Win32\PlatformToolsets\v70\1042\link.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1042\midl.xml = V140\Platforms\Win32\PlatformToolsets\v70\1042\midl.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1042\mt.xml = V140\Platforms\Win32\PlatformToolsets\v70\1042\mt.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1045", "1045", "{6343DCEF-5D8A-4998-8FDD-63F5817D6B49}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v70\1045\cl.xml = V140\Platforms\Win32\PlatformToolsets\v70\1045\cl.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1045\fxcop.xml = V140\Platforms\Win32\PlatformToolsets\v70\1045\fxcop.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1045\lib.xml = V140\Platforms\Win32\PlatformToolsets\v70\1045\lib.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1045\link.xml = V140\Platforms\Win32\PlatformToolsets\v70\1045\link.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1045\midl.xml = V140\Platforms\Win32\PlatformToolsets\v70\1045\midl.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1045\mt.xml = V140\Platforms\Win32\PlatformToolsets\v70\1045\mt.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1046", "1046", "{67221343-8169-4E39-B556-0D0109F683FF}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v70\1046\cl.xml = V140\Platforms\Win32\PlatformToolsets\v70\1046\cl.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1046\fxcop.xml = V140\Platforms\Win32\PlatformToolsets\v70\1046\fxcop.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1046\lib.xml = V140\Platforms\Win32\PlatformToolsets\v70\1046\lib.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1046\link.xml = V140\Platforms\Win32\PlatformToolsets\v70\1046\link.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1046\midl.xml = V140\Platforms\Win32\PlatformToolsets\v70\1046\midl.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1046\mt.xml = V140\Platforms\Win32\PlatformToolsets\v70\1046\mt.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1049", "1049", "{698EEEC6-328D-41FE-BAF1-A9C0D55EC151}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v70\1049\cl.xml = V140\Platforms\Win32\PlatformToolsets\v70\1049\cl.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1049\fxcop.xml = V140\Platforms\Win32\PlatformToolsets\v70\1049\fxcop.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1049\lib.xml = V140\Platforms\Win32\PlatformToolsets\v70\1049\lib.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1049\link.xml = V140\Platforms\Win32\PlatformToolsets\v70\1049\link.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1049\midl.xml = V140\Platforms\Win32\PlatformToolsets\v70\1049\midl.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1049\mt.xml = V140\Platforms\Win32\PlatformToolsets\v70\1049\mt.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2052", "2052", "{68F92F6E-98B5-4F55-999A-DCE2ECEF8AFC}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v70\2052\cl.xml = V140\Platforms\Win32\PlatformToolsets\v70\2052\cl.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\2052\fxcop.xml = V140\Platforms\Win32\PlatformToolsets\v70\2052\fxcop.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\2052\lib.xml = V140\Platforms\Win32\PlatformToolsets\v70\2052\lib.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\2052\link.xml = V140\Platforms\Win32\PlatformToolsets\v70\2052\link.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\2052\midl.xml = V140\Platforms\Win32\PlatformToolsets\v70\2052\midl.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\2052\mt.xml = V140\Platforms\Win32\PlatformToolsets\v70\2052\mt.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3082", "3082", "{23F33D6D-9530-45E8-B214-3977376D9A67}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v70\3082\cl.xml = V140\Platforms\Win32\PlatformToolsets\v70\3082\cl.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\3082\fxcop.xml = V140\Platforms\Win32\PlatformToolsets\v70\3082\fxcop.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\3082\lib.xml = V140\Platforms\Win32\PlatformToolsets\v70\3082\lib.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\3082\link.xml = V140\Platforms\Win32\PlatformToolsets\v70\3082\link.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\3082\midl.xml = V140\Platforms\Win32\PlatformToolsets\v70\3082\midl.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\3082\mt.xml = V140\Platforms\Win32\PlatformToolsets\v70\3082\mt.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1055", "1055", "{DD5A21F9-E7EB-4190-B465-B22E9B117163}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v70\1055\cl.xml = V140\Platforms\Win32\PlatformToolsets\v70\1055\cl.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1055\fxcop.xml = V140\Platforms\Win32\PlatformToolsets\v70\1055\fxcop.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1055\lib.xml = V140\Platforms\Win32\PlatformToolsets\v70\1055\lib.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1055\link.xml = V140\Platforms\Win32\PlatformToolsets\v70\1055\link.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1055\midl.xml = V140\Platforms\Win32\PlatformToolsets\v70\1055\midl.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1055\mt.xml = V140\Platforms\Win32\PlatformToolsets\v70\1055\mt.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "context", "context", "{F98F7BD0-99ED-4AAF-B9D8-2C42AE5D351B}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v70\1031\context\general.xml = V140\Platforms\Win32\PlatformToolsets\v70\1031\context\general.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1031\context\general_makefile.xml = V140\Platforms\Win32\PlatformToolsets\v70\1031\context\general_makefile.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1031\context\general_makefile_ps.xml = V140\Platforms\Win32\PlatformToolsets\v70\1031\context\general_makefile_ps.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "context", "context", "{A2C85DB5-C4FA-4AB6-BFB4-CA28011B0F52}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v70\1033\context\general.xml = V140\Platforms\Win32\PlatformToolsets\v70\1033\context\general.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1033\context\general_makefile.xml = V140\Platforms\Win32\PlatformToolsets\v70\1033\context\general_makefile.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1033\context\general_makefile_ps.xml = V140\Platforms\Win32\PlatformToolsets\v70\1033\context\general_makefile_ps.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "context", "context", "{78A63D3E-509C-470E-AC25-7D9C56A4954E}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v70\1036\context\general.xml = V140\Platforms\Win32\PlatformToolsets\v70\1036\context\general.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1036\context\general_makefile.xml = V140\Platforms\Win32\PlatformToolsets\v70\1036\context\general_makefile.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1036\context\general_makefile_ps.xml = V140\Platforms\Win32\PlatformToolsets\v70\1036\context\general_makefile_ps.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "context", "context", "{58556721-B08A-44B4-B354-CEE454C11652}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v70\1040\context\general.xml = V140\Platforms\Win32\PlatformToolsets\v70\1040\context\general.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1040\context\general_makefile.xml = V140\Platforms\Win32\PlatformToolsets\v70\1040\context\general_makefile.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1040\context\general_makefile_ps.xml = V140\Platforms\Win32\PlatformToolsets\v70\1040\context\general_makefile_ps.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "context", "context", "{41403431-48DB-4D05-8B09-972FE65D44E7}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v70\1041\context\general.xml = V140\Platforms\Win32\PlatformToolsets\v70\1041\context\general.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1041\context\general_makefile.xml = V140\Platforms\Win32\PlatformToolsets\v70\1041\context\general_makefile.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1041\context\general_makefile_ps.xml = V140\Platforms\Win32\PlatformToolsets\v70\1041\context\general_makefile_ps.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "context", "context", "{99D02C30-8C69-4230-A925-3D64136E1258}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v70\1042\context\general.xml = V140\Platforms\Win32\PlatformToolsets\v70\1042\context\general.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1042\context\general_makefile.xml = V140\Platforms\Win32\PlatformToolsets\v70\1042\context\general_makefile.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1042\context\general_makefile_ps.xml = V140\Platforms\Win32\PlatformToolsets\v70\1042\context\general_makefile_ps.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "context", "context", "{E9041826-66CA-48B3-B6FC-6D30C156DE95}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v70\1045\context\general.xml = V140\Platforms\Win32\PlatformToolsets\v70\1045\context\general.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1045\context\general_makefile.xml = V140\Platforms\Win32\PlatformToolsets\v70\1045\context\general_makefile.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1045\context\general_makefile_ps.xml = V140\Platforms\Win32\PlatformToolsets\v70\1045\context\general_makefile_ps.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "context", "context", "{74CB9258-B193-4A44-9F5E-F8DF324A529B}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v70\1046\context\general.xml = V140\Platforms\Win32\PlatformToolsets\v70\1046\context\general.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1046\context\general_makefile.xml = V140\Platforms\Win32\PlatformToolsets\v70\1046\context\general_makefile.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1046\context\general_makefile_ps.xml = V140\Platforms\Win32\PlatformToolsets\v70\1046\context\general_makefile_ps.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "context", "context", "{8D97E3EC-A53F-4D62-BD1F-BC9D4C1634EC}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v70\1049\context\general.xml = V140\Platforms\Win32\PlatformToolsets\v70\1049\context\general.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1049\context\general_makefile.xml = V140\Platforms\Win32\PlatformToolsets\v70\1049\context\general_makefile.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1049\context\general_makefile_ps.xml = V140\Platforms\Win32\PlatformToolsets\v70\1049\context\general_makefile_ps.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "context", "context", "{709A0B0A-5E40-4938-AF32-C7347E9E3B7E}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v70\1055\context\general.xml = V140\Platforms\Win32\PlatformToolsets\v70\1055\context\general.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1055\context\general_makefile.xml = V140\Platforms\Win32\PlatformToolsets\v70\1055\context\general_makefile.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\1055\context\general_makefile_ps.xml = V140\Platforms\Win32\PlatformToolsets\v70\1055\context\general_makefile_ps.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "context", "context", "{D07675E5-AAEF-4FA9-902B-883E25867F2B}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v70\3082\context\general.xml = V140\Platforms\Win32\PlatformToolsets\v70\3082\context\general.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\3082\context\general_makefile.xml = V140\Platforms\Win32\PlatformToolsets\v70\3082\context\general_makefile.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\3082\context\general_makefile_ps.xml = V140\Platforms\Win32\PlatformToolsets\v70\3082\context\general_makefile_ps.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "context", "context", "{8B16969D-C7D8-486C-BE4F-76C20D743B2A}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v70\2052\context\general.xml = V140\Platforms\Win32\PlatformToolsets\v70\2052\context\general.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\2052\context\general_makefile.xml = V140\Platforms\Win32\PlatformToolsets\v70\2052\context\general_makefile.xml
+		V140\Platforms\Win32\PlatformToolsets\v70\2052\context\general_makefile_ps.xml = V140\Platforms\Win32\PlatformToolsets\v70\2052\context\general_makefile_ps.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1031", "1031", "{A2BC5403-4748-45F2-ACB2-25184E4AE744}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v71\1031\cl.xml = V140\Platforms\Win32\PlatformToolsets\v71\1031\cl.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1031\fxcop.xml = V140\Platforms\Win32\PlatformToolsets\v71\1031\fxcop.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1031\lib.xml = V140\Platforms\Win32\PlatformToolsets\v71\1031\lib.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1031\link.xml = V140\Platforms\Win32\PlatformToolsets\v71\1031\link.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1031\midl.xml = V140\Platforms\Win32\PlatformToolsets\v71\1031\midl.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1031\mt.xml = V140\Platforms\Win32\PlatformToolsets\v71\1031\mt.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3082", "3082", "{44558540-AD64-4C45-9C91-059E7F792A47}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v71\3082\cl.xml = V140\Platforms\Win32\PlatformToolsets\v71\3082\cl.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\3082\fxcop.xml = V140\Platforms\Win32\PlatformToolsets\v71\3082\fxcop.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\3082\lib.xml = V140\Platforms\Win32\PlatformToolsets\v71\3082\lib.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\3082\link.xml = V140\Platforms\Win32\PlatformToolsets\v71\3082\link.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\3082\midl.xml = V140\Platforms\Win32\PlatformToolsets\v71\3082\midl.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\3082\mt.xml = V140\Platforms\Win32\PlatformToolsets\v71\3082\mt.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2052", "2052", "{81CA6D07-FFDA-4B01-BE74-DD46274F1309}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v71\2052\cl.xml = V140\Platforms\Win32\PlatformToolsets\v71\2052\cl.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\2052\fxcop.xml = V140\Platforms\Win32\PlatformToolsets\v71\2052\fxcop.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\2052\lib.xml = V140\Platforms\Win32\PlatformToolsets\v71\2052\lib.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\2052\link.xml = V140\Platforms\Win32\PlatformToolsets\v71\2052\link.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\2052\midl.xml = V140\Platforms\Win32\PlatformToolsets\v71\2052\midl.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\2052\mt.xml = V140\Platforms\Win32\PlatformToolsets\v71\2052\mt.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1055", "1055", "{41611CF0-9F6B-4B7B-9A52-C2738BDF0B5B}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v71\1055\cl.xml = V140\Platforms\Win32\PlatformToolsets\v71\1055\cl.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1055\fxcop.xml = V140\Platforms\Win32\PlatformToolsets\v71\1055\fxcop.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1055\lib.xml = V140\Platforms\Win32\PlatformToolsets\v71\1055\lib.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1055\link.xml = V140\Platforms\Win32\PlatformToolsets\v71\1055\link.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1055\midl.xml = V140\Platforms\Win32\PlatformToolsets\v71\1055\midl.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1055\mt.xml = V140\Platforms\Win32\PlatformToolsets\v71\1055\mt.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1049", "1049", "{FE57E2D8-6BF7-4AD1-AE63-0391014629A7}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v71\1049\cl.xml = V140\Platforms\Win32\PlatformToolsets\v71\1049\cl.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1049\fxcop.xml = V140\Platforms\Win32\PlatformToolsets\v71\1049\fxcop.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1049\lib.xml = V140\Platforms\Win32\PlatformToolsets\v71\1049\lib.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1049\link.xml = V140\Platforms\Win32\PlatformToolsets\v71\1049\link.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1049\midl.xml = V140\Platforms\Win32\PlatformToolsets\v71\1049\midl.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1049\mt.xml = V140\Platforms\Win32\PlatformToolsets\v71\1049\mt.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1046", "1046", "{5CAE444D-F3D2-4D79-AEC4-B89D5C6CE43B}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v71\1046\cl.xml = V140\Platforms\Win32\PlatformToolsets\v71\1046\cl.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1046\fxcop.xml = V140\Platforms\Win32\PlatformToolsets\v71\1046\fxcop.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1046\lib.xml = V140\Platforms\Win32\PlatformToolsets\v71\1046\lib.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1046\link.xml = V140\Platforms\Win32\PlatformToolsets\v71\1046\link.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1046\midl.xml = V140\Platforms\Win32\PlatformToolsets\v71\1046\midl.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1046\mt.xml = V140\Platforms\Win32\PlatformToolsets\v71\1046\mt.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1045", "1045", "{61F9D954-F577-4F0E-8C43-9B90C424EEFA}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v71\1045\cl.xml = V140\Platforms\Win32\PlatformToolsets\v71\1045\cl.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1045\fxcop.xml = V140\Platforms\Win32\PlatformToolsets\v71\1045\fxcop.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1045\lib.xml = V140\Platforms\Win32\PlatformToolsets\v71\1045\lib.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1045\link.xml = V140\Platforms\Win32\PlatformToolsets\v71\1045\link.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1045\midl.xml = V140\Platforms\Win32\PlatformToolsets\v71\1045\midl.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1045\mt.xml = V140\Platforms\Win32\PlatformToolsets\v71\1045\mt.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1042", "1042", "{14A5C3C9-9E76-431B-B04A-3AFAD4A8B439}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v71\1042\cl.xml = V140\Platforms\Win32\PlatformToolsets\v71\1042\cl.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1042\fxcop.xml = V140\Platforms\Win32\PlatformToolsets\v71\1042\fxcop.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1042\lib.xml = V140\Platforms\Win32\PlatformToolsets\v71\1042\lib.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1042\link.xml = V140\Platforms\Win32\PlatformToolsets\v71\1042\link.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1042\midl.xml = V140\Platforms\Win32\PlatformToolsets\v71\1042\midl.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1042\mt.xml = V140\Platforms\Win32\PlatformToolsets\v71\1042\mt.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1041", "1041", "{ADDDF3D0-0098-445E-9086-FC6D12061721}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v71\1041\cl.xml = V140\Platforms\Win32\PlatformToolsets\v71\1041\cl.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1041\fxcop.xml = V140\Platforms\Win32\PlatformToolsets\v71\1041\fxcop.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1041\lib.xml = V140\Platforms\Win32\PlatformToolsets\v71\1041\lib.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1041\link.xml = V140\Platforms\Win32\PlatformToolsets\v71\1041\link.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1041\midl.xml = V140\Platforms\Win32\PlatformToolsets\v71\1041\midl.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1041\mt.xml = V140\Platforms\Win32\PlatformToolsets\v71\1041\mt.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1040", "1040", "{341A2156-D6D5-4729-87A7-E6D642472C5B}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v71\1040\cl.xml = V140\Platforms\Win32\PlatformToolsets\v71\1040\cl.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1040\fxcop.xml = V140\Platforms\Win32\PlatformToolsets\v71\1040\fxcop.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1040\lib.xml = V140\Platforms\Win32\PlatformToolsets\v71\1040\lib.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1040\link.xml = V140\Platforms\Win32\PlatformToolsets\v71\1040\link.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1040\midl.xml = V140\Platforms\Win32\PlatformToolsets\v71\1040\midl.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1040\mt.xml = V140\Platforms\Win32\PlatformToolsets\v71\1040\mt.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1036", "1036", "{AD632C50-D583-4FE4-AFA0-FB0CDD3CBE9C}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v71\1036\cl.xml = V140\Platforms\Win32\PlatformToolsets\v71\1036\cl.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1036\fxcop.xml = V140\Platforms\Win32\PlatformToolsets\v71\1036\fxcop.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1036\lib.xml = V140\Platforms\Win32\PlatformToolsets\v71\1036\lib.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1036\link.xml = V140\Platforms\Win32\PlatformToolsets\v71\1036\link.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1036\midl.xml = V140\Platforms\Win32\PlatformToolsets\v71\1036\midl.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1036\mt.xml = V140\Platforms\Win32\PlatformToolsets\v71\1036\mt.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1033", "1033", "{34CB4146-6469-4EDD-8ABD-F5B01A1A6791}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v71\1033\cl.xml = V140\Platforms\Win32\PlatformToolsets\v71\1033\cl.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1033\fxcop.xml = V140\Platforms\Win32\PlatformToolsets\v71\1033\fxcop.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1033\lib.xml = V140\Platforms\Win32\PlatformToolsets\v71\1033\lib.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1033\link.xml = V140\Platforms\Win32\PlatformToolsets\v71\1033\link.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1033\midl.xml = V140\Platforms\Win32\PlatformToolsets\v71\1033\midl.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1033\mt.xml = V140\Platforms\Win32\PlatformToolsets\v71\1033\mt.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1029", "1029", "{51ADBDE0-2CE4-40C4-9BAD-3444B39F26D0}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v71\1029\cl.xml = V140\Platforms\Win32\PlatformToolsets\v71\1029\cl.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1029\fxcop.xml = V140\Platforms\Win32\PlatformToolsets\v71\1029\fxcop.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1029\lib.xml = V140\Platforms\Win32\PlatformToolsets\v71\1029\lib.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1029\link.xml = V140\Platforms\Win32\PlatformToolsets\v71\1029\link.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1029\midl.xml = V140\Platforms\Win32\PlatformToolsets\v71\1029\midl.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1029\mt.xml = V140\Platforms\Win32\PlatformToolsets\v71\1029\mt.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1028", "1028", "{32F448C7-0DC6-4576-B706-E1F793BE0B4F}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v71\1028\cl.xml = V140\Platforms\Win32\PlatformToolsets\v71\1028\cl.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1028\fxcop.xml = V140\Platforms\Win32\PlatformToolsets\v71\1028\fxcop.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1028\lib.xml = V140\Platforms\Win32\PlatformToolsets\v71\1028\lib.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1028\link.xml = V140\Platforms\Win32\PlatformToolsets\v71\1028\link.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1028\midl.xml = V140\Platforms\Win32\PlatformToolsets\v71\1028\midl.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1028\mt.xml = V140\Platforms\Win32\PlatformToolsets\v71\1028\mt.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "context", "context", "{B5C22180-2A30-4317-A86C-365800E4CF95}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v71\3082\context\general.xml = V140\Platforms\Win32\PlatformToolsets\v71\3082\context\general.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\3082\context\general_makefile.xml = V140\Platforms\Win32\PlatformToolsets\v71\3082\context\general_makefile.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\3082\context\general_makefile_ps.xml = V140\Platforms\Win32\PlatformToolsets\v71\3082\context\general_makefile_ps.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "context", "context", "{606B4220-609E-4D70-B84D-FC5E4DF823A5}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v71\2052\context\general.xml = V140\Platforms\Win32\PlatformToolsets\v71\2052\context\general.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\2052\context\general_makefile.xml = V140\Platforms\Win32\PlatformToolsets\v71\2052\context\general_makefile.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\2052\context\general_makefile_ps.xml = V140\Platforms\Win32\PlatformToolsets\v71\2052\context\general_makefile_ps.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "context", "context", "{10721E19-D84F-404B-86E1-CD205F9CFD03}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v71\1055\context\general.xml = V140\Platforms\Win32\PlatformToolsets\v71\1055\context\general.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1055\context\general_makefile.xml = V140\Platforms\Win32\PlatformToolsets\v71\1055\context\general_makefile.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1055\context\general_makefile_ps.xml = V140\Platforms\Win32\PlatformToolsets\v71\1055\context\general_makefile_ps.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "context", "context", "{A9263DCC-BB8B-4C93-AB06-66E248C7F19F}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v71\1049\context\general.xml = V140\Platforms\Win32\PlatformToolsets\v71\1049\context\general.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1049\context\general_makefile.xml = V140\Platforms\Win32\PlatformToolsets\v71\1049\context\general_makefile.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1049\context\general_makefile_ps.xml = V140\Platforms\Win32\PlatformToolsets\v71\1049\context\general_makefile_ps.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "context", "context", "{AA19FF88-1FDF-44FF-AEC1-9CBBF6EE5FF7}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v71\1046\context\general.xml = V140\Platforms\Win32\PlatformToolsets\v71\1046\context\general.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1046\context\general_makefile.xml = V140\Platforms\Win32\PlatformToolsets\v71\1046\context\general_makefile.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1046\context\general_makefile_ps.xml = V140\Platforms\Win32\PlatformToolsets\v71\1046\context\general_makefile_ps.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "context", "context", "{1BC6F4B0-37B7-4A81-9270-70123572BBCA}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v71\1045\context\general.xml = V140\Platforms\Win32\PlatformToolsets\v71\1045\context\general.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1045\context\general_makefile.xml = V140\Platforms\Win32\PlatformToolsets\v71\1045\context\general_makefile.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1045\context\general_makefile_ps.xml = V140\Platforms\Win32\PlatformToolsets\v71\1045\context\general_makefile_ps.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "context", "context", "{181D98FB-11CA-4E33-A9CA-4AB979B67E25}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v71\1042\context\general.xml = V140\Platforms\Win32\PlatformToolsets\v71\1042\context\general.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1042\context\general_makefile.xml = V140\Platforms\Win32\PlatformToolsets\v71\1042\context\general_makefile.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1042\context\general_makefile_ps.xml = V140\Platforms\Win32\PlatformToolsets\v71\1042\context\general_makefile_ps.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "context", "context", "{ABD70A5F-5B7B-485F-9608-098C9D9BD188}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v71\1041\context\general.xml = V140\Platforms\Win32\PlatformToolsets\v71\1041\context\general.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1041\context\general_makefile.xml = V140\Platforms\Win32\PlatformToolsets\v71\1041\context\general_makefile.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1041\context\general_makefile_ps.xml = V140\Platforms\Win32\PlatformToolsets\v71\1041\context\general_makefile_ps.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "context", "context", "{2E30A397-4621-49BE-B87F-0C9C148802AF}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v71\1040\context\general.xml = V140\Platforms\Win32\PlatformToolsets\v71\1040\context\general.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1040\context\general_makefile.xml = V140\Platforms\Win32\PlatformToolsets\v71\1040\context\general_makefile.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1040\context\general_makefile_ps.xml = V140\Platforms\Win32\PlatformToolsets\v71\1040\context\general_makefile_ps.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "context", "context", "{1BB9912A-E890-40E6-ABD9-B9C0962FCC71}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v71\1036\context\general.xml = V140\Platforms\Win32\PlatformToolsets\v71\1036\context\general.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1036\context\general_makefile.xml = V140\Platforms\Win32\PlatformToolsets\v71\1036\context\general_makefile.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1036\context\general_makefile_ps.xml = V140\Platforms\Win32\PlatformToolsets\v71\1036\context\general_makefile_ps.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "context", "context", "{8A9734DE-3E40-47F4-83B8-49E9C9B081A3}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v71\1033\context\general.xml = V140\Platforms\Win32\PlatformToolsets\v71\1033\context\general.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1033\context\general_makefile.xml = V140\Platforms\Win32\PlatformToolsets\v71\1033\context\general_makefile.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1033\context\general_makefile_ps.xml = V140\Platforms\Win32\PlatformToolsets\v71\1033\context\general_makefile_ps.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "context", "context", "{CF493366-9B48-4C50-B76C-5BAEE1541C9C}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v71\1031\context\general.xml = V140\Platforms\Win32\PlatformToolsets\v71\1031\context\general.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1031\context\general_makefile.xml = V140\Platforms\Win32\PlatformToolsets\v71\1031\context\general_makefile.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1031\context\general_makefile_ps.xml = V140\Platforms\Win32\PlatformToolsets\v71\1031\context\general_makefile_ps.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "context", "context", "{8476B25D-B581-4ECE-9973-147637058C46}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v71\1029\context\general.xml = V140\Platforms\Win32\PlatformToolsets\v71\1029\context\general.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1029\context\general_makefile.xml = V140\Platforms\Win32\PlatformToolsets\v71\1029\context\general_makefile.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1029\context\general_makefile_ps.xml = V140\Platforms\Win32\PlatformToolsets\v71\1029\context\general_makefile_ps.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "context", "context", "{176462C7-2589-4679-A1BF-01928C979031}"
+	ProjectSection(SolutionItems) = preProject
+		V140\Platforms\Win32\PlatformToolsets\v71\1028\context\general.xml = V140\Platforms\Win32\PlatformToolsets\v71\1028\context\general.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1028\context\general_makefile.xml = V140\Platforms\Win32\PlatformToolsets\v71\1028\context\general_makefile.xml
+		V140\Platforms\Win32\PlatformToolsets\v71\1028\context\general_makefile_ps.xml = V140\Platforms\Win32\PlatformToolsets\v71\1028\context\general_makefile_ps.xml
+	EndProjectSection
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Daffodil_vs2015.ENU", "Daffodil_vs2015.ENU\Daffodil_vs2015.ENU.vdproj", "{6F00D09D-5580-4571-BF53-AE5262F6D6D1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -887,16 +1809,21 @@ Global
 		{3094649B-13B7-4A18-8D51-2BB6F30C7E64}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3094649B-13B7-4A18-8D51-2BB6F30C7E64}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3094649B-13B7-4A18-8D51-2BB6F30C7E64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F00D09D-5580-4571-BF53-AE5262F6D6D1}.Debug|Any CPU.ActiveCfg = Debug
+		{6F00D09D-5580-4571-BF53-AE5262F6D6D1}.Debug|Any CPU.Build.0 = Debug
+		{6F00D09D-5580-4571-BF53-AE5262F6D6D1}.Release|Any CPU.ActiveCfg = Release
+		{6F00D09D-5580-4571-BF53-AE5262F6D6D1}.Release|Any CPU.Build.0 = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{39B472F0-A079-4AC9-9F1D-2D36307C9EB1} = {4DDEE8B4-EB34-4E00-BBCB-61942B509E60}
+		{DE480805-EE0F-409F-92E6-21F60180D033} = {4DDEE8B4-EB34-4E00-BBCB-61942B509E60}
 		{EA20F8DF-CB63-4F31-B6C4-A48942EE7436} = {39B472F0-A079-4AC9-9F1D-2D36307C9EB1}
 		{1DDC5E6A-54FD-4088-8A2A-C9C9B5BB6B32} = {39B472F0-A079-4AC9-9F1D-2D36307C9EB1}
-		{9B856956-AC8D-44C2-B1D2-E437DCD586F7} = {39B472F0-A079-4AC9-9F1D-2D36307C9EB1}
 		{C54FB516-C2CC-431F-850F-80DEBD114751} = {39B472F0-A079-4AC9-9F1D-2D36307C9EB1}
-		{1C38F015-2CC0-4535-BCBC-089ED120057A} = {EA20F8DF-CB63-4F31-B6C4-A48942EE7436}
+		{9B856956-AC8D-44C2-B1D2-E437DCD586F7} = {39B472F0-A079-4AC9-9F1D-2D36307C9EB1}
 		{3161D7D2-5A93-4840-9470-9622CF95EFA2} = {EA20F8DF-CB63-4F31-B6C4-A48942EE7436}
 		{D86D3E14-3D0E-47DB-AACB-6F3AE2B16F98} = {EA20F8DF-CB63-4F31-B6C4-A48942EE7436}
 		{9EC5BDEF-C1FC-4290-BBAB-221978DB63BE} = {EA20F8DF-CB63-4F31-B6C4-A48942EE7436}
@@ -911,7 +1838,6 @@ Global
 		{616EFDC7-4E07-40B2-B90B-433F44CF2230} = {EA20F8DF-CB63-4F31-B6C4-A48942EE7436}
 		{3D8BFCC2-F75F-4503-978A-A182A2DF0E88} = {EA20F8DF-CB63-4F31-B6C4-A48942EE7436}
 		{E525E07E-AC54-4111-81C5-526A555AD158} = {EA20F8DF-CB63-4F31-B6C4-A48942EE7436}
-		{953B7C97-A1C5-4536-844E-F1B769E1F4BD} = {1DDC5E6A-54FD-4088-8A2A-C9C9B5BB6B32}
 		{CAF58E46-E5F5-423F-9560-950CA7422E03} = {1DDC5E6A-54FD-4088-8A2A-C9C9B5BB6B32}
 		{20E557C8-063B-4445-8FE1-2DA27ED5EAF1} = {1DDC5E6A-54FD-4088-8A2A-C9C9B5BB6B32}
 		{95F05350-1603-41B0-AEEB-ED3EA7AF93D1} = {1DDC5E6A-54FD-4088-8A2A-C9C9B5BB6B32}
@@ -926,23 +1852,9 @@ Global
 		{D3DAABCB-DEE9-4C6D-873F-BC570D332FB2} = {1DDC5E6A-54FD-4088-8A2A-C9C9B5BB6B32}
 		{5C8315C6-59B3-4214-AC60-5D8AC13CB013} = {1DDC5E6A-54FD-4088-8A2A-C9C9B5BB6B32}
 		{CCA662F1-D3B3-4445-82EC-ED3545E35038} = {1DDC5E6A-54FD-4088-8A2A-C9C9B5BB6B32}
-		{99E657A1-4ADE-4AAC-8B07-9F8CF53AD3B0} = {9B856956-AC8D-44C2-B1D2-E437DCD586F7}
-		{26AE62FE-E423-4682-BA0C-C35F41DB6EEA} = {9B856956-AC8D-44C2-B1D2-E437DCD586F7}
-		{DC1774F7-00CB-4A4C-9A99-9054684827E8} = {9B856956-AC8D-44C2-B1D2-E437DCD586F7}
-		{359C6672-8F3E-4825-B175-42A998BFB35F} = {9B856956-AC8D-44C2-B1D2-E437DCD586F7}
-		{CD559688-506F-4061-9B5D-654262243899} = {9B856956-AC8D-44C2-B1D2-E437DCD586F7}
-		{68C18F9E-1894-4421-8FCD-767ADF034968} = {9B856956-AC8D-44C2-B1D2-E437DCD586F7}
-		{38E9A519-F148-4F9B-9A84-3C684676D9DC} = {9B856956-AC8D-44C2-B1D2-E437DCD586F7}
-		{0ADBCF3E-0BF0-45E0-9CAF-332188AED6BC} = {9B856956-AC8D-44C2-B1D2-E437DCD586F7}
-		{F359CC59-CB80-4418-93CF-A7F7F1D1F315} = {9B856956-AC8D-44C2-B1D2-E437DCD586F7}
-		{3BCFA408-2BB6-48A3-8C96-82DBB755A9C8} = {9B856956-AC8D-44C2-B1D2-E437DCD586F7}
-		{91818F75-945C-41A0-BCF3-E0E9CFAB27EB} = {9B856956-AC8D-44C2-B1D2-E437DCD586F7}
-		{39693736-9456-4C0D-8C9D-3923E0CFD7A7} = {9B856956-AC8D-44C2-B1D2-E437DCD586F7}
-		{42595D97-6747-418E-BDE2-2CF3373BC965} = {9B856956-AC8D-44C2-B1D2-E437DCD586F7}
-		{5FF275C8-8CBA-4CD6-A35A-CBF136E8FE42} = {9B856956-AC8D-44C2-B1D2-E437DCD586F7}
-		{A87E0A21-FA78-4CE9-A2A6-7483953016F5} = {9B856956-AC8D-44C2-B1D2-E437DCD586F7}
+		{CE6E5B00-4BC8-4F19-8B95-30DA5D50D7B2} = {CAF58E46-E5F5-423F-9560-950CA7422E03}
+		{B11CF695-5900-4AEA-8DBA-44D4B32531D5} = {3161D7D2-5A93-4840-9470-9622CF95EFA2}
 		{10476236-3B5E-4D2B-98CD-B4E36C67AEB8} = {C54FB516-C2CC-431F-850F-80DEBD114751}
-		{5B3D41D8-4443-4CF7-AC7A-8C29F4C01672} = {C54FB516-C2CC-431F-850F-80DEBD114751}
 		{CD82E7A1-1801-405C-AF12-F7766F09F3CD} = {C54FB516-C2CC-431F-850F-80DEBD114751}
 		{53100E84-CC10-43F7-8F82-9F1A4DA4746C} = {C54FB516-C2CC-431F-850F-80DEBD114751}
 		{61C8BFCA-4EE7-47B9-9BC8-EED022BF34A2} = {C54FB516-C2CC-431F-850F-80DEBD114751}
@@ -956,12 +1868,9 @@ Global
 		{7119FF73-2EDC-411F-BB73-BE5E5D5DE709} = {C54FB516-C2CC-431F-850F-80DEBD114751}
 		{7E1F9240-D24A-40A1-94D9-9D2C7E305916} = {C54FB516-C2CC-431F-850F-80DEBD114751}
 		{3663E3A1-525B-407F-8D30-9941FDDC6FFA} = {C54FB516-C2CC-431F-850F-80DEBD114751}
-		{CE6E5B00-4BC8-4F19-8B95-30DA5D50D7B2} = {CAF58E46-E5F5-423F-9560-950CA7422E03}
-		{B11CF695-5900-4AEA-8DBA-44D4B32531D5} = {3161D7D2-5A93-4840-9470-9622CF95EFA2}
 		{1CDEAA9C-40F9-422B-8F8C-F4A9DB8CECE2} = {10476236-3B5E-4D2B-98CD-B4E36C67AEB8}
 		{9740F9C3-F9C4-4570-99D2-9F98858B06D5} = {DE480805-EE0F-409F-92E6-21F60180D033}
 		{95C304C0-C29A-435E-A671-979F0FBE3AE7} = {9740F9C3-F9C4-4570-99D2-9F98858B06D5}
-		{3094649B-13B7-4A18-8D51-2BB6F30C7E64} = {9740F9C3-F9C4-4570-99D2-9F98858B06D5}
 		{326CC110-DF94-4224-AA51-0984EB76234C} = {9740F9C3-F9C4-4570-99D2-9F98858B06D5}
 		{CC13F1D1-4308-4259-A83E-26D38D311BE1} = {9740F9C3-F9C4-4570-99D2-9F98858B06D5}
 		{95F42DB3-6DA9-496F-AADA-6F50A0613A2F} = {9740F9C3-F9C4-4570-99D2-9F98858B06D5}
@@ -975,6 +1884,20 @@ Global
 		{815B3B93-ADE8-40D6-9B9A-90BAD43F4522} = {9740F9C3-F9C4-4570-99D2-9F98858B06D5}
 		{54DE5150-8E22-4D8B-9963-CEC903005F4D} = {9740F9C3-F9C4-4570-99D2-9F98858B06D5}
 		{584007FD-B69A-4A3C-88A3-8FA02EF39CB7} = {9740F9C3-F9C4-4570-99D2-9F98858B06D5}
+		{DC1774F7-00CB-4A4C-9A99-9054684827E8} = {9B856956-AC8D-44C2-B1D2-E437DCD586F7}
+		{359C6672-8F3E-4825-B175-42A998BFB35F} = {9B856956-AC8D-44C2-B1D2-E437DCD586F7}
+		{CD559688-506F-4061-9B5D-654262243899} = {9B856956-AC8D-44C2-B1D2-E437DCD586F7}
+		{68C18F9E-1894-4421-8FCD-767ADF034968} = {9B856956-AC8D-44C2-B1D2-E437DCD586F7}
+		{38E9A519-F148-4F9B-9A84-3C684676D9DC} = {9B856956-AC8D-44C2-B1D2-E437DCD586F7}
+		{0ADBCF3E-0BF0-45E0-9CAF-332188AED6BC} = {9B856956-AC8D-44C2-B1D2-E437DCD586F7}
+		{F359CC59-CB80-4418-93CF-A7F7F1D1F315} = {9B856956-AC8D-44C2-B1D2-E437DCD586F7}
+		{3BCFA408-2BB6-48A3-8C96-82DBB755A9C8} = {9B856956-AC8D-44C2-B1D2-E437DCD586F7}
+		{91818F75-945C-41A0-BCF3-E0E9CFAB27EB} = {9B856956-AC8D-44C2-B1D2-E437DCD586F7}
+		{39693736-9456-4C0D-8C9D-3923E0CFD7A7} = {9B856956-AC8D-44C2-B1D2-E437DCD586F7}
+		{42595D97-6747-418E-BDE2-2CF3373BC965} = {9B856956-AC8D-44C2-B1D2-E437DCD586F7}
+		{5FF275C8-8CBA-4CD6-A35A-CBF136E8FE42} = {9B856956-AC8D-44C2-B1D2-E437DCD586F7}
+		{A87E0A21-FA78-4CE9-A2A6-7483953016F5} = {9B856956-AC8D-44C2-B1D2-E437DCD586F7}
+		{99E657A1-4ADE-4AAC-8B07-9F8CF53AD3B0} = {9B856956-AC8D-44C2-B1D2-E437DCD586F7}
 		{7CD8B9F1-DB7D-48EE-A117-A338DE26BDAD} = {CD82E7A1-1801-405C-AF12-F7766F09F3CD}
 		{F43715B8-C897-4363-B481-186837B6A1D9} = {53100E84-CC10-43F7-8F82-9F1A4DA4746C}
 		{A20129A5-E8D9-480A-A0EA-CC1B54B63F6A} = {61C8BFCA-4EE7-47B9-9BC8-EED022BF34A2}
@@ -1014,5 +1937,124 @@ Global
 		{67CCD92F-9456-4D89-9F54-BF8630D7EED3} = {D3DAABCB-DEE9-4C6D-873F-BC570D332FB2}
 		{F0C27748-17E2-449C-B13B-14B377DAC7F0} = {5C8315C6-59B3-4214-AC60-5D8AC13CB013}
 		{1824660B-04A2-4DC8-9466-3404019AA337} = {CCA662F1-D3B3-4445-82EC-ED3545E35038}
+		{E126F979-B9D6-4359-9211-D407AE2E4F9E} = {DE8E6869-D3BF-4ADE-9F38-991A8FCFB5C3}
+		{170274FD-B597-4B96-A591-02DA1278E4F4} = {DE8E6869-D3BF-4ADE-9F38-991A8FCFB5C3}
+		{FE215286-BA4F-48A8-B026-D69AB5B92D57} = {E126F979-B9D6-4359-9211-D407AE2E4F9E}
+		{0B81D396-46D0-47D6-9657-3773AB746781} = {E126F979-B9D6-4359-9211-D407AE2E4F9E}
+		{EDD40F51-2A8F-4F5D-AD77-3EA9B00BD5F3} = {E126F979-B9D6-4359-9211-D407AE2E4F9E}
+		{028E56D9-B933-4FB6-A755-880538769A64} = {E126F979-B9D6-4359-9211-D407AE2E4F9E}
+		{79AAC59A-C4F5-43CF-830F-D4FECA5B10D6} = {170274FD-B597-4B96-A591-02DA1278E4F4}
+		{A2BC5403-4748-45F2-ACB2-25184E4AE744} = {FE215286-BA4F-48A8-B026-D69AB5B92D57}
+		{44558540-AD64-4C45-9C91-059E7F792A47} = {FE215286-BA4F-48A8-B026-D69AB5B92D57}
+		{81CA6D07-FFDA-4B01-BE74-DD46274F1309} = {FE215286-BA4F-48A8-B026-D69AB5B92D57}
+		{41611CF0-9F6B-4B7B-9A52-C2738BDF0B5B} = {FE215286-BA4F-48A8-B026-D69AB5B92D57}
+		{FE57E2D8-6BF7-4AD1-AE63-0391014629A7} = {FE215286-BA4F-48A8-B026-D69AB5B92D57}
+		{5CAE444D-F3D2-4D79-AEC4-B89D5C6CE43B} = {FE215286-BA4F-48A8-B026-D69AB5B92D57}
+		{61F9D954-F577-4F0E-8C43-9B90C424EEFA} = {FE215286-BA4F-48A8-B026-D69AB5B92D57}
+		{14A5C3C9-9E76-431B-B04A-3AFAD4A8B439} = {FE215286-BA4F-48A8-B026-D69AB5B92D57}
+		{ADDDF3D0-0098-445E-9086-FC6D12061721} = {FE215286-BA4F-48A8-B026-D69AB5B92D57}
+		{341A2156-D6D5-4729-87A7-E6D642472C5B} = {FE215286-BA4F-48A8-B026-D69AB5B92D57}
+		{AD632C50-D583-4FE4-AFA0-FB0CDD3CBE9C} = {FE215286-BA4F-48A8-B026-D69AB5B92D57}
+		{34CB4146-6469-4EDD-8ABD-F5B01A1A6791} = {FE215286-BA4F-48A8-B026-D69AB5B92D57}
+		{51ADBDE0-2CE4-40C4-9BAD-3444B39F26D0} = {FE215286-BA4F-48A8-B026-D69AB5B92D57}
+		{32F448C7-0DC6-4576-B706-E1F793BE0B4F} = {FE215286-BA4F-48A8-B026-D69AB5B92D57}
+		{A0A23B3C-1660-4D09-8819-93BE3D68E964} = {0B81D396-46D0-47D6-9657-3773AB746781}
+		{4BCB6B5B-D2DF-410E-AFDF-5DEE3EFCFE2D} = {0B81D396-46D0-47D6-9657-3773AB746781}
+		{98B2927E-5476-47B0-8C60-A11B35622653} = {0B81D396-46D0-47D6-9657-3773AB746781}
+		{4E2BF045-FD91-41AD-8AD8-D16B0BF0C071} = {0B81D396-46D0-47D6-9657-3773AB746781}
+		{E2AD6771-12D0-4B17-9B2E-E6E465BB0390} = {0B81D396-46D0-47D6-9657-3773AB746781}
+		{17EF02EA-A5EF-46E3-92AA-330817B3E355} = {0B81D396-46D0-47D6-9657-3773AB746781}
+		{FAE0A924-E08B-4FE3-A611-B80BE76EAFB2} = {0B81D396-46D0-47D6-9657-3773AB746781}
+		{2614B43D-8542-463C-980C-227528C6165C} = {0B81D396-46D0-47D6-9657-3773AB746781}
+		{6343DCEF-5D8A-4998-8FDD-63F5817D6B49} = {0B81D396-46D0-47D6-9657-3773AB746781}
+		{67221343-8169-4E39-B556-0D0109F683FF} = {0B81D396-46D0-47D6-9657-3773AB746781}
+		{698EEEC6-328D-41FE-BAF1-A9C0D55EC151} = {0B81D396-46D0-47D6-9657-3773AB746781}
+		{68F92F6E-98B5-4F55-999A-DCE2ECEF8AFC} = {0B81D396-46D0-47D6-9657-3773AB746781}
+		{23F33D6D-9530-45E8-B214-3977376D9A67} = {0B81D396-46D0-47D6-9657-3773AB746781}
+		{DD5A21F9-E7EB-4190-B465-B22E9B117163} = {0B81D396-46D0-47D6-9657-3773AB746781}
+		{946E8BF5-E4B8-4E04-B0E3-7929B2D0D124} = {EDD40F51-2A8F-4F5D-AD77-3EA9B00BD5F3}
+		{7D96D3E0-A1B1-4DCE-84A0-5BBC3E7BDEC8} = {EDD40F51-2A8F-4F5D-AD77-3EA9B00BD5F3}
+		{676A73CC-B06D-4911-A99A-0D89AA0323CF} = {EDD40F51-2A8F-4F5D-AD77-3EA9B00BD5F3}
+		{9DA60F66-BF18-4E5F-A8C9-73F98EB4F3E5} = {EDD40F51-2A8F-4F5D-AD77-3EA9B00BD5F3}
+		{A91C3AD9-83E7-42B4-9452-81E8E9750B20} = {EDD40F51-2A8F-4F5D-AD77-3EA9B00BD5F3}
+		{07CC10D8-21ED-480C-A699-65AF01084B2F} = {EDD40F51-2A8F-4F5D-AD77-3EA9B00BD5F3}
+		{A8F5617B-A47F-4C00-B57C-974C53011EC9} = {EDD40F51-2A8F-4F5D-AD77-3EA9B00BD5F3}
+		{149127D3-660F-4CC2-A6FC-20587EE2965F} = {EDD40F51-2A8F-4F5D-AD77-3EA9B00BD5F3}
+		{8D97C12E-5FA3-44A1-94B0-26210A93C5CA} = {EDD40F51-2A8F-4F5D-AD77-3EA9B00BD5F3}
+		{AC99AA9F-DC35-444C-A6E3-978643ABD987} = {EDD40F51-2A8F-4F5D-AD77-3EA9B00BD5F3}
+		{C615B981-279E-447E-B55A-9E7DDFF41652} = {EDD40F51-2A8F-4F5D-AD77-3EA9B00BD5F3}
+		{67500338-23AA-4FE8-9F65-1F0E649A8A35} = {EDD40F51-2A8F-4F5D-AD77-3EA9B00BD5F3}
+		{AA5D1230-A8F0-4954-B9FB-86DB2C1C2293} = {EDD40F51-2A8F-4F5D-AD77-3EA9B00BD5F3}
+		{07371373-9CC0-4D0D-8C11-744C55CA1DF8} = {EDD40F51-2A8F-4F5D-AD77-3EA9B00BD5F3}
+		{38D3AC9E-39C3-4759-BE91-3DDC6EC99278} = {028E56D9-B933-4FB6-A755-880538769A64}
+		{7E39E45D-F45D-41DB-B129-6F3033F5559E} = {028E56D9-B933-4FB6-A755-880538769A64}
+		{2269F190-065C-454B-B4EA-1CE76C5DA62F} = {028E56D9-B933-4FB6-A755-880538769A64}
+		{DDA9CD8B-8932-4A74-A435-C86DB4D3347B} = {028E56D9-B933-4FB6-A755-880538769A64}
+		{8A1BF784-896C-4201-B3AA-62A8AC537FBA} = {028E56D9-B933-4FB6-A755-880538769A64}
+		{0D48A66A-72D7-4FBB-9EBE-47A1C1695115} = {028E56D9-B933-4FB6-A755-880538769A64}
+		{E25686CD-D45F-48FF-9388-E8D4DB3160E2} = {028E56D9-B933-4FB6-A755-880538769A64}
+		{EE54B130-0F36-4556-A211-76F0D3C58056} = {028E56D9-B933-4FB6-A755-880538769A64}
+		{192D67E7-ED11-4D3F-961F-5F07D5EC35B5} = {028E56D9-B933-4FB6-A755-880538769A64}
+		{CA7FFA67-D814-4DD0-8CD0-AADD42E10765} = {028E56D9-B933-4FB6-A755-880538769A64}
+		{D942A59A-7564-4627-8A8A-2732A2ABDA48} = {028E56D9-B933-4FB6-A755-880538769A64}
+		{85086D8D-65F3-474F-9D21-2949B9534234} = {028E56D9-B933-4FB6-A755-880538769A64}
+		{6117DDFF-2C17-435A-9888-778E88E6C4B1} = {028E56D9-B933-4FB6-A755-880538769A64}
+		{4C2E62BD-9CEA-4F02-8631-06801C51938E} = {028E56D9-B933-4FB6-A755-880538769A64}
+		{8DCA3FA7-2121-4EB8-A6FB-FD42A32A0A95} = {79AAC59A-C4F5-43CF-830F-D4FECA5B10D6}
+		{5A71E8BE-1FDE-46DB-8F61-325EEB0F30A8} = {79AAC59A-C4F5-43CF-830F-D4FECA5B10D6}
+		{2C861AFA-34ED-48FB-B716-61C5772CE32A} = {79AAC59A-C4F5-43CF-830F-D4FECA5B10D6}
+		{3FF4B7A6-C167-4823-835A-A854820B4461} = {79AAC59A-C4F5-43CF-830F-D4FECA5B10D6}
+		{32AFABBD-9BF2-4D9F-8B5C-DD1CC504DDF0} = {79AAC59A-C4F5-43CF-830F-D4FECA5B10D6}
+		{4F845890-3AD8-474E-9254-C415FB8E8006} = {79AAC59A-C4F5-43CF-830F-D4FECA5B10D6}
+		{13CE0FF7-B5A5-4F4A-A489-6A70A3D3A4F5} = {79AAC59A-C4F5-43CF-830F-D4FECA5B10D6}
+		{A8E85D53-18AB-4BD2-8426-E7E4326AF004} = {79AAC59A-C4F5-43CF-830F-D4FECA5B10D6}
+		{ABB449B1-2A60-4565-8A09-9DEEC4402289} = {79AAC59A-C4F5-43CF-830F-D4FECA5B10D6}
+		{59D3E407-3EED-4F7A-97CC-D27DC96934E2} = {79AAC59A-C4F5-43CF-830F-D4FECA5B10D6}
+		{5B175019-4000-4547-93DA-AC7E82706DAB} = {79AAC59A-C4F5-43CF-830F-D4FECA5B10D6}
+		{6E265CA9-D8C8-44B4-AA1A-A04BB6EB967A} = {79AAC59A-C4F5-43CF-830F-D4FECA5B10D6}
+		{4A83F79C-D8DE-4F06-8C7C-EF7DA3E7EA24} = {79AAC59A-C4F5-43CF-830F-D4FECA5B10D6}
+		{9CCCBDB3-0E6E-4791-9F1C-039E88C0E080} = {79AAC59A-C4F5-43CF-830F-D4FECA5B10D6}
+		{B921FDC4-D0AB-4657-A35F-E68B36A45E19} = {946E8BF5-E4B8-4E04-B0E3-7929B2D0D124}
+		{17F4C0A0-E025-46DA-8468-26AB8E33E377} = {7D96D3E0-A1B1-4DCE-84A0-5BBC3E7BDEC8}
+		{6EA44C72-4D0E-4554-BA24-BEDD61366325} = {676A73CC-B06D-4911-A99A-0D89AA0323CF}
+		{6B9E7E59-79AF-46DA-9631-732D43E07AE3} = {9DA60F66-BF18-4E5F-A8C9-73F98EB4F3E5}
+		{3773FCEF-3F15-4CED-84D8-D2B7E4F76E2E} = {A91C3AD9-83E7-42B4-9452-81E8E9750B20}
+		{3A613569-E998-423A-9BCA-5C818F4C4C00} = {07CC10D8-21ED-480C-A699-65AF01084B2F}
+		{4D1EDDEA-FC87-4372-A47D-6BA32A1F43EA} = {A8F5617B-A47F-4C00-B57C-974C53011EC9}
+		{72844E93-7E3E-471D-A2E7-288EA4ABC4F9} = {149127D3-660F-4CC2-A6FC-20587EE2965F}
+		{EA18BA76-E284-454F-9DC9-A7362E36CD59} = {8D97C12E-5FA3-44A1-94B0-26210A93C5CA}
+		{69CA856D-296B-4C9E-9F39-054E494DC701} = {AC99AA9F-DC35-444C-A6E3-978643ABD987}
+		{2C00DF96-30FC-46DA-BE70-A3A92C764BD7} = {C615B981-279E-447E-B55A-9E7DDFF41652}
+		{A62DE600-1CFE-42BA-A769-A011A3A81A38} = {67500338-23AA-4FE8-9F65-1F0E649A8A35}
+		{8220650C-9DF0-4CB0-95AA-1D3B8C10EF72} = {AA5D1230-A8F0-4954-B9FB-86DB2C1C2293}
+		{4A1A2498-4F3F-40AA-8869-705ECF75F765} = {07371373-9CC0-4D0D-8C11-744C55CA1DF8}
+		{FEC19FE0-1A7C-4E95-AE73-8D9F04A80747} = {A0A23B3C-1660-4D09-8819-93BE3D68E964}
+		{485D7B93-E75F-4CCF-9DD8-2FC8714DA123} = {4BCB6B5B-D2DF-410E-AFDF-5DEE3EFCFE2D}
+		{F98F7BD0-99ED-4AAF-B9D8-2C42AE5D351B} = {98B2927E-5476-47B0-8C60-A11B35622653}
+		{A2C85DB5-C4FA-4AB6-BFB4-CA28011B0F52} = {4E2BF045-FD91-41AD-8AD8-D16B0BF0C071}
+		{78A63D3E-509C-470E-AC25-7D9C56A4954E} = {E2AD6771-12D0-4B17-9B2E-E6E465BB0390}
+		{58556721-B08A-44B4-B354-CEE454C11652} = {17EF02EA-A5EF-46E3-92AA-330817B3E355}
+		{41403431-48DB-4D05-8B09-972FE65D44E7} = {FAE0A924-E08B-4FE3-A611-B80BE76EAFB2}
+		{99D02C30-8C69-4230-A925-3D64136E1258} = {2614B43D-8542-463C-980C-227528C6165C}
+		{E9041826-66CA-48B3-B6FC-6D30C156DE95} = {6343DCEF-5D8A-4998-8FDD-63F5817D6B49}
+		{74CB9258-B193-4A44-9F5E-F8DF324A529B} = {67221343-8169-4E39-B556-0D0109F683FF}
+		{8D97E3EC-A53F-4D62-BD1F-BC9D4C1634EC} = {698EEEC6-328D-41FE-BAF1-A9C0D55EC151}
+		{8B16969D-C7D8-486C-BE4F-76C20D743B2A} = {68F92F6E-98B5-4F55-999A-DCE2ECEF8AFC}
+		{D07675E5-AAEF-4FA9-902B-883E25867F2B} = {23F33D6D-9530-45E8-B214-3977376D9A67}
+		{709A0B0A-5E40-4938-AF32-C7347E9E3B7E} = {DD5A21F9-E7EB-4190-B465-B22E9B117163}
+		{CF493366-9B48-4C50-B76C-5BAEE1541C9C} = {A2BC5403-4748-45F2-ACB2-25184E4AE744}
+		{B5C22180-2A30-4317-A86C-365800E4CF95} = {44558540-AD64-4C45-9C91-059E7F792A47}
+		{606B4220-609E-4D70-B84D-FC5E4DF823A5} = {81CA6D07-FFDA-4B01-BE74-DD46274F1309}
+		{10721E19-D84F-404B-86E1-CD205F9CFD03} = {41611CF0-9F6B-4B7B-9A52-C2738BDF0B5B}
+		{A9263DCC-BB8B-4C93-AB06-66E248C7F19F} = {FE57E2D8-6BF7-4AD1-AE63-0391014629A7}
+		{AA19FF88-1FDF-44FF-AEC1-9CBBF6EE5FF7} = {5CAE444D-F3D2-4D79-AEC4-B89D5C6CE43B}
+		{1BC6F4B0-37B7-4A81-9270-70123572BBCA} = {61F9D954-F577-4F0E-8C43-9B90C424EEFA}
+		{181D98FB-11CA-4E33-A9CA-4AB979B67E25} = {14A5C3C9-9E76-431B-B04A-3AFAD4A8B439}
+		{ABD70A5F-5B7B-485F-9608-098C9D9BD188} = {ADDDF3D0-0098-445E-9086-FC6D12061721}
+		{2E30A397-4621-49BE-B87F-0C9C148802AF} = {341A2156-D6D5-4729-87A7-E6D642472C5B}
+		{1BB9912A-E890-40E6-ABD9-B9C0962FCC71} = {AD632C50-D583-4FE4-AFA0-FB0CDD3CBE9C}
+		{8A9734DE-3E40-47F4-83B8-49E9C9B081A3} = {34CB4146-6469-4EDD-8ABD-F5B01A1A6791}
+		{8476B25D-B581-4ECE-9973-147637058C46} = {51ADBDE0-2CE4-40C4-9BAD-3444B39F26D0}
+		{176462C7-2589-4679-A1BF-01928C979031} = {32F448C7-0DC6-4576-B706-E1F793BE0B4F}
 	EndGlobalSection
 EndGlobal
