@@ -33,8 +33,8 @@ Credits
   <StringProperty Name="IntDir" DisplayName="Directory intermedia" Description="Specifica il percorso relativo della directory dei file intermedi. Può includere variabili di ambiente." Category="General" Default="$(ConfigurationName)" Subtype="folder" F1Keyword="VC.Project.VCConfiguration.IntermediateDirectory"/>
   <EnumProperty Name="ConfigurationType" DisplayName="Tipo configurazione" Description="Specifica il tipo di output generato da questa configurazione." Category="General" F1Keyword="VC.Project.VCConfiguration.ConfigurationType">
     <EnumValue Name="Makefile" DisplayName="Makefile" Description="Makefile"/>
-    <EnumValue Name="Application" DisplayName="Applicazione (exe)" Description="Applicazione (exe)"/>
-    <EnumValue Name="DynamicLibrary" DisplayName="Libreria dinamica (dll)" Description="Libreria dinamica (dll)"/>
+    <EnumValue Name="Application" DisplayName="Applicazione (.exe)" Description="Applicazione (.exe)"/>
+    <EnumValue Name="DynamicLibrary" DisplayName="Libreria dinamica (.dll)" Description="Libreria dinamica (.dll)"/>
     <EnumValue Name="StaticLibrary" DisplayName="Libreria statica (lib)" Description="Libreria statica (lib)"/>
     <EnumValue Name="Utility" DisplayName="Utilità" Description="Utilità"/>
   </EnumProperty>

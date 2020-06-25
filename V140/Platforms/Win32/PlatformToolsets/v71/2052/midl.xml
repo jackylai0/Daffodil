@@ -27,17 +27,17 @@ Credits
     <Category Name="General" DisplayName="常规"/>
     <Category Name="Output" DisplayName="输出"/>
     <Category Name="Advanced" DisplayName="高级"/>
-    <Category Name="All Options" DisplayName="所有选项" Subtype="Search" />
+    <Category Name="All Options" DisplayName="所有选项" Subtype="Search"/>
     <Category Name="Command Line" DisplayName="命令行" Subtype="CommandLine"/>
   </Rule.Categories>
   <Rule.DataSource>
     <DataSource Persistence="ProjectFile" ItemType="Midl" Label="" HasConfigurationCondition="true"/>
   </Rule.DataSource>
-  <StringListProperty Name="PreprocessorDefinitions" DisplayName="预处理器定义" Description="指定一个或多个定义，包括 MIDL 宏(/D[宏]" Category="General" Switch="D " F1Keyword="VC.Project.VCMidlTool.PreprocessorDefinitions">
+  <StringListProperty Name="PreprocessorDefinitions" DisplayName="预处理器定义" Description="指定一个或多个定义，包括 MIDL 宏(/D[macros])" Category="General" Switch="D " F1Keyword="VC.Project.VCMidlTool.PreprocessorDefinitions">
   </StringListProperty>
   <StringListProperty Subtype="folder" Name="AdditionalIncludeDirectories" DisplayName="附加包含目录" Description="指定一个或多个要添加到包含路径中的目录(/I[路径])" Category="General" Switch="I" F1Keyword="VC.Project.VCMidlTool.AdditionalIncludeDirectories">
   </StringListProperty>
-  <BoolProperty Name="IgnoreStandardIncludePath" DisplayName="忽略标准包含路径" Description="忽略当前目录和 INCLUDE 目录" Category="General" Switch="no_def_idir" F1Keyword="VC.Project.VCMidlTool.IgnoreStandardIncludePath">
+  <BoolProperty Name="IgnoreStandardIncludePath" DisplayName="忽略标准包含路径" Description="忽略当前目录和 INCLUDE 目录(/no_def_idir)" Category="General" Switch="no_def_idir" F1Keyword="VC.Project.VCMidlTool.IgnoreStandardIncludePath">
   </BoolProperty>
   <BoolProperty Name="MkTypLibCompatible" DisplayName="与 MkTypLib 兼容" Description="强制与 mktyplib.exe 2.03 版兼容(/mktyplib203)" Category="General" Switch="mktyplib203" F1Keyword="VC.Project.VCMidlTool.MkTypLibCompatible">
   </BoolProperty>
@@ -155,8 +155,8 @@ Credits
   </EnumProperty>
   <StringProperty Subtype="file" Name="RedirectOutputAndErrors" DisplayName="重定向输出" Description="将输出从屏幕重定向到文件(/o file)" Category="Advanced" Switch="o" Separator=" " F1Keyword="VC.Project.VCMidlTool.RedirectOutputAndErrors">
   </StringProperty>
-  <StringProperty Subtype="folder" Name="TrackerLogDirectory" DisplayName="跟踪器日志目录" Description="跟踪器日志目录。" IncludeInCommandLine="false" Visible="false">
-  </StringProperty>
   <StringProperty Name="AdditionalOptions" DisplayName="附加选项" Description="附加选项" Category="Command Line" F1Keyword="vc.project.AdditionalOptionsPage">
+  </StringProperty>
+  <StringProperty Subtype="folder" Name="TrackerLogDirectory" DisplayName="跟踪器日志目录" Description="跟踪器日志目录。" IncludeInCommandLine="false" Visible="false">
   </StringProperty>
 </Rule>

@@ -24,24 +24,24 @@ Credits
 <!--Copyright, Microsoft Corporation, All rights reserved.-->
 <Rule Name="MIDL" PageTemplate="tool" DisplayName="MIDL" SwitchPrefix="/" Order="60" xmlns="http://schemas.microsoft.com/build/2009/properties" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:sys="clr-namespace:System;assembly=mscorlib">
   <Rule.Categories>
-    <Category Name="General" DisplayName="General"/>
-    <Category Name="Output" DisplayName="Output"/>
-    <Category Name="Advanced" DisplayName="Advanced"/>
-    <Category Name="All Options" DisplayName="All Options" Subtype="Search" />
-    <Category Name="Command Line" DisplayName="Command Line" Subtype="CommandLine"/>
+    <Category Name="General" DisplayName="Genel"/>
+    <Category Name="Output" DisplayName="Çıkış"/>
+    <Category Name="Advanced" DisplayName="Gelişmiş"/>
+    <Category Name="All Options" DisplayName="Tüm Seçenekler" Subtype="Search"/>
+    <Category Name="Command Line" DisplayName="Komut Satırı" Subtype="CommandLine"/>
   </Rule.Categories>
   <Rule.DataSource>
     <DataSource Persistence="ProjectFile" ItemType="Midl" Label="" HasConfigurationCondition="true"/>
   </Rule.DataSource>
-  <StringListProperty Name="PreprocessorDefinitions" DisplayName="Preprocessor Definitions" Description="Specifies one or more defines, including MIDL macros (/D[macros]" Category="General" Switch="D " F1Keyword="VC.Project.VCMidlTool.PreprocessorDefinitions">
+  <StringListProperty Name="PreprocessorDefinitions" DisplayName="Ön İşlemci Tanımları" Description="MIDL makroları dahil olmak üzere bir veya daha fazla tanım belirtir. (/D[makrolar])" Category="General" Switch="D " F1Keyword="VC.Project.VCMidlTool.PreprocessorDefinitions">
   </StringListProperty>
-  <StringListProperty Subtype="folder" Name="AdditionalIncludeDirectories" DisplayName="Additional Include Directories" Description="Specifies one or more directories to add to the include path (/I[path])" Category="General" Switch="I" F1Keyword="VC.Project.VCMidlTool.AdditionalIncludeDirectories">
+  <StringListProperty Subtype="folder" Name="AdditionalIncludeDirectories" DisplayName="Ek İçeren Dizinler" Description="Ekleme yoluna eklenecek bir veya daha fazla dizini belirtir. (/I[yol])" Category="General" Switch="I" F1Keyword="VC.Project.VCMidlTool.AdditionalIncludeDirectories">
   </StringListProperty>
-  <BoolProperty Name="IgnoreStandardIncludePath" DisplayName="Ignore Standard Include Path" Description="Ignore the current and the INCLUDE directories" Category="General" Switch="no_def_idir" F1Keyword="VC.Project.VCMidlTool.IgnoreStandardIncludePath">
+  <BoolProperty Name="IgnoreStandardIncludePath" DisplayName="Standart Ekleme Yolunu Yoksay" Description="Geçerli dizinleri ve INCLUDE dizinlerini yoksay (/no_def_idir)" Category="General" Switch="no_def_idir" F1Keyword="VC.Project.VCMidlTool.IgnoreStandardIncludePath">
   </BoolProperty>
-  <BoolProperty Name="MkTypLibCompatible" DisplayName="MkTypLib Compatible" Description="Forces compatibility with mktyplib.exe version 2.03 (/mktyplib203)" Category="General" Switch="mktyplib203" F1Keyword="VC.Project.VCMidlTool.MkTypLibCompatible">
+  <BoolProperty Name="MkTypLibCompatible" DisplayName="MkTypLib Uyumlu" Description="mktyplib.exe 2.03 sürümüyle uyumluluğu zorlar (/mktyplib203)" Category="General" Switch="mktyplib203" F1Keyword="VC.Project.VCMidlTool.MkTypLibCompatible">
   </BoolProperty>
-  <EnumProperty Name="WarningLevel" DisplayName="Warning Level" Description="Selects the strictness of the MIDL code errors (/Wn)" Category="General" F1Keyword="VC.Project.VCMidlTool.WarningLevel">
+  <EnumProperty Name="WarningLevel" DisplayName="Uyarı Seviyesi" Description="MIDL kod hatalarının katılık düzeyini seçer (/Wn)" Category="General" F1Keyword="VC.Project.VCMidlTool.WarningLevel">
     <EnumValue Name="0" Switch="W0" DisplayName="1">
     </EnumValue>
     <EnumValue Name="1" Switch="W1" DisplayName="1">
@@ -53,20 +53,20 @@ Credits
     <EnumValue Name="4" Switch="W4" DisplayName="4">
     </EnumValue>
   </EnumProperty>
-  <BoolProperty Name="WarnAsError" DisplayName="Treat Warnings as Errors" Description="Enables MIDL to treat all warnings as errors (/WX)" Category="General" Switch="WX" F1Keyword="VC.Project.VCMidlTool.WarnAsError">
+  <BoolProperty Name="WarnAsError" DisplayName="Uyarıları Hata Olarak Kabul Et" Description="MIDL'nin tüm uyarıları hata olarak kabul etmesini sağlar (/WX)" Category="General" Switch="WX" F1Keyword="VC.Project.VCMidlTool.WarnAsError">
   </BoolProperty>
-  <BoolProperty Name="SuppressStartupBanner" DisplayName="Suppress Startup Banner" Description="Suppress the display of the startup banner and information message (/nologo)" Category="General" Switch="nologo" F1Keyword="VC.Project.VCMidlTool.SuppressStartupBanner">
+  <BoolProperty Name="SuppressStartupBanner" DisplayName="Başlangıç Başlığını Engelle" Description="Başlangıç başlığının ve bilgi iletilerinin görüntülenmesini engelle (/nologo)" Category="General" Switch="nologo" F1Keyword="VC.Project.VCMidlTool.SuppressStartupBanner">
   </BoolProperty>
-  <EnumProperty Name="DefaultCharType" DisplayName="C Compiler Char Type" Description="Specifies the default character type of the C compiler that will be used to compile the generated code. (/char signed|unsigned|ascii7)" Category="General" F1Keyword="VC.Project.VCMidlTool.DefaultCharType">
-    <EnumValue Name="Signed" Switch="char signed" DisplayName="Signed" Description="Signed">
+  <EnumProperty Name="DefaultCharType" DisplayName="C Derleyicisi Karakter Türü" Description="Oluşturulan kodu derlemek için kullanılacak C derleyicisi türünün varsayılan karakter türünü belirtir. (/char signed|unsigned|ascii7)" Category="General" F1Keyword="VC.Project.VCMidlTool.DefaultCharType">
+    <EnumValue Name="Signed" Switch="char signed" DisplayName="İmzalı" Description="İmzalı">
     </EnumValue>
-    <EnumValue Name="Unsigned" Switch="char unsigned" DisplayName="Unsigned" Description="Unsigned">
+    <EnumValue Name="Unsigned" Switch="char unsigned" DisplayName="İmzalanmamış" Description="İmzalanmamış">
     </EnumValue>
     <EnumValue Name="Ascii" Switch="char ascii7" DisplayName="Ascii" Description="Ascii">
     </EnumValue>
   </EnumProperty>
-  <EnumProperty Name="TargetEnvironment" DisplayName="Target Environment" Description="Specifies environment to target (/env win32|dos|win16|mac)" Category="General" F1Keyword="VC.Project.VCMidlTool.TargetEnvironment">
-    <EnumValue Name="NotSet" Switch="" DisplayName="Not Set" Description="Win32">
+  <EnumProperty Name="TargetEnvironment" DisplayName="Hedef Ortam" Description="Hedeflenen ortamı belirtir (/env win32|dos|win16|mac)" Category="General" F1Keyword="VC.Project.VCMidlTool.TargetEnvironment">
+    <EnumValue Name="NotSet" Switch="" DisplayName="Ayarlanmamış" Description="Win32">
     </EnumValue>
     <EnumValue Name="Win32" Switch="env win32" DisplayName="Microsoft Windows 32-bit" Description="Win32">
     </EnumValue>
@@ -77,90 +77,90 @@ Credits
     <EnumValue Name="Mac" Switch="env mac" DisplayName="Apple Macintosh (680x0)" Description="Macintosh">
     </EnumValue>
   </EnumProperty>
-  <BoolProperty Name="GenerateStublessProxies" DisplayName="Generate Stubless Proxies" Description="Generate fully interpreted stubs with extensions and stubless proxies for object interfaces (/Oicf, /Oif)" Category="General" Switch="Oicf" F1Keyword="VC.Project.VCMidlTool.GenerateStublessProxies">
+  <BoolProperty Name="GenerateStublessProxies" DisplayName="Saplamasız Proxyler Oluştur" Description="Nesne arabirimleri için uzantılara ve saplamasız proxylere sahip tam olarak yorumlanan saplamalar oluştur (/Oicf, /Oif)" Category="General" Switch="Oicf" F1Keyword="VC.Project.VCMidlTool.GenerateStublessProxies">
   </BoolProperty>
-  <BoolProperty Name="SuppressCompilerWarnings" DisplayName="Suppress Compiler Warnings" Description="Supress compiler warning messages (/no_warn)" Category="General" Switch="no_warn" F1Keyword="VC.Project.VCMidlTool.SuppressCompilerWarnings">
+  <BoolProperty Name="SuppressCompilerWarnings" DisplayName="Derleyici Uyarılarını Engelle" Description="Derleyici uyarı iletilerini engelle (/no_warn)" Category="General" Switch="no_warn" F1Keyword="VC.Project.VCMidlTool.SuppressCompilerWarnings">
   </BoolProperty>
-  <BoolProperty Name="ApplicationConfigurationMode" DisplayName="Application Configuration Mode" Description="Allow selected ACF attributes in the IDL file (/app_config)" Category="General" Switch="app_config" F1Keyword="VC.Project.VCMidlTool.ApplicationConfigurationMode">
+  <BoolProperty Name="ApplicationConfigurationMode" DisplayName="Uygulama Yapılandırma Modu" Description="IDL dosyasında seçilen ACF özniteliklerine izin ver (/app_config)" Category="General" Switch="app_config" F1Keyword="VC.Project.VCMidlTool.ApplicationConfigurationMode">
   </BoolProperty>
-  <IntProperty Name="LocaleID" DisplayName="Locale ID" Description="Specifies the LCID for input files, file names and directory paths (/lcid DECIMAL)" Category="General" Switch="lcid" Separator=" " F1Keyword="VC.Project.VCMidlTool.LocaleID">
+  <IntProperty Name="LocaleID" DisplayName="Yerel ayar kimliği" Description="Giriş dosyaları, dosya adları ve dizin yolları için LCID'yi belirtir (/lcid DECIMAL)" Category="General" Switch="lcid" Separator=" " F1Keyword="VC.Project.VCMidlTool.LocaleID">
   </IntProperty>
-  <StringProperty Name="OutputDirectory" DisplayName="Output Directory" Description="Output directory (/out [directory])" Category="Output" Switch="out" F1Keyword="VC.Project.VCMidlTool.OutputDirectory">
+  <StringProperty Name="OutputDirectory" DisplayName="Çıkış Dizini" Description="Çıkış dizini (/out [dizin])" Category="Output" Switch="out" F1Keyword="VC.Project.VCMidlTool.OutputDirectory">
   </StringProperty>
-  <StringProperty Subtype="file" Name="HeaderFileName" DisplayName="Header File" Description="Specifies the name of the generated header file (/h filename)" Category="Output" Switch="h" Separator=" " F1Keyword="VC.Project.VCMidlTool.HeaderFileName">
+  <StringProperty Subtype="file" Name="HeaderFileName" DisplayName="Üst Bilgi Dosyası" Description="Oluşturulan üst bilgi dosyasının adını belirtir (/h filename)" Category="Output" Switch="h" Separator=" " F1Keyword="VC.Project.VCMidlTool.HeaderFileName">
   </StringProperty>
-  <StringProperty Subtype="file" Name="DllDataFileName" DisplayName="DllData File" Description="Specifies the name of the DLLDATA file (/dlldata filename)" Category="Output" Switch="dlldata" Separator=" " F1Keyword="VC.Project.VCMidlTool.DLLDataFileName">
+  <StringProperty Subtype="file" Name="DllDataFileName" DisplayName="DllData Dosyası" Description="DLLDATA dosyasının adını belirtir (/dlldata filename)" Category="Output" Switch="dlldata" Separator=" " F1Keyword="VC.Project.VCMidlTool.DLLDataFileName">
   </StringProperty>
-  <StringProperty Subtype="file" Name="InterfaceIdentifierFileName" DisplayName="IID File" Description="Specifies the name for the Interface Identifier file (/iid filename)" Category="Output" Switch="iid" Separator=" " F1Keyword="VC.Project.VCMidlTool.InterfaceIdentifierFileName">
+  <StringProperty Subtype="file" Name="InterfaceIdentifierFileName" DisplayName="IID Dosyası" Description="Arabirim Tanımlayıcı dosyasının adını belirtir (/iid filename)" Category="Output" Switch="iid" Separator=" " F1Keyword="VC.Project.VCMidlTool.InterfaceIdentifierFileName">
   </StringProperty>
-  <StringProperty Subtype="file" Name="ProxyFileName" DisplayName="Proxy File" Description="Specifies the name of the proxy file (/proxy filename)" Category="Output" Switch="proxy" Separator=" " F1Keyword="VC.Project.VCMidlTool.ProxyFileName">
+  <StringProperty Subtype="file" Name="ProxyFileName" DisplayName="Proxy Dosyası" Description="Proxy dosyasının adını belirtir (/proxy filename)" Category="Output" Switch="proxy" Separator=" " F1Keyword="VC.Project.VCMidlTool.ProxyFileName">
   </StringProperty>
-  <BoolProperty ReverseSwitch="notlb" Name="GenerateTypeLibrary" DisplayName="Generate Type Library" Description="Specify not to generate a typelib ([/notlb] for no)" Category="Output" F1Keyword="VC.Project.VCMidlTool.GenerateTypeLibrary">
+  <BoolProperty ReverseSwitch="notlb" Name="GenerateTypeLibrary" DisplayName="Tür Kitaplığı Oluştur" Description="Typelib oluşturulup oluşturulmayacağını belirtin ([/notlb] for no)" Category="Output" F1Keyword="VC.Project.VCMidlTool.GenerateTypeLibrary">
   </BoolProperty>
-  <StringProperty Subtype="file" Name="TypeLibraryName" DisplayName="Type Library" Description="Specifies the name of the type library file (/tlb filename)" Category="Output" Switch="tlb" Separator=" " F1Keyword="VC.Project.VCMidlTool.TypeLibraryName">
+  <StringProperty Subtype="file" Name="TypeLibraryName" DisplayName="Tür Kitaplığı" Description="Tür kitaplığı dosyasının adını belirtir (/tlb filename)" Category="Output" Switch="tlb" Separator=" " F1Keyword="VC.Project.VCMidlTool.TypeLibraryName">
   </StringProperty>
-  <EnumProperty Name="GenerateClientFiles" DisplayName="Generate Client Stub Files" Description="Generate client stub file only (/client [stub|none])" Category="Output" F1Keyword="VC.Project.VCMidlTool.GenerateClientFiles">
-    <EnumValue Name="Stub" Switch="client stub" DisplayName="Stub" Description="Stub">
+  <EnumProperty Name="GenerateClientFiles" DisplayName="İstemci Saplama Dosyalarını Oluştur" Description="Yalnızca istemci saplama dosyası oluştur (/client [stub|none])" Category="Output" F1Keyword="VC.Project.VCMidlTool.GenerateClientFiles">
+    <EnumValue Name="Stub" Switch="client stub" DisplayName="Saplama" Description="Saplama">
     </EnumValue>
-    <EnumValue Name="None" Switch="client none" DisplayName="None" Description="None">
+    <EnumValue Name="None" Switch="client none" DisplayName="Yok" Description="Yok">
     </EnumValue>
   </EnumProperty>
-  <EnumProperty Name="GenerateServerFiles" DisplayName="Generate Server Stub Files" Description="Generate server stub file only (/server [stub|none])" Category="Output" F1Keyword="VC.Project.VCMidlTool.GenerateServerFiles">
-    <EnumValue Name="Stub" Switch="server stub" DisplayName="Stub" Description="Stub">
+  <EnumProperty Name="GenerateServerFiles" DisplayName="Sunucu Saplama Dosyalarını Oluştur" Description="Yalnızca sunucu saplama dosyası oluştur (/server [stub|none])" Category="Output" F1Keyword="VC.Project.VCMidlTool.GenerateServerFiles">
+    <EnumValue Name="Stub" Switch="server stub" DisplayName="Saplama" Description="Saplama">
     </EnumValue>
-    <EnumValue Name="None" Switch="server none" DisplayName="None" Description="None">
-    </EnumValue>
-  </EnumProperty>
-  <StringProperty Subtype="file" Name="ClientStubFile" DisplayName="Client Stub File" Description="Specify the client stub file (/cstub [file])" Category="Output" Switch="cstub" Separator=" " F1Keyword="VC.Project.VCMidlTool.ClientStubFile">
-  </StringProperty>
-  <StringProperty Subtype="file" Name="ServerStubFile" DisplayName="Server Stub File" Description="Specify the server stub file (/sstub [file])" Category="Output" Switch="sstub" Separator=" " F1Keyword="VC.Project.VCMidlTool.ServerStubFile">
-  </StringProperty>
-  <EnumProperty Name="TypeLibFormat" DisplayName="Type Library Format" Description="Specifies the type library file format ([/oldtlb|/newtlb])" Category="Output" F1Keyword="VC.Project.VCMidlTool.TypeLibFormat">
-    <EnumValue Name="NewFormat" Switch="newtlb" DisplayName="NewFormat" Description="New Format">
-    </EnumValue>
-    <EnumValue Name="OldFormat" Switch="oldtlb" DisplayName="OldFormat" Description="Old Format">
+    <EnumValue Name="None" Switch="server none" DisplayName="Yok" Description="Yok">
     </EnumValue>
   </EnumProperty>
-  <StringProperty Name="CPreprocessOptions" DisplayName="C Preprocess Options" Description="Specifies switches to pass to C compiler preprocessor (/cpp_opt switches)" Category="Advanced" Switch="cpp_opt" Separator=" " F1Keyword="VC.Project.VCMidlTool.CPreprocessOptions">
+  <StringProperty Subtype="file" Name="ClientStubFile" DisplayName="İstemci Saplama Dosyası" Description="İstemci saplama dosyasını belirt (/cstub [dosya])" Category="Output" Switch="cstub" Separator=" " F1Keyword="VC.Project.VCMidlTool.ClientStubFile">
   </StringProperty>
-  <StringListProperty Name="UndefinePreprocessorDefinitions" DisplayName="Undefine Preprocessor Definitions" Description="Specifies one or more undefines, including MIDL macros (/U[macros])" Category="Advanced" Switch="U" F1Keyword="VC.Project.VCMidlTool.UndefinePreprocessorDefinitions">
+  <StringProperty Subtype="file" Name="ServerStubFile" DisplayName="Sunucu Saplama Dosyası" Description="Sunucu saplama dosyasını belirt (/sstub [dosya])" Category="Output" Switch="sstub" Separator=" " F1Keyword="VC.Project.VCMidlTool.ServerStubFile">
+  </StringProperty>
+  <EnumProperty Name="TypeLibFormat" DisplayName="Tür Kitaplığı Biçimi" Description="Tür kitaplığı dosyası biçimini belirtir ([/oldtlb|/newtlb])" Category="Output" F1Keyword="VC.Project.VCMidlTool.TypeLibFormat">
+    <EnumValue Name="NewFormat" Switch="newtlb" DisplayName="NewFormat" Description="Yeni Biçim">
+    </EnumValue>
+    <EnumValue Name="OldFormat" Switch="oldtlb" DisplayName="OldFormat" Description="Eski Biçim">
+    </EnumValue>
+  </EnumProperty>
+  <StringProperty Name="CPreprocessOptions" DisplayName="C Ön İşleme Seçenekleri" Description="C derleyicisi ön işlemcisine geçirilecek anahtarları belirtir (/cpp_opt switches)" Category="Advanced" Switch="cpp_opt" Separator=" " F1Keyword="VC.Project.VCMidlTool.CPreprocessOptions">
+  </StringProperty>
+  <StringListProperty Name="UndefinePreprocessorDefinitions" DisplayName="Ön İşlemci Tanımlarını Kaldır" Description="MIDL makroları dahil olmak üzere bir veya daha fazla tanımsızı belirtir. (/U[makrolar])" Category="Advanced" Switch="U" F1Keyword="VC.Project.VCMidlTool.UndefinePreprocessorDefinitions">
   </StringListProperty>
-  <EnumProperty Name="EnableErrorChecks" DisplayName="Enable Error Checking" Description="Select error checking option ([/error all|none])" Category="Advanced" F1Keyword="VC.Project.VCMidlTool.EnableErrorChecks">
-    <EnumValue Name="EnableCustom" Switch="" DisplayName="EnableCustom" Description="All">
+  <EnumProperty Name="EnableErrorChecks" DisplayName="Hata Denetimini Etkinleştir" Description="Hata denetimi seçeneğini belirleyin ([/error all|none])" Category="Advanced" F1Keyword="VC.Project.VCMidlTool.EnableErrorChecks">
+    <EnumValue Name="EnableCustom" Switch="" DisplayName="EnableCustom" Description="Tümü">
     </EnumValue>
-    <EnumValue Name="All" Switch="error all" DisplayName="All" Description="All">
+    <EnumValue Name="All" Switch="error all" DisplayName="Tümü" Description="Tümü">
     </EnumValue>
-    <EnumValue Name="None" Switch="error none" DisplayName="None" Description="None">
-    </EnumValue>
-  </EnumProperty>
-  <BoolProperty Name="ErrorCheckAllocations" DisplayName="Check Allocations" Description="Check for out of memory errors (/error allocation)" Category="Advanced" Switch="error allocation" F1Keyword="VC.Project.VCMidlTool.ErrorCheckAllocations">
-  </BoolProperty>
-  <BoolProperty Name="ErrorCheckBounds" DisplayName="Check Bounds" Description="Check size vs transmission length specification (/error bounds_check)" Category="Advanced" Switch="error bounds_check" F1Keyword="VC.Project.VCMidlTool.ErrorCheckBounds">
-  </BoolProperty>
-  <BoolProperty Name="ErrorCheckEnumRange" DisplayName="Check Enum Range" Description="Check enum values to be in allowable range (/error enum)" Category="Advanced" Switch="error enum" F1Keyword="VC.Project.VCMidlTool.ErrorCheckEnumRange">
-  </BoolProperty>
-  <BoolProperty Name="ErrorCheckRefPointers" DisplayName="Check Reference Pointers" Description="Check ref pointers to be non-null (/error ref)" Category="Advanced" Switch="error ref" F1Keyword="VC.Project.VCMidlTool.ErrorCheckRefPointers">
-  </BoolProperty>
-  <BoolProperty Name="ErrorCheckStubData" DisplayName="Check Stub Data" Description="Emit additional check for server side stub data validity (/error stub_data)" Category="Advanced" Switch="error stub_data" F1Keyword="VC.Project.VCMidlTool.ErrorCheckStubData">
-  </BoolProperty>
-  <BoolProperty ReverseSwitch="no_robust" Name="ValidateAllParameters" DisplayName="Validate Parameters" Description="Generate additonal information to validate parameters (/robust|/no_robust)" Category="Advanced" Switch="robust" F1Keyword="VC.Project.VCMidlTool.ValidateParameters">
-  </BoolProperty>
-  <EnumProperty Name="StructMemberAlignment" DisplayName="Struct Member Alignment" Description="Specifies the packing level of structures in the target system (/ZpN)" Category="Advanced" F1Keyword="VC.Project.VCMidlTool.StructMemberAlignment">
-    <EnumValue Name="NotSet" Switch="" DisplayName="Not Set" Description="Not Set">
-    </EnumValue>
-    <EnumValue Name="1" Switch="Zp1" DisplayName="1 Byte" Description="Zp1">
-    </EnumValue>
-    <EnumValue Name="2" Switch="Zp2" DisplayName="2 Byte" Description="Zp2">
-    </EnumValue>
-    <EnumValue Name="4" Switch="Zp4" DisplayName="4 Byte" Description="Zp4">
-    </EnumValue>
-    <EnumValue Name="8" Switch="Zp8" DisplayName="8 Byte" Description="Zp8">
+    <EnumValue Name="None" Switch="error none" DisplayName="Yok" Description="Yok">
     </EnumValue>
   </EnumProperty>
-  <StringProperty Subtype="file" Name="RedirectOutputAndErrors" DisplayName="Redirect Output" Description="Redirects output from screen to a file (/o file)" Category="Advanced" Switch="o" Separator=" " F1Keyword="VC.Project.VCMidlTool.RedirectOutputAndErrors">
+  <BoolProperty Name="ErrorCheckAllocations" DisplayName="Ayrılan Alanları Denetle" Description="Yetersiz bellek hatalarını denetle (/error allocation)" Category="Advanced" Switch="error allocation" F1Keyword="VC.Project.VCMidlTool.ErrorCheckAllocations">
+  </BoolProperty>
+  <BoolProperty Name="ErrorCheckBounds" DisplayName="Sınırları Denetle" Description="Boyut ve iletim uzunluğu belirtimlerinin karşılıklı uyumunu denetle (/error bounds_check)" Category="Advanced" Switch="error bounds_check" F1Keyword="VC.Project.VCMidlTool.ErrorCheckBounds">
+  </BoolProperty>
+  <BoolProperty Name="ErrorCheckEnumRange" DisplayName="Numaralandırma Aralıklarını Denetle" Description="Numaralandırmanın izin verilen aralıkta olup olmadığını denetle (/error enum)" Category="Advanced" Switch="error enum" F1Keyword="VC.Project.VCMidlTool.ErrorCheckEnumRange">
+  </BoolProperty>
+  <BoolProperty Name="ErrorCheckRefPointers" DisplayName="Başvuru İşaretçilerini Denetle" Description="Başvuru işaretçilerinin null olup olmadığını denetle (/error ref)" Category="Advanced" Switch="error ref" F1Keyword="VC.Project.VCMidlTool.ErrorCheckRefPointers">
+  </BoolProperty>
+  <BoolProperty Name="ErrorCheckStubData" DisplayName="Saplama Verilerini Denetle" Description="Sunucu tarafı saplama verisi geçerliliği için ek denetimleri gösterir (/error stub_data)" Category="Advanced" Switch="error stub_data" F1Keyword="VC.Project.VCMidlTool.ErrorCheckStubData">
+  </BoolProperty>
+  <BoolProperty ReverseSwitch="no_robust" Name="ValidateAllParameters" DisplayName="Parametreleri Doğrula" Description="Parametreleri doğrulamak için ek bilgileri oluştur(/robust|/no_robust)" Category="Advanced" Switch="robust" F1Keyword="VC.Project.VCMidlTool.ValidateParameters">
+  </BoolProperty>
+  <EnumProperty Name="StructMemberAlignment" DisplayName="Struct Üyesi Hizalaması" Description="Hedef sistemde bulunan yapıların paket düzeyini belirtir (/ZpN)" Category="Advanced" F1Keyword="VC.Project.VCMidlTool.StructMemberAlignment">
+    <EnumValue Name="NotSet" Switch="" DisplayName="Ayarlanmamış" Description="Ayarlanmamış">
+    </EnumValue>
+    <EnumValue Name="1" Switch="Zp1" DisplayName="1 Bayt" Description="Zp1">
+    </EnumValue>
+    <EnumValue Name="2" Switch="Zp2" DisplayName="2 Bayt" Description="Zp2">
+    </EnumValue>
+    <EnumValue Name="4" Switch="Zp4" DisplayName="4 Bayt" Description="Zp4">
+    </EnumValue>
+    <EnumValue Name="8" Switch="Zp8" DisplayName="8 Bayt" Description="Zp8">
+    </EnumValue>
+  </EnumProperty>
+  <StringProperty Subtype="file" Name="RedirectOutputAndErrors" DisplayName="Çıkışı Yönlendir" Description="Ekrandaki çıkışı bir dosyaya yönlendirir (/o dosyası)" Category="Advanced" Switch="o" Separator=" " F1Keyword="VC.Project.VCMidlTool.RedirectOutputAndErrors">
   </StringProperty>
-  <StringProperty Subtype="folder" Name="TrackerLogDirectory" DisplayName="Tracker Log Directory" Description="Tracker Log Directory." IncludeInCommandLine="false" Visible="false">
+  <StringProperty Name="AdditionalOptions" DisplayName="Ek Seçenekler" Description="Ek Seçenekler" Category="Command Line" F1Keyword="vc.project.AdditionalOptionsPage">
   </StringProperty>
-  <StringProperty Name="AdditionalOptions" DisplayName="Additional Options" Description="Additional Options" Category="Command Line" F1Keyword="vc.project.AdditionalOptionsPage">
+  <StringProperty Subtype="folder" Name="TrackerLogDirectory" DisplayName="İzleyici Günlüğü Dizini" Description="İzleme Günlüğü Dizini." IncludeInCommandLine="false" Visible="false">
   </StringProperty>
 </Rule>

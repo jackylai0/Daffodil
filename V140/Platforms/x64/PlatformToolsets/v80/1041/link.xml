@@ -32,7 +32,7 @@ Credits
     <Category Name="Optimization" DisplayName="最適化"/>
     <Category Name="Embedded IDL" DisplayName="埋め込み IDL"/>
     <Category Name="Advanced" DisplayName="詳細設定"/>
-    <Category Name="All Options" DisplayName="すべてのオプション" Subtype="Search" />
+    <Category Name="All Options" DisplayName="すべてのオプション" Subtype="Search"/>
     <Category Name="Command Line" DisplayName="コマンド ライン" Subtype="CommandLine"/>
   </Rule.Categories>
   <Rule.DataSource>
@@ -45,20 +45,20 @@ Credits
     </EnumValue>
     <EnumValue Name="LinkVerbose" Switch="VERBOSE" DisplayName="詳細情報をすべて表示" Description="進行状況をすべて表示します。">
     </EnumValue>
-    <EnumValue Name="LinkVerboseLib" Switch="VERBOSE:Lib" DisplayName="検索したライブラリ" Description="検索されたライブラリのみを進行状況で表示します">
+    <EnumValue Name="LinkVerboseLib" Switch="VERBOSE:Lib" DisplayName="検索したライブラリ" Description="検索したライブラリのみを進行状況で表示します。">
     </EnumValue>
-    <EnumValue Name="LinkVerboseICF" Switch="VERBOSE:ICF" DisplayName="最適化されたリンク時の COMDAT の圧縮" Description="最適化されたリンク時の COMDAT の圧縮についての情報を表示します">
+    <EnumValue Name="LinkVerboseICF" Switch="VERBOSE:ICF" DisplayName="最適化されたリンク時の COMDAT の圧縮" Description="最適化されたリンク時の COMDAT の圧縮についての情報を表示します。">
     </EnumValue>
-    <EnumValue Name="LinkVerboseREF" Switch="VERBOSE:REF" DisplayName="最適化されたリンク時に削除されたデータ" Description="最適化されたリンク時に削除された関数およびデータについての情報を表示します">
+    <EnumValue Name="LinkVerboseREF" Switch="VERBOSE:REF" DisplayName="最適化されたリンク時に削除されたデータ" Description="最適化されたリンク時に削除された関数およびデータについての情報を表示します。">
     </EnumValue>
-    <EnumValue Name="LinkVerboseSAFESEH" Switch="VERBOSE:SAFESEH" DisplayName="SEH と互換性のないモジュール" Description="安全な例外処理との互換性がないモジュールの情報を表示します">
+    <EnumValue Name="LinkVerboseSAFESEH" Switch="VERBOSE:SAFESEH" DisplayName="SEH と互換性のないモジュール" Description="安全な例外処理との互換性がないモジュールの情報を表示します。">
     </EnumValue>
-    <EnumValue Name="LinkVerboseCLR" Switch="VERBOSE:CLR" DisplayName="マネージ コードに関連するリンカー動作" Description="マネージ コードに関連するリンカー動作についての情報を表示します">
+    <EnumValue Name="LinkVerboseCLR" Switch="VERBOSE:CLR" DisplayName="マネージ コードに関連するリンカー動作" Description="マネージ コードに関連するリンカー動作についての情報を表示します。">
     </EnumValue>
   </EnumProperty>
   <StringProperty Name="Version" DisplayName="バージョン" Description="/VERSION オプションは、.exe ファイルまたは .dll ファイルのヘッダーにバージョン番号を含めるようにリンカーを設定します。DUMPBIN /HEADERS を使用して、OPTIONAL HEADER VALUES のイメージ バージョン フィールドを表示し、/VERSION の効果を確認します。" Category="General" Switch="VERSION" Separator=":" F1Keyword="VC.Project.VCLinkerTool.Version">
   </StringProperty>
-  <BoolProperty ReverseSwitch="INCREMENTAL:NO" Name="LinkIncremental" DisplayName="インクリメンタル リンクを有効にする" Description="インクリメンタル リンクを有効にします。     (/INCREMENTAL, /INCREMENTAL:NO)" Category="General" Switch="INCREMENTAL" F1Keyword="VC.Project.VCLinkerTool.LinkIncremental">
+  <BoolProperty ReverseSwitch="INCREMENTAL:NO" Name="LinkIncremental" DisplayName="インクリメンタル リンクを有効にする" Description="インクリメンタル リンクを有効にします。(/INCREMENTAL, /INCREMENTAL:NO)" Category="General" Switch="INCREMENTAL" F1Keyword="VC.Project.VCLinkerTool.LinkIncremental">
     <BoolProperty.DataSource>
       <DataSource Persistence="ProjectFile" ItemType="" Label="" HasConfigurationCondition="true"/>
     </BoolProperty.DataSource>
@@ -74,14 +74,14 @@ Credits
   </BoolProperty>
   <BoolProperty Name="PerUserRedirection" DisplayName="ユーザーごとのリダイレクト" Description="出力の登録が有効になっていると、ユーザーごとのリダイレクトは、HKEY_CLASSES_ROOT へのレジストリ書き込みを、強制的に HKEY_CURRENT_USER にリダイレクトします。" Category="General" IncludeInCommandLine="false" F1Keyword="VC.Project.VCLinkerTool.PerUserRedirection">
   </BoolProperty>
-  <StringListProperty Subtype="folder" Name="AdditionalLibraryDirectories" DisplayName="追加のライブラリ ディレクトリ" Description="環境のライブラリ パスをユーザーがオーバーライドできるようにします (/LIBPATH:folder)" Category="General" Switch="LIBPATH:" F1Keyword="VC.Project.VCLinkerTool.AdditionalLibraryDirectories">
+  <StringListProperty Subtype="folder" Name="AdditionalLibraryDirectories" DisplayName="追加のライブラリ ディレクトリ" Description="環境のライブラリ パスをユーザーがオーバーライドできるようにします。 (/LIBPATH:folder)" Category="General" Switch="LIBPATH:" F1Keyword="VC.Project.VCLinkerTool.AdditionalLibraryDirectories">
   </StringListProperty>
   <BoolProperty Name="LinkLibraryDependencies" DisplayName="ライブラリ依存関係のリンク" Description="プロジェクト依存関係からのライブラリ出力を自動的にリンクするかどうかを指定します。" Category="General" IncludeInCommandLine="false" F1Keyword="VC.Project.VCLinkerTool.LinkLibraryDependencies">
     <BoolProperty.DataSource>
       <DataSource Persistence="ProjectFile" ItemType="ProjectReference" Label="" HasConfigurationCondition="true"/>
     </BoolProperty.DataSource>
   </BoolProperty>
-  <BoolProperty Name="UseLibraryDependencyInputs" DisplayName="ライブラリ依存関係の入力の使用|" Description="プロジェクト依存関係のライブラリ出力にリンクする時に、ライブラリ ファイル自体にではなく、ライブラリアン ツールへの入力を使用するかどうかを指定します。" Category="General" IncludeInCommandLine="false" F1Keyword="VC.Project.VCLinkerTool.UseLibraryDependencyInputs">
+  <BoolProperty Name="UseLibraryDependencyInputs" DisplayName="ライブラリ依存関係の入力の使用" Description="プロジェクト依存関係のライブラリ出力にリンクする時に、ライブラリ ファイル自体にではなく、ライブラリアン ツールへの入力を使用するかどうかを指定します。" Category="General" IncludeInCommandLine="false" F1Keyword="VC.Project.VCLinkerTool.UseLibraryDependencyInputs">
     <BoolProperty.DataSource>
       <DataSource Persistence="ProjectFile" ItemType="ProjectReference" Label="" HasConfigurationCondition="true"/>
     </BoolProperty.DataSource>
@@ -116,11 +116,11 @@ Credits
   </StringProperty>
   <StringProperty Subtype="folder" Name="TrackerLogDirectory" DisplayName="トラッカー ログのディレクトリ" Description="トラッカー ログのディレクトリです。" Category="General" IncludeInCommandLine="false" Visible="false">
   </StringProperty>
-  <StringListProperty Subtype="file" Name="AdditionalDependencies" DisplayName="追加の依存ファイル" Description="リンク コマンド ラインに追加する項目を指定します (例: kernel32.lib) " Category="Input" F1Keyword="VC.Project.VCLinkerTool.AdditionalDependencies">
+  <StringListProperty Subtype="file" Name="AdditionalDependencies" DisplayName="追加の依存ファイル" Description="リンク コマンド ラインに追加する項目を指定します。 (例: kernel32.lib) " Category="Input" F1Keyword="VC.Project.VCLinkerTool.AdditionalDependencies">
   </StringListProperty>
   <BoolProperty Name="IgnoreAllDefaultLibraries" DisplayName="すべての既定のライブラリの無視" Description="/NODEFAULTLIB オプションを使用すると、外部参照の解決時に検索するライブラリ リストに記載されている 1 つ以上の既定のライブラリを削除するようにリンカーを設定します。" Category="Input" Switch="NODEFAULTLIB" F1Keyword="VC.Project.VCLinkerTool.IgnoreAllDefaultLibraries">
   </BoolProperty>
-  <StringListProperty Subtype="file" Name="IgnoreSpecificDefaultLibraries" DisplayName="特定の既定のライブラリの無視" Description="無視する既定のライブラリ名を指定します。複数のライブラリを指定する場合には、セミコロンで区切ってください。     (/NODEFAULTLIB:[名前, 名前, ...])" Category="Input" Switch="NODEFAULTLIB:" F1Keyword="VC.Project.VCLinkerTool.IgnoreDefaultLibraryNames">
+  <StringListProperty Subtype="file" Name="IgnoreSpecificDefaultLibraries" DisplayName="特定の既定のライブラリの無視" Description="無視する既定のライブラリ名を指定します。複数のライブラリを指定する場合には、セミコロンで区切ってください。(/NODEFAULTLIB:[名前, 名前, ...])" Category="Input" Switch="NODEFAULTLIB:" F1Keyword="VC.Project.VCLinkerTool.IgnoreDefaultLibraryNames">
   </StringListProperty>
   <StringProperty Subtype="file" Name="ModuleDefinitionFile" DisplayName="モジュール定義ファイル" Description="/DEF オプションを使用すると、モジュール定義ファイル (.def) がリンカーに渡されます。LINK に対して指定できる .def ファイルは 1 つだけです。" Category="Input" Switch="DEF" Separator=":" F1Keyword="VC.Project.VCLinkerTool.ModuleDefinitionFile">
   </StringProperty>
@@ -172,13 +172,13 @@ Credits
     </EnumValue>
     <EnumValue Name="Native" Switch="SUBSYSTEM:NATIVE" DisplayName="ネイティブ" Description="Windows NT のデバイス ドライバーに対して使用します。/DRIVER:WDM が指定されている場合、既定値は NATIVE です。">
     </EnumValue>
-    <EnumValue Name="EFI Application" Switch="SUBSYSTEM:EFI_APPLICATION" DisplayName="EFI アプリケーション" Description="EFI アプリケーション">
+    <EnumValue Name="EFI Application" Switch="SUBSYSTEM:EFI_APPLICATION" DisplayName="EFI アプリケーション" Description="EFI アプリケーション。">
     </EnumValue>
-    <EnumValue Name="EFI Boot Service Driver" Switch="SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER" DisplayName="EFI ブート サービス ドライバー" Description="EFI ブート サービス ドライバー">
+    <EnumValue Name="EFI Boot Service Driver" Switch="SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER" DisplayName="EFI ブート サービス ドライバー" Description="EFI ブート サービス ドライバー。">
     </EnumValue>
-    <EnumValue Name="EFI ROM" Switch="SUBSYSTEM:EFI_ROM" DisplayName="EFI ROM" Description="EFI ROM">
+    <EnumValue Name="EFI ROM" Switch="SUBSYSTEM:EFI_ROM" DisplayName="EFI ROM" Description="EFI ROM。">
     </EnumValue>
-    <EnumValue Name="EFI Runtime" Switch="SUBSYSTEM:EFI_RUNTIME_DRIVER" DisplayName="EFI ランタイム" Description="EFI ランタイム">
+    <EnumValue Name="EFI Runtime" Switch="SUBSYSTEM:EFI_RUNTIME_DRIVER" DisplayName="EFI ランタイム" Description="EFI ランタイム。">
     </EnumValue>
     <EnumValue Name="WindowsCE" Switch="SUBSYSTEM:WINDOWSCE" DisplayName="WindowsCE" Description="Windows CE デバイスで実行するアプリケーションです。">
     </EnumValue>
@@ -187,15 +187,15 @@ Credits
   </EnumProperty>
   <StringProperty Name="MinimumRequiredVersion" DisplayName="最低限必要なバージョン" Description="サブシステムに最低限必要なバージョンを指定します。引数は 0 ～ 65,535 の範囲の 10 進数です。" Category="System" Separator="," F1Keyword="VC.Project.VCLinkerTool.MinimumRequiredVersion">
   </StringProperty>
-  <StringProperty Name="HeapReserveSize" DisplayName="ヒープ サイズの設定" Description="仮想メモリ内のヒープ領域に割り当てる総サイズを指定します。既定値は 1 MB です。   (/HEAP:reserve)" Category="System" Switch="HEAP" Separator=":" F1Keyword="VC.Project.VCLinkerTool.HeapReserveSize">
+  <StringProperty Name="HeapReserveSize" DisplayName="ヒープ サイズの設定" Description="仮想メモリ内のヒープ領域に割り当てる総サイズを指定します。既定値は 1 MB です。(/HEAP:reserve)" Category="System" Switch="HEAP" Separator=":" F1Keyword="VC.Project.VCLinkerTool.HeapReserveSize">
     <Argument Property="HeapCommitSize" IsRequired="false" Separator=","/>
   </StringProperty>
-  <StringProperty Name="HeapCommitSize" DisplayName="ヒープ コミット サイズの設定" Description="物理メモリ内のヒープ領域に割り当てる総サイズを指定します。既定値は 4 KB です。    (/HEAP:reserve,commit)" Category="System" F1Keyword="VC.Project.VCLinkerTool.HeapCommitSize">
+  <StringProperty Name="HeapCommitSize" DisplayName="ヒープ コミット サイズの設定" Description="物理メモリ内のヒープ領域に割り当てる総サイズを指定します。既定値は 4 KB です。(/HEAP:reserve,commit)" Category="System" F1Keyword="VC.Project.VCLinkerTool.HeapCommitSize">
   </StringProperty>
-  <StringProperty Name="StackReserveSize" DisplayName="スタックのサイズの設定" Description="仮想メモリ内のスタック割り当ての総サイズを指定します。既定値は 1 MB です。     (/STACK:reserve)" Category="System" Switch="STACK" Separator=":" F1Keyword="VC.Project.VCLinkerTool.StackReserveSize">
+  <StringProperty Name="StackReserveSize" DisplayName="スタックのサイズの設定" Description="仮想メモリ内のスタック割り当ての総サイズを指定します。既定値は 1 MB です。(/STACK:reserve)" Category="System" Switch="STACK" Separator=":" F1Keyword="VC.Project.VCLinkerTool.StackReserveSize">
     <Argument Property="StackCommitSize" IsRequired="false" Separator=","/>
   </StringProperty>
-  <StringProperty Name="StackCommitSize" DisplayName="スタックのコミット サイズ" Description="物理メモリ内のスタック割り当ての総サイズを指定します。既定値は 4 KB です。     (/STACK:reserve,commit)" Category="System" F1Keyword="VC.Project.VCLinkerTool.StackCommitSize">
+  <StringProperty Name="StackCommitSize" DisplayName="スタックのコミット サイズ" Description="物理メモリ内のスタック割り当ての総サイズを指定します。既定値は 4 KB です。(/STACK:reserve,commit)" Category="System" F1Keyword="VC.Project.VCLinkerTool.StackCommitSize">
   </StringProperty>
   <BoolProperty ReverseSwitch="LARGEADDRESSAWARE:NO" Name="LargeAddressAware" DisplayName="大きいサイズのアドレス" Description="/LARGEADDRESSAWARE オプションは、アプリケーションが 2 GB を超えるアドレスを処理できることをリンカーに通知します。リンカーのコマンド ラインで /LARGEADDRESSAWARE が指定されていない場合、既定で /LARGEADDRESSAWARE:NO が有効になります。" Category="System" Switch="LARGEADDRESSAWARE" F1Keyword="VC.Project.VCLinkerTool.LargeAddressAware">
   </BoolProperty>
@@ -223,19 +223,19 @@ Credits
   </StringProperty>
   <StringProperty Subtype="file" Name="ProfileGuidedDatabase" DisplayName="ガイド付きデータベースのプロファイル" Description="ガイド付き最適化のプロファイル用の .pgd ファイルを指定します。(/PGD)" Category="Optimization" Switch="PGD" Separator=":" F1Keyword="VC.Project.VCLinkerTool.ProfileGuidedDatabase">
   </StringProperty>
-  <EnumProperty Name="LinkTimeCodeGeneration" DisplayName="リンク時のコード生成" Description="リンク時のコード生成を指定します" Category="Optimization" F1Keyword="VC.Project.VCLinkerTool.LinkTimeCodeGeneration">
+  <EnumProperty Name="LinkTimeCodeGeneration" DisplayName="リンク時のコード生成" Description="リンク時のコード生成を指定します。" Category="Optimization" F1Keyword="VC.Project.VCLinkerTool.LinkTimeCodeGeneration">
     <EnumValue Name="Default" Switch="" DisplayName="既定" Description="LTCG の既定の設定です。">
     </EnumValue>
-    <EnumValue Name="UseLinkTimeCodeGeneration" Switch="LTCG" DisplayName="リンク時のコード生成を使用" Description="リンク時のコード生成を使用します">
+    <EnumValue Name="UseLinkTimeCodeGeneration" Switch="LTCG" DisplayName="リンク時のコード生成を使用" Description="リンク時のコード生成を使用します。">
     </EnumValue>
-    <EnumValue Name="PGInstrument" Switch="LTCG:PGInstrument" DisplayName="ガイド付き最適化のプロファイル - インストルメント" Description="リンク時のコード生成を指定します">
+    <EnumValue Name="PGInstrument" Switch="LTCG:PGInstrument" DisplayName="ガイド付き最適化のプロファイル - インストルメント" Description="リンク時のコード生成を指定します。">
     </EnumValue>
     <EnumValue Name="PGOptimization" Switch="LTCG:PGOptimize" DisplayName="ガイド付き最適化のプロファイル - 最適化" Description="インストルメント化されたバイナリを実行して最適化イメージを作成した後に、作成されたプロファイル データをリンカーで使用します。">
     </EnumValue>
     <EnumValue Name="PGUpdate" Switch="LTCG:PGUpdate" DisplayName="ガイド付き最適化のプロファイル - 更新" Description=":PGINSTRUMENT フェーズで指定された入力ファイル リストの追加または変更を許可し、それを追跡します。">
     </EnumValue>
   </EnumProperty>
-  <StringProperty Subtype="file" Name="MidlCommandFile" DisplayName="MIDL コマンド" Description="MIDL コマンド ライン オプションを指定します (/MIDL:@responsefile)" Category="Embedded IDL" Switch="MIDL" Separator=":@" F1Keyword="VC.Project.VCLinkerTool.MidlCommandFile">
+  <StringProperty Subtype="file" Name="MidlCommandFile" DisplayName="MIDL コマンド" Description="MIDL コマンド ライン オプションを指定します。 (/MIDL:@responsefile)" Category="Embedded IDL" Switch="MIDL" Separator=":@" F1Keyword="VC.Project.VCLinkerTool.MidlCommandFile">
   </StringProperty>
   <BoolProperty Name="IgnoreEmbeddedIDL" DisplayName="埋め込み IDL の無視" Description="/IGNOREIDL オプションは、ソース コード内の IDL 属性を処理せず、.idl ファイル内に IDL 属性を含めません。" Category="Embedded IDL" Switch="IGNOREIDL" F1Keyword="VC.Project.VCLinkerTool.IgnoreEmbeddedIDL">
   </BoolProperty>
@@ -251,11 +251,11 @@ Credits
   </BoolProperty>
   <BoolProperty Name="SetChecksum" DisplayName="チェックサムの設定" Description="/RELEASE オプションは、.exe ファイルのヘッダー内にチェックサムを設定します。" Category="Advanced" Switch="RELEASE" F1Keyword="VC.Project.VCLinkerTool.SetChecksum">
   </BoolProperty>
-  <StringProperty Name="BaseAddress" DisplayName="ベース アドレス" Description="プログラムのベース アドレスを設定します (/BASE:{address[,size] | @filename,key})" Category="Advanced" Switch="BASE" Separator=":" F1Keyword="VC.Project.VCLinkerTool.BaseAddress">
+  <StringProperty Name="BaseAddress" DisplayName="ベース アドレス" Description="プログラムのベース アドレスを設定します。 (/BASE:{address[,size] | @filename,key})" Category="Advanced" Switch="BASE" Separator=":" F1Keyword="VC.Project.VCLinkerTool.BaseAddress">
   </StringProperty>
-  <BoolProperty ReverseSwitch="DYNAMICBASE:NO" Name="RandomizedBaseAddress" DisplayName="ランダム化されたベース アドレス" Description="ランダム化されたベース アドレスです (/DYNAMICBASE[:NO])" Category="Advanced" Switch="DYNAMICBASE" F1Keyword="VC.Project.VCLinkerTool.RandomizedBaseAddress">
+  <BoolProperty ReverseSwitch="DYNAMICBASE:NO" Name="RandomizedBaseAddress" DisplayName="ランダム化されたベース アドレス" Description="ランダム化されたベース アドレスです。 (/DYNAMICBASE[:NO])" Category="Advanced" Switch="DYNAMICBASE" F1Keyword="VC.Project.VCLinkerTool.RandomizedBaseAddress">
   </BoolProperty>
-  <BoolProperty ReverseSwitch="FIXED:NO" Name="FixedBaseAddress" DisplayName="固定ベース アドレス" Description="指定のベース アドレスにのみ読み込むことができるプログラムを作成します (/FIXED[:NO])" Category="Advanced" Switch="FIXED" F1Keyword="VC.Project.VCLinkerTool.FixedBaseAddress">
+  <BoolProperty ReverseSwitch="FIXED:NO" Name="FixedBaseAddress" DisplayName="固定ベース アドレス" Description="指定のベース アドレスにのみ読み込むことができるプログラムを作成します。 (/FIXED[:NO])" Category="Advanced" Switch="FIXED" F1Keyword="VC.Project.VCLinkerTool.FixedBaseAddress">
   </BoolProperty>
   <BoolProperty ReverseSwitch="NXCOMPAT:NO" Name="DataExecutionPrevention" DisplayName="データ実行防止 (DEP)" Description="実行可能ファイルで Windows のデータ実行防止機能に対する互換性がテストされたことを示します。(/NXCOMPAT[:NO])" Category="Advanced" Switch="NXCOMPAT" F1Keyword="VC.Project.VCLinkerTool.DataExecutionPrevention">
   </BoolProperty>
@@ -265,7 +265,7 @@ Credits
   </BoolProperty>
   <BoolProperty Name="SupportNobindOfDelayLoadedDLL" DisplayName="遅延読み込みされた DLL のバインドなし" Description="NOBIND 修飾子は、バインドできる IAT を最終イメージに含めないようにリンカーを設定します。既定では、遅延読み込みの DLL に対してバインドできる IAT が作成されます。(/DELAY:NOBIND)" Category="Advanced" Switch="DELAY:NOBIND" F1Keyword="VC.Project.VCLinkerTool.SupportNobindOfDelayLoadedDLL">
   </BoolProperty>
-  <StringProperty Subtype="file" Name="ImportLibrary" DisplayName="インポート ライブラリ" Description="インポート ライブラリの既定の名前をオーバーライドします (/IMPLIB:filename)" Category="Advanced" Switch="IMPLIB" Separator=":" F1Keyword="VC.Project.VCLinkerTool.ImportLIbrary">
+  <StringProperty Subtype="file" Name="ImportLibrary" DisplayName="インポート ライブラリ" Description="インポート ライブラリの既定の名前をオーバーライドします。 (/IMPLIB:filename)" Category="Advanced" Switch="IMPLIB" Separator=":" F1Keyword="VC.Project.VCLinkerTool.ImportLIbrary">
   </StringProperty>
   <StringProperty Name="MergeSections" DisplayName="セクションの結合" Description="/MERGE オプションは、第 1 のセクション (from) と第 2 のセクション (to) を結合し、結合後のセクションの名前を to にします。たとえば、/merge:.rdata=.text と指定します。" Category="Advanced" Switch="MERGE" Separator=":" F1Keyword="VC.Project.VCLinkerTool.MergeSections">
   </StringProperty>
@@ -317,14 +317,14 @@ Credits
   </EnumProperty>
   <StringProperty Subtype="file" Name="LinkKeyFile" DisplayName="キー ファイル" Description="アセンブリに署名するキーまたはキー ペアを指定します。(/KEYFILE:filename)" Category="Advanced" Switch="KEYFILE" Separator=":" F1Keyword="VC.Project.VCLinkerTool.KeyFile">
     <StringProperty.DataSource>
-      <DataSource Persistence="ProjectFile" ItemType="" Label="" HasConfigurationCondition="true" />
+      <DataSource Persistence="ProjectFile" ItemType="" Label="" HasConfigurationCondition="true"/>
     </StringProperty.DataSource>
   </StringProperty>
   <StringProperty Subtype="file" Name="KeyContainer" DisplayName="キー コンテナー" Description="アセンブリに署名するキー コンテナーを指定します。(/KEYCONTAINER:name)" Category="Advanced" Switch="KEYCONTAINER" Separator=":" F1Keyword="VC.Project.VCLinkerTool.KeyContainer">
   </StringProperty>
   <BoolProperty ReverseSwitch="DELAYSIGN:NO" Name="LinkDelaySign" DisplayName="遅延署名" Description="アセンブリに部分署名します。/DELAYSIGN は、アセンブリに公開キーを含める場合にのみ使用します。既定値は、/DELAYSIGN:NO です。" Category="Advanced" Switch="DELAYSIGN" F1Keyword="VC.Project.VCLinkerTool.DelaySign">
     <BoolProperty.DataSource>
-      <DataSource Persistence="ProjectFile" ItemType="" Label="" HasConfigurationCondition="true" />
+      <DataSource Persistence="ProjectFile" ItemType="" Label="" HasConfigurationCondition="true"/>
     </BoolProperty.DataSource>
   </BoolProperty>
   <BoolProperty ReverseSwitch="CLRUNMANAGEDCODECHECK:NO" Name="CLRUnmanagedCodeCheck" DisplayName="CLR アンマネージ コード チェック " Description="/CLRUNMANAGEDCODECHECK は、マネージ コードからネイティブ DLL への、リンカーによって生成された PInvoke 呼び出しに対して、SuppressUnmanagedCodeSecurityAttribute を適用するかどうかを指定します。" Category="Advanced" Switch="CLRUNMANAGEDCODECHECK" F1Keyword="VC.Project.VCLinkerTool.CLRUnmanagedCodeCheck">
@@ -339,7 +339,7 @@ Credits
     <EnumValue Name="NoErrorReport" Switch="ERRORREPORT:NONE" DisplayName="エラー報告なし" Description="エラー報告を行いません。">
     </EnumValue>
   </EnumProperty>
-  <IntProperty Name="SectionAlignment" DisplayName="セクション アライメント" Description="/ALIGN オプションは、プログラムのリニア アドレス空間内における各セクションの配置を指定します。バイト数の数値の引数を 2 の累乗で設定する必要があります。" Category="Advanced" Switch="ALIGN" Separator=":" F1Keyword="VC.Project.VCLinkerTool.Alignment">
+  <IntProperty Name="SectionAlignment" DisplayName="セクション アラインメント" Description="/ALIGN オプションは、プログラムのリニア アドレス空間内における各セクションのアラインメントを指定します。バイト数の数値の引数を 2 の累乗で設定する必要があります。" Category="Advanced" Switch="ALIGN" Separator=":" F1Keyword="VC.Project.VCLinkerTool.Alignment">
   </IntProperty>
   <EnumProperty Name="CLRSupportLastError" DisplayName="PInvoke 呼び出しの最終エラー コードの保持" Description="/CLRSUPPORTLASTERROR は既定で有効であり、P/Invoke 機構を通じて呼び出された関数の最終エラー コードを保持します。P/Invoke により、/clr を指定してコンパイルされたコードから DLL 内のネイティブ関数を呼び出すことができます。" Category="Advanced" F1Keyword="VC.Project.VCLinkerTool.CLRSupportLastError">
     <EnumValue Name="Enabled" Switch="CLRSupportLastError" DisplayName="有効" Description="CLRSupportLastError を有効にします。">
@@ -351,10 +351,10 @@ Credits
   </EnumProperty>
   <BoolProperty ReverseSwitch="SAFESEH:NO" Name="ImageHasSafeExceptionHandlers" DisplayName="安全な例外ハンドラーを含むイメージ" Description="/SAFESEH を指定すると、イメージの安全な例外ハンドラーのテーブルも生成できる場合に、イメージのみを生成するようにリンカーを設定します。このテーブルは、どの例外ハンドラーがイメージに対して有効であるかをオペレーティング システムに通知します。" Category="Advanced" Switch="SAFESEH" F1Keyword="VC.Project.VCLinkerTool.ImageHasSafeExceptionHandlers">
   </BoolProperty>
+  <StringProperty Name="AdditionalOptions" DisplayName="その他のオプション" Description="追加オプション。" Category="Command Line" F1Keyword="vc.project.AdditionalOptionsPage">
+  </StringProperty>
   <BoolProperty Name="LinkDLL" Switch="DLL" Visible="false">
   </BoolProperty>
-  <StringProperty Name="AdditionalOptions" DisplayName="追加オプション" Description="追加オプション" Category="Command Line" F1Keyword="vc.project.AdditionalOptionsPage">
-  </StringProperty>
   <BoolProperty Name="BuildingInIDE" Visible="false">
   </BoolProperty>
 </Rule>

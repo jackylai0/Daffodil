@@ -22,25 +22,25 @@ Credits
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 -->
 <!--Copyright, Microsoft Corporation, All rights reserved.-->
-<Rule Name="ConfigurationGeneral" DisplayName="General" PageTemplate="generic" Description="General" xmlns="http://schemas.microsoft.com/build/2009/properties">
+<Rule Name="ConfigurationGeneral" DisplayName="Genel" PageTemplate="generic" Description="Genel" xmlns="http://schemas.microsoft.com/build/2009/properties">
   <Rule.Categories>
-    <Category Name="General" DisplayName="General" Description="General"/>
+    <Category Name="General" DisplayName="Genel" Description="Genel"/>
   </Rule.Categories>
   <Rule.DataSource>
     <DataSource Persistence="ProjectFile" Label="Configuration"/>
   </Rule.DataSource>
-  <StringProperty Name="OutDir" DisplayName="Output Directory" Description="Specifies a relative path to the output file directory; can include environment variables." Category="General" Default="$(SolutionDir)$(ConfigurationName)" Subtype="folder" F1Keyword="VC.Project.VCConfiguration.OutputDirectory"/>
-  <StringProperty Name="IntDir" DisplayName="Intermediate Directory" Description="Specifies a relative path to the intermediate file directory; can include environment variables." Category="General" Default="$(ConfigurationName)" Subtype="folder" F1Keyword="VC.Project.VCConfiguration.IntermediateDirectory"/>
-  <EnumProperty Name="CLRSupport" DisplayName="Common Language Runtime Support" Description="Select the Common Language Runtime support your code uses." Category="General" F1Keyword="VC.Project.VCConfiguration.ManagedExtensions">
-    <EnumValue Name="false" DisplayName="No Common Language RunTime Support" Description="No Common Language RunTime Support"/>
-    <EnumValue Name="true" Switch="clr" DisplayName="Common Language RunTime Support" Description="Creates metadata for your application that can be consumed by other CLR applications, and allows your application to consume types and data in the metadata of other CLR components."/>
+  <StringProperty Name="OutDir" DisplayName="Çıkış Dizini" Description="Çıkış dosyası dizinine göreli bir yol belirtir; durum değişkenleri içerebilir." Category="General" Default="$(SolutionDir)$(ConfigurationName)" Subtype="folder" F1Keyword="VC.Project.VCConfiguration.OutputDirectory"/>
+  <StringProperty Name="IntDir" DisplayName="Ara Dizin" Description="Ara dosya dizinine göreli bir yol belirtir; durum değişkenleri içerebilir." Category="General" Default="$(ConfigurationName)" Subtype="folder" F1Keyword="VC.Project.VCConfiguration.IntermediateDirectory"/>
+  <EnumProperty Name="CLRSupport" DisplayName="Ortak Dil Çalışma Zamanı Modülü Desteği" Description="Kodunuzun kullandığı Ortak Dil Çalışma Zamanı desteğini seçin." Category="General" F1Keyword="VC.Project.VCConfiguration.ManagedExtensions">
+    <EnumValue Name="false" DisplayName="Ortak Dil Çalışma Zamanı Modülü Desteği Yok" Description="Ortak Dil Çalışma Zamanı Modülü Desteği Yok"/>
+    <EnumValue Name="true" Switch="clr" DisplayName="Ortak Dil Çalışma Zamanı Modülü Desteği" Description="Uygulamanız için diğer CLR uygulamaları tarafından tüketilebilecek meta verileri oluşturur ve uygulamanızın diğer CLR bileşenlerine ait meta verilerdeki türleri ve verileri tüketebilmesini sağlar."/>
   </EnumProperty>
-  <StringProperty Name="BuildLogFile" DisplayName="Build Log File" Description="Specifies the build log file to write to when build logging is enabled." F1Keyword="VC.Project.VCConfiguration.BuildLogFile" Category="General" Default="$(ProjectDir)\$(MSBuildProjectName).log" Subtype="file">
+  <StringProperty Name="BuildLogFile" DisplayName="Derleme Günlüğü Dosyası" Description="Derleme günlüğünün üzerine, kaydetme açık olduğunda yazılacak olan derleme günlüğü dosyasını belirtir." F1Keyword="VC.Project.VCConfiguration.BuildLogFile" Category="General" Default="$(ProjectDir)\$(MSBuildProjectName).log" Subtype="file">
     <StringProperty.DataSource>
       <DataSource Persistence="ProjectFile" ItemType="BuildLog" PersistedName="Path"/>
     </StringProperty.DataSource>
   </StringProperty>
-  <StringProperty Name="_ProjectFileVersion" DisplayName="Project File Version" Description="Specifies the version of the conversion tool used to create this project file." Category="General" Visible="false">
+  <StringProperty Name="_ProjectFileVersion" DisplayName="Proje Dosyası Sürümü" Description="Bu proje dosyasını oluşturmak için dönüştürme aracının sürümünü belirtir." Category="General" Visible="false">
     <StringProperty.DataSource>
       <DataSource Persistence="ProjectFile"/>
     </StringProperty.DataSource>

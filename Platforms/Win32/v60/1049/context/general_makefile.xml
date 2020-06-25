@@ -29,8 +29,8 @@ Credits
   <Rule.DataSource>
     <DataSource Persistence="ProjectFile" Label="Configuration"/>
   </Rule.DataSource>
-  <StringProperty Name="OutDir" DisplayName="Выходной каталог" Description="Указывает относительный путь к выходному каталогу файлов; может включать в себя  переменные среды." Category="General" Default="$(SolutionDir)$(ConfigurationName)" Subtype="folder" F1Keyword="VC.Project.VCConfiguration.OutputDirectory"/>
-  <StringProperty Name="IntDir" DisplayName="Промежуточный каталог" Description="Указывает относительный путь к промежуточному каталогу файлов; может включать в себя  переменные среды." Category="General" Default="$(ConfigurationName)" Subtype="folder" F1Keyword="VC.Project.VCConfiguration.IntermediateDirectory"/>
+  <StringProperty Name="OutDir" DisplayName="Выходной каталог" Description="Указывает относительный путь к выходному каталогу файлов; может включать в себя переменные окружения." Category="General" Default="$(SolutionDir)$(ConfigurationName)" Subtype="folder" F1Keyword="VC.Project.VCConfiguration.OutputDirectory"/>
+  <StringProperty Name="IntDir" DisplayName="Промежуточный каталог" Description="Указывает относительный путь к промежуточному каталогу файлов; может включать в себя переменные окружения." Category="General" Default="$(ConfigurationName)" Subtype="folder" F1Keyword="VC.Project.VCConfiguration.IntermediateDirectory"/>
   <EnumProperty Name="ConfigurationType" DisplayName="Тип конфигурации" Description="Определяет тип выходных файлов, создаваемый этой конфигурацией." Category="General" F1Keyword="VC.Project.VCConfiguration.ConfigurationType">
     <EnumValue Name="Makefile" DisplayName="Файл makefile" Description="Файл makefile"/>
     <EnumValue Name="Application" DisplayName="Приложение (.exe)" Description="Приложение (.exe)"/>
@@ -41,7 +41,7 @@ Credits
   <EnumProperty Name="CLRSupport" DisplayName="Поддержка общеязыковой среды выполнения (CLR)" Description="Выберите используемую вашим кодом поддержку CLR." Category="General" Visible="false" F1Keyword="VC.Project.VCConfiguration.ManagedExtensions">
     <EnumValue Name="false" DisplayName="Без поддержки CLR-среды" Description="Без поддержки CLR-среды"/>
   </EnumProperty>
-  <StringProperty Name="BuildLogFile" DisplayName="Файл журнала построения" Description="Определяет файл журнала построения, в который будет вестись запись, если ведение журнала включено." F1Keyword="VC.Project.VCConfiguration.BuildLogFile" Category="General" Default="$(ProjectDir)\$(MSBuildProjectName).log" Subtype="file">
+  <StringProperty Name="BuildLogFile" DisplayName="Файл журнала сборки" Description="Определяет файл журнала сборки, в который будет вестись запись, если ведение журнала включено." F1Keyword="VC.Project.VCConfiguration.BuildLogFile" Category="General" Default="$(ProjectDir)\$(MSBuildProjectName).log" Subtype="file">
     <StringProperty.DataSource>
       <DataSource Persistence="ProjectFile" ItemType="BuildLog" PersistedName="Path"/>
     </StringProperty.DataSource>

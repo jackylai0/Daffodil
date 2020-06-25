@@ -22,32 +22,32 @@ Credits
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 -->
 <!--Copyright, Microsoft Corporation, All rights reserved.-->
-<Rule Name="ConfigurationGeneral" DisplayName="General" PageTemplate="generic" Description="General" xmlns="http://schemas.microsoft.com/build/2009/properties">
+<Rule Name="ConfigurationGeneral" DisplayName="Ogólne" PageTemplate="generic" Description="Ogólne" xmlns="http://schemas.microsoft.com/build/2009/properties">
   <Rule.Categories>
-    <Category Name="General" DisplayName="General" Description="General"/>
+    <Category Name="General" DisplayName="Ogólne" Description="Ogólne"/>
   </Rule.Categories>
   <Rule.DataSource>
     <DataSource Persistence="ProjectFile" Label="Configuration"/>
   </Rule.DataSource>
-  <StringProperty Name="OutDir" DisplayName="Output Directory" Description="Specifies a relative path to the output file directory; can include environment variables." Category="General" Default="$(SolutionDir)$(ConfigurationName)" Subtype="folder" F1Keyword="VC.Project.VCConfiguration.OutputDirectory"/>
-  <StringProperty Name="IntDir" DisplayName="Intermediate Directory" Description="Specifies a relative path to the intermediate file directory; can include environment variables." Category="General" Default="$(ConfigurationName)" Subtype="folder" F1Keyword="VC.Project.VCConfiguration.IntermediateDirectory"/>
-  <EnumProperty Name="ConfigurationType" DisplayName="Configuration Type" Description="Specifies the type of output this configuration generates." Category="General" F1Keyword="VC.Project.VCConfiguration.ConfigurationType">
-    <EnumValue Name="Makefile" DisplayName="Makefile" Description="Makefile"/>
-    <EnumValue Name="Application" DisplayName="Application (.exe)" Description="Application (.exe)"/>
-    <EnumValue Name="DynamicLibrary" DisplayName="Dynamic Library (.dll)" Description="Dynamic Library (.dll)"/>
-    <EnumValue Name="StaticLibrary" DisplayName="Static library (.lib)" Description="Static Library (.lib)"/>
-    <EnumValue Name="Utility" DisplayName="Utility" Description="Utility"/>
+  <StringProperty Name="OutDir" DisplayName="Katalog wyjściowy" Description="Określa ścieżkę względną do katalogu zawierającego plik wyjściowy; może zawierać zmienne środowiskowe." Category="General" Default="$(SolutionDir)$(ConfigurationName)" Subtype="folder" F1Keyword="VC.Project.VCConfiguration.OutputDirectory"/>
+  <StringProperty Name="IntDir" DisplayName="Katalog pośredni" Description="Określa ścieżkę względną do pośredniego katalogu plików; może zawierać zmienne środowiskowe." Category="General" Default="$(ConfigurationName)" Subtype="folder" F1Keyword="VC.Project.VCConfiguration.IntermediateDirectory"/>
+  <EnumProperty Name="ConfigurationType" DisplayName="Typ konfiguracji" Description="Określa typ danych wyjściowych generowanych przez tę konfigurację." Category="General" F1Keyword="VC.Project.VCConfiguration.ConfigurationType">
+    <EnumValue Name="Makefile" DisplayName="plik reguł programu make" Description="plik reguł programu make"/>
+    <EnumValue Name="Application" DisplayName="Aplikacja (.exe)" Description="Aplikacja (.exe)"/>
+    <EnumValue Name="DynamicLibrary" DisplayName="Biblioteka dynamiczna (.dll)" Description="Biblioteka dynamiczna (.dll)"/>
+    <EnumValue Name="StaticLibrary" DisplayName="Biblioteka statyczna (.lib)" Description="Biblioteka statyczna (.lib)"/>
+    <EnumValue Name="Utility" DisplayName="Narzędzie" Description="Narzędzie"/>
   </EnumProperty>
-  <EnumProperty Name="CLRSupport" DisplayName="Common Language Runtime Support" Description="Select the Common Language Runtime support your code uses." Category="General" F1Keyword="VC.Project.VCConfiguration.ManagedExtensions">
-    <EnumValue Name="false" DisplayName="No Common Language RunTime Support" Description="No Common Language RunTime Support"/>
-    <EnumValue Name="true" Switch="clr" DisplayName="Common Language RunTime Support" Description="Creates metadata for your application that can be consumed by other CLR applications, and allows your application to consume types and data in the metadata of other CLR components."/>
+  <EnumProperty Name="CLRSupport" DisplayName="Obsługa środowiska CLR" Description="Wybierz obsługę środowiska uruchomieniowego CLR, której używa twój kod." Category="General" F1Keyword="VC.Project.VCConfiguration.ManagedExtensions">
+    <EnumValue Name="false" DisplayName="Brak obsługi środowiska uruchomieniowego CLR" Description="Brak obsługi środowiska uruchomieniowego CLR"/>
+    <EnumValue Name="true" Switch="clr" DisplayName="Obsługa środowiska uruchomieniowego CLR (/clr)" Description="Obsługa środowiska uruchomieniowego CLR (/clr)"/>
   </EnumProperty>
-  <StringProperty Name="BuildLogFile" DisplayName="Build Log File" Description="Specifies the build log file to write to when build logging is enabled." F1Keyword="VC.Project.VCConfiguration.BuildLogFile" Category="General" Default="$(ProjectDir)\$(MSBuildProjectName).log" Subtype="file">
+  <StringProperty Name="BuildLogFile" DisplayName="Plik dziennika kompilacji" Description="Określa plik dziennika kompilacji, w którym mają być zapisywane informacje, gdy jest włączone rejestrowanie danych kompilacji." F1Keyword="VC.Project.VCConfiguration.BuildLogFile" Category="General" Default="$(ProjectDir)\$(MSBuildProjectName).log" Subtype="file">
     <StringProperty.DataSource>
       <DataSource Persistence="ProjectFile" ItemType="BuildLog" PersistedName="Path"/>
     </StringProperty.DataSource>
   </StringProperty>
-  <StringProperty Name="_ProjectFileVersion" DisplayName="Project File Version" Description="Specifies the version of the conversion tool used to create this project file." Category="General" Visible="false">
+  <StringProperty Name="_ProjectFileVersion" DisplayName="Wersja pliku projektu" Description="Określa wersję narzędzia konwersji użytego do utworzenia tego pliku projektu." Category="General" Visible="false">
     <StringProperty.DataSource>
       <DataSource Persistence="ProjectFile"/>
     </StringProperty.DataSource>

@@ -30,17 +30,17 @@ Credits
   <Rule.DataSource>
     <DataSource Persistence="ProjectFile" Label="Configuration"/>
   </Rule.DataSource>
-  <StringProperty Name="OutDir" DisplayName="Выходной каталог" Description="Указывает относительный путь к выходному каталогу файлов; может включать в себя  переменные среды." Category="General" Default="$(SolutionDir)$(Configuration)\" Subtype="folder" F1Keyword="VC.Project.VCConfiguration.OutputDirectory">
+  <StringProperty Name="OutDir" DisplayName="Выходной каталог" Description="Указывает относительный путь к выходному каталогу файлов; может включать в себя переменные окружения." Category="General" Default="$(SolutionDir)$(Configuration)\" Subtype="folder" F1Keyword="VC.Project.VCConfiguration.OutputDirectory">
                   <StringProperty.DataSource>
                      <DataSource Persistence="ProjectFile" Label=""/>
                   </StringProperty.DataSource>
   </StringProperty>
-  <StringProperty Name="IntDir" DisplayName="Промежуточный каталог" Description="Указывает относительный путь к промежуточному каталогу файлов; может включать в себя  переменные среды." Category="General" Default="$(Configuration)\" Subtype="folder" F1Keyword="VC.Project.VCConfiguration.IntermediateDirectory">
+  <StringProperty Name="IntDir" DisplayName="Промежуточный каталог" Description="Указывает относительный путь к промежуточному каталогу файлов; может включать в себя переменные окружения." Category="General" Default="$(Configuration)\" Subtype="folder" F1Keyword="VC.Project.VCConfiguration.IntermediateDirectory">
                   <StringProperty.DataSource>
                      <DataSource Persistence="ProjectFile" Label=""/>
                   </StringProperty.DataSource>
   </StringProperty>
-  <StringProperty Name="TargetName" DisplayName="Конечное имя" Description="Задает расширение файла, создаваемого проектом." F1Keyword="VC.Project.VCConfiguration.TargetName" Category="General" Default="$(ProjectName)">
+  <StringProperty Name="TargetName" DisplayName="Имя целевого объекта" Description="Задает расширение файла, создаваемого проектом." F1Keyword="VC.Project.VCConfiguration.TargetName" Category="General" Default="$(ProjectName)">
                   <StringProperty.DataSource>
                      <DataSource Persistence="ProjectFile" Label=""/>
                   </StringProperty.DataSource>
@@ -55,7 +55,7 @@ Credits
                             <DataSource Persistence="ProjectFile" Label=""/>
                       </StringListProperty.DataSource>
   </StringListProperty>
-  <StringProperty Name="BuildLogFile" DisplayName="Файл журнала построения" Description="Определяет файл журнала построения, в который будет вестись запись, если ведение журнала включено." F1Keyword="VC.Project.VCConfiguration.BuildLogFile" Category="General" Default="$(ProjectDir)\$(MSBuildProjectName).log" Subtype="file">
+  <StringProperty Name="BuildLogFile" DisplayName="Файл журнала сборки" Description="Определяет файл журнала сборки, в который будет вестись запись, если ведение журнала включено." F1Keyword="VC.Project.VCConfiguration.BuildLogFile" Category="General" Default="$(ProjectDir)\$(MSBuildProjectName).log" Subtype="file">
                   <StringProperty.DataSource>
                      <DataSource Persistence="ProjectFile" ItemType="BuildLog" PersistedName="Path"/>
                   </StringProperty.DataSource>
@@ -64,7 +64,7 @@ Credits
   <StringListProperty Name="InheritProjectPropertySheets" DisplayName="Inherit Project Property Sheets"
                       Description="Specifies the project property sheets this configuration or property sheet inherits from."
                       Category="General" Separator=";" Subtype="file" /> -->
-  <DynamicEnumProperty Name="PlatformToolset" DisplayName="Набор инструментов платформы" EnumProvider="Toolsets" Description="Задает набор инструментов, используемый для построения текущей конфигурации; если не указан, используется набор инструментов по умолчанию" F1Keyword="VC.Project.VCConfiguration.PlatformToolset" Category="General"/>
+  <DynamicEnumProperty Name="PlatformToolset" DisplayName="Набор инструментов платформы" EnumProvider="Toolsets" Description="Задает набор инструментов, используемый для сборки текущей конфигурации; если не указан, используется набор инструментов по умолчанию" F1Keyword="VC.Project.VCConfiguration.PlatformToolset" Category="General"/>
   <EnumProperty Name="ConfigurationType" DisplayName="Тип конфигурации" Description="Определяет тип выходных файлов, создаваемый этой конфигурацией." Category="ProjectDefaults" F1Keyword="VC.Project.VCConfiguration.ConfigurationType">
     <EnumValue Name="Makefile" DisplayName="Файл makefile" Description="Файл makefile"/>
     <EnumValue Name="Application" DisplayName="Приложение (.exe)" Description="Приложение (.exe)"/>

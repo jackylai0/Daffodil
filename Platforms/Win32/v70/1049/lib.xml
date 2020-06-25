@@ -32,9 +32,9 @@ Credits
   </Rule.DataSource>
   <StringProperty Subtype="file" Name="OutputFile" DisplayName="Выходной файл" Description="Параметр /OUT переопределяет стандартное имя и место программы, создаваемые библиотекой (lib)." Category="General" Switch="OUT" Separator=":" F1Keyword="VC.Project.VCLibrarianTool.OutputFile">
   </StringProperty>
-  <StringListProperty Subtype="file" Name="AdditionalDependencies" DisplayName="Дополнительные зависимости" Description="Задает дополнительные элементы, которые нужно добавить в командную строку компоновки (т.е. kernel32.lib) " Category="General" F1Keyword="VC.Project.VCLibrarianTool.AdditionalDependencies">
+  <StringListProperty Subtype="file" Name="AdditionalDependencies" DisplayName="Дополнительные зависимости" Description="Задает дополнительные элементы, которые нужно добавить в командную строку компоновки. (т.е. kernel32.lib) " Category="General" F1Keyword="VC.Project.VCLibrarianTool.AdditionalDependencies">
   </StringListProperty>
-  <StringListProperty Subtype="folder" Name="AdditionalLibraryDirectories" DisplayName="Дополнительные каталоги библиотек" Description="Разрешает пользователю переопределять путь среды библиотеки" Category="General" Switch="LIBPATH:" F1Keyword="VC.Project.VCLibrarianTool.AdditionalLibraryDirectories">
+  <StringListProperty Subtype="folder" Name="AdditionalLibraryDirectories" DisplayName="Дополнительные каталоги библиотек" Description="Разрешает пользователю переопределять путь окружения библиотеки." Category="General" Switch="LIBPATH:" F1Keyword="VC.Project.VCLibrarianTool.AdditionalLibraryDirectories">
   </StringListProperty>
   <BoolProperty Name="SuppressStartupBanner" DisplayName="Отключить загрузочный баннер" Description="Параметр /NOLOGO запрещает отображение сообщения об авторском праве и номера версии. " Category="General" Switch="NOLOGO" F1Keyword="VC.Project.VCLibrarianTool.SuppressStartupBanner">
   </BoolProperty>
@@ -42,11 +42,11 @@ Credits
   </StringProperty>
   <BoolProperty Name="IgnoreAllDefaultLibraries" DisplayName="Игнорировать все стандартные библиотеки" Description="Параметр /NODEFAULTLIB предписывает библиотеке удалить одну или несколько стандартных библиотек из списка, в котором выполняется поиск, при разрешении внешних ссылок. " Category="General" Switch="NODEFAULTLIB" F1Keyword="VC.Project.VCLibrarianTool.IgnoreAllDefaultLibraries">
   </BoolProperty>
-  <StringListProperty Subtype="file" Name="IgnoreSpecificDefaultLibraries" DisplayName="Игнорировать все стандартные библиотеки" Description="Библиотека, которую должна игнорировать библиотека, при разрешении внешних ссылок." Category="General" Switch="NODEFAULTLIB:" F1Keyword="VC.Project.VCLibrarianTool.IgnoreDefaultLibraryNames">
+  <StringListProperty Subtype="file" Name="IgnoreSpecificDefaultLibraries" DisplayName="Игнорировать конкретные стандартные библиотеки" Description="Библиотека, которую должна игнорировать библиотека, при разрешении внешних ссылок." Category="General" Switch="NODEFAULTLIB:" F1Keyword="VC.Project.VCLibrarianTool.IgnoreDefaultLibraryNames">
   </StringListProperty>
-  <StringListProperty Name="ExportNamedFunctions" DisplayName="Функции, отобранные для экспорта" Description="Экспортировать одну или несколько указанных функций " Category="General" Switch="EXPORT:" F1Keyword="VC.Project.VCLibrarianTool.ExportNamedFunctions">
+  <StringListProperty Name="ExportNamedFunctions" DisplayName="Функции, отобранные для экспорта" Description="Экспортировать одну или несколько указанных функций." Category="General" Switch="EXPORT:" F1Keyword="VC.Project.VCLibrarianTool.ExportNamedFunctions">
   </StringListProperty>
-  <StringProperty Name="ForceSymbolReferences" DisplayName="Принудительно включать ссылки на символы" Description="Заставить библиотеку (Lib) включать ссылку на этот символ" Category="General" Switch="INCLUDE" Separator=":" F1Keyword="VC.Project.VCLibrarianTool.ForceSymbolReferences">
+  <StringProperty Name="ForceSymbolReferences" DisplayName="Принудительно включать ссылки на символы" Description="Заставить библиотеку (Lib) включать ссылку на этот символ." Category="General" Switch="INCLUDE" Separator=":" F1Keyword="VC.Project.VCLibrarianTool.ForceSymbolReferences">
   </StringProperty>
   <BoolProperty Name="LinkLibraryDependencies" DisplayName="Компоновать библиотеки из зависимостей" Description="Указывает, будут ли автоматически использоваться при компоновке выходные данные зависимостей проекта в виде библиотек." Category="General" IncludeInCommandLine="false" F1Keyword="VC.Project.VCLibrarianTool.LinkLibraryDependencies">
     <BoolProperty.DataSource>
@@ -56,39 +56,39 @@ Credits
   <StringProperty Name="DisplayLibrary" DisplayName="Отобразить библиотеку в стандартном выходном формате" Description="Отображает информацию о выходной библиотеке в стандартном выходном формате. Вывод можно перенаправить в файл. Можно использовать параметр /LIST для определения правильного содержания существующей библиотеки при ее изменении." Category="General" Switch="LIST" Separator=":" Visible="false">
   </StringProperty>
   <EnumProperty Name="TargetMachine" DisplayName="Конечный компьютер" Description="Параметр /MACHINE определяет целевую платформу программы." Category="General" F1Keyword="VC.Project.VCLibrarianTool.TargetMachine">
-    <EnumValue Name="MachineAM33" Switch="MACHINE:AM33" DisplayName="MachineAM33">
+    <EnumValue Name="MachineAM33" Switch="MACHINE:AM33" DisplayName="MachineAM33" Description="MachineAM33">
     </EnumValue>
-    <EnumValue Name="MachineARM" Switch="MACHINE:ARM" DisplayName="MachineARM">
+    <EnumValue Name="MachineARM" Switch="MACHINE:ARM" DisplayName="MachineARM" Description="MachineARM">
     </EnumValue>
-    <EnumValue Name="MachineCEE" Switch="MACHINE:CEE" DisplayName="MachineCEE">
+    <EnumValue Name="MachineCEE" Switch="MACHINE:CEE" DisplayName="MachineCEE" Description="MachineCEE">
     </EnumValue>
-    <EnumValue Name="MachineIA64" Switch="MACHINE:IA64" DisplayName="MachineIA64">
+    <EnumValue Name="MachineIA64" Switch="MACHINE:IA64" DisplayName="MachineIA64" Description="MachineIA64">
     </EnumValue>
-    <EnumValue Name="MachineM32R" Switch="MACHINE:M32R" DisplayName="MachineM32R">
+    <EnumValue Name="MachineM32R" Switch="MACHINE:M32R" DisplayName="MachineM32R" Description="MachineM32R">
     </EnumValue>
-    <EnumValue Name="MachineMIPS" Switch="MACHINE:MIPS" DisplayName="MachineMIPS">
+    <EnumValue Name="MachineMIPS" Switch="MACHINE:MIPS" DisplayName="MachineMIPS" Description="MachineMIPS">
     </EnumValue>
-    <EnumValue Name="MachineMIPS16" Switch="MACHINE:MIPS16" DisplayName="MachineMIPS16">
+    <EnumValue Name="MachineMIPS16" Switch="MACHINE:MIPS16" DisplayName="MachineMIPS16" Description="MachineMIPS16">
     </EnumValue>
-    <EnumValue Name="MachineMIPSFPU" Switch="MACHINE:MIPSFPU" DisplayName="MachineMIPSFPU">
+    <EnumValue Name="MachineMIPSFPU" Switch="MACHINE:MIPSFPU" DisplayName="MachineMIPSFPU" Description="MachineMIPSFPU">
     </EnumValue>
-    <EnumValue Name="MachineMIPSFPU16" Switch="MACHINE:MIPSFPU16" DisplayName="MachineMIPSFPU16">
+    <EnumValue Name="MachineMIPSFPU16" Switch="MACHINE:MIPSFPU16" DisplayName="MachineMIPSFPU16" Description="MachineMIPSFPU16">
     </EnumValue>
-    <EnumValue Name="MachineMIPSR41XX" Switch="MACHINE:MIPSR41XX" DisplayName="MachineMIPSR41XX">
+    <EnumValue Name="MachineMIPSR41XX" Switch="MACHINE:MIPSR41XX" DisplayName="MachineMIPSR41XX" Description="MachineMIPSR41XX">
     </EnumValue>
-    <EnumValue Name="MachinePPC" Switch="MACHINE:PPC" DisplayName="MachinePPC">
+    <EnumValue Name="MachinePPC" Switch="MACHINE:PPC" DisplayName="MachinePPC" Description="MachinePPC">
     </EnumValue>
-    <EnumValue Name="MachineSH3" Switch="MACHINE:SH3" DisplayName="MachineSH3">
+    <EnumValue Name="MachineSH3" Switch="MACHINE:SH3" DisplayName="MachineSH3" Description="MachineSH3">
     </EnumValue>
-    <EnumValue Name="MachineSH4" Switch="MACHINE:SH4" DisplayName="MachineSH4">
+    <EnumValue Name="MachineSH4" Switch="MACHINE:SH4" DisplayName="MachineSH4" Description="MachineSH4">
     </EnumValue>
-    <EnumValue Name="MachineSH5" Switch="MACHINE:SH5" DisplayName="MachineSH5">
+    <EnumValue Name="MachineSH5" Switch="MACHINE:SH5" DisplayName="MachineSH5" Description="MachineSH5">
     </EnumValue>
-    <EnumValue Name="MachineTHUMB" Switch="MACHINE:THUMB" DisplayName="MachineTHUMB">
+    <EnumValue Name="MachineTHUMB" Switch="MACHINE:THUMB" DisplayName="MachineTHUMB" Description="MachineTHUMB">
     </EnumValue>
-    <EnumValue Name="MachineTRICORE" Switch="MACHINE:TRICORE" DisplayName="MachineTRICORE">
+    <EnumValue Name="MachineTRICORE" Switch="MACHINE:TRICORE" DisplayName="MachineTRICORE" Description="MachineTRICORE">
     </EnumValue>
-    <EnumValue Name="MachineX86" Switch="MACHINE:X86" DisplayName="MachineX86">
+    <EnumValue Name="MachineX86" Switch="MACHINE:X86" DisplayName="MachineX86" Description="MachineX86">
     </EnumValue>
   </EnumProperty>
   <EnumProperty Name="SubSystem" DisplayName="Подсистема" Description="Параметр /SUBSYSTEM предписывает операционной системе порядок выполнения EXE-файла. Выбор подсистемы влияет на символ точки входа (или функцию точки входа), который выберет компоновщик." Category="General" F1Keyword="VC.Project.VCLibrarianTool.SubSystem">
@@ -120,10 +120,10 @@ Credits
   </StringListProperty>
   <BoolProperty Name="Verbose" DisplayName="Подробный" Description="Подробный" Category="General" Switch="VERBOSE" F1Keyword="VC.Project.VCLibrarianTool.Verbose">
   </BoolProperty>
-  <StringProperty Subtype="file" Name="Name" DisplayName="Имя" Description="При построении библиотеки импорта задает имя DLL, для которого создается библиотека импорта." Category="General" Switch="NAME:" F1Keyword="VC.Project.VCLibrarianTool.Name">
+  <StringProperty Subtype="file" Name="Name" DisplayName="Имя" Description="При сборке библиотеки импорта задает имя DLL, для которого создается библиотека импорта." Category="General" Switch="NAME:" F1Keyword="VC.Project.VCLibrarianTool.Name">
   </StringProperty>
-  <StringProperty Subtype="folder" Name="TrackerLogDirectory" DisplayName="Каталог журнала отслеживания" Description="Каталог журнала отслеживания." Category="General" IncludeInCommandLine="false" Visible="false">
+  <StringProperty Subtype="folder" Name="TrackerLogDirectory" DisplayName="Каталог журнала отслеживания" Description="Каталог журнала отслеживания." IncludeInCommandLine="false" Visible="false">
   </StringProperty>
-  <StringProperty Name="AdditionalOptions" DisplayName="Дополнительные параметры" Description="Дополнительные параметры" Category="Command Line" F1Keyword="vc.project.AdditionalOptionsPage">
+  <StringProperty Name="AdditionalOptions" DisplayName="Дополнительные параметры" Description="Дополнительные параметры." Category="Command Line" F1Keyword="vc.project.AdditionalOptionsPage">
   </StringProperty>
 </Rule>

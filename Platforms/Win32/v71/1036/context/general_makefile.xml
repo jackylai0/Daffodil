@@ -40,7 +40,7 @@ Credits
   </EnumProperty>
   <EnumProperty Name="CLRSupport" DisplayName="Prise en charge du Common Language Runtime" Description="Sélectionnez la prise en charge du Common Language Runtime qu'utilise votre code." Category="General" F1Keyword="VC.Project.VCConfiguration.ManagedExtensions">
     <EnumValue Name="false" DisplayName="Pas de prise en charge du Common Language Runtime" Description="Pas de prise en charge du Common Language Runtime"/>
-    <EnumValue Name="true" Switch="clr" DisplayName="Prise en charge du Common Language Runtime" Description="Crée les métadonnées de votre application qui peuvent être utilisées par d'autres applications CLR, et permet à votre application d'utiliser les types et données des métadonnées appartenant à d'autres composants CLR."/>
+    <EnumValue Name="true" Switch="clr" DisplayName="Prise en charge du Common Language Runtime (/clr)" Description="Prise en charge du Common Language Runtime (/clr)"/>
   </EnumProperty>
   <StringProperty Name="BuildLogFile" DisplayName="Fichier journal de génération" Description="Spécifie le fichier journal de génération à utiliser lorsque la journalisation de la génération est activée." F1Keyword="VC.Project.VCConfiguration.BuildLogFile" Category="General" Default="$(ProjectDir)\$(MSBuildProjectName).log" Subtype="file">
     <StringProperty.DataSource>

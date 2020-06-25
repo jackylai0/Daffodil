@@ -32,11 +32,11 @@ Credits
   <Rule.DataSource>
     <DataSource Persistence="ProjectFile" ItemType="Midl" Label="" HasConfigurationCondition="true"/>
   </Rule.DataSource>
-  <StringListProperty Name="PreprocessorDefinitions" DisplayName="Präprozessordefinitionen" Description="Gibt mindestens eine Definition an, einschließlich MIDL-Makros. (/D[Makros]" Category="General" Switch="D " F1Keyword="VC.Project.VCMidlTool.PreprocessorDefinitions">
+  <StringListProperty Name="PreprocessorDefinitions" DisplayName="Präprozessordefinitionen" Description="Gibt mindestens eine Definition an, einschließlich MIDL-Makros. (/D[Makros])" Category="General" Switch="D " F1Keyword="VC.Project.VCMidlTool.PreprocessorDefinitions">
   </StringListProperty>
   <StringListProperty Subtype="folder" Name="AdditionalIncludeDirectories" DisplayName="Zusätzliche Includeverzeichnisse" Description="Gibt mindestens ein Verzeichnis an, das dem Includepfad hinzugefügt wird. (/I[Pfad])" Category="General" Switch="I" F1Keyword="VC.Project.VCMidlTool.AdditionalIncludeDirectories">
   </StringListProperty>
-  <BoolProperty Name="IgnoreStandardIncludePath" DisplayName="Standardincludepfad ignorieren" Description="Die aktuellen und die INCLUDE-Verzeichnisse werden ignoriert." Category="General" Switch="no_def_idir" F1Keyword="VC.Project.VCMidlTool.IgnoreStandardIncludePath">
+  <BoolProperty Name="IgnoreStandardIncludePath" DisplayName="Standardincludepfad ignorieren" Description="Die aktuellen und die INCLUDE-Verzeichnisse werden ignoriert. (/no_def_idir)" Category="General" Switch="no_def_idir" F1Keyword="VC.Project.VCMidlTool.IgnoreStandardIncludePath">
   </BoolProperty>
   <BoolProperty Name="MkTypLibCompatible" DisplayName="MkTypLib-kompatibel" Description="Erzwingt Kompatibilität mit &quot;mktyplib.exe&quot;, Version 2.03. (/mktyplib203)" Category="General" Switch="mktyplib203" F1Keyword="VC.Project.VCMidlTool.MkTypLibCompatible">
   </BoolProperty>
@@ -118,7 +118,7 @@ Credits
   </EnumProperty>
   <StringProperty Name="CPreprocessOptions" DisplayName="C-Präprozessoroptionen" Description="Gibt Schalter an, die an den C-Compiler-Präprozessor übergeben werden. (/cpp_opt switches)" Category="Advanced" Switch="cpp_opt" Separator=" " F1Keyword="VC.Project.VCMidlTool.CPreprocessOptions">
   </StringProperty>
-  <StringListProperty Name="UndefinePreprocessorDefinitions" DisplayName="Definition von Präprozessordefinitionen aufheben" Description="Gibt mindestens eine Definition an, die aufgehoben wird, einschließlich MIDL-Makros. (/U[Makros])" Category="Advanced" Switch="U" F1Keyword="VC.Project.VCMidlTool.UndefinePreprocessorDefinitions">
+  <StringListProperty Name="UndefinePreprocessorDefinitions" DisplayName="Präprozessordefinitionen aufheben" Description="Gibt mindestens eine Definition an, die aufgehoben wird, einschließlich MIDL-Makros. (/U[Makros])" Category="Advanced" Switch="U" F1Keyword="VC.Project.VCMidlTool.UndefinePreprocessorDefinitions">
   </StringListProperty>
   <EnumProperty Name="EnableErrorChecks" DisplayName="Fehlerüberprüfung aktivieren" Description="Aktiviert die Fehlerüberprüfungsoption. ([/error all|none])" Category="Advanced" F1Keyword="VC.Project.VCMidlTool.EnableErrorChecks">
     <EnumValue Name="EnableCustom" Switch="" DisplayName="EnableCustom" Description="Alle">
@@ -128,7 +128,7 @@ Credits
     <EnumValue Name="None" Switch="error none" DisplayName="Keine" Description="Keine">
     </EnumValue>
   </EnumProperty>
-  <BoolProperty Name="ErrorCheckAllocations" DisplayName="Zuordnungen überprüfen" Description="Überprüft auf Fehler, die aufgrund von nicht genügend Arbeitsspeicher aufgetreten sind. (/error allocation)" Category="Advanced" Switch="error allocation" F1Keyword="VC.Project.VCMidlTool.ErrorCheckAllocations">
+  <BoolProperty Name="ErrorCheckAllocations" DisplayName="Speicherbelegungen überprüfen" Description="Überprüft auf Fehler, die aufgrund von nicht genügend Arbeitsspeicher aufgetreten sind. (/error allocation)" Category="Advanced" Switch="error allocation" F1Keyword="VC.Project.VCMidlTool.ErrorCheckAllocations">
   </BoolProperty>
   <BoolProperty Name="ErrorCheckBounds" DisplayName="Begrenzungen überprüfen" Description="Überprüft die Größe im Vergleich mit der Übertragungslängenspezifikation. (/error bounds_check)" Category="Advanced" Switch="error bounds_check" F1Keyword="VC.Project.VCMidlTool.ErrorCheckBounds">
   </BoolProperty>

@@ -91,7 +91,7 @@ Credits
     <EnumValue Name="false" DisplayName="无公共语言运行时支持" Description="无公共语言运行时支持"/>
     <EnumValue Name="true" DisplayName="公共语言运行时支持(/clr)" Description="公共语言运行时支持(/clr)"/>
   </EnumProperty>
-  <EnumProperty Name="WholeProgramOptimization" DisplayName="全程序优化" Description="指定程序将跨 .obj 边界进行优化；当启用 C/C++ 优化时效果最好。" Category="ProjectDefaults" F1Keyword="VC.Project.VCConfiguration.WholeProgramOptimization">
+  <EnumProperty Name="WholeProgramOptimization" DisplayName="全程序优化" Description="指定程序将跨 .obj 边界进行优化；当开启 C/C++ 优化时效果最好。" Category="ProjectDefaults" F1Keyword="VC.Project.VCConfiguration.WholeProgramOptimization">
     <EnumValue Name="false" DisplayName="无全程序优化" Description="无全程序优化"/>
     <EnumValue Name="true" DisplayName="使用链接时间代码生成" Description="使用链接时间代码生成"/>
   </EnumProperty>

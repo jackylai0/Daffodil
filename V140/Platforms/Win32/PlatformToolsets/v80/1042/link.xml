@@ -32,7 +32,7 @@ Credits
     <Category Name="Optimization" DisplayName="최적화"/>
     <Category Name="Embedded IDL" DisplayName="포함 IDL"/>
     <Category Name="Advanced" DisplayName="고급"/>
-    <Category Name="All Options" DisplayName="모든 옵션" Subtype="Search" />
+    <Category Name="All Options" DisplayName="모든 옵션" Subtype="Search"/>
     <Category Name="Command Line" DisplayName="명령줄" Subtype="CommandLine"/>
   </Rule.Categories>
   <Rule.DataSource>
@@ -51,7 +51,7 @@ Credits
     </EnumValue>
     <EnumValue Name="LinkVerboseREF" Switch="VERBOSE:REF" DisplayName="최적화된 링크 작업에서 제거된 데이터 정보" Description="최적화된 링크 작업에서 제거된 함수와 데이터에 대한 정보를 표시합니다.">
     </EnumValue>
-    <EnumValue Name="LinkVerboseSAFESEH" Switch="VERBOSE:SAFESEH" DisplayName="SEH와 호환되지 않는 모듈 정보" Description="안전한 예외 처리와 호환되지 않는 모듈에 대한 정보를 표시합니다. ">
+    <EnumValue Name="LinkVerboseSAFESEH" Switch="VERBOSE:SAFESEH" DisplayName="SEH와 호환되지 않는 모듈 정보" Description="안전한 예외 처리와 호환되지 않는 모듈에 대한 정보를 표시합니다.">
     </EnumValue>
     <EnumValue Name="LinkVerboseCLR" Switch="VERBOSE:CLR" DisplayName="관리 코드와 관련된 링커 작업 정보" Description="관리 코드와 관련된 링커 작업에 대한 정보를 표시합니다.">
     </EnumValue>
@@ -116,13 +116,13 @@ Credits
   </StringProperty>
   <StringProperty Subtype="folder" Name="TrackerLogDirectory" DisplayName="추적기 로그 디렉터리" Description="추적기 로그 디렉터리입니다." Category="General" IncludeInCommandLine="false" Visible="false">
   </StringProperty>
-  <StringListProperty Subtype="file" Name="AdditionalDependencies" DisplayName="추가 종속성" Description="링크 명령줄에 kernel32.lib와 같이 추가할 항목을 지정합니다. " Category="Input" F1Keyword="VC.Project.VCLinkerTool.AdditionalDependencies">
+  <StringListProperty Subtype="file" Name="AdditionalDependencies" DisplayName="추가 종속성" Description="링크 명령줄에 추가할 항목(예: kernel32.lib)을 지정합니다. " Category="Input" F1Keyword="VC.Project.VCLinkerTool.AdditionalDependencies">
   </StringListProperty>
   <BoolProperty Name="IgnoreAllDefaultLibraries" DisplayName="모든 기본 라이브러리 무시" Description="/NODEFAULTLIB 옵션을 사용하면 외부 참조를 확인할 때 검색하는 라이브러리 목록에서 하나 이상의 기본 라이브러리를 제거하도록 링커에 지시할 수 있습니다. " Category="Input" Switch="NODEFAULTLIB" F1Keyword="VC.Project.VCLinkerTool.IgnoreAllDefaultLibraries">
   </BoolProperty>
   <StringListProperty Subtype="file" Name="IgnoreSpecificDefaultLibraries" DisplayName="특정 기본 라이브러리 무시" Description="무시할 하나 이상의 기본 라이브러리 이름을 지정합니다. 라이브러리가 여러 개인 경우 세미콜론으로 구분합니다.     (/NODEFAULTLIB:[name, name, ...])" Category="Input" Switch="NODEFAULTLIB:" F1Keyword="VC.Project.VCLinkerTool.IgnoreDefaultLibraryNames">
   </StringListProperty>
-  <StringProperty Subtype="file" Name="ModuleDefinitionFile" DisplayName="모듈 정의 파일" Description="/DEF 옵션으로 모듈 정의 파일(.def)을 링커에 전달합니다. .def 파일은 LINK에 대해 하나만 지정할 수 있습니다. " Category="Input" Switch="DEF" Separator=":" F1Keyword="VC.Project.VCLinkerTool.ModuleDefinitionFile">
+  <StringProperty Subtype="file" Name="ModuleDefinitionFile" DisplayName="모듈 정의 파일" Description="/DEF 옵션으로 모듈 정의 파일(.def)을 링커에 전달합니다. .def 파일은 LINK에 대해 하나만 지정할 수 있습니다." Category="Input" Switch="DEF" Separator=":" F1Keyword="VC.Project.VCLinkerTool.ModuleDefinitionFile">
   </StringProperty>
   <StringListProperty Subtype="file" Name="AddModuleNamesToAssembly" DisplayName="어셈블리에 모듈 추가" Description="/ASSEMBLYMODULE 옵션을 사용하면 어셈블리에 모듈 참조를 추가할 수 있습니다. 모듈 참조를 추가한 어셈블리 프로그램에서는 모듈의 형식 정보를 사용할 수 없습니다. 하지만 해당 어셈블리를 참조하는 모든 프로그램에서 모듈의 형식 정보를 사용할 수 있습니다." Category="Input" Switch="ASSEMBLYMODULE:" F1Keyword="VC.Project.VCLinkerTool.AddModuleNamesToAssembly">
   </StringListProperty>
@@ -172,13 +172,13 @@ Credits
     </EnumValue>
     <EnumValue Name="Native" Switch="SUBSYSTEM:NATIVE" DisplayName="네이티브" Description="Windows NT용 장치 드라이버입니다. /DRIVER:WDM을 지정한 경우 NATIVE가 기본값입니다.">
     </EnumValue>
-    <EnumValue Name="EFI Application" Switch="SUBSYSTEM:EFI_APPLICATION" DisplayName="EFI 응용 프로그램" Description="EFI 응용 프로그램">
+    <EnumValue Name="EFI Application" Switch="SUBSYSTEM:EFI_APPLICATION" DisplayName="EFI 응용 프로그램" Description="EFI 응용 프로그램입니다.">
     </EnumValue>
-    <EnumValue Name="EFI Boot Service Driver" Switch="SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER" DisplayName="EFI 부트 서비스 드라이버" Description="EFI 부트 서비스 드라이버">
+    <EnumValue Name="EFI Boot Service Driver" Switch="SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER" DisplayName="EFI 부트 서비스 드라이버" Description="EFI 부트 서비스 드라이버입니다.">
     </EnumValue>
-    <EnumValue Name="EFI ROM" Switch="SUBSYSTEM:EFI_ROM" DisplayName="EFI ROM" Description="EFI ROM">
+    <EnumValue Name="EFI ROM" Switch="SUBSYSTEM:EFI_ROM" DisplayName="EFI ROM" Description="EFI ROM입니다.">
     </EnumValue>
-    <EnumValue Name="EFI Runtime" Switch="SUBSYSTEM:EFI_RUNTIME_DRIVER" DisplayName="EFI 런타임" Description="EFI 런타임">
+    <EnumValue Name="EFI Runtime" Switch="SUBSYSTEM:EFI_RUNTIME_DRIVER" DisplayName="EFI 런타임" Description="EFI 런타임입니다.">
     </EnumValue>
     <EnumValue Name="WindowsCE" Switch="SUBSYSTEM:WINDOWSCE" DisplayName="WindowsCE" Description="Windows CE 장치에서 실행되는 응용 프로그램입니다.">
     </EnumValue>
@@ -226,7 +226,7 @@ Credits
   <EnumProperty Name="LinkTimeCodeGeneration" DisplayName="링크 타임 코드 생성" Description="링크 타임 코드를 생성하도록 지정합니다." Category="Optimization" F1Keyword="VC.Project.VCLinkerTool.LinkTimeCodeGeneration">
     <EnumValue Name="Default" Switch="" DisplayName="기본값" Description="기본 LTCG 설정입니다.">
     </EnumValue>
-    <EnumValue Name="UseLinkTimeCodeGeneration" Switch="LTCG" DisplayName="링크 타임 코드 생성 사용" Description="링크 타임 코드 생성 사용">
+    <EnumValue Name="UseLinkTimeCodeGeneration" Switch="LTCG" DisplayName="링크 타임 코드 생성 사용" Description="링크 타임 코드 생성을 사용합니다.">
     </EnumValue>
     <EnumValue Name="PGInstrument" Switch="LTCG:PGInstrument" DisplayName="프로필 기반 최적화 - 계측" Description="링크 타임 코드를 생성하도록 지정합니다.">
     </EnumValue>
@@ -253,7 +253,7 @@ Credits
   </BoolProperty>
   <StringProperty Name="BaseAddress" DisplayName="기준 주소" Description="프로그램의 기준 주소를 설정합니다. (/BASE:{address[,size] | @filename,key})" Category="Advanced" Switch="BASE" Separator=":" F1Keyword="VC.Project.VCLinkerTool.BaseAddress">
   </StringProperty>
-  <BoolProperty ReverseSwitch="DYNAMICBASE:NO" Name="RandomizedBaseAddress" DisplayName="임의 기준 주소" Description="임의 기준 주소 (/DYNAMICBASE[:NO])" Category="Advanced" Switch="DYNAMICBASE" F1Keyword="VC.Project.VCLinkerTool.RandomizedBaseAddress">
+  <BoolProperty ReverseSwitch="DYNAMICBASE:NO" Name="RandomizedBaseAddress" DisplayName="임의 기준 주소" Description="임의 기준 주소입니다. (/DYNAMICBASE[:NO])" Category="Advanced" Switch="DYNAMICBASE" F1Keyword="VC.Project.VCLinkerTool.RandomizedBaseAddress">
   </BoolProperty>
   <BoolProperty ReverseSwitch="FIXED:NO" Name="FixedBaseAddress" DisplayName="고정 기준 주소" Description="기본 설정 기준 주소에서만 로드할 수 있는 프로그램을 만듭니다. (/FIXED[:NO])" Category="Advanced" Switch="FIXED" F1Keyword="VC.Project.VCLinkerTool.FixedBaseAddress">
   </BoolProperty>
@@ -317,14 +317,14 @@ Credits
   </EnumProperty>
   <StringProperty Subtype="file" Name="LinkKeyFile" DisplayName="키 파일" Description="어셈블리에 서명하는 키 또는 키 쌍을 지정합니다. (/KEYFILE:filename)" Category="Advanced" Switch="KEYFILE" Separator=":" F1Keyword="VC.Project.VCLinkerTool.KeyFile">
     <StringProperty.DataSource>
-      <DataSource Persistence="ProjectFile" ItemType="" Label="" HasConfigurationCondition="true" />
+      <DataSource Persistence="ProjectFile" ItemType="" Label="" HasConfigurationCondition="true"/>
     </StringProperty.DataSource>
   </StringProperty>
   <StringProperty Subtype="file" Name="KeyContainer" DisplayName="키 컨테이너" Description="어셈블리에 서명하는 키 컨테이너를 지정합니다. (/KEYCONTAINER:name)" Category="Advanced" Switch="KEYCONTAINER" Separator=":" F1Keyword="VC.Project.VCLinkerTool.KeyContainer">
   </StringProperty>
   <BoolProperty ReverseSwitch="DELAYSIGN:NO" Name="LinkDelaySign" DisplayName="서명 연기" Description="어셈블리에 부분적으로 서명합니다. 어셈블리에 공개 키를 배치하려는 경우에만 /DELAYSIGN을 사용합니다. 기본값은 /DELAYSIGN:NO입니다." Category="Advanced" Switch="DELAYSIGN" F1Keyword="VC.Project.VCLinkerTool.DelaySign">
     <BoolProperty.DataSource>
-      <DataSource Persistence="ProjectFile" ItemType="" Label="" HasConfigurationCondition="true" />
+      <DataSource Persistence="ProjectFile" ItemType="" Label="" HasConfigurationCondition="true"/>
     </BoolProperty.DataSource>
   </BoolProperty>
   <BoolProperty ReverseSwitch="CLRUNMANAGEDCODECHECK:NO" Name="CLRUnmanagedCodeCheck" DisplayName="CLR 비관리 코드 검사" Description="/CLRUNMANAGEDCODECHECK는 관리 코드에서 네이티브 DLL로 호출하는 링커 생성 PInvoke 호출에 링커가 SuppressUnmanagedCodeSecurityAttribute를 적용할지 여부를 지정합니다." Category="Advanced" Switch="CLRUNMANAGEDCODECHECK" F1Keyword="VC.Project.VCLinkerTool.CLRUnmanagedCodeCheck">
@@ -351,10 +351,10 @@ Credits
   </EnumProperty>
   <BoolProperty ReverseSwitch="SAFESEH:NO" Name="ImageHasSafeExceptionHandlers" DisplayName="이미지에 안전한 예외 처리기 포함" Description="/SAFESEH를 지정하면 링커에서는 이미지의 안전한 예외 처리기 테이블을 만들 수 있을 경우에만 이미지를 생성합니다. 이 테이블은 해당 운영 체제에서 해당 이미지에 올바른 예외 처리기를 지정합니다." Category="Advanced" Switch="SAFESEH" F1Keyword="VC.Project.VCLinkerTool.ImageHasSafeExceptionHandlers">
   </BoolProperty>
+  <StringProperty Name="AdditionalOptions" DisplayName="추가 옵션" Description="추가 옵션입니다." Category="Command Line" F1Keyword="vc.project.AdditionalOptionsPage">
+  </StringProperty>
   <BoolProperty Name="LinkDLL" Switch="DLL" Visible="false">
   </BoolProperty>
-  <StringProperty Name="AdditionalOptions" DisplayName="추가 옵션" Description="추가 옵션" Category="Command Line" F1Keyword="vc.project.AdditionalOptionsPage">
-  </StringProperty>
   <BoolProperty Name="BuildingInIDE" Visible="false">
   </BoolProperty>
 </Rule>

@@ -27,17 +27,17 @@ Credits
     <Category Name="General" DisplayName="일반"/>
     <Category Name="Output" DisplayName="출력"/>
     <Category Name="Advanced" DisplayName="고급"/>
-    <Category Name="All Options" DisplayName="모든 옵션" Subtype="Search" />
+    <Category Name="All Options" DisplayName="모든 옵션" Subtype="Search"/>
     <Category Name="Command Line" DisplayName="명령줄" Subtype="CommandLine"/>
   </Rule.Categories>
   <Rule.DataSource>
     <DataSource Persistence="ProjectFile" ItemType="Midl" Label="" HasConfigurationCondition="true"/>
   </Rule.DataSource>
-  <StringListProperty Name="PreprocessorDefinitions" DisplayName="전처리기 정의" Description="하나 이상의 MIDL 매크로를 포함한 정의를 지정합니다. (/D[macros]" Category="General" Switch="D " F1Keyword="VC.Project.VCMidlTool.PreprocessorDefinitions">
+  <StringListProperty Name="PreprocessorDefinitions" DisplayName="전처리기 정의" Description="하나 이상의 MIDL 매크로를 포함한 정의를 지정합니다(/D[macros])." Category="General" Switch="D " F1Keyword="VC.Project.VCMidlTool.PreprocessorDefinitions">
   </StringListProperty>
   <StringListProperty Subtype="folder" Name="AdditionalIncludeDirectories" DisplayName="추가 포함 디렉터리" Description="포함 경로에 추가할 하나 이상의 디렉터리를 지정합니다. (/I[path])" Category="General" Switch="I" F1Keyword="VC.Project.VCMidlTool.AdditionalIncludeDirectories">
   </StringListProperty>
-  <BoolProperty Name="IgnoreStandardIncludePath" DisplayName="표준 포함 경로 무시" Description="현재 디렉터리와 INCLUDE 디렉터리를 무시합니다." Category="General" Switch="no_def_idir" F1Keyword="VC.Project.VCMidlTool.IgnoreStandardIncludePath">
+  <BoolProperty Name="IgnoreStandardIncludePath" DisplayName="표준 포함 경로 무시" Description="현재 디렉터리와 INCLUDE 디렉터리를 무시합니다(/no_def_idir)." Category="General" Switch="no_def_idir" F1Keyword="VC.Project.VCMidlTool.IgnoreStandardIncludePath">
   </BoolProperty>
   <BoolProperty Name="MkTypLibCompatible" DisplayName="MkTypLib 호환" Description="mktyplib.exe 버전 2.03과 호환되게 합니다. (/mktyplib203)" Category="General" Switch="mktyplib203" F1Keyword="VC.Project.VCMidlTool.MkTypLibCompatible">
   </BoolProperty>
@@ -159,8 +159,8 @@ Credits
   </EnumProperty>
   <StringProperty Subtype="file" Name="RedirectOutputAndErrors" DisplayName="출력 리디렉션" Description="화면 출력을 파일로 리디렉션합니다. (/o file)" Category="Advanced" Switch="o" Separator=" " F1Keyword="VC.Project.VCMidlTool.RedirectOutputAndErrors">
   </StringProperty>
-  <StringProperty Subtype="folder" Name="TrackerLogDirectory" DisplayName="추적기 로그 디렉터리" Description="추적기 로그 디렉터리입니다." IncludeInCommandLine="false" Visible="false">
-  </StringProperty>
   <StringProperty Name="AdditionalOptions" DisplayName="추가 옵션" Description="추가 옵션" Category="Command Line" F1Keyword="vc.project.AdditionalOptionsPage">
+  </StringProperty>
+  <StringProperty Subtype="folder" Name="TrackerLogDirectory" DisplayName="추적기 로그 디렉터리" Description="추적기 로그 디렉터리입니다." IncludeInCommandLine="false" Visible="false">
   </StringProperty>
 </Rule>

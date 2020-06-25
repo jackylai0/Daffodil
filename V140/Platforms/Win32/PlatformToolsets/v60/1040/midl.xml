@@ -27,17 +27,17 @@ Credits
     <Category Name="General" DisplayName="Generale"/>
     <Category Name="Output" DisplayName="Output"/>
     <Category Name="Advanced" DisplayName="Avanzate"/>
-    <Category Name="All Options" DisplayName="Tutte le opzioni" Subtype="Search" />
+    <Category Name="All Options" DisplayName="Tutte le opzioni" Subtype="Search"/>
     <Category Name="Command Line" DisplayName="Riga di comando" Subtype="CommandLine"/>
   </Rule.Categories>
   <Rule.DataSource>
     <DataSource Persistence="ProjectFile" ItemType="Midl" Label="" HasConfigurationCondition="true"/>
   </Rule.DataSource>
-  <StringListProperty Name="PreprocessorDefinitions" DisplayName="Definizioni preprocessore" Description="Specifica una o più definizioni, comprese le macro MIDL. (/D[macro]" Category="General" Switch="D " F1Keyword="VC.Project.VCMidlTool.PreprocessorDefinitions">
+  <StringListProperty Name="PreprocessorDefinitions" DisplayName="Definizioni preprocessore" Description="Specifica una o più definizioni, comprese le macro MIDL. (/D[macro])" Category="General" Switch="D " F1Keyword="VC.Project.VCMidlTool.PreprocessorDefinitions">
   </StringListProperty>
   <StringListProperty Subtype="folder" Name="AdditionalIncludeDirectories" DisplayName="Directory di inclusione aggiuntive" Description="Specifica una o più directory da aggiungere al percorso di inclusione. (/I[percorso])" Category="General" Switch="I" F1Keyword="VC.Project.VCMidlTool.AdditionalIncludeDirectories">
   </StringListProperty>
-  <BoolProperty Name="IgnoreStandardIncludePath" DisplayName="Ignora percorsi di inclusione standard" Description="Ignora la directory corrente e la directory INCLUDE" Category="General" Switch="no_def_idir" F1Keyword="VC.Project.VCMidlTool.IgnoreStandardIncludePath">
+  <BoolProperty Name="IgnoreStandardIncludePath" DisplayName="Ignora percorsi di inclusione standard" Description="Ignora la directory corrente e la directory INCLUDE. (/no_def_idir)" Category="General" Switch="no_def_idir" F1Keyword="VC.Project.VCMidlTool.IgnoreStandardIncludePath">
   </BoolProperty>
   <BoolProperty Name="MkTypLibCompatible" DisplayName="Compatibile MkTypLib" Description="Impone la compatibilità con la versione 2.03 di mktyplib.exe. (/mktyplib203)" Category="General" Switch="mktyplib203" F1Keyword="VC.Project.VCMidlTool.MkTypLibCompatible">
   </BoolProperty>
@@ -68,7 +68,7 @@ Credits
   <EnumProperty Name="TargetEnvironment" DisplayName="Ambiente di destinazione" Description="Specifica l'ambiente di destinazione. (/env win32|dos|win16|mac)" Category="General" F1Keyword="VC.Project.VCMidlTool.TargetEnvironment">
     <EnumValue Name="NotSet" Switch="" DisplayName="Non impostato" Description="Win32">
     </EnumValue>
-    <EnumValue Name="Win32" Switch="env win32" DisplayName="Microsoft Windows a 32 bit" Description="Win32">
+    <EnumValue Name="Win32" Switch="env win32" DisplayName="Microsoft Windows Installer a 32 bit" Description="Win32">
     </EnumValue>
     <EnumValue Name="DOS" Switch="env dos" DisplayName="Microsoft MS-DOS" Description="MS-DOS">
     </EnumValue>
@@ -159,8 +159,8 @@ Credits
   </EnumProperty>
   <StringProperty Subtype="file" Name="RedirectOutputAndErrors" DisplayName="Reindirizza output" Description="Reindirizza l'output dallo schermo a un file. (/o file)" Category="Advanced" Switch="o" Separator=" " F1Keyword="VC.Project.VCMidlTool.RedirectOutputAndErrors">
   </StringProperty>
-  <StringProperty Subtype="folder" Name="TrackerLogDirectory" DisplayName="Directory log di Tracker" Description="Directory dei log di Tracker." IncludeInCommandLine="false" Visible="false">
-  </StringProperty>
   <StringProperty Name="AdditionalOptions" DisplayName="Opzioni aggiuntive" Description="Opzioni aggiuntive" Category="Command Line" F1Keyword="vc.project.AdditionalOptionsPage">
+  </StringProperty>
+  <StringProperty Subtype="folder" Name="TrackerLogDirectory" DisplayName="Directory log di Tracker" Description="Directory dei log di Tracker." IncludeInCommandLine="false" Visible="false">
   </StringProperty>
 </Rule>

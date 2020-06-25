@@ -27,7 +27,7 @@ Credits
     <Category Name="General" DisplayName="Geral"/>
     <Category Name="Output" DisplayName="Saída"/>
     <Category Name="Advanced" DisplayName="Avançado"/>
-    <Category Name="All Options" DisplayName="Todas as Opções" Subtype="Search" />
+    <Category Name="All Options" DisplayName="Todas as opções" Subtype="Search"/>
     <Category Name="Command Line" DisplayName="Linha de Comando" Subtype="CommandLine"/>
   </Rule.Categories>
   <Rule.DataSource>
@@ -37,11 +37,11 @@ Credits
   </StringListProperty>
   <StringListProperty Subtype="folder" Name="AdditionalIncludeDirectories" DisplayName="Diretórios de Inclusão Adicionais" Description="Especifica um ou mais diretórios a adicionar no caminho de inclusão (/I[caminho])" Category="General" Switch="I" F1Keyword="VC.Project.VCMidlTool.AdditionalIncludeDirectories">
   </StringListProperty>
-  <BoolProperty Name="IgnoreStandardIncludePath" DisplayName="Ignorar Caminho de Inclusão Padrão" Description="Ignorar os diretórios de INCLUSÃO e o atual" Category="General" Switch="no_def_idir" F1Keyword="VC.Project.VCMidlTool.IgnoreStandardIncludePath">
+  <BoolProperty Name="IgnoreStandardIncludePath" DisplayName="Ignorar Caminho de Inclusão Padrão" Description="Ignorar os diretórios de INCLUDE e o atual (/no_def_idir)" Category="General" Switch="no_def_idir" F1Keyword="VC.Project.VCMidlTool.IgnoreStandardIncludePath">
   </BoolProperty>
   <BoolProperty Name="MkTypLibCompatible" DisplayName="Compatível com MkTypLib" Description="Força compatibilidade com mktyplib.exe versão 2.03 (/mktyplib203)" Category="General" Switch="mktyplib203" F1Keyword="VC.Project.VCMidlTool.MkTypLibCompatible">
   </BoolProperty>
-  <EnumProperty Name="WarningLevel" DisplayName="Nível de Alerta" Description="Seleciona o rigor dos erros de código do MIDL (/Wn)" Category="General" F1Keyword="VC.Project.VCMidlTool.WarningLevel">
+  <EnumProperty Name="WarningLevel" DisplayName="Nível de Aviso" Description="Seleciona o rigor dos erros de código do MIDL (/Wn)" Category="General" F1Keyword="VC.Project.VCMidlTool.WarningLevel">
     <EnumValue Name="0" Switch="W0" DisplayName="1">
     </EnumValue>
     <EnumValue Name="1" Switch="W1" DisplayName="1">
@@ -55,7 +55,7 @@ Credits
   </EnumProperty>
   <BoolProperty Name="WarnAsError" DisplayName="Tratar Avisos como Erros" Description="Habilita MIDL para tratar todos os avisos como erros (/WX)" Category="General" Switch="WX" F1Keyword="VC.Project.VCMidlTool.WarnAsError">
   </BoolProperty>
-  <BoolProperty Name="SuppressStartupBanner" DisplayName="Suppress Startup Banner" Description="Suprimir a exibição da faixa de inicialização e mensagem de informações (/nologo)" Category="General" Switch="nologo" F1Keyword="VC.Project.VCMidlTool.SuppressStartupBanner">
+  <BoolProperty Name="SuppressStartupBanner" DisplayName="Suprimir Faixa de Inicialização" Description="Suprimir a exibição da faixa de inicialização e mensagem de informações (/nologo)" Category="General" Switch="nologo" F1Keyword="VC.Project.VCMidlTool.SuppressStartupBanner">
   </BoolProperty>
   <EnumProperty Name="DefaultCharType" DisplayName="Tipo de Carácter de Compilador C" Description="Especifica o tipo de caractere padrão do compilador C que será usado para compilar o código gerado. (/char signed|unsigned|ascii7)" Category="General" F1Keyword="VC.Project.VCMidlTool.DefaultCharType">
     <EnumValue Name="Signed" Switch="char signed" DisplayName="Assinado" Description="Assinado">
@@ -159,8 +159,8 @@ Credits
   </EnumProperty>
   <StringProperty Subtype="file" Name="RedirectOutputAndErrors" DisplayName="Redirecionar Saída" Description="Redireciona saída da tela para arquivo (/o arquivo)" Category="Advanced" Switch="o" Separator=" " F1Keyword="VC.Project.VCMidlTool.RedirectOutputAndErrors">
   </StringProperty>
-  <StringProperty Subtype="folder" Name="TrackerLogDirectory" DisplayName="Diretório de Log de Rastreamento" Description="Diretório de Log de Rastreamento." IncludeInCommandLine="false" Visible="false">
-  </StringProperty>
   <StringProperty Name="AdditionalOptions" DisplayName="Opções Adicionais" Description="Opções Adicionais" Category="Command Line" F1Keyword="vc.project.AdditionalOptionsPage">
+  </StringProperty>
+  <StringProperty Subtype="folder" Name="TrackerLogDirectory" DisplayName="Diretório de Log de Rastreamento" Description="Diretório de Log de Rastreamento." IncludeInCommandLine="false" Visible="false">
   </StringProperty>
 </Rule>

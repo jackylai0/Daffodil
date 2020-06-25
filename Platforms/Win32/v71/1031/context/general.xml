@@ -87,11 +87,11 @@ Credits
     <EnumValue Name="Unicode" DisplayName="Unicode-Zeichensatz verwenden" Description="Unicode-Zeichensatz verwenden"/>
     <EnumValue Name="MultiByte" DisplayName="Multibyte-Zeichensatz verwenden" Description="Multibyte-Zeichensatz verwenden"/>
   </EnumProperty>
-  <EnumProperty Name="CLRSupport" DisplayName="Common Language Runtime-Unterstützung" Description="Gibt an, ob diese Konfiguration Common Language Runtime unterstützt. Dies ist mit einigen anderen Einstellungen inkompatibel, z.B. Laufzeitüberprüfungen. In der Hilfe zu den /clr-Schaltern des C++-Compilers finden Sie eine Liste mit allen Konflikten." Category="ProjectDefaults" F1Keyword="VC.Project.VCConfiguration.ManagedExtensions">
+  <EnumProperty Name="CLRSupport" DisplayName="Common Language Runtime-Unterstützung" Description="Gibt an, ob diese Konfiguration Common Language Runtime unterstützt. Dies ist mit einigen anderen Einstellungen inkompatibel, z. B. Laufzeitüberprüfungen. In der Hilfe zu den /clr-Schaltern des C++-Compilers finden Sie eine Liste mit allen Konflikten." Category="ProjectDefaults" F1Keyword="VC.Project.VCConfiguration.ManagedExtensions">
     <EnumValue Name="false" DisplayName="Keine Common Language Runtime-Unterstützung" Description="Keine Common Language Runtime-Unterstützung"/>
     <EnumValue Name="true" DisplayName="Common Language Runtime-Unterstützung (/clr)" Description="Common Language Runtime-Unterstützung (/clr)"/>
   </EnumProperty>
-  <EnumProperty Name="WholeProgramOptimization" DisplayName="Optimierung des gesamten Programms" Description="Gibt an, dass das Programm über die OBJ-Grenzen hinaus optimiert wird. Funktioniert am besten, wenn die  C/C++-Optimierungen aktiviert sind." Category="ProjectDefaults" F1Keyword="VC.Project.VCConfiguration.WholeProgramOptimization">
+  <EnumProperty Name="WholeProgramOptimization" DisplayName="Optimierung des gesamten Programms" Description="Gibt an, dass das Programm über die OBJ-Grenzen hinaus optimiert wird. Funktioniert am besten, wenn C/C++-Optimierungen aktiviert sind." Category="ProjectDefaults" F1Keyword="VC.Project.VCConfiguration.WholeProgramOptimization">
     <EnumValue Name="false" DisplayName="Keine komplette Programmoptimierung" Description="Keine komplette Programmoptimierung"/>
     <EnumValue Name="true" DisplayName="Link-Zeitcodegenerierung verwenden" Description="Link-Zeitcodegenerierung verwenden"/>
   </EnumProperty>

@@ -36,11 +36,11 @@ Credits
   </StringListProperty>
   <StringListProperty Subtype="folder" Name="AdditionalIncludeDirectories" DisplayName="Autres répertoires Include" Description="Spécifie un ou plusieurs répertoires à ajouter au chemin d'accès Include (/I[path])" Category="General" Switch="I" F1Keyword="VC.Project.VCMidlTool.AdditionalIncludeDirectories">
   </StringListProperty>
-  <BoolProperty Name="IgnoreStandardIncludePath" DisplayName="Chemin d'accès Include standard ignoré" Description="Ignore le répertoire actuel et les répertoires INCLUDE" Category="General" Switch="no_def_idir" F1Keyword="VC.Project.VCMidlTool.IgnoreStandardIncludePath">
+  <BoolProperty Name="IgnoreStandardIncludePath" DisplayName="Chemin d'accès Include standard ignoré" Description="Ignorer le répertoire actuel et les répertoires INCLUDE (/no_def_idir)" Category="General" Switch="no_def_idir" F1Keyword="VC.Project.VCMidlTool.IgnoreStandardIncludePath">
   </BoolProperty>
   <BoolProperty Name="MkTypLibCompatible" DisplayName="Compatible MkTypLib" Description="Force la compatibilité avec mktyplib.exe version 2.03 (/mktyplib203)" Category="General" Switch="mktyplib203" F1Keyword="VC.Project.VCMidlTool.MkTypLibCompatible">
   </BoolProperty>
-  <EnumProperty Name="WarningLevel" DisplayName="Niveau d'avertissement" Description="Sélectionne le niveau de traitement des codes d'erreur MIDL (/Wn)" Category="General" F1Keyword="VC.Project.VCMidlTool.WarningLevel">
+  <EnumProperty Name="WarningLevel" DisplayName="Niveau d'avertissement" Description="Sélectionne le niveau de traitement des erreurs de code MIDL (/Wn)" Category="General" F1Keyword="VC.Project.VCMidlTool.WarningLevel">
     <EnumValue Name="0" Switch="W0" DisplayName="1">
     </EnumValue>
     <EnumValue Name="1" Switch="W1" DisplayName="1">
@@ -116,7 +116,7 @@ Credits
     <EnumValue Name="OldFormat" Switch="oldtlb" DisplayName="OldFormat" Description="Ancien format">
     </EnumValue>
   </EnumProperty>
-  <StringProperty Name="CPreprocessOptions" DisplayName="Options de préprocesseur C" Description="Spécifie les commutateurs à passer au préprocesseur du compilateur C (/cpp_opt commutateurs)" Category="Advanced" Switch="cpp_opt" Separator=" " F1Keyword="VC.Project.VCMidlTool.CPreprocessOptions">
+  <StringProperty Name="CPreprocessOptions" DisplayName="Options de préprocesseur C" Description="Spécifie les commutateurs à passer au préprocesseur du compilateur C (commutateurs /cpp_opt)" Category="Advanced" Switch="cpp_opt" Separator=" " F1Keyword="VC.Project.VCMidlTool.CPreprocessOptions">
   </StringProperty>
   <StringListProperty Name="UndefinePreprocessorDefinitions" DisplayName="Définitions de préprocesseur non définies" Description="Spécifie une ou plusieurs définitions non définies, y compris des macros MIDL (/U[macros])" Category="Advanced" Switch="U" F1Keyword="VC.Project.VCMidlTool.UndefinePreprocessorDefinitions">
   </StringListProperty>

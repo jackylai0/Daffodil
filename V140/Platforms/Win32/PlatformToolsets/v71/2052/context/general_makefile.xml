@@ -40,7 +40,7 @@ Credits
   </EnumProperty>
   <EnumProperty Name="CLRSupport" DisplayName="公共语言运行时支持" Description="选择您的代码所使用的公共语言运行时支持。" Category="General" F1Keyword="VC.Project.VCConfiguration.ManagedExtensions">
     <EnumValue Name="false" DisplayName="无公共语言运行时支持" Description="无公共语言运行时支持"/>
-    <EnumValue Name="true" Switch="clr" DisplayName="公共语言运行时支持" Description="为您的应用程序创建可供其他 CLR 应用程序使用的元数据，并允许您的应用程序使用其他 CLR 组件的元数据中的类型和数据。"/>
+    <EnumValue Name="true" Switch="clr" DisplayName="公共语言运行时支持(/clr)" Description="公共语言运行时支持(/clr)"/>
   </EnumProperty>
   <StringProperty Name="BuildLogFile" DisplayName="生成日志文件" Description="指定启用生成记录时要写入的生成日志文件。" F1Keyword="VC.Project.VCConfiguration.BuildLogFile" Category="General" Default="$(ProjectDir)\$(MSBuildProjectName).log" Subtype="file">
     <StringProperty.DataSource>

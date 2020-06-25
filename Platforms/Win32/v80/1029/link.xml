@@ -24,252 +24,252 @@ Credits
 <!--Copyright, Microsoft Corporation, All rights reserved.-->
 <Rule Name="Link" PageTemplate="tool" DisplayName="Linker" SwitchPrefix="/" Order="20" xmlns="http://schemas.microsoft.com/build/2009/properties" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:sys="clr-namespace:System;assembly=mscorlib">
   <Rule.Categories>
-    <Category Name="General" DisplayName="General"/>
-    <Category Name="Input" DisplayName="Input"/>
-    <Category Name="Manifest File" DisplayName="Manifest File"/>
-    <Category Name="Debugging" DisplayName="Debugging"/>
-    <Category Name="System" DisplayName="System"/>
-    <Category Name="Optimization" DisplayName="Optimization"/>
-    <Category Name="Embedded IDL" DisplayName="Embedded IDL"/>
-    <Category Name="Advanced" DisplayName="Advanced"/>
-    <Category Name="Command Line" DisplayName="Command Line" Subtype="CommandLine"/>
+    <Category Name="General" DisplayName="Obecné"/>
+    <Category Name="Input" DisplayName="Vstup"/>
+    <Category Name="Manifest File" DisplayName="Soubor manifestu"/>
+    <Category Name="Debugging" DisplayName="Ladění"/>
+    <Category Name="System" DisplayName="Systém"/>
+    <Category Name="Optimization" DisplayName="Optimalizace"/>
+    <Category Name="Embedded IDL" DisplayName="Vložené IDL"/>
+    <Category Name="Advanced" DisplayName="Upřesnit"/>
+    <Category Name="Command Line" DisplayName="Příkazový řádek" Subtype="CommandLine"/>
   </Rule.Categories>
   <Rule.DataSource>
     <DataSource Persistence="ProjectFile" ItemType="Link" Label="" HasConfigurationCondition="true"/>
   </Rule.DataSource>
-  <StringProperty Subtype="file" Name="OutputFile" DisplayName="Output File" Description="The /OUT option overrides the default name and location of the program that the linker creates." Category="General" Switch="OUT" Separator=":" F1Keyword="VC.Project.VCLinkerTool.OutputFile">
+  <StringProperty Subtype="file" Name="OutputFile" DisplayName="Výstupní soubor" Description="Parametr /OUT přepisuje výchozí název a umístění programu, který vytvoří linker." Category="General" Switch="OUT" Separator=":" F1Keyword="VC.Project.VCLinkerTool.OutputFile">
   </StringProperty>
-  <EnumProperty Name="ShowProgress" DisplayName="Show Progress" Description="Prints Linker Progress Messages" Category="General" F1Keyword="VC.Project.VCLinkerTool.ShowProgress">
-    <EnumValue Name="NotSet" Switch="" DisplayName="Not Set" Description="No verbosity.">
+  <EnumProperty Name="ShowProgress" DisplayName="Zobrazit průběh" Description="Zobrazí zprávy o průběhu linkeru." Category="General" F1Keyword="VC.Project.VCLinkerTool.ShowProgress">
+    <EnumValue Name="NotSet" Switch="" DisplayName="Nenastaveno" Description="Žádné podrobnosti">
     </EnumValue>
-    <EnumValue Name="LinkVerbose" Switch="VERBOSE" DisplayName="Display all progress messages" Description="Displays all progress messages. ">
+    <EnumValue Name="LinkVerbose" Switch="VERBOSE" DisplayName="Zobrazit všechny zprávy o průběhu" Description="Zobrazuje všechny zprávy o průběhu. ">
     </EnumValue>
-    <EnumValue Name="LinkVerboseLib" Switch="VERBOSE:Lib" DisplayName="For Libraries Searched" Description="Displays progress messages indicating just the libraries searched">
+    <EnumValue Name="LinkVerboseLib" Switch="VERBOSE:Lib" DisplayName="O prohledávaných knihovnách" Description="Zobrazuje zprávy o průběhu označující jenom prohledané knihovny.">
     </EnumValue>
-    <EnumValue Name="LinkVerboseICF" Switch="VERBOSE:ICF" DisplayName="About COMDAT folding during optimized linking" Description="Displays information about COMDAT folding during optimized linking">
+    <EnumValue Name="LinkVerboseICF" Switch="VERBOSE:ICF" DisplayName="O skládání sekvencí COMDAT během optimalizovaného propojování" Description="Zobrazuje informace o skládání sekvencí COMDAT během optimalizovaného propojování.">
     </EnumValue>
-    <EnumValue Name="LinkVerboseREF" Switch="VERBOSE:REF" DisplayName="About data removed during optimized linking" Description="Displays information about functions and data removed during optimized linking">
+    <EnumValue Name="LinkVerboseREF" Switch="VERBOSE:REF" DisplayName="O datech odebraných během optimalizovaného propojování" Description="Zobrazuje informace o funkcích a datech odebraných během optimalizovaného propojování.">
     </EnumValue>
-    <EnumValue Name="LinkVerboseSAFESEH" Switch="VERBOSE:SAFESEH" DisplayName="About Modules incompatible with SEH" Description="Displays information about modoules incompatible with Safe Exception Handling ">
+    <EnumValue Name="LinkVerboseSAFESEH" Switch="VERBOSE:SAFESEH" DisplayName="O modulech nekompatibilních se SEH" Description="Zobrazuje informace o modulech nekompatibilních s bezpečným ošetřením výjimek.">
     </EnumValue>
-    <EnumValue Name="LinkVerboseCLR" Switch="VERBOSE:CLR" DisplayName="About linker activity related to managed code" Description="Display information about linker activity related to managed code">
+    <EnumValue Name="LinkVerboseCLR" Switch="VERBOSE:CLR" DisplayName="O aktivitě linkeru související se spravovaným kódem" Description="Zobrazuje informace o aktivitě linkeru související se spravovaným kódem.">
     </EnumValue>
   </EnumProperty>
-  <StringProperty Name="Version" DisplayName="Version" Description="The /VERSION option tells the linker to put a version number in the header of the .exe or .dll file. Use DUMPBIN /HEADERS to see the image version field of the OPTIONAL HEADER VALUES to see the effect of /VERSION." Category="General" Switch="VERSION" Separator=":" F1Keyword="VC.Project.VCLinkerTool.Version">
+  <StringProperty Name="Version" DisplayName="Verze" Description="Parametr /VERSION přikáže linkeru, aby do hlavičky souboru EXE nebo DLL vložil číslo verze. Pomocí příkazu DUMPBIN /HEADERS můžete zobrazit pole s verzí bitové kopie z části OPTIONAL HEADER VALUES a posoudit účinek parametru /VERSION." Category="General" Switch="VERSION" Separator=":" F1Keyword="VC.Project.VCLinkerTool.Version">
   </StringProperty>
-  <BoolProperty ReverseSwitch="INCREMENTAL:NO" Name="LinkIncremental" DisplayName="Enable Incremental Linking" Description="Enables incremental linking.     (/INCREMENTAL, /INCREMENTAL:NO)" Category="General" Switch="INCREMENTAL" F1Keyword="VC.Project.VCLinkerTool.LinkIncremental">
+  <BoolProperty ReverseSwitch="INCREMENTAL:NO" Name="LinkIncremental" DisplayName="Povolit přírůstkové propojení" Description="Umožňuje přírůstkové propojení.     (/INCREMENTAL, /INCREMENTAL:NO)" Category="General" Switch="INCREMENTAL" F1Keyword="VC.Project.VCLinkerTool.LinkIncremental">
     <BoolProperty.DataSource>
       <DataSource Persistence="ProjectFile" ItemType="" Label="" HasConfigurationCondition="true"/>
     </BoolProperty.DataSource>
   </BoolProperty>
-  <BoolProperty Name="SuppressStartupBanner" DisplayName="Suppress Startup Banner" Description="The /NOLOGO option prevents display of the copyright message and version number. " Category="General" Switch="NOLOGO" F1Keyword="VC.Project.VCLinkerTool.SuppressStartupBanner">
+  <BoolProperty Name="SuppressStartupBanner" DisplayName="Potlačit úvodní nápis" Description="Parametr /NOLOGO zakazuje zobrazení zprávy o autorských právech a čísla verze. " Category="General" Switch="NOLOGO" F1Keyword="VC.Project.VCLinkerTool.SuppressStartupBanner">
   </BoolProperty>
-  <BoolProperty Name="IgnoreImportLibrary" DisplayName="Ignore Import Library" Description="Specifies that the import library generated by this configuration should not be imported into dependent projects." Category="General" F1Keyword="VC.Project.VCLinkerTool.IgnoreImportLibrary">
+  <BoolProperty Name="IgnoreImportLibrary" DisplayName="Ignorovat knihovnu importu" Description="Určuje, že knihovna importu vygenerovaná touto konfigurací nemá být importována do závislých projektů." Category="General" F1Keyword="VC.Project.VCLinkerTool.IgnoreImportLibrary">
     <BoolProperty.DataSource>
       <DataSource Persistence="ProjectFile" ItemType="" Label="" HasConfigurationCondition="true"/>
     </BoolProperty.DataSource>
   </BoolProperty>
-  <BoolProperty Name="RegisterOutput" DisplayName="Register Output" Description="Specifies whether to register the primary output of this build." Category="General" IncludeInCommandLine="false" F1Keyword="VC.Project.VCLinkerTool.RegisterOutput">
+  <BoolProperty Name="RegisterOutput" DisplayName="Registrovat výstup" Description="Určuje, zda se má registrovat primární výstup tohoto sestavení." Category="General" IncludeInCommandLine="false" F1Keyword="VC.Project.VCLinkerTool.RegisterOutput">
   </BoolProperty>
-  <BoolProperty Name="PerUserRedirection" DisplayName="Per-user Redirection" Description="When Register Output is enabled, Per-user redirection forces registry writes to HKEY_CLASSES_ROOT to be redirected to HKEY_CURRENT_USER." Category="General" IncludeInCommandLine="false" F1Keyword="VC.Project.VCLinkerTool.PerUserRedirection">
+  <BoolProperty Name="PerUserRedirection" DisplayName="Přesměrování pro uživatele" Description="Pokud je povolen výstup registru, vynutí přesměrování pro uživatele, takže se zápisy v registru do větve HKEY_CLASSES_ROOT přesměrují do větve HKEY_CURRENT_USER." Category="General" IncludeInCommandLine="false" F1Keyword="VC.Project.VCLinkerTool.PerUserRedirection">
   </BoolProperty>
-  <StringListProperty Subtype="folder" Name="AdditionalLibraryDirectories" DisplayName="Additional Library Directories" Description="Allows the user to override the environmental library path (/LIBPATH:folder)" Category="General" Switch="LIBPATH:" F1Keyword="VC.Project.VCLinkerTool.AdditionalLibraryDirectories">
+  <StringListProperty Subtype="folder" Name="AdditionalLibraryDirectories" DisplayName="Další adresáře knihoven" Description="Umožňuje uživateli přepsat cestu ke knihovnám převzatou z prostředí. (/LIBPATH:složka)" Category="General" Switch="LIBPATH:" F1Keyword="VC.Project.VCLinkerTool.AdditionalLibraryDirectories">
   </StringListProperty>
-  <BoolProperty Name="LinkLibraryDependencies" DisplayName="Link Library Dependencies" Description="Specifies whether or not library outputs from project dependencies are automatically linked in." Category="General" IncludeInCommandLine="false" F1Keyword="VC.Project.VCLinkerTool.LinkLibraryDependencies">
+  <BoolProperty Name="LinkLibraryDependencies" DisplayName="Propojit závislé položky knihoven" Description="Určuje, jestli se automaticky propojí výstupy knihoven ze závislostí projektů." Category="General" IncludeInCommandLine="false" F1Keyword="VC.Project.VCLinkerTool.LinkLibraryDependencies">
     <BoolProperty.DataSource>
       <DataSource Persistence="ProjectFile" ItemType="ProjectReference" Label="" HasConfigurationCondition="true"/>
     </BoolProperty.DataSource>
   </BoolProperty>
-  <BoolProperty Name="UseLibraryDependencyInputs" DisplayName="Use Library Dependency Inputs" Description="Specifies whether or not the inputs to the librarian tool are used rather than the library file itself when linking in library outputs of project dependencies." Category="General" IncludeInCommandLine="false" F1Keyword="VC.Project.VCLinkerTool.UseLibraryDependencyInputs">
+  <BoolProperty Name="UseLibraryDependencyInputs" DisplayName="Použít vstupy závislých položek knihoven" Description="Určuje, zda se při propojování výstupů knihoven závislých položek projektu mají místo samotného souboru knihovny používat raději vstupy nástroje librarian." Category="General" IncludeInCommandLine="false" F1Keyword="VC.Project.VCLinkerTool.UseLibraryDependencyInputs">
     <BoolProperty.DataSource>
       <DataSource Persistence="ProjectFile" ItemType="ProjectReference" Label="" HasConfigurationCondition="true"/>
     </BoolProperty.DataSource>
   </BoolProperty>
-  <BoolProperty ReverseSwitch="LTCG:NOSTATUS" Name="LinkStatus" DisplayName="Link Status" Description="Specifies whether the linker should display a progress indicator showing what percentage of the link is complete. The default is to not display this status information. (/LTCG:STATUS|LTCG:NOSTATUS)" Category="General" Switch="LTCG:STATUS" F1Keyword="VC.Project.VCLinkerTool.LinkStatus">
+  <BoolProperty ReverseSwitch="LTCG:NOSTATUS" Name="LinkStatus" DisplayName="Stav propojování" Description="Určuje, zda má linker zobrazit ukazatel průběhu, který v procentech znázorňuje, nakolik je propojování dokončeno. Ve výchozím nastavení se tento stavový údaj nezobrazuje. (/LTCG:STATUS|LTCG:NOSTATUS)" Category="General" Switch="LTCG:STATUS" F1Keyword="VC.Project.VCLinkerTool.LinkStatus">
   </BoolProperty>
-  <BoolProperty ReverseSwitch="ALLOWBIND:NO" Name="PreventDllBinding" DisplayName="Prevent Dll Binding" Description="/ALLOWBIND:NO sets a bit in a DLL's header that indicates to Bind.exe that the image is not allowed to be bound. You may not want a DLL to be bound if it has been digitally signed (binding invalidates the signature)." Category="General" Switch="ALLOWBIND" F1Keyword="VC.Project.VCLinkerTool.PreventDLLBinding">
+  <BoolProperty ReverseSwitch="ALLOWBIND:NO" Name="PreventDllBinding" DisplayName="Zabránit vazbě knihoven DLL" Description="Parametr /ALLOWBIND:NO nastaví v hlavičce knihovny DLL bit, který programu Bind.exe sděluje, že vazba tohoto obrazu není povolena. Vazbu knihovny DLL můžete zakázat, pokud je digitálně podepsána (vazba zneplatní podpis)." Category="General" Switch="ALLOWBIND" F1Keyword="VC.Project.VCLinkerTool.PreventDLLBinding">
   </BoolProperty>
-  <BoolProperty ReverseSwitch="WX:NO" Name="TreatLinkerWarningAsErrors" DisplayName="Treat Linker Warning As Errors" Description="/WX causes no output file to be generated if the linker generates a warning." Category="General" Switch="WX" F1Keyword="VC.Project.VCLinkerTool.TreatLinkerWarningsAsErrors">
+  <BoolProperty ReverseSwitch="WX:NO" Name="TreatLinkerWarningAsErrors" DisplayName="Zpracovávat upozornění linkeru jako chyby" Description="Parametr /WX způsobí, že se nevygeneruje žádný výstupní soubor, pokud linker vydá upozornění." Category="General" Switch="WX" F1Keyword="VC.Project.VCLinkerTool.TreatLinkerWarningsAsErrors">
   </BoolProperty>
-  <EnumProperty Name="ForceFileOutput" DisplayName="Force File Output" Description="The /FORCE option tells the linker to create an .exe file or DLL even if a symbol is referenced but not defined or is multiply defined. It may create invalid exe file." Category="General" F1Keyword="VC.Project.VCLinkerTool.ForceFileOutput">
-    <EnumValue Name="Enabled" Switch="FORCE" DisplayName="Enabled" Description="/FORCE with no arguments implies both multiple and unresolved.">
+  <EnumProperty Name="ForceFileOutput" DisplayName="Vynutit výstup souboru" Description="Parametr /FORCE přikazuje linkeru, aby vytvořil soubor EXE nebo knihovnu DLL, i když odkazovaný symbol není definován nebo je definován několikrát. Může dojít k vytvoření neplatného souboru EXE." Category="General" F1Keyword="VC.Project.VCLinkerTool.ForceFileOutput">
+    <EnumValue Name="Enabled" Switch="FORCE" DisplayName="Povoleno" Description="Parametr /FORCE bez argumentů znamená jak vícenásobné, tak nevyřešené.">
     </EnumValue>
-    <EnumValue Name="MultiplyDefinedSymbolOnly" Switch="FORCE:MULTIPLE" DisplayName="Multiply Defined Symbol Only" Description="Use /FORCE:MULTIPLE to create an output file whether or not LINK finds more than one definition for a symbol.">
+    <EnumValue Name="MultiplyDefinedSymbolOnly" Switch="FORCE:MULTIPLE" DisplayName="Pouze vícenásobně definovaný symbol" Description="Pomocí parametru /FORCE:MULTIPLE se vytvoří výstupní soubor bez ohledu na to, zda příkaz LINK najde či nenajde více než jednu definici symbolu.">
     </EnumValue>
-    <EnumValue Name="UndefinedSymbolOnly" Switch="FORCE:UNRESOLVED" DisplayName="Undefined Symbol Only" Description="Use /FORCE:UNRESOLVED to create an output file whether or not LINK finds an undefined symbol. /FORCE:UNRESOLVED is ignored if the entry point symbol is unresolved.">
+    <EnumValue Name="UndefinedSymbolOnly" Switch="FORCE:UNRESOLVED" DisplayName="Pouze nedefinovaný symbol" Description="Pomocí parametru /FORCE:UNRESOLVED se vytvoří výstupní soubor bez ohledu na to, zda příkaz LINK najde či nenajde nedefinovaný symbol. Pokud není symbol vstupního bodu vyřešen, parametr /FORCE:UNRESOLVED se ignoruje.">
     </EnumValue>
   </EnumProperty>
-  <EnumProperty Name="CreateHotPatchableImage" DisplayName="Create Hot Patchable Image" Description="Prepares an image for hotpatching." Category="General" F1Keyword="VC.Project.VCLinkerTool.CreateHotPatchableImage">
-    <EnumValue Name="Enabled" Switch="FUNCTIONPADMIN" DisplayName="Enabled" Description="Prepares an image for hotpatching.">
+  <EnumProperty Name="CreateHotPatchableImage" DisplayName="Vytvořit bitovou kopii opravitelnou za provozu" Description="Připraví bitovou kopii k opravě za provozu." Category="General" F1Keyword="VC.Project.VCLinkerTool.CreateHotPatchableImage">
+    <EnumValue Name="Enabled" Switch="FUNCTIONPADMIN" DisplayName="Povoleno" Description="Připraví bitovou kopii k opravě za provozu.">
     </EnumValue>
-    <EnumValue Name="X86Image" Switch="FUNCTIONPADMIN:5" DisplayName="X86 Image Only" Description="Prepares an X86 image for hotpatching.">
+    <EnumValue Name="X86Image" Switch="FUNCTIONPADMIN:5" DisplayName="Pouze bitová kopie pro procesor X86" Description="Připraví bitovou kopii pro procesor X86 k opravě za provozu.">
     </EnumValue>
-    <EnumValue Name="X64Image" Switch="FUNCTIONPADMIN:6" DisplayName="X64 Image Only" Description="Prepares an X64 image for hotpatching.">
+    <EnumValue Name="X64Image" Switch="FUNCTIONPADMIN:6" DisplayName="Pouze bitová kopie pro procesor X64" Description="Připraví bitovou kopii pro procesor X64 k opravě za provozu.">
     </EnumValue>
-    <EnumValue Name="ItaniumImage" Switch="FUNCTIONPADMIN:16" DisplayName="Itanium Image Only" Description="Prepares an Itanium image for hotpatching.">
+    <EnumValue Name="ItaniumImage" Switch="FUNCTIONPADMIN:16" DisplayName="Pouze bitová kopie pro procesor Itanium" Description="Připraví bitovou kopii pro procesor Itanium k opravě za provozu.">
     </EnumValue>
   </EnumProperty>
-  <StringProperty Name="SpecifySectionAttributes" DisplayName="Specify Section Attributes" Description="The /SECTION option changes the attributes of a section, overriding the attributes set when the .obj file for the section was compiled." Category="General" Switch="SECTION" Separator=":" F1Keyword="VC.Project.VCLinkerTool.SpecifySectionAttributes">
+  <StringProperty Name="SpecifySectionAttributes" DisplayName="Určit atributy oddílu" Description="Parametr /SECTION změní atributy oddílu a přepíše přitom atributy nastavené při kompilaci souboru OBJ tohoto oddílu." Category="General" Switch="SECTION" Separator=":" F1Keyword="VC.Project.VCLinkerTool.SpecifySectionAttributes">
   </StringProperty>
-  <StringProperty Subtype="file" Name="MSDOSStubFileName" DisplayName="MS-DOS Stub File Name" Description="The /STUB option attaches an MS-DOS stub program to a Win32 program. " Category="General" Switch="STUB" Separator=":" Visible="false">
+  <StringProperty Subtype="file" Name="MSDOSStubFileName" DisplayName="Název souboru zástupného programu MS-DOS" Description="Parametr /STUB připojí k programu Win32 zástupný program MS-DOS. " Category="General" Switch="STUB" Separator=":" Visible="false">
   </StringProperty>
-  <StringProperty Subtype="folder" Name="TrackerLogDirectory" DisplayName="Tracker Log Directory" Description="Tracker log directory." Category="General" IncludeInCommandLine="false" Visible="false">
+  <StringProperty Subtype="folder" Name="TrackerLogDirectory" DisplayName="Adresář protokolu sledovacího modulu" Description="Adresář protokolu sledovacího modulu" Category="General" IncludeInCommandLine="false" Visible="false">
   </StringProperty>
-  <StringListProperty Subtype="file" Name="AdditionalDependencies" DisplayName="Additional Dependencies" Description="Specifies additional items to add to the link command line [i.e. kernel32.lib] " Category="Input" F1Keyword="VC.Project.VCLinkerTool.AdditionalDependencies">
+  <StringListProperty Subtype="file" Name="AdditionalDependencies" DisplayName="Další závislosti" Description="Určuje další položky, které se mají přidat k příkazovému řádku propojení [např. kernel32.lib]. " Category="Input" F1Keyword="VC.Project.VCLinkerTool.AdditionalDependencies">
   </StringListProperty>
-  <BoolProperty Name="IgnoreAllDefaultLibraries" DisplayName="Ignore All Default Libraries" Description="The /NODEFAULTLIB option tells the linker to remove one or more default libraries from the list of libraries it searches when resolving external references. " Category="Input" Switch="NODEFAULTLIB" F1Keyword="VC.Project.VCLinkerTool.IgnoreAllDefaultLibraries">
+  <BoolProperty Name="IgnoreAllDefaultLibraries" DisplayName="Ignorovat všechny výchozí knihovny" Description="Parametr /NODEFAULTLIB přikazuje linkeru, aby odebral jednu nebo více výchozích knihoven ze seznamu knihoven, které prohledává při překladu externích odkazů. " Category="Input" Switch="NODEFAULTLIB" F1Keyword="VC.Project.VCLinkerTool.IgnoreAllDefaultLibraries">
   </BoolProperty>
-  <StringListProperty Subtype="file" Name="IgnoreSpecificDefaultLibraries" DisplayName="Ignore Specific Default Libraries" Description="Specifies one or more names of default libraries to ignore; separate multiple libraries with semi-colons.     (/NODEFAULTLIB:[name, name, ...])" Category="Input" Switch="NODEFAULTLIB:" F1Keyword="VC.Project.VCLinkerTool.IgnoreDefaultLibraryNames">
+  <StringListProperty Subtype="file" Name="IgnoreSpecificDefaultLibraries" DisplayName="Ignorovat konkrétní výchozí knihovny" Description="Určuje jeden nebo několik názvů výchozích knihoven, které se mají ignorovat; několik knihoven oddělte středníkem.     (/NODEFAULTLIB:[název, název, ...])" Category="Input" Switch="NODEFAULTLIB:" F1Keyword="VC.Project.VCLinkerTool.IgnoreDefaultLibraryNames">
   </StringListProperty>
-  <StringProperty Subtype="file" Name="ModuleDefinitionFile" DisplayName="Module Definition File" Description="The /DEF option passes a module-definition file (.def) to the linker. Only one .def file can be specified to LINK. " Category="Input" Switch="DEF" Separator=":" F1Keyword="VC.Project.VCLinkerTool.ModuleDefinitionFile">
+  <StringProperty Subtype="file" Name="ModuleDefinitionFile" DisplayName="Soubor definice modulu" Description="Parametr /DEF předá linkeru soubor definice modulu (DEF). Pro příkaz LINK je možné zadat pouze jeden soubor DEF. " Category="Input" Switch="DEF" Separator=":" F1Keyword="VC.Project.VCLinkerTool.ModuleDefinitionFile">
   </StringProperty>
-  <StringListProperty Subtype="file" Name="AddModuleNamesToAssembly" DisplayName="Add Module to Assembly" Description="The /ASSEMBLYMODULE option allows you to add a module reference to an assembly. Type information in the module will not be available to the assembly program that added the module reference. However, type information in the module will be available to any program that references the assembly." Category="Input" Switch="ASSEMBLYMODULE:" F1Keyword="VC.Project.VCLinkerTool.AddModuleNamesToAssembly">
+  <StringListProperty Subtype="file" Name="AddModuleNamesToAssembly" DisplayName="Přidat modul do sestavení" Description="Parametr /ASSEMBLYMODULE umožňuje do sestavení přidat odkaz na modul. Informace o typech v tomto modulu nebudou dostupné sestavovacímu programu, který odkaz na tento modul přidal. Informace o typech v tomto modulu však budou dostupné všem programům, které odkazují na toto sestavení." Category="Input" Switch="ASSEMBLYMODULE:" F1Keyword="VC.Project.VCLinkerTool.AddModuleNamesToAssembly">
   </StringListProperty>
-  <StringListProperty Subtype="file" Name="EmbedManagedResourceFile" DisplayName="Embed Managed Resource File" Description="/ASSEMBLYRESOURCE embeds a resource file in the output file." Category="Input" Switch="ASSEMBLYRESOURCE:" F1Keyword="VC.Project.VCLinkerTool.EmbedManagedResourceFile">
+  <StringListProperty Subtype="file" Name="EmbedManagedResourceFile" DisplayName="Vložit soubor spravovaného prostředku" Description="Pomocí parametru /ASSEMBLYRESOURCE se do výstupního souboru vloží soubor prostředku." Category="Input" Switch="ASSEMBLYRESOURCE:" F1Keyword="VC.Project.VCLinkerTool.EmbedManagedResourceFile">
   </StringListProperty>
-  <StringListProperty Subtype="file" Name="ForceSymbolReferences" DisplayName="Force Symbol References" Description="The /INCLUDE option tells the linker to add a specified symbol to the symbol table." Category="Input" Switch="INCLUDE:" F1Keyword="VC.Project.VCLinkerTool.ForceSymbolReferences">
+  <StringListProperty Subtype="file" Name="ForceSymbolReferences" DisplayName="Vynutit odkazy na symboly" Description="Parametr /INCLUDE přikáže linkeru, aby do tabulky symbolů přidal zadaný symbol." Category="Input" Switch="INCLUDE:" F1Keyword="VC.Project.VCLinkerTool.ForceSymbolReferences">
   </StringListProperty>
-  <StringListProperty Subtype="file" Name="DelayLoadDLLs" DisplayName="Delay Loaded Dlls" Description="The /DELAYLOAD option causes delayed loading of DLLs. The dllname specifies a DLL to delay load. " Category="Input" Switch="DELAYLOAD:" F1Keyword="VC.Project.VCLinkerTool.DelayLoadDLLS">
+  <StringListProperty Subtype="file" Name="DelayLoadDLLs" DisplayName="Zavést knihovny DLL odloženě" Description="Parametr /DELAYLOAD způsobí odložené zavedení knihoven DLL. Argument dllname určuje knihovnu DLL, která se má odloženě zavést. " Category="Input" Switch="DELAYLOAD:" F1Keyword="VC.Project.VCLinkerTool.DelayLoadDLLS">
   </StringListProperty>
-  <StringListProperty Subtype="file" Name="AssemblyLinkResource" DisplayName="Assembly Link Resource" Description="The /ASSEMBLYLINKRESOURCE option creates a link to a .NET Framework resource in the output file; the resource file is not placed in the output file. " Category="Input" Switch="ASSEMBLYLINKRESOURCE:" F1Keyword="VC.Project.VCLinkerTool.AssemblyLinkResource">
+  <StringListProperty Subtype="file" Name="AssemblyLinkResource" DisplayName="Prostředek odkazovaný v sestavení" Description="Pomocí parametru /ASSEMBLYLINKRESOURCE se ve výstupním souboru vytvoří odkaz na prostředek rozhraní .NET Framework; soubor tohoto prostředku není umístěn do výstupního souboru. " Category="Input" Switch="ASSEMBLYLINKRESOURCE:" F1Keyword="VC.Project.VCLinkerTool.AssemblyLinkResource">
   </StringListProperty>
-  <BoolProperty ReverseSwitch="MANIFEST:NO" Name="GenerateManifest" DisplayName="Generate Manifest" Description="/MANIFEST specifies that the linker should create a side-by-side manifest file." Category="Manifest File" Switch="MANIFEST" F1Keyword="VC.Project.VCLinkerTool.GenerateManifest">
+  <BoolProperty ReverseSwitch="MANIFEST:NO" Name="GenerateManifest" DisplayName="Generovat manifest" Description="Parametr /MANIFEST určuje, že má linker vytvořit vedlejší soubor manifestu." Category="Manifest File" Switch="MANIFEST" F1Keyword="VC.Project.VCLinkerTool.GenerateManifest">
     <BoolProperty.DataSource>
       <DataSource Persistence="ProjectFile" ItemType="" Label="" HasConfigurationCondition="true"/>
     </BoolProperty.DataSource>
   </BoolProperty>
-  <StringProperty Subtype="file" Name="ManifestFile" DisplayName="Manifest File" Description="/MANIFESTFILE lets you change the default name of the manifest file. The default name of the manifest file is the file name with .manifest appended." Category="Manifest File" Switch="ManifestFile" Separator=":" F1Keyword="VC.Project.VCLinkerTool.ManifestFile">
+  <StringProperty Subtype="file" Name="ManifestFile" DisplayName="Soubor manifestu" Description="Parametr /MANIFESTFILE umožňuje změnit výchozí název souboru manifestu. Výchozí název souboru manifestu je tvořen názvem souboru s příponou .manifest." Category="Manifest File" Switch="ManifestFile" Separator=":" F1Keyword="VC.Project.VCLinkerTool.ManifestFile">
   </StringProperty>
-  <StringListProperty Subtype="file" Name="AdditionalManifestDependencies" DisplayName="Additional Manifest Dependencies" Description="/MANIFESTDEPENDENCY lets you specify attributes that will be placed in the dependency section of the manifest file." Category="Manifest File" Switch="MANIFESTDEPENDENCY:" F1Keyword="VC.Project.VCLinkerTool.AdditionalManifestDependencies">
+  <StringListProperty Subtype="file" Name="AdditionalManifestDependencies" DisplayName="Další závislé položky manifestu" Description="Parametr /MANIFESTDEPENDENCY umožňuje zadat atributy, které budou umístěny do oddílu závislých položek souboru manifestu." Category="Manifest File" Switch="MANIFESTDEPENDENCY:" F1Keyword="VC.Project.VCLinkerTool.AdditionalManifestDependencies">
   </StringListProperty>
-  <BoolProperty ReverseSwitch="ALLOWISOLATION:NO" Name="AllowIsolation" DisplayName="Allow Isolation" Description="Specifies behavior for manifest lookup. (/ALLOWISOLATION:NO)" Category="Manifest File" Switch="ALLOWISOLATION" F1Keyword="VC.Project.VCLinkerTool.AllowIsolation">
+  <BoolProperty ReverseSwitch="ALLOWISOLATION:NO" Name="AllowIsolation" DisplayName="Povolit izolaci" Description="Určuje chování při vyhledávání manifestu. (/ALLOWISOLATION:NO)" Category="Manifest File" Switch="ALLOWISOLATION" F1Keyword="VC.Project.VCLinkerTool.AllowIsolation">
   </BoolProperty>
-  <BoolProperty Name="GenerateDebugInformation" DisplayName="Generate Debug Info" Description="The /DEBUG option creates debugging information for the .exe file or DLL." Category="Debugging" Switch="DEBUG" F1Keyword="VC.Project.VCLinkerTool.GenerateDebugInformation">
+  <BoolProperty Name="GenerateDebugInformation" DisplayName="Generovat ladicí informace" Description="The /DEBUG option creates debugging information for the .exe file or DLL." Category="Debugging" Switch="DEBUG" F1Keyword="VC.Project.VCLinkerTool.GenerateDebugInformation">
   </BoolProperty>
-  <StringProperty Subtype="file" Name="ProgramDatabaseFile" DisplayName="Generate Program Database File" Description="By default, when /DEBUG is specified, the linker creates a program database (PDB) which holds debugging information. The default file name for the PDB has the base name of the program and the extension .pdb." Category="Debugging" Switch="PDB" Separator=":" F1Keyword="VC.Project.VCLinkerTool.ProgramDatabaseFile">
+  <StringProperty Subtype="file" Name="ProgramDatabaseFile" DisplayName="Generovat soubor databáze programu" Description="Při zadání parametru /DEBUG vytvoří linker databázi programu (PDB), která obsahuje ladicí informace. Výchozí název souboru této databáze je tvořen základním názvem programu a příponou PDB." Category="Debugging" Switch="PDB" Separator=":" F1Keyword="VC.Project.VCLinkerTool.ProgramDatabaseFile">
   </StringProperty>
-  <StringProperty Subtype="file" Name="StripPrivateSymbols" DisplayName="Strip Private Symbols" Description="The /PDBSTRIPPED option creates a second program database (PDB) file when you build your program image with any of the compiler or linker options that generate a PDB file (/DEBUG, /Z7, /Zd, or /Zi)." Category="Debugging" Switch="PDBSTRIPPED" Separator=":" F1Keyword="VC.Project.VCLinkerTool.StripPrivateSymbols">
+  <StringProperty Subtype="file" Name="StripPrivateSymbols" DisplayName="Odstranit privátní symboly" Description="Parametr /PDBSTRIPPED vytvoří druhý soubor databáze programu (PDB), pokud se obraz programu sestavuje pomocí libovolných parametrů kompilátoru nebo linkeru, které vytvářejí soubor PDB (/DEBUG, /Z7, /Zd nebo /Zi)." Category="Debugging" Switch="PDBSTRIPPED" Separator=":" F1Keyword="VC.Project.VCLinkerTool.StripPrivateSymbols">
   </StringProperty>
-  <BoolProperty Name="GenerateMapFile" DisplayName="Generate Map File" Description="The /MAP option tells the linker to create a mapfile." Category="Debugging" Switch="MAP" F1Keyword="VC.Project.VCLinkerTool.GenerateMapFile">
+  <BoolProperty Name="GenerateMapFile" DisplayName="Generovat soubor mapy" Description="Parametr /MAP přikazuje linkeru, aby vytvořil soubor mapy." Category="Debugging" Switch="MAP" F1Keyword="VC.Project.VCLinkerTool.GenerateMapFile">
     <Argument Property="MapFileName" IsRequired="false"/>
   </BoolProperty>
-  <StringProperty Subtype="file" Name="MapFileName" DisplayName="Map File Name" Description="A user-specified name for the mapfile. It replaces the default name." Category="Debugging" Separator=":" F1Keyword="VC.Project.VCLinkerTool.MapFileName">
+  <StringProperty Subtype="file" Name="MapFileName" DisplayName="Název souboru mapy" Description="Uživatelem zadaný název souboru mapy. Nahrazuje výchozí název." Category="Debugging" Separator=":" F1Keyword="VC.Project.VCLinkerTool.MapFileName">
   </StringProperty>
-  <BoolProperty Name="MapExports" DisplayName="Map Exports" Description="The /MAPINFO option tells the linker to include the specified information in a mapfile, which is created if you specify the /MAP option. EXPORTS tells the linker to include exported functions." Category="Debugging" Switch="MAPINFO:EXPORTS" F1Keyword="VC.Project.VCLinkerTool.MapExports">
+  <BoolProperty Name="MapExports" DisplayName="Mapovat exporty" Description="Parametr /MAPINFO přikazuje linkeru, aby do souboru mapy začlenil zadané informace, které se vytvoří při zadání parametru /MAP. Parametr EXPORTS přikazuje linkeru začlenit exportované funkce." Category="Debugging" Switch="MAPINFO:EXPORTS" F1Keyword="VC.Project.VCLinkerTool.MapExports">
   </BoolProperty>
-  <BoolProperty ReverseSwitch="ASSEMBLYDEBUG:DISABLE" Name="AssemblyDebug" DisplayName="Debuggable Assembly" Description="/ASSEMBLYDEBUG emits the DebuggableAttribute attribute with debug information tracking and disables JIT optimizations." Category="Debugging" Switch="ASSEMBLYDEBUG" F1Keyword="VC.Project.VCLinkerTool.AssemblyDebug">
+  <BoolProperty ReverseSwitch="ASSEMBLYDEBUG:DISABLE" Name="AssemblyDebug" DisplayName="Laditelné sestavení" Description="Parametr /ASSEMBLYDEBUG generuje atribut DebuggableAttribute se sledováním ladicích informací a zakazuje optimalizace JIT." Category="Debugging" Switch="ASSEMBLYDEBUG" F1Keyword="VC.Project.VCLinkerTool.AssemblyDebug">
   </BoolProperty>
-  <EnumProperty Name="SubSystem" DisplayName="SubSystem" Description="The /SUBSYSTEM option tells the operating system how to run the .exe file.The choice of subsystem affects the entry point symbol (or entry point function) that the linker will choose." Category="System" F1Keyword="VC.Project.VCLinkerTool.SubSystem">
+  <EnumProperty Name="SubSystem" DisplayName="Subsystém" Description="Parametr /SUBSYSTEM informuje operační systém, jak má spustit soubor EXE. Výběr subsystému ovlivňuje, jaký symbol vstupního bodu (nebo funkci vstupního bodu) linker použije." Category="System" F1Keyword="VC.Project.VCLinkerTool.SubSystem">
     <EnumProperty.Arguments>
       <Argument Property="MinimumRequiredVersion" IsRequired="false"/>
     </EnumProperty.Arguments>
-    <EnumValue Name="NotSet" Switch="" DisplayName="Not Set" Description="No subsystem set.">
+    <EnumValue Name="NotSet" Switch="" DisplayName="Nenastaveno" Description="Není nastaven žádný subsystém.">
     </EnumValue>
-    <EnumValue Name="Console" Switch="SUBSYSTEM:CONSOLE" DisplayName="Console" Description="Win32 character-mode application. Console applications are given a console by the operating system. If main or wmain is defined, CONSOLE is the default.">
+    <EnumValue Name="Console" Switch="SUBSYSTEM:CONSOLE" DisplayName="Konzola" Description="Aplikace Win32 ve znakovém režimu. Konzolové aplikace získají konzolu od operačního systému. Pokud není definována funkce main ani wmain, je CONSOLE výchozí hodnota.">
     </EnumValue>
-    <EnumValue Name="Windows" Switch="SUBSYSTEM:WINDOWS" DisplayName="Windows" Description="Application does not require a console, probably because it creates its own windows for interaction with the user. If WinMain or wWinMain is defined, WINDOWS is the default.">
+    <EnumValue Name="Windows" Switch="SUBSYSTEM:WINDOWS" DisplayName="Windows" Description="Aplikace nevyžaduje konzolu, pravděpodobně proto, že vytváří vlastní okna pro interakci s uživatelem. Pokud je definována funkce WinMain nebo wWinMain, je WINDOWS výchozí hodnota.">
     </EnumValue>
-    <EnumValue Name="Native" Switch="SUBSYSTEM:NATIVE" DisplayName="Native" Description="Device drivers for Windows NT. If /DRIVER:WDM is specified, NATIVE is the default.">
+    <EnumValue Name="Native" Switch="SUBSYSTEM:NATIVE" DisplayName="Nativní" Description="Ovladače zařízení pro Windows NT. Pokud je zadán parametr /DRIVER:WDM, je výchozí hodnota NATIVE.">
     </EnumValue>
-    <EnumValue Name="EFI Application" Switch="SUBSYSTEM:EFI_APPLICATION" DisplayName="EFI Application" Description="EFI Application">
+    <EnumValue Name="EFI Application" Switch="SUBSYSTEM:EFI_APPLICATION" DisplayName="Aplikace EFI" Description="Aplikace EFI">
     </EnumValue>
-    <EnumValue Name="EFI Boot Service Driver" Switch="SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER" DisplayName="EFI Boot Service Driver" Description="EFI Boot Service Driver">
+    <EnumValue Name="EFI Boot Service Driver" Switch="SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER" DisplayName="Ovladač spouštěcí služby EFI" Description="Ovladač spouštěcí služby EFI">
     </EnumValue>
-    <EnumValue Name="EFI ROM" Switch="SUBSYSTEM:EFI_ROM" DisplayName="EFI ROM" Description="EFI ROM">
+    <EnumValue Name="EFI ROM" Switch="SUBSYSTEM:EFI_ROM" DisplayName="Paměť ROM EFI" Description="Paměť ROM EFI">
     </EnumValue>
-    <EnumValue Name="EFI Runtime" Switch="SUBSYSTEM:EFI_RUNTIME_DRIVER" DisplayName="EFI Runtime" Description="EFI Runtime">
+    <EnumValue Name="EFI Runtime" Switch="SUBSYSTEM:EFI_RUNTIME_DRIVER" DisplayName="Modul runtime EFI" Description="Modul runtime EFI">
     </EnumValue>
     <EnumValue Name="WindowsCE" Switch="SUBSYSTEM:WINDOWSCE" DisplayName="WindowsCE" Description="Application that runs on a Windows CE device.">
     </EnumValue>
-    <EnumValue Name="POSIX" Switch="SUBSYSTEM:POSIX" DisplayName="POSIX" Description="Application that runs with the POSIX subsystem in Windows NT.">
+    <EnumValue Name="POSIX" Switch="SUBSYSTEM:POSIX" DisplayName="POSIX" Description="Aplikace spouštěná v subsystému POSIX systému Windows NT">
     </EnumValue>
   </EnumProperty>
-  <StringProperty Name="MinimumRequiredVersion" DisplayName="Minimum Required Version" Description="Specify the minimum required version of the subsystem. The arguments are decimal numbers in the range 0 through 65,535." Category="System" Separator="," F1Keyword="VC.Project.VCLinkerTool.MinimumRequiredVersion">
+  <StringProperty Name="MinimumRequiredVersion" DisplayName="Minimální požadovaná verze" Description="Určuje minimální požadovanou verzi subsystému. Argumenty jsou desetinná čísla v rozmezí 0 až 65535." Category="System" Separator="," F1Keyword="VC.Project.VCLinkerTool.MinimumRequiredVersion">
   </StringProperty>
-  <StringProperty Name="HeapReserveSize" DisplayName="Heap Reserve Size" Description="Specifies total heap allocation size in virtual memory. Default is 1MB.    (/HEAP:reserve)" Category="System" Switch="HEAP" Separator=":" F1Keyword="VC.Project.VCLinkerTool.HeapReserveSize">
+  <StringProperty Name="HeapReserveSize" DisplayName="Velikost rezervace haldy" Description="Určuje celkovou velikost haldy přidělenou ve virtuální paměti. Výchozí hodnota je 1 MB.    (/HEAP:reserve)" Category="System" Switch="HEAP" Separator=":" F1Keyword="VC.Project.VCLinkerTool.HeapReserveSize">
     <Argument Property="HeapCommitSize" IsRequired="false" Separator=","/>
   </StringProperty>
-  <StringProperty Name="HeapCommitSize" DisplayName="Heap Commit Size" Description="Specifies total heap allocation size in physical memory. Default is 4KB.    (/HEAP:reserve,commit)" Category="System" F1Keyword="VC.Project.VCLinkerTool.HeapCommitSize">
+  <StringProperty Name="HeapCommitSize" DisplayName="Velikost potvrzení změn haldy" Description="Určuje celkovou velikost haldy přidělenou ve fyzické paměti. Výchozí hodnota je 4 kB.    (/HEAP:reserve,commit)" Category="System" F1Keyword="VC.Project.VCLinkerTool.HeapCommitSize">
   </StringProperty>
-  <StringProperty Name="StackReserveSize" DisplayName="Stack Reserve Size" Description="Specifies the total stack allocation size in virtual memory. Default is 1MB.     (/STACK:reserve)" Category="System" Switch="STACK" Separator=":" F1Keyword="VC.Project.VCLinkerTool.StackReserveSize">
+  <StringProperty Name="StackReserveSize" DisplayName="Velikost rezervace zásobníku" Description="Určuje celkovou velikost zásobníku přidělenou ve virtuální paměti. Výchozí hodnota je 1 MB.     (/STACK:reserve)" Category="System" Switch="STACK" Separator=":" F1Keyword="VC.Project.VCLinkerTool.StackReserveSize">
     <Argument Property="StackCommitSize" IsRequired="false" Separator=","/>
   </StringProperty>
-  <StringProperty Name="StackCommitSize" DisplayName="Stack Commit Size" Description="Specifies the total stack allocation size in physical memory. Default is 4KB.     (/STACK:reserve,commit)" Category="System" F1Keyword="VC.Project.VCLinkerTool.StackCommitSize">
+  <StringProperty Name="StackCommitSize" DisplayName="Velikost potvrzení změn zásobníku" Description="Určuje celkovou velikost zásobníku přidělenou ve fyzické paměti. Výchozí hodnota je 4 kB.     (/STACK:reserve,commit)" Category="System" F1Keyword="VC.Project.VCLinkerTool.StackCommitSize">
   </StringProperty>
-  <BoolProperty ReverseSwitch="LARGEADDRESSAWARE:NO" Name="LargeAddressAware" DisplayName="Enable Large Addresses" Description="The /LARGEADDRESSAWARE option tells the linker that the application can handle addresses larger than 2 gigabytes. By default, /LARGEADDRESSAWARE:NO is enabled if /LARGEADDRESSAWARE is not otherwise specified on the linker line." Category="System" Switch="LARGEADDRESSAWARE" F1Keyword="VC.Project.VCLinkerTool.LargeAddressAware">
+  <BoolProperty ReverseSwitch="LARGEADDRESSAWARE:NO" Name="LargeAddressAware" DisplayName="Povolit velké adresy" Description="Parametr /LARGEADDRESSAWARE sdělí linkeru, že aplikace dokáže zpracovat adresy větší než 2 GB. Ve výchozím nastavení je parametr /LARGEADDRESSAWARE:NO povolen, pokud na řádku linkeru není zadán parametr /LARGEADDRESSAWARE." Category="System" Switch="LARGEADDRESSAWARE" F1Keyword="VC.Project.VCLinkerTool.LargeAddressAware">
   </BoolProperty>
-  <BoolProperty ReverseSwitch="TSAWARE:NO" Name="TerminalServerAware" DisplayName="Terminal Server" Description="The /TSAWARE option sets a flag in the IMAGE_OPTIONAL_HEADER DllCharacteristics field in the program image's optional header. When this flag is set, Terminal Server will not make certain changes to the application." Category="System" Switch="TSAWARE" F1Keyword="VC.Project.VCLinkerTool.TerminalServerAware">
+  <BoolProperty ReverseSwitch="TSAWARE:NO" Name="TerminalServerAware" DisplayName="Terminálový server" Description="Parametr /TSAWARE nastaví příznak v poli IMAGE_OPTIONAL_HEADER DllCharacteristics v nepovinné hlavičce bitové kopie programu. Při nastavení tohoto příznaku neprovede terminálový server určité změny aplikace." Category="System" Switch="TSAWARE" F1Keyword="VC.Project.VCLinkerTool.TerminalServerAware">
   </BoolProperty>
-  <BoolProperty Name="SwapRunFromCD" DisplayName="Swap Run From CD" Description="The /SWAPRUN option tells the operating system to first copy the linker output to a swap file, and then run the image from there. This is a Windows NT 4.0 (and later) feature.When CD is specified, the operating system will copy the image on a removable disk to a page file and then load it." Category="System" Switch="SWAPRUN:CD" F1Keyword="VC.Project.VCLinkerTool.SwapRunFromCD">
+  <BoolProperty Name="SwapRunFromCD" DisplayName="Spuštění odkládacího souboru z disku CD" Description="Parametr /SWAPRUN přikazuje operačnímu systému, aby nejprve zkopíroval výstup linkeru do odkládacího souboru a pak z něho spustil bitovou kopii. Jedná se o funkci systému Windows NT 4.0 (a novějších). Pokud je zadán parametr CD, zkopíruje operační systém tuto bitovou kopii na vyměnitelném disku do stránkovacího souboru a pak ji zavede." Category="System" Switch="SWAPRUN:CD" F1Keyword="VC.Project.VCLinkerTool.SwapRunFromCD">
   </BoolProperty>
-  <BoolProperty Name="SwapRunFromNET" DisplayName="Swap Run From Network" Description="The /SWAPRUN option tells the operating system to first copy the linker output to a swap file, and then run the image from there. This is a Windows NT 4.0 (and later) feature. If NET is specified, the operating system will first copy the binary image from the network to a swap file and load it from there. This option is useful for running applications over the network." Category="System" Switch="SWAPRUN:NET" F1Keyword="VC.Project.VCLinkerTool.SwapRunFromNet">
+  <BoolProperty Name="SwapRunFromNET" DisplayName="Spuštění odkládacího souboru ze sítě" Description="Parametr /SWAPRUN přikazuje operačnímu systému, aby nejprve zkopíroval výstup linkeru do odkládacího souboru a pak z něho spustil bitovou kopii. Jedná se o funkci systému Windows NT 4.0 (a novějších). Pokud je zadán parametr NET, zkopíruje operační systém nejprve bitovou kopii ze sítě do odkládacího souboru, odkud ho zavede. Tento parametr je užitečný ke spouštění aplikací přes síť." Category="System" Switch="SWAPRUN:NET" F1Keyword="VC.Project.VCLinkerTool.SwapRunFromNet">
   </BoolProperty>
-  <EnumProperty Name="Driver" DisplayName="Driver" Description="Use the /DRIVER linker option to build a Windows NT kernel mode driver." Category="System" F1Keyword="VC.Project.VCLinkerTool.driver">
-    <EnumValue Name="NotSet" Switch="" DisplayName="Not Set" Description="Default driver setting.">
+  <EnumProperty Name="Driver" DisplayName="Ovladač" Description="Parametr /DRIVER linkeru se používá k sestavení ovladače Windows NT v režimu jádra." Category="System" F1Keyword="VC.Project.VCLinkerTool.driver">
+    <EnumValue Name="NotSet" Switch="" DisplayName="Nenastaveno" Description="Výchozí nastavení ovladače">
     </EnumValue>
-    <EnumValue Name="Driver" Switch="Driver" DisplayName="Driver" Description="Driver">
+    <EnumValue Name="Driver" Switch="Driver" DisplayName="Ovladač" Description="Ovladač">
     </EnumValue>
-    <EnumValue Name="UpOnly" Switch="DRIVER:UPONLY" DisplayName="UP Only" Description="/DRIVER:UPONLY causes the linker to add the IMAGE_FILE_UP_SYSTEM_ONLY bit to the characteristics in the output header to specify that it is a uniprocessor (UP) driver. The operating system will refuse to load a UP driver on a multiprocessor (MP) system.">
+    <EnumValue Name="UpOnly" Switch="DRIVER:UPONLY" DisplayName="Pouze jednoprocesorové" Description="Při použití parametru /DRIVER:UPONLY přidá linker do charakteristik výstupní hlavičky bit IMAGE_FILE_UP_SYSTEM_ONLY, kterým určí, že jde o jednoprocesorový ovladač. Na víceprocesorovém systému operační systém odmítne zavést jednoprocesorový ovladač.">
     </EnumValue>
-    <EnumValue Name="WDM" Switch="DRIVER:WDM" DisplayName="WDM" Description="/DRIVER:WDM causes the linker to set the IMAGE_DLLCHARACTERISTICS_WDM_DRIVER bit in the optional header's DllCharacteristics field.">
+    <EnumValue Name="WDM" Switch="DRIVER:WDM" DisplayName="WDM" Description="Při použití parametru /DRIVER:WDM nastaví linker v poli DllCharacteristics nepovinné hlavičky bit IMAGE_DLLCHARACTERISTICS_WDM_DRIVER.">
     </EnumValue>
   </EnumProperty>
-  <BoolProperty ReverseSwitch="OPT:NOREF" Name="OptimizeReferences" DisplayName="References" Description="/OPT:REF eliminates functions and/or data that are never referenced while /OPT:NOREF keeps functions and/or data that are never referenced. " Category="Optimization" Switch="OPT:REF" F1Keyword="VC.Project.VCLinkerTool.OptimizeReferences">
+  <BoolProperty ReverseSwitch="OPT:NOREF" Name="OptimizeReferences" DisplayName="Odkazy" Description="Parametr /OPT:REF vyřadí funkce a/nebo data, která nejsou nikdy odkazována, zatímco parametr /OPT:NOREF je zachová. " Category="Optimization" Switch="OPT:REF" F1Keyword="VC.Project.VCLinkerTool.OptimizeReferences">
   </BoolProperty>
-  <BoolProperty ReverseSwitch="OPT:NOICF" Name="EnableCOMDATFolding" DisplayName="Enable COMDAT Folding" Description="Use /OPT:ICF[=iterations] to perform identical COMDAT folding. " Category="Optimization" Switch="OPT:ICF" F1Keyword="VC.Project.VCLinkerTool.EnableCOMDATFolding">
+  <BoolProperty ReverseSwitch="OPT:NOICF" Name="EnableCOMDATFolding" DisplayName="Povolit skládání sekvencí COMDAT" Description="Použije parametr /OPT:ICF[=iterace] ke skládání identických sekvencí COMDAT. " Category="Optimization" Switch="OPT:ICF" F1Keyword="VC.Project.VCLinkerTool.EnableCOMDATFolding">
   </BoolProperty>
-  <StringProperty Subtype="file" Name="FunctionOrder" DisplayName="Function Order" Description="The /ORDER option tells LINK to optimize your program by placing certain COMDATs into the image in a predetermined order. LINK places the functions in the specified order within each section in the image." Category="Optimization" Switch="ORDER" Separator=":@" F1Keyword="VC.Project.VCLinkerTool.FunctionOrder">
+  <StringProperty Subtype="file" Name="FunctionOrder" DisplayName="Pořadí funkcí" Description="Parametr /ORDER dá příkazu LINK pokyn, aby program optimalizoval umístěním určitých sekvencí COMDAT do bitové kopie v předem určeném pořadí. Příkaz LINK tyto funkce umístí v zadaném pořadí do jednotlivých oddílů v obrazu." Category="Optimization" Switch="ORDER" Separator=":@" F1Keyword="VC.Project.VCLinkerTool.FunctionOrder">
   </StringProperty>
-  <StringProperty Subtype="file" Name="ProfileGuidedDatabase" DisplayName="Profile Guided Database" Description="Specify .pgd file for profile guided optionizations. (/PGD)" Category="Optimization" Switch="PGD" Separator=":" F1Keyword="VC.Project.VCLinkerTool.ProfileGuidedDatabase">
+  <StringProperty Subtype="file" Name="ProfileGuidedDatabase" DisplayName="Databáze na základě profilu" Description="Určuje soubor PGD pro optimalizaci na základě profilu. (/PGD)" Category="Optimization" Switch="PGD" Separator=":" F1Keyword="VC.Project.VCLinkerTool.ProfileGuidedDatabase">
   </StringProperty>
-  <EnumProperty Name="LinkTimeCodeGeneration" DisplayName="Link Time Code Generation" Description="Specifies link-time code generation" Category="Optimization" F1Keyword="VC.Project.VCLinkerTool.LinkTimeCodeGeneration">
-    <EnumValue Name="Default" Switch="" DisplayName="Default" Description="Default LTCG setting.">
+  <EnumProperty Name="LinkTimeCodeGeneration" DisplayName="Generování kódu při propojování" Description="Určuje generování kódu v době propojování." Category="Optimization" F1Keyword="VC.Project.VCLinkerTool.LinkTimeCodeGeneration">
+    <EnumValue Name="Default" Switch="" DisplayName="Výchozí" Description="Výchozí nastavení LTCG">
     </EnumValue>
-    <EnumValue Name="UseLinkTimeCodeGeneration" Switch="LTCG" DisplayName="Use Link Time Code Generation" Description="Use Link Time Code Generation">
+    <EnumValue Name="UseLinkTimeCodeGeneration" Switch="LTCG" DisplayName="Použít generování kódu při propojování" Description="Použije se generování kódu při propojování.">
     </EnumValue>
-    <EnumValue Name="PGInstrument" Switch="LTCG:PGInstrument" DisplayName="Profile Guided Optimization - Instrument" Description="Specifies link-time code generation">
+    <EnumValue Name="PGInstrument" Switch="LTCG:PGInstrument" DisplayName="Optimalizace na základě profilu – instrumentace" Description="Určuje generování kódu v době propojování.">
     </EnumValue>
-    <EnumValue Name="PGOptimization" Switch="LTCG:PGOptimize" DisplayName="Profile Guided Optimization - Optimization" Description="Specifies that the linker should use the profile data created after running the instrumented binary to create an optimized image.">
+    <EnumValue Name="PGOptimization" Switch="LTCG:PGOptimize" DisplayName="Optimalizace na základě profilu – optimalizace" Description="Určuje, že má linkeru použít data profilu vytvořená po spuštění instrumentovaného binárního souboru k vytvoření optimalizované bitové kopie.">
     </EnumValue>
-    <EnumValue Name="PGUpdate" Switch="LTCG:PGUpdate" DisplayName="Profile Guided Optimization - Update" Description="Allows and tracks list of input files to be added or modified from what was specified in the :PGINSTRUMENT phase.">
+    <EnumValue Name="PGUpdate" Switch="LTCG:PGUpdate" DisplayName="Optimalizace na základě profilu – aktualizace" Description="Umožňuje povolit a sledovat seznam vstupních souborů, které mají být přidány nebo změněny podle zadání ve fázi :PGINSTRUMENT.">
     </EnumValue>
   </EnumProperty>
-  <StringProperty Subtype="file" Name="MidlCommandFile" DisplayName="MIDL Commands" Description="Specify MIDL command line Options (/MIDL:@responsefile)" Category="Embedded IDL" Switch="MIDL" Separator=":@" F1Keyword="VC.Project.VCLinkerTool.MidlCommandFile">
+  <StringProperty Subtype="file" Name="MidlCommandFile" DisplayName="Příkazy MIDL" Description="Určuje parametry příkazového řádku MIDL. (/MIDL:@soubor_odpovědí)" Category="Embedded IDL" Switch="MIDL" Separator=":@" F1Keyword="VC.Project.VCLinkerTool.MidlCommandFile">
   </StringProperty>
-  <BoolProperty Name="IgnoreEmbeddedIDL" DisplayName="Ignore Embedded IDL" Description="The /IGNOREIDL option specifies that any IDL attributes in source code should not be processed into an .idl file." Category="Embedded IDL" Switch="IGNOREIDL" F1Keyword="VC.Project.VCLinkerTool.IgnoreEmbeddedIDL">
+  <BoolProperty Name="IgnoreEmbeddedIDL" DisplayName="Ignorovat vložené IDL" Description="Parametr /IGNOREIDL určuje, že žádné atributy IDL ve zdrojovém kódu nemají být zpracovány do souboru IDL." Category="Embedded IDL" Switch="IGNOREIDL" F1Keyword="VC.Project.VCLinkerTool.IgnoreEmbeddedIDL">
   </BoolProperty>
-  <StringProperty Subtype="file" Name="MergedIDLBaseFileName" DisplayName="Merged IDL Base File Name" Description="The /IDLOUT option specifies the name and extension of the .idl file." Category="Embedded IDL" Switch="IDLOUT" Separator=":" F1Keyword="VC.Project.VCLinkerTool.MergedIDLBaseFileName">
+  <StringProperty Subtype="file" Name="MergedIDLBaseFileName" DisplayName="Název základního sloučeného souboru IDL" Description="Parametr /IDLOUT určuje název a příponu souboru IDL." Category="Embedded IDL" Switch="IDLOUT" Separator=":" F1Keyword="VC.Project.VCLinkerTool.MergedIDLBaseFileName">
   </StringProperty>
-  <StringProperty Subtype="file" Name="TypeLibraryFile" DisplayName="Type Library" Description="The /TLBOUT option specifies the name and extension of the .tlb file." Category="Embedded IDL" Switch="TLBOUT" Separator=":" F1Keyword="VC.Project.VCLinkerTool.TypeLibraryFile">
+  <StringProperty Subtype="file" Name="TypeLibraryFile" DisplayName="Knihovna typů" Description="Parametr /TLBOUT určuje název a příponu souboru TLB." Category="Embedded IDL" Switch="TLBOUT" Separator=":" F1Keyword="VC.Project.VCLinkerTool.TypeLibraryFile">
   </StringProperty>
-  <IntProperty Name="TypeLibraryResourceID" DisplayName="TypeLib Resource ID" Description="Allows you to specify the resource ID of the linker-generated type library. (/TLBID:id)" Category="Embedded IDL" Switch="TLBID" Separator=":" F1Keyword="VC.Project.VCLinkerTool.TypeLibraryResourceID">
+  <IntProperty Name="TypeLibraryResourceID" DisplayName="ID prostředku knihovny typů" Description="Umožňuje zadat ID prostředku knihovny typů vygenerované linkerem. (/TLBID:id)" Category="Embedded IDL" Switch="TLBID" Separator=":" F1Keyword="VC.Project.VCLinkerTool.TypeLibraryResourceID">
   </IntProperty>
-  <StringProperty Name="EntryPointSymbol" DisplayName="Entry Point" Description="The /ENTRY option specifies an entry point function as the starting address for an .exe file or DLL." Category="Advanced" Switch="ENTRY" Separator=":" F1Keyword="VC.Project.VCLinkerTool.EntryPointSymbol">
+  <StringProperty Name="EntryPointSymbol" DisplayName="Vstupní bod" Description="Parametr /ENTRY určuje funkci vstupního bodu jako počáteční adresu souboru EXE nebo knihovny DLL." Category="Advanced" Switch="ENTRY" Separator=":" F1Keyword="VC.Project.VCLinkerTool.EntryPointSymbol">
   </StringProperty>
-  <BoolProperty Name="NoEntryPoint" DisplayName="No Entry Point" Description="The /NOENTRY option is required for creating a resource-only DLL.Use this option to prevent LINK from linking a reference to _main into the DLL." Category="Advanced" Switch="NOENTRY" F1Keyword="VC.Project.VCLinkerTool.ResourceOnlyDLL">
+  <BoolProperty Name="NoEntryPoint" DisplayName="Bez vstupního bodu" Description="Parametr /NOENTRY se vyžaduje k vytvoření knihovny DLL určené pouze pro prostředky. Pomocí tohoto parametru můžete příkazu LINK zabránit v propojení odkazu na _main s knihovnou DLL." Category="Advanced" Switch="NOENTRY" F1Keyword="VC.Project.VCLinkerTool.ResourceOnlyDLL">
   </BoolProperty>
-  <BoolProperty Name="SetChecksum" DisplayName="Set Checksum" Description="The /RELEASE option sets the Checksum in the header of an .exe file." Category="Advanced" Switch="RELEASE" F1Keyword="VC.Project.VCLinkerTool.SetChecksum">
+  <BoolProperty Name="SetChecksum" DisplayName="Nastavit kontrolní součet" Description="Parametr /RELEASE nastavuje kontrolní součet v hlavičce souboru EXE." Category="Advanced" Switch="RELEASE" F1Keyword="VC.Project.VCLinkerTool.SetChecksum">
   </BoolProperty>
-  <StringProperty Name="BaseAddress" DisplayName="Base Address" Description="Sets a base address for the program (/BASE:{address[,size] | @filename,key})" Category="Advanced" Switch="BASE" Separator=":" F1Keyword="VC.Project.VCLinkerTool.BaseAddress">
+  <StringProperty Name="BaseAddress" DisplayName="Základní adresa" Description="Umožňuje nastavit základní adresu programu. (/BASE:{adresa[,velikost] | @název_souboru,klíč})" Category="Advanced" Switch="BASE" Separator=":" F1Keyword="VC.Project.VCLinkerTool.BaseAddress">
   </StringProperty>
-  <BoolProperty ReverseSwitch="DYNAMICBASE:NO" Name="RandomizedBaseAddress" DisplayName="Randomized Base Address" Description="Randomized Base Address (/DYNAMICBASE[:NO])" Category="Advanced" Switch="DYNAMICBASE" F1Keyword="VC.Project.VCLinkerTool.RandomizedBaseAddress">
+  <BoolProperty ReverseSwitch="DYNAMICBASE:NO" Name="RandomizedBaseAddress" DisplayName="Náhodná základní adresa" Description="Náhodná základní adresa (/DYNAMICBASE[:NO])" Category="Advanced" Switch="DYNAMICBASE" F1Keyword="VC.Project.VCLinkerTool.RandomizedBaseAddress">
   </BoolProperty>
-  <BoolProperty ReverseSwitch="FIXED:NO" Name="FixedBaseAddress" DisplayName="Fixed Base Address" Description="Creates a program that can be loaded only at its preferred base address (/FIXED[:NO])" Category="Advanced" Switch="FIXED" F1Keyword="VC.Project.VCLinkerTool.FixedBaseAddress">
+  <BoolProperty ReverseSwitch="FIXED:NO" Name="FixedBaseAddress" DisplayName="Pevná základní adresa" Description="Vytvoří program, který se dá zavést jenom na jeho preferovanou základní adresu. (/FIXED[:NO])" Category="Advanced" Switch="FIXED" F1Keyword="VC.Project.VCLinkerTool.FixedBaseAddress">
   </BoolProperty>
-  <BoolProperty ReverseSwitch="NXCOMPAT:NO" Name="DataExecutionPrevention" DisplayName="Data Execution Prevention (DEP)" Description="Marks an executable as having been tested to be compatible with Windows Data Execution Prevention feature. (/NXCOMPAT[:NO])" Category="Advanced" Switch="NXCOMPAT" F1Keyword="VC.Project.VCLinkerTool.DataExecutionPrevention">
+  <BoolProperty ReverseSwitch="NXCOMPAT:NO" Name="DataExecutionPrevention" DisplayName="Zabránění spuštění dat (DEP)" Description="Označí spustitelný soubor jako otestovaný na kompatibilitu s funkcí Zabránění spuštění dat Windows. (/NXCOMPAT[:NO])" Category="Advanced" Switch="NXCOMPAT" F1Keyword="VC.Project.VCLinkerTool.DataExecutionPrevention">
   </BoolProperty>
-  <BoolProperty Name="TurnOffAssemblyGeneration" DisplayName="Turn Off Assembly Generation" Description="The /NOASSEMBLY option tells the linker to create an image for the current output file without a .NET Framework assembly." Category="Advanced" Switch="NOASSEMBLY" F1Keyword="VC.Project.VCLinkerTool.TurnOffAssemblyGeneration">
+  <BoolProperty Name="TurnOffAssemblyGeneration" DisplayName="Vypnout generování sestavení" Description="Parametr /NOASSEMBLY přikáže linkeru, aby vytvořil bitovou kopii pro aktuální výstupní soubor bez sestavení .NET Framework." Category="Advanced" Switch="NOASSEMBLY" F1Keyword="VC.Project.VCLinkerTool.TurnOffAssemblyGeneration">
   </BoolProperty>
-  <BoolProperty Name="SupportUnloadOfDelayLoadedDLL" DisplayName="Unload delay loaded DLL" Description="The UNLOAD qualifier tells the delay-load helper function to support explicit unloading of the DLL. (/DELAY:UNLOAD)" Category="Advanced" Switch="DELAY:UNLOAD" F1Keyword="VC.Project.VCLinkerTool.SupportUnloadOfDelayLoadedDLL">
+  <BoolProperty Name="SupportUnloadOfDelayLoadedDLL" DisplayName="Uvolnit odloženě zaváděnou knihovnu DLL" Description="Kvalifikátor UNLOAD přikazuje odloženě zaváděné pomocné funkci, aby podporovala explicitní uvolnění knihovny DLL. (/DELAY:UNLOAD)" Category="Advanced" Switch="DELAY:UNLOAD" F1Keyword="VC.Project.VCLinkerTool.SupportUnloadOfDelayLoadedDLL">
   </BoolProperty>
-  <BoolProperty Name="SupportNobindOfDelayLoadedDLL" DisplayName="Nobind delay loaded DLL" Description="The NOBIND qualifier tells the linker not to include a bindable IAT in the final image. The default is to create the bindable IAT for delay-loaded DLLs. (/DELAY:NOBIND)" Category="Advanced" Switch="DELAY:NOBIND" F1Keyword="VC.Project.VCLinkerTool.SupportNobindOfDelayLoadedDLL">
+  <BoolProperty Name="SupportNobindOfDelayLoadedDLL" DisplayName="Nepoužívat vazbu u odloženě zaváděné knihovny DLL" Description="Kvalifikátor NOBIND přikazuje linkeru, aby do finální bitové kopie nezahrnoval IAT s možností vazby. Ve výchozím nastavení se pro odloženě zaváděné knihovny DLL vytvoří IAT s možností vazby. (/DELAY:NOBIND)" Category="Advanced" Switch="DELAY:NOBIND" F1Keyword="VC.Project.VCLinkerTool.SupportNobindOfDelayLoadedDLL">
   </BoolProperty>
-  <StringProperty Subtype="file" Name="ImportLibrary" DisplayName="Import Library" Description="Overrides the default import library name (/IMPLIB:filename)" Category="Advanced" Switch="IMPLIB" Separator=":" F1Keyword="VC.Project.VCLinkerTool.ImportLIbrary">
+  <StringProperty Subtype="file" Name="ImportLibrary" DisplayName="Knihovna importu" Description="Přepíše výchozí název knihovny importu. (/IMPLIB:název_souboru)" Category="Advanced" Switch="IMPLIB" Separator=":" F1Keyword="VC.Project.VCLinkerTool.ImportLIbrary">
   </StringProperty>
-  <StringProperty Name="MergeSections" DisplayName="Merge Sections" Description="The /MERGE option combines the first section (from) with the second section (to), naming the resulting section to. For example, /merge:.rdata=.text." Category="Advanced" Switch="MERGE" Separator=":" F1Keyword="VC.Project.VCLinkerTool.MergeSections">
+  <StringProperty Name="MergeSections" DisplayName="Sloučit oddíly" Description="Parametr /MERGE sloučí první oddíl (od) s druhým oddílem (do) a výsledný oddíl přejmenuje. Příklad: /merge:.rdata=.text." Category="Advanced" Switch="MERGE" Separator=":" F1Keyword="VC.Project.VCLinkerTool.MergeSections">
   </StringProperty>
-  <EnumProperty Name="TargetMachine" DisplayName="Target Machine" Description="The /MACHINE option specifies the target platform for the program." Category="Advanced" F1Keyword="VC.Project.VCLinkerTool.TargetMachine">
-    <EnumValue Name="NotSet" Switch="" DisplayName="Not Set">
+  <EnumProperty Name="TargetMachine" DisplayName="Cílový počítač" Description="Parametr /MACHINE určuje cílovou platformu programu." Category="Advanced" F1Keyword="VC.Project.VCLinkerTool.TargetMachine">
+    <EnumValue Name="NotSet" Switch="" DisplayName="Nenastaveno">
     </EnumValue>
     <EnumValue Name="MachineARM" Switch="MACHINE:ARM" DisplayName="MachineARM">
     </EnumValue>
@@ -294,65 +294,65 @@ Credits
     <EnumValue Name="MachineX86" Switch="MACHINE:X86" DisplayName="MachineX86">
     </EnumValue>
   </EnumProperty>
-  <BoolProperty Name="Profile" DisplayName="Profile" Description="Produces an output file that can be used with the Performance Tools profiler. Requires GenerateDebugInformation (/DEBUG) to be set. (/PROFILE)" Category="Advanced" Switch="PROFILE" F1Keyword="VC.Project.VCLinkerTool.Profile">
+  <BoolProperty Name="Profile" DisplayName="Profil" Description="Vytvoří výstupní soubor, který lze použít s profilerem Performance Tools. Vyžaduje, aby byl nastaven parametr GenerateDebugInformation (/DEBUG). (/PROFILE)" Category="Advanced" Switch="PROFILE" F1Keyword="VC.Project.VCLinkerTool.Profile">
   </BoolProperty>
-  <EnumProperty Name="CLRThreadAttribute" DisplayName="CLR Thread Attribute" Description="Explicitly specify the threading attribute for the entry point of your CLR program." Category="Advanced" F1Keyword="VC.Project.VCLinkerTool.CLRThreadAttribute">
-    <EnumValue Name="MTAThreadingAttribute" Switch="CLRTHREADATTRIBUTE:MTA" DisplayName="MTA threading attribute" Description="Applies the MTAThreadAttribute attribute to the entry point of your program.">
+  <EnumProperty Name="CLRThreadAttribute" DisplayName="Atribut vlákna modulu CLR" Description="Umožňuje explicitně určit vláknový atribut pro vstupní bod programu CLR." Category="Advanced" F1Keyword="VC.Project.VCLinkerTool.CLRThreadAttribute">
+    <EnumValue Name="MTAThreadingAttribute" Switch="CLRTHREADATTRIBUTE:MTA" DisplayName="Vláknový atribut MTA" Description="Aplikuje atribut MTAThreadAttribute na vstupní bod programu.">
     </EnumValue>
-    <EnumValue Name="STAThreadingAttribute" Switch="CLRTHREADATTRIBUTE:STA" DisplayName="STA threading attribute" Description="Applies the STAThreadAttribute attribute to the entry point of your program.">
+    <EnumValue Name="STAThreadingAttribute" Switch="CLRTHREADATTRIBUTE:STA" DisplayName="Vláknový atribut STA" Description="Aplikuje atribut STAThreadAttribute na vstupní bod programu.">
     </EnumValue>
-    <EnumValue Name="DefaultThreadingAttribute" Switch="CLRTHREADATTRIBUTE:NONE" DisplayName="Default threading attribute" Description="Same as not specifying /CLRTHREADATTRIBUTE. Lets the Common Language Runtime (CLR) set the default threading attribute.">
-    </EnumValue>
-  </EnumProperty>
-  <EnumProperty Name="CLRImageType" DisplayName="CLR Image Type" Description="Sets the type (IJW, pure, or safe) of a CLR image." Category="Advanced" F1Keyword="VC.Project.VCLinkerTool.CLRImageType">
-    <EnumValue Name="ForceIJWImage" Switch="CLRIMAGETYPE:IJW" DisplayName="Force IJW image">
-    </EnumValue>
-    <EnumValue Name="ForcePureILImage" Switch="CLRIMAGETYPE:PURE" DisplayName="Force Pure IL Image">
-    </EnumValue>
-    <EnumValue Name="ForceSafeILImage" Switch="CLRIMAGETYPE:SAFE" DisplayName="Force Safe IL Image">
-    </EnumValue>
-    <EnumValue Name="Default" Switch="" DisplayName="Default image type">
+    <EnumValue Name="DefaultThreadingAttribute" Switch="CLRTHREADATTRIBUTE:NONE" DisplayName="Výchozí vláknový atribut" Description="Stejné jako bez zadání parametru /CLRTHREADATTRIBUTE. Umožňuje, aby modul CLR (Common Language Runtime) nastavil výchozí vláknový atribut.">
     </EnumValue>
   </EnumProperty>
-  <StringProperty Subtype="file" Name="LinkKeyFile" DisplayName="Key File" Description="Specify key or key pair to sign an assembly. (/KEYFILE:filename)" Category="Advanced" Switch="KEYFILE" Separator=":" F1Keyword="VC.Project.VCLinkerTool.KeyFile">
+  <EnumProperty Name="CLRImageType" DisplayName="Typ bitové kopie modulu CLR" Description="Nastavuje typ bitové kopie modulu CLR (IJW, úplná nebo bezpeční)." Category="Advanced" F1Keyword="VC.Project.VCLinkerTool.CLRImageType">
+    <EnumValue Name="ForceIJWImage" Switch="CLRIMAGETYPE:IJW" DisplayName="Vynutit bitovou kopii IJW">
+    </EnumValue>
+    <EnumValue Name="ForcePureILImage" Switch="CLRIMAGETYPE:PURE" DisplayName="Vynutit bitovou kopii výhradně v jazyce IL">
+    </EnumValue>
+    <EnumValue Name="ForceSafeILImage" Switch="CLRIMAGETYPE:SAFE" DisplayName="Vynutit bezpečnou bitovou kopii v jazyce IL">
+    </EnumValue>
+    <EnumValue Name="Default" Switch="" DisplayName="Výchozí typ bitové kopie">
+    </EnumValue>
+  </EnumProperty>
+  <StringProperty Subtype="file" Name="LinkKeyFile" DisplayName="Soubor klíče" Description="Určuje klíč nebo dvojici klíčů, kterou se má sestavení podepsat. (/KEYFILE:název_souboru)" Category="Advanced" Switch="KEYFILE" Separator=":" F1Keyword="VC.Project.VCLinkerTool.KeyFile">
     <StringProperty.DataSource>
-      <DataSource Persistence="ProjectFile" ItemType="" Label="" HasConfigurationCondition="true" />
+      <DataSource Persistence="ProjectFile" ItemType="" Label="" HasConfigurationCondition="true"/>
     </StringProperty.DataSource>
   </StringProperty>
-  <StringProperty Subtype="file" Name="KeyContainer" DisplayName="Key Container" Description="Specify a key container to sign an assembly. (/KEYCONTAINER:name)" Category="Advanced" Switch="KEYCONTAINER" Separator=":" F1Keyword="VC.Project.VCLinkerTool.KeyContainer">
+  <StringProperty Subtype="file" Name="KeyContainer" DisplayName="Kontejner klíčů" Description="Určuje kontejner klíčů, kterým se má sestavení podepsat. (/KEYCONTAINER:název)" Category="Advanced" Switch="KEYCONTAINER" Separator=":" F1Keyword="VC.Project.VCLinkerTool.KeyContainer">
   </StringProperty>
-  <BoolProperty ReverseSwitch="DELAYSIGN:NO" Name="LinkDelaySign" DisplayName="Delay Sign" Description="Partially sign an assembly. Use /DELAYSIGN if you only want to place the public key in the assembly. The default is /DELAYSIGN:NO." Category="Advanced" Switch="DELAYSIGN" F1Keyword="VC.Project.VCLinkerTool.DelaySign">
+  <BoolProperty ReverseSwitch="DELAYSIGN:NO" Name="LinkDelaySign" DisplayName="Příznak odložení" Description="Umožňuje částečný podpis sestavení. Parametr /DELAYSIGN použijte v případě, že do sestavení pouze chcete umístit veřejný klíč. Výchozí nastavení je /DELAYSIGN:NO." Category="Advanced" Switch="DELAYSIGN" F1Keyword="VC.Project.VCLinkerTool.DelaySign">
     <BoolProperty.DataSource>
-      <DataSource Persistence="ProjectFile" ItemType="" Label="" HasConfigurationCondition="true" />
+      <DataSource Persistence="ProjectFile" ItemType="" Label="" HasConfigurationCondition="true"/>
     </BoolProperty.DataSource>
   </BoolProperty>
-  <BoolProperty ReverseSwitch="CLRUNMANAGEDCODECHECK:NO" Name="CLRUnmanagedCodeCheck" DisplayName="CLR Unmanaged Code Check" Description="/CLRUNMANAGEDCODECHECK specifies whether the linker will apply SuppressUnmanagedCodeSecurityAttribute to linker-generated PInvoke calls from managed code into native DLLs." Category="Advanced" Switch="CLRUNMANAGEDCODECHECK" F1Keyword="VC.Project.VCLinkerTool.CLRUnmanagedCodeCheck">
+  <BoolProperty ReverseSwitch="CLRUNMANAGEDCODECHECK:NO" Name="CLRUnmanagedCodeCheck" DisplayName="Kontrola nespravovaného kódu modulu CLR" Description="Parametr /CLRUNMANAGEDCODECHECK určuje, zda linker použije atribut SuppressUnmanagedCodeSecurityAttribute pro linkerem generovaná volání PInvoke ze spravovaného kódu do nativních knihoven DLL." Category="Advanced" Switch="CLRUNMANAGEDCODECHECK" F1Keyword="VC.Project.VCLinkerTool.CLRUnmanagedCodeCheck">
   </BoolProperty>
-  <EnumProperty Name="LinkErrorReporting" DisplayName="Error Reporting" Description="Allows you to provide internal compiler error (ICE) information directly to the Visual C++ team." Category="Advanced" F1Keyword="VC.Project.VCLinkerTool.ErrorReporting">
-    <EnumValue Name="PromptImmediately" Switch="ERRORREPORT:PROMPT" DisplayName="PromptImmediately" Description="Prompt immediately.">
+  <EnumProperty Name="LinkErrorReporting" DisplayName="Zasílání zpráv o chybách" Description="Umožňuje poskytnout informace o vnitřní chybě kompilátoru (ICE) přímo týmu Visual C++." Category="Advanced" F1Keyword="VC.Project.VCLinkerTool.ErrorReporting">
+    <EnumValue Name="PromptImmediately" Switch="ERRORREPORT:PROMPT" DisplayName="Vyzvat okamžitě" Description="Vyzvat okamžitě">
     </EnumValue>
-    <EnumValue Name="QueueForNextLogin" Switch="ERRORREPORT:QUEUE" DisplayName="Queue For Next Login" Description="Queue for next login.">
+    <EnumValue Name="QueueForNextLogin" Switch="ERRORREPORT:QUEUE" DisplayName="Zařadit do fronty pro příští přihlášení" Description="Zařadit do fronty pro příští přihlášení">
     </EnumValue>
-    <EnumValue Name="SendErrorReport" Switch="ERRORREPORT:SEND" DisplayName="Send Error Report" Description="Send error report.">
+    <EnumValue Name="SendErrorReport" Switch="ERRORREPORT:SEND" DisplayName="Odeslat zprávu o chybách" Description="Odešle zprávu o chybách.">
     </EnumValue>
-    <EnumValue Name="NoErrorReport" Switch="ERRORREPORT:NONE" DisplayName="No Error Report" Description="No error report.">
+    <EnumValue Name="NoErrorReport" Switch="ERRORREPORT:NONE" DisplayName="Žádná sestava chyb" Description="Žádná sestava chyb">
     </EnumValue>
   </EnumProperty>
-  <IntProperty Name="SectionAlignment" DisplayName="SectionAlignment" Description="The /ALIGN option specifies the alignment of each section within the linear address space of the program. The number argument is in bytes and must be a power of two." Category="Advanced" Switch="ALIGN" Separator=":" F1Keyword="VC.Project.VCLinkerTool.Alignment">
+  <IntProperty Name="SectionAlignment" DisplayName="Zarovnání oddílu" Description="Parametr /ALIGN určuje zarovnání jednotlivých oddílů uvnitř lineárního adresního prostoru programu. Tento číselný argument je vyjádřen v bajtech a musí být mocninou čísla 2." Category="Advanced" Switch="ALIGN" Separator=":" F1Keyword="VC.Project.VCLinkerTool.Alignment">
   </IntProperty>
-  <EnumProperty Name="CLRSupportLastError" DisplayName="Preserve Last Error Code for PInvoke Calls" Description="/CLRSUPPORTLASTERROR, which is on by default, preserves the last error code of functions called through the P/Invoke mechanism, which allows you to call native functions in DLLS, from code compiled with /clr." Category="Advanced" F1Keyword="VC.Project.VCLinkerTool.CLRSupportLastError">
-    <EnumValue Name="Enabled" Switch="CLRSupportLastError" DisplayName="Enabled" Description="Enable CLRSupportLastError.">
+  <EnumProperty Name="CLRSupportLastError" DisplayName="Zachovat poslední kód chyby pro volání PInvoke" Description="Parametr /CLRSUPPORTLASTERROR, který je ve výchozím nastavení zapnutý, zachová poslední kód chyby funkcí volaných mechanismem P/Invoke, který umožňuje volat nativní funkce v knihovnách DLL z kódu zkompilovaného s parametrem /clr." Category="Advanced" F1Keyword="VC.Project.VCLinkerTool.CLRSupportLastError">
+    <EnumValue Name="Enabled" Switch="CLRSupportLastError" DisplayName="Povoleno" Description="Povoluje CLRSupportLastError.">
     </EnumValue>
-    <EnumValue Name="Disabled" Switch="CLRSupportLastError:NO" DisplayName="Disabled" Description="Disable CLRSupportLastError.">
+    <EnumValue Name="Disabled" Switch="CLRSupportLastError:NO" DisplayName="Zakázáno" Description="Zakazuje CLRSupportLastError.">
     </EnumValue>
-    <EnumValue Name="SystemDlls" Switch="CLRSupportLastError:SYSTEMDLL" DisplayName="System Dlls Only" Description="Enable CLRSupportLastError for system dlls only.">
+    <EnumValue Name="SystemDlls" Switch="CLRSupportLastError:SYSTEMDLL" DisplayName="Pouze systémové knihovny DLL" Description="Povoluje funkci CLRSupportLastError pouze pro systémové knihovny DLL.">
     </EnumValue>
   </EnumProperty>
-  <BoolProperty ReverseSwitch="SAFESEH:NO" Name="ImageHasSafeExceptionHandlers" DisplayName="Image Has Safe Exception Handlers" Description="When /SAFESEH is specified, the linker will only produce an image if it can also produce a table of the image's safe exception handlers. This table specifies for the operating system which exception handlers are valid for the image." Category="Advanced" Switch="SAFESEH" F1Keyword="VC.Project.VCLinkerTool.ImageHasSafeExceptionHandlers">
+  <BoolProperty ReverseSwitch="SAFESEH:NO" Name="ImageHasSafeExceptionHandlers" DisplayName="Bitová kopie má bezpečné obslužné rutiny výjimek" Description="Při zadání parametru /SAFESEH vytvoří linker pouze bitovou kopii, pokud může také vytvořit tabulku bezpečných obslužných rutin výjimek bitové kopie. V této tabulce je specifikován operační systém, jehož obslužné programy výjimek jsou pro tuto bitovou kopii platné." Category="Advanced" Switch="SAFESEH" F1Keyword="VC.Project.VCLinkerTool.ImageHasSafeExceptionHandlers">
   </BoolProperty>
   <BoolProperty Name="LinkDLL" Switch="DLL" Visible="false">
   </BoolProperty>
-  <StringProperty Name="AdditionalOptions" DisplayName="Additional Options" Description="Additional Options" Category="Command Line" F1Keyword="vc.project.AdditionalOptionsPage">
+  <StringProperty Name="AdditionalOptions" DisplayName="Další možnosti" Description="Další možnosti" Category="Command Line" F1Keyword="vc.project.AdditionalOptionsPage">
   </StringProperty>
   <BoolProperty Name="BuildingInIDE" Visible="false">
   </BoolProperty>

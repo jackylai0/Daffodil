@@ -32,11 +32,11 @@ Credits
   <Rule.DataSource>
     <DataSource Persistence="ProjectFile" ItemType="Midl" Label="" HasConfigurationCondition="true"/>
   </Rule.DataSource>
-  <StringListProperty Name="PreprocessorDefinitions" DisplayName="前置處理器定義" Description="指定一或多個定義，包括 MIDL 巨集 (/D[巨集]" Category="General" Switch="D " F1Keyword="VC.Project.VCMidlTool.PreprocessorDefinitions">
+  <StringListProperty Name="PreprocessorDefinitions" DisplayName="前置處理器定義" Description="指定一或多個定義，包括 MIDL 巨集 (/D[巨集])" Category="General" Switch="D " F1Keyword="VC.Project.VCMidlTool.PreprocessorDefinitions">
   </StringListProperty>
   <StringListProperty Subtype="folder" Name="AdditionalIncludeDirectories" DisplayName="其他 Include 目錄" Description="指定一或多個要加入至 Include 路徑的目錄 (/I[路徑])" Category="General" Switch="I" F1Keyword="VC.Project.VCMidlTool.AdditionalIncludeDirectories">
   </StringListProperty>
-  <BoolProperty Name="IgnoreStandardIncludePath" DisplayName="忽略標準 Include 路徑" Description="忽略目前的目錄和 INCLUDE 目錄" Category="General" Switch="no_def_idir" F1Keyword="VC.Project.VCMidlTool.IgnoreStandardIncludePath">
+  <BoolProperty Name="IgnoreStandardIncludePath" DisplayName="忽略標準 Include 路徑" Description="忽略目前的目錄和 INCLUDE 目錄 (/no_def_idir)" Category="General" Switch="no_def_idir" F1Keyword="VC.Project.VCMidlTool.IgnoreStandardIncludePath">
   </BoolProperty>
   <BoolProperty Name="MkTypLibCompatible" DisplayName="MkTypLib 相容" Description="強制與 mktyplib.exe 2.03 版相容 (/mktyplib203)" Category="General" Switch="mktyplib203" F1Keyword="VC.Project.VCMidlTool.MkTypLibCompatible">
   </BoolProperty>
@@ -56,7 +56,7 @@ Credits
   </BoolProperty>
   <BoolProperty Name="SuppressStartupBanner" DisplayName="隱藏程式啟始資訊" Description="隱藏程式啟始資訊及資訊訊息 (/nologo)" Category="General" Switch="nologo" F1Keyword="VC.Project.VCMidlTool.SuppressStartupBanner">
   </BoolProperty>
-  <EnumProperty Name="DefaultCharType" DisplayName="C 編譯器 Char 型別" Description="指定要用來編譯所產生程式碼的 C 編譯器的預設字元型別。(/char signed|unsigned|ascii7)" Category="General" F1Keyword="VC.Project.VCMidlTool.DefaultCharType">
+  <EnumProperty Name="DefaultCharType" DisplayName="C 編譯器 Char 類型" Description="指定要用來編譯所產生程式碼的 C 編譯器的預設字元類型。(/char signed|unsigned|ascii7)" Category="General" F1Keyword="VC.Project.VCMidlTool.DefaultCharType">
     <EnumValue Name="Signed" Switch="char signed" DisplayName="已簽署" Description="已簽署">
     </EnumValue>
     <EnumValue Name="Unsigned" Switch="char unsigned" DisplayName="未簽署" Description="未簽署">
@@ -94,9 +94,9 @@ Credits
   </StringProperty>
   <StringProperty Subtype="file" Name="ProxyFileName" DisplayName="Proxy 檔" Description="指定 Proxy 檔的名稱 (/proxy filename)" Category="Output" Switch="proxy" Separator=" " F1Keyword="VC.Project.VCMidlTool.ProxyFileName">
   </StringProperty>
-  <BoolProperty ReverseSwitch="notlb" Name="GenerateTypeLibrary" DisplayName="產生型別程式庫" Description="指定不產生 typelib ([/notlb] 代表不產生)" Category="Output" F1Keyword="VC.Project.VCMidlTool.GenerateTypeLibrary">
+  <BoolProperty ReverseSwitch="notlb" Name="GenerateTypeLibrary" DisplayName="產生類型程式庫" Description="指定不產生 typelib ([/notlb] 代表不產生)" Category="Output" F1Keyword="VC.Project.VCMidlTool.GenerateTypeLibrary">
   </BoolProperty>
-  <StringProperty Subtype="file" Name="TypeLibraryName" DisplayName="型別程式庫" Description="指定型別程式庫檔案的名稱 (/tlb filename)" Category="Output" Switch="tlb" Separator=" " F1Keyword="VC.Project.VCMidlTool.TypeLibraryName">
+  <StringProperty Subtype="file" Name="TypeLibraryName" DisplayName="類型程式庫" Description="指定類型程式庫檔案的名稱 (/tlb filename)" Category="Output" Switch="tlb" Separator=" " F1Keyword="VC.Project.VCMidlTool.TypeLibraryName">
   </StringProperty>
   <EnumProperty Name="GenerateClientFiles" DisplayName="產生用戶端 Stub 檔" Description="只產生用戶端 Stub 檔 (/client [stub|none])" Category="Output" F1Keyword="VC.Project.VCMidlTool.GenerateClientFiles">
     <EnumValue Name="Stub" Switch="client stub" DisplayName="Stub" Description="Stub">
@@ -114,7 +114,7 @@ Credits
   </StringProperty>
   <StringProperty Subtype="file" Name="ServerStubFile" DisplayName="伺服器 Stub 檔" Description="指定伺服器 Stub 檔 (/sstub [檔案])" Category="Output" Switch="sstub" Separator=" " F1Keyword="VC.Project.VCMidlTool.ServerStubFile">
   </StringProperty>
-  <EnumProperty Name="TypeLibFormat" DisplayName="型別程式庫格式" Description="指定型別程式庫檔案格式 ([/oldtlb|/newtlb])" Category="Output" F1Keyword="VC.Project.VCMidlTool.TypeLibFormat">
+  <EnumProperty Name="TypeLibFormat" DisplayName="類型程式庫格式" Description="指定類型程式庫檔案格式 ([/oldtlb|/newtlb])" Category="Output" F1Keyword="VC.Project.VCMidlTool.TypeLibFormat">
     <EnumValue Name="NewFormat" Switch="newtlb" DisplayName="NewFormat" Description="新格式">
     </EnumValue>
     <EnumValue Name="OldFormat" Switch="oldtlb" DisplayName="OldFormat" Description="舊格式">

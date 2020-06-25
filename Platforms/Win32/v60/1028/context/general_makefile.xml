@@ -31,7 +31,7 @@ Credits
   </Rule.DataSource>
   <StringProperty Name="OutDir" DisplayName="輸出目錄" Description="指定輸出檔案目錄的相對路徑; 可以包含環境變數。" Category="General" Default="$(SolutionDir)$(ConfigurationName)" Subtype="folder" F1Keyword="VC.Project.VCConfiguration.OutputDirectory"/>
   <StringProperty Name="IntDir" DisplayName="中繼目錄" Description="指定中繼檔案目錄的相對路徑; 可以包含環境變數。" Category="General" Default="$(ConfigurationName)" Subtype="folder" F1Keyword="VC.Project.VCConfiguration.IntermediateDirectory"/>
-  <EnumProperty Name="ConfigurationType" DisplayName="組態類型" Description="指定此組態產生的輸出類型。" Category="General" F1Keyword="VC.Project.VCConfiguration.ConfigurationType">
+  <EnumProperty Name="ConfigurationType" DisplayName="組態類型" Description="指定這個組態所產生的輸出類型。" Category="General" F1Keyword="VC.Project.VCConfiguration.ConfigurationType">
     <EnumValue Name="Makefile" DisplayName="Makefile" Description="Makefile"/>
     <EnumValue Name="Application" DisplayName="應用程式 (.exe)" Description="應用程式 (.exe)"/>
     <EnumValue Name="DynamicLibrary" DisplayName="動態程式庫 (.dll)" Description="動態程式庫 (.dll)"/>

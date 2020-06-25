@@ -90,13 +90,13 @@ Credits
   </StringProperty>
   <StringProperty Subtype="folder" Name="TrackerLogDirectory" DisplayName="추적기 로그 디렉터리" Description="추적기 로그 디렉터리입니다." Category="General" IncludeInCommandLine="false" Visible="false">
   </StringProperty>
-  <StringListProperty Subtype="file" Name="AdditionalDependencies" DisplayName="추가 종속성" Description="링크 명령줄에 kernel32.lib와 같이 추가할 항목을 지정합니다. " Category="Input" F1Keyword="VC.Project.VCLinkerTool.AdditionalDependencies">
+  <StringListProperty Subtype="file" Name="AdditionalDependencies" DisplayName="추가 종속성" Description="링크 명령줄에 추가할 항목(예: kernel32.lib)을 지정합니다. " Category="Input" F1Keyword="VC.Project.VCLinkerTool.AdditionalDependencies">
   </StringListProperty>
   <BoolProperty Name="IgnoreAllDefaultLibraries" DisplayName="모든 기본 라이브러리 무시" Description="/NODEFAULTLIB 옵션을 사용하면 외부 참조를 확인할 때 검색하는 라이브러리 목록에서 하나 이상의 기본 라이브러리를 제거하도록 링커에 지시할 수 있습니다. " Category="Input" Switch="NODEFAULTLIB" F1Keyword="VC.Project.VCLinkerTool.IgnoreAllDefaultLibraries">
   </BoolProperty>
   <StringListProperty Subtype="file" Name="IgnoreSpecificDefaultLibraries" DisplayName="특정 기본 라이브러리 무시" Description="무시할 하나 이상의 기본 라이브러리 이름을 지정합니다. 라이브러리가 여러 개인 경우 세미콜론으로 구분합니다.     (/NODEFAULTLIB:[name, name, ...])" Category="Input" Switch="NODEFAULTLIB:" F1Keyword="VC.Project.VCLinkerTool.IgnoreDefaultLibraryNames">
   </StringListProperty>
-  <StringProperty Subtype="file" Name="ModuleDefinitionFile" DisplayName="모듈 정의 파일" Description="/DEF 옵션으로 모듈 정의 파일(.def)을 링커에 전달합니다. .def 파일은 LINK에 대해 하나만 지정할 수 있습니다. " Category="Input" Switch="DEF" Separator=":" F1Keyword="VC.Project.VCLinkerTool.ModuleDefinitionFile">
+  <StringProperty Subtype="file" Name="ModuleDefinitionFile" DisplayName="모듈 정의 파일" Description="/DEF 옵션으로 모듈 정의 파일(.def)을 링커에 전달합니다. .def 파일은 LINK에 대해 하나만 지정할 수 있습니다." Category="Input" Switch="DEF" Separator=":" F1Keyword="VC.Project.VCLinkerTool.ModuleDefinitionFile">
   </StringProperty>
   <StringListProperty Subtype="file" Name="ForceSymbolReferences" DisplayName="강제 기호 참조" Description="/INCLUDE 옵션을 사용하면 지정된 기호를 기호 테이블에 추가하도록 링커에 지시할 수 있습니다." Category="Input" Switch="INCLUDE:" F1Keyword="VC.Project.VCLinkerTool.ForceSymbolReferences">
   </StringListProperty>
@@ -135,13 +135,13 @@ Credits
     </EnumValue>
     <EnumValue Name="Native" Switch="SUBSYSTEM:NATIVE" DisplayName="네이티브" Description="Windows NT용 장치 드라이버입니다. /DRIVER:WDM을 지정한 경우 NATIVE가 기본값입니다.">
     </EnumValue>
-    <EnumValue Name="EFI Application" Switch="SUBSYSTEM:EFI_APPLICATION" DisplayName="EFI 응용 프로그램" Description="EFI 응용 프로그램">
+    <EnumValue Name="EFI Application" Switch="SUBSYSTEM:EFI_APPLICATION" DisplayName="EFI 응용 프로그램" Description="EFI 응용 프로그램입니다.">
     </EnumValue>
-    <EnumValue Name="EFI Boot Service Driver" Switch="SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER" DisplayName="EFI 부트 서비스 드라이버" Description="EFI 부트 서비스 드라이버">
+    <EnumValue Name="EFI Boot Service Driver" Switch="SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER" DisplayName="EFI 부트 서비스 드라이버" Description="EFI 부트 서비스 드라이버입니다.">
     </EnumValue>
-    <EnumValue Name="EFI ROM" Switch="SUBSYSTEM:EFI_ROM" DisplayName="EFI ROM" Description="EFI ROM">
+    <EnumValue Name="EFI ROM" Switch="SUBSYSTEM:EFI_ROM" DisplayName="EFI ROM" Description="EFI ROM입니다.">
     </EnumValue>
-    <EnumValue Name="EFI Runtime" Switch="SUBSYSTEM:EFI_RUNTIME_DRIVER" DisplayName="EFI 런타임" Description="EFI 런타임">
+    <EnumValue Name="EFI Runtime" Switch="SUBSYSTEM:EFI_RUNTIME_DRIVER" DisplayName="EFI 런타임" Description="EFI 런타임입니다.">
     </EnumValue>
     <EnumValue Name="WindowsCE" Switch="SUBSYSTEM:WINDOWSCE" DisplayName="WindowsCE" Description="Windows CE 장치에서 실행되는 응용 프로그램입니다.">
     </EnumValue>
@@ -209,6 +209,8 @@ Credits
   <StringProperty Name="MergeSections" DisplayName="섹션 병합" Description="/MERGE 옵션을 사용하면 첫 번째 섹션(from)이 두 번째 섹션(to)과 결합되고 결과 섹션의 이름이 to로 지정됩니다. 예를 들어, /merge:.rdata=.text를 입력합니다." Category="Advanced" Switch="MERGE" Separator=":" F1Keyword="VC.Project.VCLinkerTool.MergeSections">
   </StringProperty>
   <EnumProperty Name="TargetMachine" DisplayName="대상 컴퓨터" Description="/MACHINE 옵션은 프로그램의 대상 플랫폼을 지정합니다." Category="Advanced" F1Keyword="VC.Project.VCLinkerTool.TargetMachine">
+    <EnumValue Name="NotSet" Switch="" DisplayName="설정 안 함">
+    </EnumValue>
     <EnumValue Name="MachineALPHA" Switch="MACHINE:ALPHA" DisplayName="MachineALPHA">
     </EnumValue>
     <EnumValue Name="MachineARM" Switch="MACHINE:ARM" DisplayName="MachineARM">
@@ -232,7 +234,7 @@ Credits
   </IntProperty>
   <BoolProperty Name="LinkDLL" Switch="DLL" Visible="false">
   </BoolProperty>
-  <StringProperty Name="AdditionalOptions" DisplayName="추가 옵션" Description="추가 옵션" Category="Command Line" F1Keyword="vc.project.AdditionalOptionsPage">
+  <StringProperty Name="AdditionalOptions" DisplayName="추가 옵션" Description="추가 옵션입니다." Category="Command Line" F1Keyword="vc.project.AdditionalOptionsPage">
   </StringProperty>
   <BoolProperty Name="BuildingInIDE" Visible="false">
   </BoolProperty>

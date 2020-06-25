@@ -55,8 +55,8 @@ Credits
     <EnumValue Name="Utility" DisplayName="Utility" Description="Utility" />
   </EnumProperty>
   <EnumProperty Name="CLRSupport" DisplayName="Common Language Runtime Support"
-                Description="Specifies whether this configuration supports the Common Language Runtime. This is incompatible with some other settings, e.g. runtime checks. See help for /clr family of C++ compiler switches for full list of conflicts."
-                Category="ProjectDefaults" Visible="false"
+                Description="Select the Common Language Runtime support your code uses."
+                Category="General" Visible="false"
                 F1Keyword="VC.Project.VCConfiguration.ManagedExtensions">
     <EnumValue Name="false" DisplayName="No Common Language Runtime Support"
                Description="No Common Language Runtime Support" />

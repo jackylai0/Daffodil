@@ -65,7 +65,7 @@ Credits
                       Description="Specifies the project property sheets this configuration or property sheet inherits from."
                       Category="General" Separator=";" Subtype="file" /> -->
   <DynamicEnumProperty Name="PlatformToolset" DisplayName="平台工具組" EnumProvider="Toolsets" Description="指定用於建置目前組態的工具組; 如果未設定，則使用預設工具組" F1Keyword="VC.Project.VCConfiguration.PlatformToolset" Category="General"/>
-  <EnumProperty Name="ConfigurationType" DisplayName="組態類型" Description="指定此組態產生的輸出類型。" Category="ProjectDefaults" F1Keyword="VC.Project.VCConfiguration.ConfigurationType">
+  <EnumProperty Name="ConfigurationType" DisplayName="組態類型" Description="指定這個組態所產生的輸出類型。" Category="ProjectDefaults" F1Keyword="VC.Project.VCConfiguration.ConfigurationType">
     <EnumValue Name="Makefile" DisplayName="Makefile" Description="Makefile"/>
     <EnumValue Name="Application" DisplayName="應用程式 (.exe)" Description="應用程式 (.exe)"/>
     <EnumValue Name="DynamicLibrary" DisplayName="動態程式庫 (.dll)" Description="動態程式庫 (.dll)"/>

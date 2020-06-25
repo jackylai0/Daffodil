@@ -33,7 +33,7 @@ Credits
   <StringProperty Name="IntDir" DisplayName="中繼目錄" Description="指定中繼檔案目錄的相對路徑; 可以包含環境變數。" Category="General" Default="$(ConfigurationName)" Subtype="folder" F1Keyword="VC.Project.VCConfiguration.IntermediateDirectory"/>
   <EnumProperty Name="CLRSupport" DisplayName="Common Language Runtime 支援" Description="選取您程式碼使用的 Common Language Runtime 支援。" Category="General" F1Keyword="VC.Project.VCConfiguration.ManagedExtensions">
     <EnumValue Name="false" DisplayName="不支援 Common Language Runtime" Description="不支援 Common Language Runtime"/>
-    <EnumValue Name="true" Switch="clr" DisplayName="Common Language Runtime 支援" Description="為您的應用程式建立其他 CLR 應用程式可以使用的中繼資料，並且讓您的應用程式使用其他 CLR 元件之中繼資料內的型別和資料。"/>
+    <EnumValue Name="true" Switch="clr" DisplayName="Common Language Runtime 支援" Description="為您的應用程式建立其他 CLR 應用程式可以使用的中繼資料，並且讓您的應用程式使用其他 CLR 元件之中繼資料內的類型和資料。"/>
   </EnumProperty>
   <StringProperty Name="BuildLogFile" DisplayName="建置記錄檔" Description="指定啟用建置記錄時，要寫入的建置記錄檔。" F1Keyword="VC.Project.VCConfiguration.BuildLogFile" Category="General" Default="$(ProjectDir)\$(MSBuildProjectName).log" Subtype="file">
     <StringProperty.DataSource>

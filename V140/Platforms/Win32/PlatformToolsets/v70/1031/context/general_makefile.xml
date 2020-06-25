@@ -40,7 +40,7 @@ Credits
   </EnumProperty>
   <EnumProperty Name="CLRSupport" DisplayName="Common Language Runtime-Unterstützung" Description="Wählen Sie die von Ihrem Code verwendete Common Language Runtime-Unterstützung aus." Category="General" F1Keyword="VC.Project.VCConfiguration.ManagedExtensions">
     <EnumValue Name="false" DisplayName="Keine Common Language Runtime-Unterstützung" Description="Keine Common Language Runtime-Unterstützung"/>
-    <EnumValue Name="true" Switch="clr" DisplayName="Common Language Runtime-Unterstützung" Description="Erstellt Metadaten für Ihre Anwendung, die von anderen CLR-Anwendungen genutzt werden können, und ermöglicht, dass Ihre Anwendung Typen und Daten in den Metadaten anderer CLR-Komponenten nutzt."/>
+    <EnumValue Name="true" Switch="clr" DisplayName="Common Language Runtime-Unterstützung (/clr)" Description="Common Language Runtime-Unterstützung (/clr)"/>
   </EnumProperty>
   <StringProperty Name="BuildLogFile" DisplayName="Buildprotokolldatei" Description="Gibt die Buildprotokolldatei an, in die bei aktivierter Buildprotokollierung geschrieben wird." F1Keyword="VC.Project.VCConfiguration.BuildLogFile" Category="General" Default="$(ProjectDir)\$(MSBuildProjectName).log" Subtype="file">
     <StringProperty.DataSource>

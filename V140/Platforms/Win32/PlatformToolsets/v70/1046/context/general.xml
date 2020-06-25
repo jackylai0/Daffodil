@@ -30,7 +30,7 @@ Credits
   <Rule.DataSource>
     <DataSource Persistence="ProjectFile" Label="Configuration"/>
   </Rule.DataSource>
-  <StringProperty Name="OutDir" DisplayName="Diretório de Saída" Description="Especifica um caminho relativo para o diretório de arquivo de saída; pode incluir variáveis de ambiente." Category="General" Default="$(SolutionDir)$(Configuration)\" Subtype="folder" F1Keyword="VC.Project.VCConfiguration.OutputDirectory">
+  <StringProperty Name="OutDir" DisplayName="Diretório de Saída" Description="Especifica um caminho relativo para o diretório do arquivo de saída; pode incluir variáveis de ambiente." Category="General" Default="$(SolutionDir)$(Configuration)\" Subtype="folder" F1Keyword="VC.Project.VCConfiguration.OutputDirectory">
                   <StringProperty.DataSource>
                      <DataSource Persistence="ProjectFile" Label=""/>
                   </StringProperty.DataSource>
@@ -50,12 +50,12 @@ Credits
                      <DataSource Persistence="ProjectFile" Label=""/>
                   </StringProperty.DataSource>
   </StringProperty>
-  <StringListProperty Name="ExtensionsToDeleteOnClean" DisplayName="Extensões a Excluir ao Limpar" Description="Especificação curinga delimitada por ponto e vírgula para os arquivos no diretório intermediário prontos para apagamento na limpeza ou recompilação." Category="General" Separator=";" F1Keyword="VC.Project.VCConfiguration.DeleteExtensionsOnClean">
+  <StringListProperty Name="ExtensionsToDeleteOnClean" DisplayName="Extensões a Serem Excluídas ao Limpar" Description="Especificação curinga delimitada por ponto e vírgula dos arquivos no diretório intermediário a serem excluídos na limpeza ou recompilação." Category="General" Separator=";" F1Keyword="VC.Project.VCConfiguration.DeleteExtensionsOnClean">
                       <StringListProperty.DataSource>
                             <DataSource Persistence="ProjectFile" Label=""/>
                       </StringListProperty.DataSource>
   </StringListProperty>
-  <StringProperty Name="BuildLogFile" DisplayName="Arquivo de Log de Compilação" Description="Especifica o arquivo de log de compilação onde deve-se gravar quando o registro de compilação em log está habilitado." F1Keyword="VC.Project.VCConfiguration.BuildLogFile" Category="General" Default="$(ProjectDir)\$(MSBuildProjectName).log" Subtype="file">
+  <StringProperty Name="BuildLogFile" DisplayName="Arquivo de Log de Compilação" Description="Especifica o arquivo de log de compilação a ser gravado quando o registro de compilação em log está habilitado." F1Keyword="VC.Project.VCConfiguration.BuildLogFile" Category="General" Default="$(ProjectDir)\$(MSBuildProjectName).log" Subtype="file">
                   <StringProperty.DataSource>
                      <DataSource Persistence="ProjectFile" ItemType="BuildLog" PersistedName="Path"/>
                   </StringProperty.DataSource>
@@ -64,7 +64,7 @@ Credits
   <StringListProperty Name="InheritProjectPropertySheets" DisplayName="Inherit Project Property Sheets"
                       Description="Specifies the project property sheets this configuration or property sheet inherits from."
                       Category="General" Separator=";" Subtype="file" /> -->
-  <DynamicEnumProperty Name="PlatformToolset" DisplayName="Estojo de Ferramentas da Plataforma" EnumProvider="Toolsets" Description="Especifica o estojo de ferramentas utilizado para construir a configuração atual; se não tiver sido definido, o estojo padrão é utilizado" F1Keyword="VC.Project.VCConfiguration.PlatformToolset" Category="General"/>
+  <DynamicEnumProperty Name="PlatformToolset" DisplayName="Conjunto de Ferramentas da Plataforma" EnumProvider="Toolsets" Description="Especifica o conjunto de ferramentas utilizado para compilar a configuração atual; se não tiver sido definido, o conjunto de ferramentas padrão é utilizado" F1Keyword="VC.Project.VCConfiguration.PlatformToolset" Category="General"/>
   <EnumProperty Name="ConfigurationType" DisplayName="Tipo de Configuração" Description="Especifica o tipo de saída que essa configuração gera." Category="ProjectDefaults" F1Keyword="VC.Project.VCConfiguration.ConfigurationType">
     <EnumValue Name="Makefile" DisplayName="Makefile" Description="Makefile"/>
     <EnumValue Name="Application" DisplayName="Aplicativo (.exe)" Description="Aplicativo (.exe)"/>
@@ -73,27 +73,27 @@ Credits
     <EnumValue Name="Utility" DisplayName="Utilitário" Description="Utilitário"/>
   </EnumProperty>
   <EnumProperty Name="UseOfMfc" DisplayName="Uso do MFC" Description="Especifica como o MFC é utilizado pela configuração." Category="ProjectDefaults" F1Keyword="VC.Project.VCConfiguration.useOfMfc">
-    <EnumValue Name="false" DisplayName="Use Bibliotecas Padrões do Windows" Description="Use Bibliotecas Padrões do Windows"/>
-    <EnumValue Name="Static" DisplayName="Use MFC em uma Biblioteca Estática" Description="Use MFC em uma Biblioteca Estática"/>
-    <EnumValue Name="Dynamic" DisplayName="Use MFC em uma DLL Compartilhada" Description="Use MFC em uma DLL Compartilhada"/>
+    <EnumValue Name="false" DisplayName="Usar Bibliotecas Padrão do Windows" Description="Usar Bibliotecas Padrão do Windows"/>
+    <EnumValue Name="Static" DisplayName="Usar MFC em uma Static Library" Description="Usar MFC em uma Static Library"/>
+    <EnumValue Name="Dynamic" DisplayName="Use MFC em uma DLL Compartilhada" Description="Usar MFC em uma DLL Compartilhada"/>
   </EnumProperty>
   <EnumProperty Name="UseOfAtl" DisplayName="Uso da ATL" Description="Especifica como a ATL é utilizada pela configuração." Category="ProjectDefaults" F1Keyword="VC.Project.VCConfiguration.useOfATL">
-    <EnumValue Name="false" DisplayName="Sem Uso de ATL" Description="Sem Uso de ATL"/>
-    <EnumValue Name="Static" DisplayName="Vínculo Estático para ATL" Description="Vínculo Estático para ATL"/>
-    <EnumValue Name="Dynamic" DisplayName="Vínculo Dinâmico para ATL" Description="Vínculo Dinâmico para ATL"/>
+    <EnumValue Name="false" DisplayName="Não Usar ATL" Description="Não Usar ATL"/>
+    <EnumValue Name="Static" DisplayName="Link Estático para ATL" Description="Link Estático para ATL"/>
+    <EnumValue Name="Dynamic" DisplayName="Link Dinâmico para ATL" Description="Link Dinâmico para ATL"/>
   </EnumProperty>
   <EnumProperty Name="CharacterSet" DisplayName="Conjunto de Caracteres" Description="Informa ao compilador para utilizar o conjunto de caracteres especificado; ajuda em problemas de localização." Category="ProjectDefaults" F1Keyword="VC.Project.VCConfiguration.CharacterSet">
     <EnumValue Name="NotSet" DisplayName="Não Definido" Description="Não Definido"/>
-    <EnumValue Name="Unicode" DisplayName="Use Conjunto de Caracteres Unicode" Description="Use Conjunto de Caracteres Unicode"/>
-    <EnumValue Name="MultiByte" DisplayName="Use Conjunto de Caracteres Multi-Byte" Description="Use Conjunto de Caracteres Multi-Byte"/>
+    <EnumValue Name="Unicode" DisplayName="Usar Conjunto de Caracteres Unicode" Description="Usar Conjunto de Caracteres Unicode"/>
+    <EnumValue Name="MultiByte" DisplayName="Usar Conjunto de Caracteres Multibyte" Description="Usar Conjunto de Caracteres Multibyte"/>
   </EnumProperty>
-  <EnumProperty Name="CLRSupport" DisplayName="Suporte da Common Language Runtime" Description="Especifica se essa configuração suporta a Common Language Runtime. Isso é incompatível com outras configurações, e.g. verificações em tempo de execução. Para uma lista completa de conflitos, consulte a ajuda por /opções da família de compiladores C++ da clr." Category="ProjectDefaults" F1Keyword="VC.Project.VCConfiguration.ManagedExtensions">
+  <EnumProperty Name="CLRSupport" DisplayName="Suporte a Common Language Runtime" Description="Especifica se essa configuração suporta a Common Language Runtime. Isso é incompatível com outras configurações, e.g. verificações em tempo de execução. Para uma lista completa de conflitos, consulte a ajuda por /opções da família de compiladores C++ da clr." Category="ProjectDefaults" F1Keyword="VC.Project.VCConfiguration.ManagedExtensions">
     <EnumValue Name="false" DisplayName="Sem Suporte da Common Language Runtime" Description="Sem Suporte da Common Language Runtime"/>
-    <EnumValue Name="true" DisplayName="Suporte da Common Language Runtime(/clr)" Description="Suporte da Common Language Runtime(/clr)"/>
+    <EnumValue Name="true" DisplayName="Suporte a Common Language Runtime (/clr)" Description="Suporte a Common Language Runtime (/clr)"/>
   </EnumProperty>
   <EnumProperty Name="WholeProgramOptimization" DisplayName="Otimização do Programa Inteiro" Description="Especifica que o programa será otimizado além das fronteiras dos .obj; funciona melhor se as otimizações de C/C++ estiverem ativadas." Category="ProjectDefaults" F1Keyword="VC.Project.VCConfiguration.WholeProgramOptimization">
-    <EnumValue Name="false" DisplayName="Sem Otimização do Programa Inteiro" Description="Sem Otimização do Programa Inteiro"/>
-    <EnumValue Name="true" DisplayName="Utilize Geração de Código em Tempo de Vinculação" Description="Utilize Geração de Código em Tempo de Vinculação"/>
+    <EnumValue Name="false" DisplayName="Otimização de Programa Parcial" Description="Otimização de Programa Parcial"/>
+    <EnumValue Name="true" DisplayName="Usar Geração de Código Durante o Tempo de Vinculação" Description="Usar Geração de Código Durante o Tempo de Vinculação"/>
   </EnumProperty>
   <BoolProperty Name="UseDebugLibraries" DisplayName="Utilizar Bibliotecas de Depuração" Description="Especifica se essa configuração deve utilizar bibliotecas de depuração e opções de depuração" Category="ProjectDefaults" Visible="false">
   </BoolProperty>

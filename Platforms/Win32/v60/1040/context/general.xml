@@ -67,8 +67,8 @@ Credits
   <DynamicEnumProperty Name="PlatformToolset" DisplayName="Set strumenti della piattaforma" EnumProvider="Toolsets" Description="Specifica il set di strumenti utilizzato per compilare la configurazione corrente. Se non è impostato, viene utilizzato il set di strumenti predefinito" F1Keyword="VC.Project.VCConfiguration.PlatformToolset" Category="General"/>
   <EnumProperty Name="ConfigurationType" DisplayName="Tipo configurazione" Description="Specifica il tipo di output generato da questa configurazione." Category="ProjectDefaults" F1Keyword="VC.Project.VCConfiguration.ConfigurationType">
     <EnumValue Name="Makefile" DisplayName="Makefile" Description="Makefile"/>
-    <EnumValue Name="Application" DisplayName="Applicazione (exe)" Description="Applicazione (exe)"/>
-    <EnumValue Name="DynamicLibrary" DisplayName="Libreria dinamica (dll)" Description="Libreria dinamica (dll)"/>
+    <EnumValue Name="Application" DisplayName="Applicazione (.exe)" Description="Applicazione (.exe)"/>
+    <EnumValue Name="DynamicLibrary" DisplayName="Libreria dinamica (.dll)" Description="Libreria dinamica (.dll)"/>
     <EnumValue Name="StaticLibrary" DisplayName="Libreria statica (lib)" Description="Libreria statica (lib)"/>
     <EnumValue Name="Utility" DisplayName="Utilità" Description="Utilità"/>
   </EnumProperty>

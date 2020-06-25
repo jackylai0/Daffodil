@@ -32,11 +32,11 @@ Credits
   <Rule.DataSource>
     <DataSource Persistence="ProjectFile" ItemType="Midl" Label="" HasConfigurationCondition="true" />
   </Rule.DataSource>
-  <StringListProperty Name="PreprocessorDefinitions" DisplayName="Preprocessor Definitions" Description="Specifies one or more defines, including MIDL macros (/D[macros]" Category="General" Switch="D " F1Keyword="VC.Project.VCMidlTool.PreprocessorDefinitions">
+  <StringListProperty Name="PreprocessorDefinitions" DisplayName="Preprocessor Definitions" Description="Specifies one or more defines, including MIDL macros (/D[macros])" Category="General" Switch="D " F1Keyword="VC.Project.VCMidlTool.PreprocessorDefinitions">
   </StringListProperty>
   <StringListProperty Subtype="folder" Name="AdditionalIncludeDirectories" DisplayName="Additional Include Directories" Description="Specifies one or more directories to add to the include path (/I[path])" Category="General" Switch="I" F1Keyword="VC.Project.VCMidlTool.AdditionalIncludeDirectories">
   </StringListProperty>
-  <BoolProperty Name="IgnoreStandardIncludePath" DisplayName="Ignore Standard Include Path" Description="Ignore the current and the INCLUDE directories" Category="General" Switch="no_def_idir" F1Keyword="VC.Project.VCMidlTool.IgnoreStandardIncludePath">
+  <BoolProperty Name="IgnoreStandardIncludePath" DisplayName="Ignore Standard Include Path" Description="Ignore the current and the INCLUDE directories (/no_def_idir)" Category="General" Switch="no_def_idir" F1Keyword="VC.Project.VCMidlTool.IgnoreStandardIncludePath">
   </BoolProperty>
   <BoolProperty Name="MkTypLibCompatible" DisplayName="MkTypLib Compatible" Description="Forces compatibility with mktyplib.exe version 2.03 (/mktyplib203)" Category="General" Switch="mktyplib203" F1Keyword="VC.Project.VCMidlTool.MkTypLibCompatible">
   </BoolProperty>

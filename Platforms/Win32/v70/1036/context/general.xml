@@ -72,7 +72,7 @@ Credits
     <EnumValue Name="StaticLibrary" DisplayName="Bibliothèque statique (.lib)" Description="Bibliothèque statique (.lib)"/>
     <EnumValue Name="Utility" DisplayName="Utilitaire" Description="Utilitaire"/>
   </EnumProperty>
-  <EnumProperty Name="UseOfMfc" DisplayName="Utilisation des MFC " Description="Spécifie la manière dont les MFC sont utilisées par la configuration." Category="ProjectDefaults" F1Keyword="VC.Project.VCConfiguration.useOfMfc">
+  <EnumProperty Name="UseOfMfc" DisplayName="Utilisation des MFC" Description="Spécifie la manière dont les MFC sont utilisées par la configuration." Category="ProjectDefaults" F1Keyword="VC.Project.VCConfiguration.useOfMfc">
     <EnumValue Name="false" DisplayName="Utiliser les bibliothèques Windows standard" Description="Utiliser les bibliothèques Windows standard"/>
     <EnumValue Name="Static" DisplayName="Utiliser les MFC dans une bibliothèque statique" Description="Utiliser les MFC dans une bibliothèque statique"/>
     <EnumValue Name="Dynamic" DisplayName="Utiliser les MFC dans une DLL partagée" Description="Utiliser les MFC dans une DLL partagée"/>

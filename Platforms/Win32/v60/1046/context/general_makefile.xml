@@ -38,8 +38,8 @@ Credits
     <EnumValue Name="StaticLibrary" DisplayName="Biblioteca estática (.lib)" Description="Biblioteca Estática (.lib)"/>
     <EnumValue Name="Utility" DisplayName="Utilitário" Description="Utilitário"/>
   </EnumProperty>
-  <EnumProperty Name="CLRSupport" DisplayName="Suporte da Common Language Runtime" Description="Selecione o suporte à Common Language Runtime que o seu código utiliza." Category="General" Visible="false" F1Keyword="VC.Project.VCConfiguration.ManagedExtensions">
-    <EnumValue Name="false" DisplayName="Sem suporte para Common Language RunTime" Description="Sem suporte para Common Language RunTime"/>
+  <EnumProperty Name="CLRSupport" DisplayName="Suporte da Common Language Runtime" Description="Selecione o suporte a Common Language Runtime que o seu código utiliza." Category="General" Visible="false" F1Keyword="VC.Project.VCConfiguration.ManagedExtensions">
+    <EnumValue Name="false" DisplayName="Não há suporta a Common Language Runtime" Description="Não há suporta a Common Language Runtime"/>
   </EnumProperty>
   <StringProperty Name="BuildLogFile" DisplayName="Arquivo de Log de Compilação" Description="Especifica o arquivo de log de compilação onde deve-se gravar quando o registro de compilação em log está habilitado." F1Keyword="VC.Project.VCConfiguration.BuildLogFile" Category="General" Default="$(ProjectDir)\$(MSBuildProjectName).log" Subtype="file">
     <StringProperty.DataSource>

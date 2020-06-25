@@ -22,5 +22,5 @@ Credits
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 -->
 <!--Copyright, Microsoft Corporation, All rights reserved.-->
-<Rule Name="Mt" PageTemplate="tool" DisplayName="Manifest Tool" SwitchPrefix="/" Order="30" xmlns="http://schemas.microsoft.com/build/2009/properties" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:sys="clr-namespace:System;assembly=mscorlib">
+<Rule Name="Mt" PageTemplate="tool" DisplayName="清单工具" SwitchPrefix="/" Order="30" xmlns="http://schemas.microsoft.com/build/2009/properties" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:sys="clr-namespace:System;assembly=mscorlib">
 </Rule>

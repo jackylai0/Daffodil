@@ -32,11 +32,11 @@ Credits
   <Rule.DataSource>
     <DataSource Persistence="ProjectFile" ItemType="Midl" Label="" HasConfigurationCondition="true"/>
   </Rule.DataSource>
-  <StringListProperty Name="PreprocessorDefinitions" DisplayName="Определения препроцессора" Description="задает одно или несколько определений, включая MIDL-макросы (/D[макросы]." Category="General" Switch="D " F1Keyword="VC.Project.VCMidlTool.PreprocessorDefinitions">
+  <StringListProperty Name="PreprocessorDefinitions" DisplayName="Определения препроцессора" Description="Задает одно или несколько определений, включая MIDL-макросы (/D[макросы])." Category="General" Switch="D " F1Keyword="VC.Project.VCMidlTool.PreprocessorDefinitions">
   </StringListProperty>
-  <StringListProperty Subtype="folder" Name="AdditionalIncludeDirectories" DisplayName="Дополнительные каталоги включаемых файлов" Description="Задает один или несколько каталогов, добавляемых к пути поиска включаемых файлов  (/I[путь])" Category="General" Switch="I" F1Keyword="VC.Project.VCMidlTool.AdditionalIncludeDirectories">
+  <StringListProperty Subtype="folder" Name="AdditionalIncludeDirectories" DisplayName="Дополнительные каталоги включаемых файлов" Description="Задает один или несколько каталогов, добавляемых к пути поиска включаемых файлов (/I[путь])" Category="General" Switch="I" F1Keyword="VC.Project.VCMidlTool.AdditionalIncludeDirectories">
   </StringListProperty>
-  <BoolProperty Name="IgnoreStandardIncludePath" DisplayName="Игнорировать стандартный путь поиска включаемых файлов" Description="Игнорировать текущий и каталоги INCLUDE" Category="General" Switch="no_def_idir" F1Keyword="VC.Project.VCMidlTool.IgnoreStandardIncludePath">
+  <BoolProperty Name="IgnoreStandardIncludePath" DisplayName="Игнорировать стандартный путь поиска включаемых файлов" Description="Игнорировать текущий каталог и каталоги INCLUDE (/no_def_idir)" Category="General" Switch="no_def_idir" F1Keyword="VC.Project.VCMidlTool.IgnoreStandardIncludePath">
   </BoolProperty>
   <BoolProperty Name="MkTypLibCompatible" DisplayName="MkTypLib совместимость" Description="Обеспечивает принудительную совместимость с mktyplib.exe версии 2.03 (/mktyplib203)" Category="General" Switch="mktyplib203" F1Keyword="VC.Project.VCMidlTool.MkTypLibCompatible">
   </BoolProperty>
@@ -54,7 +54,7 @@ Credits
   </EnumProperty>
   <BoolProperty Name="WarnAsError" DisplayName="Обрабатывать предупреждения как ошибки" Description="Включает режим, в котором MIDL интерпретирует предупреждения как ошибки (/WX)" Category="General" Switch="WX" F1Keyword="VC.Project.VCMidlTool.WarnAsError">
   </BoolProperty>
-  <BoolProperty Name="SuppressStartupBanner" DisplayName="Отключить загрузочный баннер" Description="Отключает отображение загрузочного баннера, а также информационных сообщений." Category="General" Switch="nologo" F1Keyword="VC.Project.VCMidlTool.SuppressStartupBanner">
+  <BoolProperty Name="SuppressStartupBanner" DisplayName="Отключить загрузочный баннер" Description="Отключает отображение загрузочного баннера, а также информационных сообщений (/nologo)" Category="General" Switch="nologo" F1Keyword="VC.Project.VCMidlTool.SuppressStartupBanner">
   </BoolProperty>
   <EnumProperty Name="DefaultCharType" DisplayName="Тип char для C компилятора" Description="Определяет значение типа char, которое будет по умолчанию использовать C компилятор с создаваемом коде. (/char signed|unsigned|ascii7)" Category="General" F1Keyword="VC.Project.VCMidlTool.DefaultCharType">
     <EnumValue Name="Signed" Switch="char signed" DisplayName="Подписано" Description="Подписано">
@@ -64,7 +64,7 @@ Credits
     <EnumValue Name="Ascii" Switch="char ascii7" DisplayName="Ascii" Description="Ascii">
     </EnumValue>
   </EnumProperty>
-  <EnumProperty Name="TargetEnvironment" DisplayName="Конечная среда" Description="Задает конечную среду (/env win32|dos|win16|mac)" Category="General" F1Keyword="VC.Project.VCMidlTool.TargetEnvironment">
+  <EnumProperty Name="TargetEnvironment" DisplayName="Целевое окружение" Description="Задает целевое окружение (/env win32|dos|win16|mac)" Category="General" F1Keyword="VC.Project.VCMidlTool.TargetEnvironment">
     <EnumValue Name="NotSet" Switch="" DisplayName="Не задано" Description="Win32">
     </EnumValue>
     <EnumValue Name="Win32" Switch="env win32" DisplayName="Microsoft Windows, 32-разрядная" Description="Win32">

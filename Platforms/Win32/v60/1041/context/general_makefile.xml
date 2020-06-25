@@ -33,15 +33,15 @@ Credits
   <StringProperty Name="IntDir" DisplayName="中間ディレクトリ" Description="中間ファイル ディレクトリへの相対パスを指定します。環境変数を含めることができます。" Category="General" Default="$(ConfigurationName)" Subtype="folder" F1Keyword="VC.Project.VCConfiguration.IntermediateDirectory"/>
   <EnumProperty Name="ConfigurationType" DisplayName="構成の種類" Description="この構成が生成する出力の種類を指定します。" Category="General" F1Keyword="VC.Project.VCConfiguration.ConfigurationType">
     <EnumValue Name="Makefile" DisplayName="メイクファイル" Description="メイクファイルです"/>
-    <EnumValue Name="Application" DisplayName="アプリケーション (.exe)" Description="アプリケーション (.exe) です"/>
-    <EnumValue Name="DynamicLibrary" DisplayName="ダイナミック ライブラリ (.dll)" Description="ダイナミック ライブラリ (.dll) です"/>
-    <EnumValue Name="StaticLibrary" DisplayName="スタティック ライブラリ (.lib)" Description="スタティック ライブラリ (.lib) です"/>
+    <EnumValue Name="Application" DisplayName="アプリケーション (.exe)" Description="アプリケーション (.exe)"/>
+    <EnumValue Name="DynamicLibrary" DisplayName="ダイナミック ライブラリ (.dll)" Description="ダイナミック ライブラリ (.dll)"/>
+    <EnumValue Name="StaticLibrary" DisplayName="スタティック ライブラリ (.lib)" Description="スタティック ライブラリ (.lib)"/>
     <EnumValue Name="Utility" DisplayName="ユーティリティ" Description="ユーティリティです"/>
   </EnumProperty>
   <EnumProperty Name="CLRSupport" DisplayName="共通言語ランタイム サポート" Description="コードで使用する共通言語ランタイム サポートを選択します。" Category="General" Visible="false" F1Keyword="VC.Project.VCConfiguration.ManagedExtensions">
-    <EnumValue Name="false" DisplayName="共通言語ランタイム サポートを使用しない" Description="共通言語ランタイム サポートを使用しません"/>
+    <EnumValue Name="false" DisplayName="共通言語ランタイム サポートを使用しない" Description="共通言語ランタイム サポートを使用しない"/>
   </EnumProperty>
-  <StringProperty Name="BuildLogFile" DisplayName="ビルド ログ ファイル" Description="ビルドのログが有効になっている場合、書き込むビルド ログ ファイルを指定します。" F1Keyword="VC.Project.VCConfiguration.BuildLogFile" Category="General" Default="$(ProjectDir)\$(MSBuildProjectName).log" Subtype="file">
+  <StringProperty Name="BuildLogFile" DisplayName="ビルド ログ ファイル" Description="ビルドのログが有効になっている場合に、書き込むビルド ログ ファイルを指定します。" F1Keyword="VC.Project.VCConfiguration.BuildLogFile" Category="General" Default="$(ProjectDir)\$(MSBuildProjectName).log" Subtype="file">
     <StringProperty.DataSource>
       <DataSource Persistence="ProjectFile" ItemType="BuildLog" PersistedName="Path"/>
     </StringProperty.DataSource>

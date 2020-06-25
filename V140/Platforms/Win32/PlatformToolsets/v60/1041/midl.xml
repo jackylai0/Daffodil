@@ -27,17 +27,17 @@ Credits
     <Category Name="General" DisplayName="全般"/>
     <Category Name="Output" DisplayName="出力"/>
     <Category Name="Advanced" DisplayName="詳細設定"/>
-    <Category Name="All Options" DisplayName="すべてのオプション" Subtype="Search" />
+    <Category Name="All Options" DisplayName="すべてのオプション" Subtype="Search"/>
     <Category Name="Command Line" DisplayName="コマンド ライン" Subtype="CommandLine"/>
   </Rule.Categories>
   <Rule.DataSource>
     <DataSource Persistence="ProjectFile" ItemType="Midl" Label="" HasConfigurationCondition="true"/>
   </Rule.DataSource>
-  <StringListProperty Name="PreprocessorDefinitions" DisplayName="プリプロセッサの定義" Description="MIDL マクロを含め、いくつかの定義を行います (/D [マクロ]) " Category="General" Switch="D " F1Keyword="VC.Project.VCMidlTool.PreprocessorDefinitions">
+  <StringListProperty Name="PreprocessorDefinitions" DisplayName="プリプロセッサの定義" Description="MIDL マクロを含め、いくつかの定義を行います (/D [マクロ])" Category="General" Switch="D " F1Keyword="VC.Project.VCMidlTool.PreprocessorDefinitions">
   </StringListProperty>
   <StringListProperty Subtype="folder" Name="AdditionalIncludeDirectories" DisplayName="追加のインクルード ディレクトリ" Description="インクルード パスに追加する 1 つ以上のディレクトリを指定します (/I[パス])" Category="General" Switch="I" F1Keyword="VC.Project.VCMidlTool.AdditionalIncludeDirectories">
   </StringListProperty>
-  <BoolProperty Name="IgnoreStandardIncludePath" DisplayName="標準インクルード パスの無視" Description="現在のディレクトリとインクルード ディレクトリを無視します" Category="General" Switch="no_def_idir" F1Keyword="VC.Project.VCMidlTool.IgnoreStandardIncludePath">
+  <BoolProperty Name="IgnoreStandardIncludePath" DisplayName="標準インクルード パスの無視" Description="現在のディレクトリとインクルード ディレクトリを無視します (/no_def_idir)" Category="General" Switch="no_def_idir" F1Keyword="VC.Project.VCMidlTool.IgnoreStandardIncludePath">
   </BoolProperty>
   <BoolProperty Name="MkTypLibCompatible" DisplayName="MkTypLib 互換" Description="mktyplib.exe version 2.03 と互換させます (/mktyplib203)" Category="General" Switch="mktyplib203" F1Keyword="VC.Project.VCMidlTool.MkTypLibCompatible">
   </BoolProperty>
@@ -145,7 +145,7 @@ Credits
   </BoolProperty>
   <BoolProperty ReverseSwitch="no_robust" Name="ValidateAllParameters" DisplayName="パラメーターの確認" Description="パラメーターを検証するための追加情報を生成します (/robust|/no_robust)" Category="Advanced" Switch="robust" F1Keyword="VC.Project.VCMidlTool.ValidateParameters">
   </BoolProperty>
-  <EnumProperty Name="StructMemberAlignment" DisplayName="構造体メンバーのアライメント" Description="対象システム内の構造体のパッキング レベルを指定します (/ZpN)" Category="Advanced" F1Keyword="VC.Project.VCMidlTool.StructMemberAlignment">
+  <EnumProperty Name="StructMemberAlignment" DisplayName="構造体メンバーのアラインメント" Description="対象システム内の構造体のパッキング レベルを指定します (/ZpN)" Category="Advanced" F1Keyword="VC.Project.VCMidlTool.StructMemberAlignment">
     <EnumValue Name="NotSet" Switch="" DisplayName="設定なし" Description="設定なし">
     </EnumValue>
     <EnumValue Name="1" Switch="Zp1" DisplayName="1 バイト" Description="Zp1">
@@ -159,8 +159,8 @@ Credits
   </EnumProperty>
   <StringProperty Subtype="file" Name="RedirectOutputAndErrors" DisplayName="出力先の変更" Description="出力を画面からファイルへリダイレクトします (/o ファイル)" Category="Advanced" Switch="o" Separator=" " F1Keyword="VC.Project.VCMidlTool.RedirectOutputAndErrors">
   </StringProperty>
-  <StringProperty Subtype="folder" Name="TrackerLogDirectory" DisplayName="トラッカー ログのディレクトリ" Description="トラッカー ログのディレクトリです。" IncludeInCommandLine="false" Visible="false">
+  <StringProperty Name="AdditionalOptions" DisplayName="その他のオプション" Description="その他のオプション" Category="Command Line" F1Keyword="vc.project.AdditionalOptionsPage">
   </StringProperty>
-  <StringProperty Name="AdditionalOptions" DisplayName="追加オプション" Description="追加オプションです" Category="Command Line" F1Keyword="vc.project.AdditionalOptionsPage">
+  <StringProperty Subtype="folder" Name="TrackerLogDirectory" DisplayName="トラッカー ログのディレクトリ" Description="トラッカー ログのディレクトリです。" IncludeInCommandLine="false" Visible="false">
   </StringProperty>
 </Rule>

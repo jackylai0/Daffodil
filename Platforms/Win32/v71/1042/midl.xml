@@ -32,11 +32,11 @@ Credits
   <Rule.DataSource>
     <DataSource Persistence="ProjectFile" ItemType="Midl" Label="" HasConfigurationCondition="true"/>
   </Rule.DataSource>
-  <StringListProperty Name="PreprocessorDefinitions" DisplayName="전처리기 정의" Description="하나 이상의 MIDL 매크로를 포함한 정의를 지정합니다. (/D[macros]" Category="General" Switch="D " F1Keyword="VC.Project.VCMidlTool.PreprocessorDefinitions">
+  <StringListProperty Name="PreprocessorDefinitions" DisplayName="전처리기 정의" Description="하나 이상의 MIDL 매크로를 포함한 정의를 지정합니다(/D[macros])." Category="General" Switch="D " F1Keyword="VC.Project.VCMidlTool.PreprocessorDefinitions">
   </StringListProperty>
   <StringListProperty Subtype="folder" Name="AdditionalIncludeDirectories" DisplayName="추가 포함 디렉터리" Description="포함 경로에 추가할 하나 이상의 디렉터리를 지정합니다. (/I[path])" Category="General" Switch="I" F1Keyword="VC.Project.VCMidlTool.AdditionalIncludeDirectories">
   </StringListProperty>
-  <BoolProperty Name="IgnoreStandardIncludePath" DisplayName="표준 포함 경로 무시" Description="현재 디렉터리와 INCLUDE 디렉터리를 무시합니다." Category="General" Switch="no_def_idir" F1Keyword="VC.Project.VCMidlTool.IgnoreStandardIncludePath">
+  <BoolProperty Name="IgnoreStandardIncludePath" DisplayName="표준 포함 경로 무시" Description="현재 디렉터리와 INCLUDE 디렉터리를 무시합니다(/no_def_idir)." Category="General" Switch="no_def_idir" F1Keyword="VC.Project.VCMidlTool.IgnoreStandardIncludePath">
   </BoolProperty>
   <BoolProperty Name="MkTypLibCompatible" DisplayName="MkTypLib 호환" Description="mktyplib.exe 버전 2.03과 호환되게 합니다. (/mktyplib203)" Category="General" Switch="mktyplib203" F1Keyword="VC.Project.VCMidlTool.MkTypLibCompatible">
   </BoolProperty>

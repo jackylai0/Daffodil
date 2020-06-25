@@ -24,91 +24,91 @@ Credits
 <!--Copyright, Microsoft Corporation, All rights reserved.-->
 <Rule Name="LIB" PageTemplate="tool" DisplayName="Librarian" SwitchPrefix="/" Order="40" xmlns="http://schemas.microsoft.com/build/2009/properties" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:sys="clr-namespace:System;assembly=mscorlib">
   <Rule.Categories>
-    <Category Name="General" DisplayName="General"/>
-    <Category Name="All Options" DisplayName="All Options" Subtype="Search" />
-    <Category Name="Command Line" DisplayName="Command Line" Subtype="CommandLine"/>
+    <Category Name="General" DisplayName="Obecné"/>
+    <Category Name="All Options" DisplayName="Všechny možnosti" Subtype="Search"/>
+    <Category Name="Command Line" DisplayName="Příkazový řádek" Subtype="CommandLine"/>
   </Rule.Categories>
   <Rule.DataSource>
     <DataSource Persistence="ProjectFile" ItemType="Lib" Label="" HasConfigurationCondition="true"/>
   </Rule.DataSource>
-  <StringProperty Subtype="file" Name="OutputFile" DisplayName="Output File" Description="The /OUT option overrides the default name and location of the program that the lib creates." Category="General" Switch="OUT" Separator=":" F1Keyword="VC.Project.VCLibrarianTool.OutputFile">
+  <StringProperty Subtype="file" Name="OutputFile" DisplayName="Výstupní soubor" Description="Parametr /OUT přepisuje výchozí název a umístění programu, který nástroj lib vytváří." Category="General" Switch="OUT" Separator=":" F1Keyword="VC.Project.VCLibrarianTool.OutputFile">
   </StringProperty>
-  <StringListProperty Subtype="file" Name="AdditionalDependencies" DisplayName="Additional Dependencies" Description="Specifies additional items to add to the link command line [i.e. kernel32.lib] " Category="General" F1Keyword="VC.Project.VCLibrarianTool.AdditionalDependencies">
+  <StringListProperty Subtype="file" Name="AdditionalDependencies" DisplayName="Další závislosti" Description="Určuje další položky, které se mají přidat k příkazovému řádku propojení [např. kernel32.lib]. " Category="General" F1Keyword="VC.Project.VCLibrarianTool.AdditionalDependencies">
   </StringListProperty>
-  <StringListProperty Subtype="folder" Name="AdditionalLibraryDirectories" DisplayName="Additional Library Directories" Description="Allows the user to override the environmental library path" Category="General" Switch="LIBPATH:" F1Keyword="VC.Project.VCLibrarianTool.AdditionalLibraryDirectories">
+  <StringListProperty Subtype="folder" Name="AdditionalLibraryDirectories" DisplayName="Další adresáře knihoven" Description="Umožňuje uživateli přepsat cestu ke knihovnám převzatou z prostředí." Category="General" Switch="LIBPATH:" F1Keyword="VC.Project.VCLibrarianTool.AdditionalLibraryDirectories">
   </StringListProperty>
-  <BoolProperty Name="SuppressStartupBanner" DisplayName="Suppress Startup Banner" Description="The /NOLOGO option prevents display of the copyright message and version number. " Category="General" Switch="NOLOGO" F1Keyword="VC.Project.VCLibrarianTool.SuppressStartupBanner">
+  <BoolProperty Name="SuppressStartupBanner" DisplayName="Potlačit úvodní nápis" Description="Parametr /NOLOGO zakazuje zobrazení zprávy o autorských právech a čísla verze. " Category="General" Switch="NOLOGO" F1Keyword="VC.Project.VCLibrarianTool.SuppressStartupBanner">
   </BoolProperty>
-  <StringProperty Subtype="file" Name="ModuleDefinitionFile" DisplayName="Module Definition File Name" Description="The /DEF option passes a module-definition file (.def) to LIB. Only one .def file can be specified to LIB." Category="General" Switch="DEF" Separator=":" F1Keyword="VC.Project.VCLibrarianTool.ModuleDefinitionFile">
+  <StringProperty Subtype="file" Name="ModuleDefinitionFile" DisplayName="Název souboru definice modulu" Description="Parametr /DEF předá nástroji LIB soubor definice modulu (DEF). Pro nástroj LIB je možné zadat pouze jeden soubor DEF." Category="General" Switch="DEF" Separator=":" F1Keyword="VC.Project.VCLibrarianTool.ModuleDefinitionFile">
   </StringProperty>
-  <BoolProperty Name="IgnoreAllDefaultLibraries" DisplayName="Ignore All Default Libraries" Description="The /NODEFAULTLIB option tells the lib to remove one or more default libraries from the list of libraries it searches when resolving external references. " Category="General" Switch="NODEFAULTLIB" F1Keyword="VC.Project.VCLibrarianTool.IgnoreAllDefaultLibraries">
+  <BoolProperty Name="IgnoreAllDefaultLibraries" DisplayName="Ignorovat všechny výchozí knihovny" Description="Parametr /NODEFAULTLIB přikazuje nástroji lib, aby odebral jednu nebo více výchozích knihoven ze seznamu knihoven, které prohledává při překladu externích odkazů. " Category="General" Switch="NODEFAULTLIB" F1Keyword="VC.Project.VCLibrarianTool.IgnoreAllDefaultLibraries">
   </BoolProperty>
-  <StringListProperty Subtype="file" Name="IgnoreSpecificDefaultLibraries" DisplayName="Ignore Specific Default Libraries" Description="A library that you want the lib to ignore when it resolves external references." Category="General" Switch="NODEFAULTLIB:" F1Keyword="VC.Project.VCLibrarianTool.IgnoreDefaultLibraryNames">
+  <StringListProperty Subtype="file" Name="IgnoreSpecificDefaultLibraries" DisplayName="Ignorovat konkrétní výchozí knihovny" Description="Knihovna, kterou má nástroj lib ignorovat při překladu externích odkazů" Category="General" Switch="NODEFAULTLIB:" F1Keyword="VC.Project.VCLibrarianTool.IgnoreDefaultLibraryNames">
   </StringListProperty>
-  <StringListProperty Name="ExportNamedFunctions" DisplayName="Export Named Functions" Description="Export one or more specified functions " Category="General" Switch="EXPORT:" F1Keyword="VC.Project.VCLibrarianTool.ExportNamedFunctions">
+  <StringListProperty Name="ExportNamedFunctions" DisplayName="Exportovat pojmenované funkce" Description="Exportuje jednu nebo víc zadaných funkcí." Category="General" Switch="EXPORT:" F1Keyword="VC.Project.VCLibrarianTool.ExportNamedFunctions">
   </StringListProperty>
-  <StringProperty Name="ForceSymbolReferences" DisplayName="Force Symbol References" Description="Force Lib to include a reference to this symbol" Category="General" Switch="INCLUDE" Separator=":" F1Keyword="VC.Project.VCLibrarianTool.ForceSymbolReferences">
+  <StringProperty Name="ForceSymbolReferences" DisplayName="Vynutit odkazy na symboly" Description="Vynutí, aby nástroj Lib zahrnul odkaz na tento symbol." Category="General" Switch="INCLUDE" Separator=":" F1Keyword="VC.Project.VCLibrarianTool.ForceSymbolReferences">
   </StringProperty>
-  <BoolProperty Name="LinkLibraryDependencies" DisplayName="Link Library Dependencies" Description="Specifies whether or not library outputs from project dependencies are automatically linked in." Category="General" IncludeInCommandLine="false" F1Keyword="VC.Project.VCLibrarianTool.LinkLibraryDependencies">
+  <BoolProperty Name="LinkLibraryDependencies" DisplayName="Propojit závislé položky knihoven" Description="Určuje, jestli se automaticky propojí výstupy knihoven ze závislostí projektů." Category="General" IncludeInCommandLine="false" F1Keyword="VC.Project.VCLibrarianTool.LinkLibraryDependencies">
     <BoolProperty.DataSource>
       <DataSource Persistence="ProjectFile" ItemType="ProjectReference" Label="" HasConfigurationCondition="true"/>
     </BoolProperty.DataSource>
   </BoolProperty>
-  <StringProperty Name="DisplayLibrary" DisplayName="Display Library to standard output" Description="Displays information about the output library to standard output. The output can be redirected to a file. You can use /LIST to determine the contents of an existing library without modifying it." Category="General" Switch="LIST" Separator=":" Visible="false">
+  <StringProperty Name="DisplayLibrary" DisplayName="Zobrazit knihovnu na standardním výstupu" Description="Zobrazí informace o výstupní knihovně na standardním výstupu. Výstup lze přesměrovat do souboru. Pomocí parametru /LIST můžete zjistit obsah stávající knihovny bez její změny." Category="General" Switch="LIST" Separator=":" Visible="false">
   </StringProperty>
-  <EnumProperty Name="TargetMachine" DisplayName="Target Machine" Description="The /MACHINE option specifies the target platform for the program." Category="General" F1Keyword="VC.Project.VCLibrarianTool.TargetMachine">
-    <EnumValue Name="MachineALPHA" Switch="MACHINE:ALPHA" DisplayName="MachineALPHA">
+  <EnumProperty Name="TargetMachine" DisplayName="Cílový počítač" Description="Parametr /MACHINE určuje cílovou platformu programu." Category="General" F1Keyword="VC.Project.VCLibrarianTool.TargetMachine">
+    <EnumValue Name="MachineALPHA" Switch="MACHINE:ALPHA" DisplayName="MachineALPHA" Description="MachineALPHA">
     </EnumValue>
-    <EnumValue Name="MachineARM" Switch="MACHINE:ARM" DisplayName="MachineARM">
+    <EnumValue Name="MachineARM" Switch="MACHINE:ARM" DisplayName="MachineARM" Description="MachineARM">
     </EnumValue>
-    <EnumValue Name="MachineMIPS" Switch="MACHINE:MIPS" DisplayName="MachineMIPS">
+    <EnumValue Name="MachineMIPS" Switch="MACHINE:MIPS" DisplayName="MachineMIPS" Description="MachineMIPS">
     </EnumValue>
-    <EnumValue Name="MachineMIPS16" Switch="MACHINE:MIPS16" DisplayName="MachineMIPS16">
+    <EnumValue Name="MachineMIPS16" Switch="MACHINE:MIPS16" DisplayName="MachineMIPS16" Description="MachineMIPS16">
     </EnumValue>
-    <EnumValue Name="MachineMIPSR41XX" Switch="MACHINE:MIPSR41XX" DisplayName="MachineMIPSR41XX">
+    <EnumValue Name="MachineMIPSR41XX" Switch="MACHINE:MIPSR41XX" DisplayName="MachineMIPSR41XX" Description="MachineMIPSR41XX">
     </EnumValue>
-    <EnumValue Name="MachinePPC" Switch="MACHINE:PPC" DisplayName="MachinePPC">
+    <EnumValue Name="MachinePPC" Switch="MACHINE:PPC" DisplayName="MachinePPC" Description="MachinePPC">
     </EnumValue>
-    <EnumValue Name="MachineSH3" Switch="MACHINE:SH3" DisplayName="MachineSH3">
+    <EnumValue Name="MachineSH3" Switch="MACHINE:SH3" DisplayName="MachineSH3" Description="MachineSH3">
     </EnumValue>
-    <EnumValue Name="MachineSH4" Switch="MACHINE:SH4" DisplayName="MachineSH4">
+    <EnumValue Name="MachineSH4" Switch="MACHINE:SH4" DisplayName="MachineSH4" Description="MachineSH4">
     </EnumValue>
-    <EnumValue Name="MachineX86" Switch="MACHINE:X86" DisplayName="MachineX86">
+    <EnumValue Name="MachineX86" Switch="MACHINE:X86" DisplayName="MachineX86" Description="MachineX86">
     </EnumValue>
   </EnumProperty>
-  <EnumProperty Name="SubSystem" DisplayName="SubSystem" Description="The /SUBSYSTEM option tells the operating system how to run the .exe file.The choice of subsystem affects the entry point symbol (or entry point function) that the linker will choose." Category="General" F1Keyword="VC.Project.VCLibrarianTool.SubSystem">
+  <EnumProperty Name="SubSystem" DisplayName="Subsystém" Description="Parametr /SUBSYSTEM informuje operační systém, jak má spustit soubor EXE. Výběr subsystému ovlivňuje, jaký symbol vstupního bodu (nebo funkci vstupního bodu) linker použije." Category="General" F1Keyword="VC.Project.VCLibrarianTool.SubSystem">
     <EnumProperty.Arguments>
       <Argument Property="MinimumRequiredVersion" IsRequired="false"/>
     </EnumProperty.Arguments>
-    <EnumValue Name="Console" Switch="SUBSYSTEM:CONSOLE" DisplayName="Console" Description="Win32 character-mode application. Console applications are given a console by the operating system. If main or wmain is defined, CONSOLE is the default.">
+    <EnumValue Name="Console" Switch="SUBSYSTEM:CONSOLE" DisplayName="Konzolová" Description="Aplikace Win32 ve znakovém režimu. Konzolové aplikace získají konzolu od operačního systému. Pokud není definována funkce main ani wmain, je CONSOLE výchozí hodnota.">
     </EnumValue>
-    <EnumValue Name="Windows" Switch="SUBSYSTEM:WINDOWS" DisplayName="Windows" Description="Application does not require a console, probably because it creates its own windows for interaction with the user. If WinMain or wWinMain is defined, WINDOWS is the default.">
+    <EnumValue Name="Windows" Switch="SUBSYSTEM:WINDOWS" DisplayName="Windows" Description="Aplikace nevyžaduje konzolu, pravděpodobně proto, že vytváří vlastní okna pro interakci s uživatelem. Pokud je definována funkce WinMain nebo wWinMain, je WINDOWS výchozí hodnota.">
     </EnumValue>
-    <EnumValue Name="Native" Switch="SUBSYSTEM:NATIVE" DisplayName="Native" Description="Device drivers for Windows NT. If /DRIVER:WDM is specified, NATIVE is the default.">
+    <EnumValue Name="Native" Switch="SUBSYSTEM:NATIVE" DisplayName="Nativní" Description="Ovladače zařízení pro Windows NT. Pokud je zadán parametr /DRIVER:WDM, je výchozí hodnota NATIVE.">
     </EnumValue>
-    <EnumValue Name="EFI Application" Switch="SUBSYSTEM:EFI_APPLICATION" DisplayName="EFI Application" Description="EFI Application.">
+    <EnumValue Name="EFI Application" Switch="SUBSYSTEM:EFI_APPLICATION" DisplayName="Aplikace EFI" Description="Aplikace EFI">
     </EnumValue>
-    <EnumValue Name="EFI Boot Service Driver" Switch="SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER" DisplayName="EFI Boot Service Driver" Description="EFI boot service driver.">
+    <EnumValue Name="EFI Boot Service Driver" Switch="SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER" DisplayName="Ovladač spouštěcí služby EFI" Description="Ovladač spouštěcí služby EFI">
     </EnumValue>
-    <EnumValue Name="EFI ROM" Switch="SUBSYSTEM:EFI_ROM" DisplayName="EFI ROM" Description="EFI ROM.">
+    <EnumValue Name="EFI ROM" Switch="SUBSYSTEM:EFI_ROM" DisplayName="Paměť ROM EFI" Description="Paměť ROM EFI">
     </EnumValue>
-    <EnumValue Name="EFI Runtime" Switch="SUBSYSTEM:EFI_RUNTIME_DRIVER" DisplayName="EFI Runtime" Description="EFI runtime.">
+    <EnumValue Name="EFI Runtime" Switch="SUBSYSTEM:EFI_RUNTIME_DRIVER" DisplayName="Modul runtime EFI" Description="Modul runtime EFI">
     </EnumValue>
-    <EnumValue Name="WindowsCE" Switch="SUBSYSTEM:WINDOWSCE" DisplayName="WindowsCE" Description="Application that runs on a Windows CE device.">
+    <EnumValue Name="WindowsCE" Switch="SUBSYSTEM:WINDOWSCE" DisplayName="WindowsCE" Description="Aplikace spouštěná v zařízení Windows CE">
     </EnumValue>
-    <EnumValue Name="POSIX" Switch="SUBSYSTEM:POSIX" DisplayName="POSIX" Description="Application that runs with the POSIX subsystem in Windows NT.">
+    <EnumValue Name="POSIX" Switch="SUBSYSTEM:POSIX" DisplayName="POSIX" Description="Aplikace spouštěná v subsystému POSIX systému Windows NT">
     </EnumValue>
   </EnumProperty>
-  <StringProperty Name="MinimumRequiredVersion" DisplayName="Minimum Required Version" Description="Specify the minimum required version of the subsystem. The arguments are decimal numbers in the range 0 through 65,535." Category="General" Separator=",">
+  <StringProperty Name="MinimumRequiredVersion" DisplayName="Minimální požadovaná verze" Description="Určuje minimální požadovanou verzi subsystému. Argumenty jsou desetinná čísla v rozmezí 0 až 65535." Category="General" Separator=",">
   </StringProperty>
-  <StringListProperty Subtype="file" Name="RemoveObjects" DisplayName="Remove Objects" Description="Omits the specified object from the output library. LIB creates an output library by combining all objects (whether in object files or libraries), and then deleting any objects specified with /REMOVE." Category="General" Switch="REMOVE:" F1Keyword="VC.Project.VCLibrarianTool.RemoveObjects">
+  <StringListProperty Subtype="file" Name="RemoveObjects" DisplayName="Odebrat objekty" Description="Vynechá zadaný objekt ve výstupní knihovně. Nástroj LIB vytvoří výstupní knihovnu tak, že zkombinuje všechny objekty (ze souborů objektů nebo knihoven) a poté odstraní všechny objekty zadané pomocí parametru /REMOVE." Category="General" Switch="REMOVE:" F1Keyword="VC.Project.VCLibrarianTool.RemoveObjects">
   </StringListProperty>
-  <BoolProperty Name="Verbose" DisplayName="Verbose" Description="Verbose" Category="General" Switch="VERBOSE" F1Keyword="VC.Project.VCLibrarianTool.Verbose">
+  <BoolProperty Name="Verbose" DisplayName="Podrobné" Description="Podrobné" Category="General" Switch="VERBOSE" F1Keyword="VC.Project.VCLibrarianTool.Verbose">
   </BoolProperty>
-  <StringProperty Subtype="file" Name="Name" DisplayName="Name" Description="When building an import library, specifies the name of the DLL for which the import library is being built." Category="General" Switch="NAME:" F1Keyword="VC.Project.VCLibrarianTool.Name">
+  <StringProperty Subtype="file" Name="Name" DisplayName="Název" Description="Při sestavování knihovny importů určuje název knihovny DLL, pro kterou se knihovna importů sestavuje." Category="General" Switch="NAME:" F1Keyword="VC.Project.VCLibrarianTool.Name">
   </StringProperty>
-  <StringProperty Subtype="folder" Name="TrackerLogDirectory" DisplayName="Tracker Log Directory" Description="Tracker log directory." Category="General" IncludeInCommandLine="false" Visible="false">
+  <StringProperty Name="AdditionalOptions" DisplayName="Další možnosti" Description="Další možnosti" Category="Command Line" F1Keyword="vc.project.AdditionalOptionsPage">
   </StringProperty>
-  <StringProperty Name="AdditionalOptions" DisplayName="Additional Options" Description="Additional Options" Category="Command Line" F1Keyword="vc.project.AdditionalOptionsPage">
+  <StringProperty Subtype="folder" Name="TrackerLogDirectory" DisplayName="Adresář protokolu sledovacího modulu" Description="Adresář protokolu sledovacího modulu" IncludeInCommandLine="false" Visible="false">
   </StringProperty>
 </Rule>
