@@ -60,8 +60,6 @@ Credits
     </EnumValue>
     <EnumValue Name="MachineARM" Switch="MACHINE:ARM" DisplayName="MachineARM" Description="MachineARM">
     </EnumValue>
-    <EnumValue Name="MachineCEE" Switch="MACHINE:CEE" DisplayName="MachineCEE" Description="MachineCEE">
-    </EnumValue>
     <EnumValue Name="MachineIA64" Switch="MACHINE:IA64" DisplayName="MachineIA64" Description="MachineIA64">
     </EnumValue>
     <EnumValue Name="MachineM32R" Switch="MACHINE:M32R" DisplayName="MachineM32R" Description="MachineM32R">
@@ -78,7 +76,11 @@ Credits
     </EnumValue>
     <EnumValue Name="MachinePPC" Switch="MACHINE:PPC" DisplayName="MachinePPC" Description="MachinePPC">
     </EnumValue>
+    <EnumValue Name="MachinePPCFP" Switch="MACHINE:PPCFP" DisplayName="MachinePPCFP" Description="MachinePPCFP">
+    </EnumValue>
     <EnumValue Name="MachineSH3" Switch="MACHINE:SH3" DisplayName="MachineSH3" Description="MachineSH3">
+    </EnumValue>
+    <EnumValue Name="MachineSH3DSP" Switch="MACHINE:SH3DSP" DisplayName="MachineSH3DSP" Description="MachineSH3DSP">
     </EnumValue>
     <EnumValue Name="MachineSH4" Switch="MACHINE:SH4" DisplayName="MachineSH4" Description="MachineSH4">
     </EnumValue>
