@@ -60,7 +60,6 @@ Credits
     <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
     <ExecuteAsTool>false</ExecuteAsTool>
     <CLRSupport Condition="'$(CLRSupport)' != '' and '$(CLRSupport)' != 'false'">true</CLRSupport>
-    <_ImportMicrosoftCppDesignTime>false</_ImportMicrosoftCppDesignTime>
   </PropertyGroup>
   <ItemDefinitionGroup>
     <ClCompile>
