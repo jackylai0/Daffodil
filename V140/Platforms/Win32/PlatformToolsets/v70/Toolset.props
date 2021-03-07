@@ -73,6 +73,11 @@ Credits
       <DebugInformationFormat>Disabled</DebugInformationFormat>
     </ClCompile>
   </ItemDefinitionGroup>
+  <ItemDefinitionGroup>
+    <Link>
+      <LinkTimeCodeGeneration Condition="'$(WholeProgramOptimization)' == 'true'">UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+    </Link>
+  </ItemDefinitionGroup>
   <Import Project="$(MSBuildThisFileDirectory)ImportAfter\*.props" Condition="Exists('$(MSBuildThisFileDirectory)ImportAfter')" />
   
   <!-- This is intentially added after ImportAfter. -->
